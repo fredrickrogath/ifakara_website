@@ -57,22 +57,28 @@ Route::middleware([
 
     Route::get('/dashboard', [\App\Http\Controllers\HomeController::class, 'DetermineUserRole'])->name('dashboard');
 
+
+    Route::get("/page", function(){
+        return Inertia::render('Dashboard', $academicService->dashboardData());
+     });
+
+
     /*
     |--------------------------------------------------------------------------
     | ROUTES FOR THE HEAD
     |--------------------------------------------------------------------------
     */
 
-    Route::group(['prefix' => 'head', 'middleware' => 'is_head', 'as' => 'head.'], function () {
-        Route::get('/pageSix', [\App\Http\Controllers\Head\DashboardController::class, 'pageSix'])->name('pageSix');
-        Route::get('/pageOne', [\App\Http\Controllers\Head\DashboardController::class, 'pageOne'])->name('pageOne');
-        Route::get('/pageTwo', [\App\Http\Controllers\Head\DashboardController::class, 'pageTwo'])->name('pageTwo');
-        Route::get('/pageFour', [\App\Http\Controllers\Head\DashboardController::class, 'pageFour'])->name('pageFour');
-        Route::get('/pageFive', [\App\Http\Controllers\Head\DashboardController::class, 'pageFive'])->name('pageFive');
-        Route::get('/dashboard', [\App\Http\Controllers\Head\DashboardController::class, 'dashboard'])->name('dashboard');
-        Route::get('/pageThree', [\App\Http\Controllers\Head\DashboardController::class, 'pageThree'])->name('pageThree');
-        Route::get('/pageSeven', [\App\Http\Controllers\Head\DashboardController::class, 'pageSeven'])->name('pageSeven');
-    });
+    // Route::group(['prefix' => 'head', 'middleware' => 'is_head', 'as' => 'head.'], function () {
+    //     Route::get('/pageSix', [\App\Http\Controllers\Head\DashboardController::class, 'pageSix'])->name('pageSix');
+    //     Route::get('/pageOne', [\App\Http\Controllers\Head\DashboardController::class, 'pageOne'])->name('pageOne');
+    //     Route::get('/pageTwo', [\App\Http\Controllers\Head\DashboardController::class, 'pageTwo'])->name('pageTwo');
+    //     Route::get('/pageFour', [\App\Http\Controllers\Head\DashboardController::class, 'pageFour'])->name('pageFour');
+    //     Route::get('/pageFive', [\App\Http\Controllers\Head\DashboardController::class, 'pageFive'])->name('pageFive');
+    //     Route::get('/dashboard', [\App\Http\Controllers\Head\DashboardController::class, 'dashboard'])->name('dashboard');
+    //     Route::get('/pageThree', [\App\Http\Controllers\Head\DashboardController::class, 'pageThree'])->name('pageThree');
+    //     Route::get('/pageSeven', [\App\Http\Controllers\Head\DashboardController::class, 'pageSeven'])->name('pageSeven');
+    // });
 
 
     /*
@@ -81,16 +87,16 @@ Route::middleware([
     |--------------------------------------------------------------------------
     */
 
-    Route::group(['prefix' => 'bishop', 'middleware' => 'is_bishop', 'as' => 'bishop.'], function () {
-        Route::get('/pageSix', [\App\Http\Controllers\Bishop\DashboardController::class, 'pageSix'])->name('pageSix');
-        Route::get('/pageOne', [\App\Http\Controllers\Bishop\DashboardController::class, 'pageOne'])->name('pageOne');
-        Route::get('/pageTwo', [\App\Http\Controllers\Bishop\DashboardController::class, 'pageTwo'])->name('pageTwo');
-        Route::get('/pageFour', [\App\Http\Controllers\Bishop\DashboardController::class, 'pageFour'])->name('pageFour');
-        Route::get('/pageFive', [\App\Http\Controllers\Bishop\DashboardController::class, 'pageFive'])->name('pageFive');
-        Route::get('/dashboard', [\App\Http\Controllers\Bishop\DashboardController::class, 'dashboard'])->name('dashboard');
-        Route::get('/pageThree', [\App\Http\Controllers\Bishop\DashboardController::class, 'pageThree'])->name('pageThree');
-        Route::get('/pageSeven', [\App\Http\Controllers\Bishop\DashboardController::class, 'pageSeven'])->name('pageSeven');
-    });
+    // Route::group(['prefix' => 'bishop', 'middleware' => 'is_bishop', 'as' => 'bishop.'], function () {
+    //     Route::get('/pageSix', [\App\Http\Controllers\Bishop\DashboardController::class, 'pageSix'])->name('pageSix');
+    //     Route::get('/pageOne', [\App\Http\Controllers\Bishop\DashboardController::class, 'pageOne'])->name('pageOne');
+    //     Route::get('/pageTwo', [\App\Http\Controllers\Bishop\DashboardController::class, 'pageTwo'])->name('pageTwo');
+    //     Route::get('/pageFour', [\App\Http\Controllers\Bishop\DashboardController::class, 'pageFour'])->name('pageFour');
+    //     Route::get('/pageFive', [\App\Http\Controllers\Bishop\DashboardController::class, 'pageFive'])->name('pageFive');
+    //     Route::get('/dashboard', [\App\Http\Controllers\Bishop\DashboardController::class, 'dashboard'])->name('dashboard');
+    //     Route::get('/pageThree', [\App\Http\Controllers\Bishop\DashboardController::class, 'pageThree'])->name('pageThree');
+    //     Route::get('/pageSeven', [\App\Http\Controllers\Bishop\DashboardController::class, 'pageSeven'])->name('pageSeven');
+    // });
 
 
 
@@ -100,16 +106,16 @@ Route::middleware([
     |--------------------------------------------------------------------------
     */
 
-    Route::group(['prefix' => 'academic', 'middleware' => 'is_academic', 'as' => 'academic.'], function () {
-        Route::get('/pageSix', [\App\Http\Controllers\Academic\DashboardController::class, 'pageSix'])->name('pageSix');
-        Route::get('/pageOne', [\App\Http\Controllers\Academic\DashboardController::class, 'pageOne'])->name('pageOne');
-        Route::get('/pageTwo', [\App\Http\Controllers\Academic\DashboardController::class, 'pageTwo'])->name('pageTwo');
-        Route::get('/pageFour', [\App\Http\Controllers\Academic\DashboardController::class, 'pageFour'])->name('pageFour');
-        Route::get('/pageFive', [\App\Http\Controllers\Academic\DashboardController::class, 'pageFive'])->name('pageFive');
-        Route::get('/dashboard', [\App\Http\Controllers\Academic\DashboardController::class, 'dashboard'])->name('dashboard');
-        Route::get('/pageThree', [\App\Http\Controllers\Academic\DashboardController::class, 'pageThree'])->name('pageThree');
-        Route::get('/pageSeven', [\App\Http\Controllers\Academic\DashboardController::class, 'pageSeven'])->name('pageSeven');
-    });
+    // Route::group(['prefix' => 'academic', 'middleware' => 'is_academic', 'as' => 'academic.'], function () {
+    //     Route::get('/pageSix', [\App\Http\Controllers\Academic\DashboardController::class, 'pageSix'])->name('pageSix');
+    //     Route::get('/pageOne', [\App\Http\Controllers\Academic\DashboardController::class, 'pageOne'])->name('pageOne');
+    //     Route::get('/pageTwo', [\App\Http\Controllers\Academic\DashboardController::class, 'pageTwo'])->name('pageTwo');
+    //     Route::get('/pageFour', [\App\Http\Controllers\Academic\DashboardController::class, 'pageFour'])->name('pageFour');
+    //     Route::get('/pageFive', [\App\Http\Controllers\Academic\DashboardController::class, 'pageFive'])->name('pageFive');
+    //     Route::get('/dashboard', [\App\Http\Controllers\Academic\DashboardController::class, 'dashboard'])->name('dashboard');
+    //     Route::get('/pageThree', [\App\Http\Controllers\Academic\DashboardController::class, 'pageThree'])->name('pageThree');
+    //     Route::get('/pageSeven', [\App\Http\Controllers\Academic\DashboardController::class, 'pageSeven'])->name('pageSeven');
+    // });
 
 
 
@@ -119,16 +125,16 @@ Route::middleware([
     |--------------------------------------------------------------------------
     */
 
-    Route::group(['prefix' => 'secretary', 'middleware' => 'is_secretary', 'as' => 'secretary.'], function () {
-        Route::get('/pageSix', [\App\Http\Controllers\Secretary\DashboardController::class, 'pageSix'])->name('pageSix');
-        Route::get('/pageOne', [\App\Http\Controllers\Secretary\DashboardController::class, 'pageOne'])->name('pageOne');
-        Route::get('/pageTwo', [\App\Http\Controllers\Secretary\DashboardController::class, 'pageTwo'])->name('pageTwo');
-        Route::get('/pageFour', [\App\Http\Controllers\Secretary\DashboardController::class, 'pageFour'])->name('pageFour');
-        Route::get('/pageFive', [\App\Http\Controllers\Secretary\DashboardController::class, 'pageFive'])->name('pageFive');
-        Route::get('/dashboard', [\App\Http\Controllers\Secretary\DashboardController::class, 'dashboard'])->name('dashboard');
-        Route::get('/pageThree', [\App\Http\Controllers\Secretary\DashboardController::class, 'pageThree'])->name('pageThree');
-        Route::get('/pageSeven', [\App\Http\Controllers\Secretary\DashboardController::class, 'pageSeven'])->name('pageSeven');
-    });
+    // Route::group(['prefix' => 'secretary', 'middleware' => 'is_secretary', 'as' => 'secretary.'], function () {
+    //     Route::get('/pageSix', [\App\Http\Controllers\Secretary\DashboardController::class, 'pageSix'])->name('pageSix');
+    //     Route::get('/pageOne', [\App\Http\Controllers\Secretary\DashboardController::class, 'pageOne'])->name('pageOne');
+    //     Route::get('/pageTwo', [\App\Http\Controllers\Secretary\DashboardController::class, 'pageTwo'])->name('pageTwo');
+    //     Route::get('/pageFour', [\App\Http\Controllers\Secretary\DashboardController::class, 'pageFour'])->name('pageFour');
+    //     Route::get('/pageFive', [\App\Http\Controllers\Secretary\DashboardController::class, 'pageFive'])->name('pageFive');
+    //     Route::get('/dashboard', [\App\Http\Controllers\Secretary\DashboardController::class, 'dashboard'])->name('dashboard');
+    //     Route::get('/pageThree', [\App\Http\Controllers\Secretary\DashboardController::class, 'pageThree'])->name('pageThree');
+    //     Route::get('/pageSeven', [\App\Http\Controllers\Secretary\DashboardController::class, 'pageSeven'])->name('pageSeven');
+    // });
 
 
 
@@ -138,16 +144,16 @@ Route::middleware([
     |--------------------------------------------------------------------------
     */
 
-    Route::group(['prefix' => 'accountant', 'middleware' => 'is_accountant', 'as' => 'accountant.'], function () {
-        Route::get('/pageSix', [\App\Http\Controllers\Accountant\DashboardController::class, 'pageSix'])->name('pageSix');
-        Route::get('/pageOne', [\App\Http\Controllers\Accountant\DashboardController::class, 'pageOne'])->name('pageOne');
-        Route::get('/pageTwo', [\App\Http\Controllers\Accountant\DashboardController::class, 'pageTwo'])->name('pageTwo');
-        Route::get('/pageFour', [\App\Http\Controllers\Accountant\DashboardController::class, 'pageFour'])->name('pageFour');
-        Route::get('/pageFive', [\App\Http\Controllers\Accountant\DashboardController::class, 'pageFive'])->name('pageFive');
-        Route::get('/dashboard', [\App\Http\Controllers\Accountant\DashboardController::class, 'dashboard'])->name('dashboard');
-        Route::get('/pageThree', [\App\Http\Controllers\Accountant\DashboardController::class, 'pageThree'])->name('pageThree');
-        Route::get('/pageSeven', [\App\Http\Controllers\Accountant\DashboardController::class, 'pageSeven'])->name('pageSeven');
-    });
+    // Route::group(['prefix' => 'accountant', 'middleware' => 'is_accountant', 'as' => 'accountant.'], function () {
+    //     Route::get('/pageSix', [\App\Http\Controllers\Accountant\DashboardController::class, 'pageSix'])->name('pageSix');
+    //     Route::get('/pageOne', [\App\Http\Controllers\Accountant\DashboardController::class, 'pageOne'])->name('pageOne');
+    //     Route::get('/pageTwo', [\App\Http\Controllers\Accountant\DashboardController::class, 'pageTwo'])->name('pageTwo');
+    //     Route::get('/pageFour', [\App\Http\Controllers\Accountant\DashboardController::class, 'pageFour'])->name('pageFour');
+    //     Route::get('/pageFive', [\App\Http\Controllers\Accountant\DashboardController::class, 'pageFive'])->name('pageFive');
+    //     Route::get('/dashboard', [\App\Http\Controllers\Accountant\DashboardController::class, 'dashboard'])->name('dashboard');
+    //     Route::get('/pageThree', [\App\Http\Controllers\Accountant\DashboardController::class, 'pageThree'])->name('pageThree');
+    //     Route::get('/pageSeven', [\App\Http\Controllers\Accountant\DashboardController::class, 'pageSeven'])->name('pageSeven');
+    // });
 
 
 
@@ -157,16 +163,16 @@ Route::middleware([
     |--------------------------------------------------------------------------
     */
 
-    Route::group(['prefix' => 'procurement', 'middleware' => 'is_procurement', 'as' => 'procurement.'], function () {
-        Route::get('/pageSix', [\App\Http\Controllers\Procurement\DashboardController::class, 'pageSix'])->name('pageSix');
-        Route::get('/pageOne', [\App\Http\Controllers\Procurement\DashboardController::class, 'pageOne'])->name('pageOne');
-        Route::get('/pageTwo', [\App\Http\Controllers\Procurement\DashboardController::class, 'pageTwo'])->name('pageTwo');
-        Route::get('/pageFour', [\App\Http\Controllers\Procurement\DashboardController::class, 'pageFour'])->name('pageFour');
-        Route::get('/pageFive', [\App\Http\Controllers\Procurement\DashboardController::class, 'pageFive'])->name('pageFive');
-        Route::get('/dashboard', [\App\Http\Controllers\Procurement\DashboardController::class, 'dashboard'])->name('dashboard');
-        Route::get('/pageThree', [\App\Http\Controllers\Procurement\DashboardController::class, 'pageThree'])->name('pageThree');
-        Route::get('/pageSeven', [\App\Http\Controllers\Procurement\DashboardController::class, 'pageSeven'])->name('pageSeven');
-    });
+    // Route::group(['prefix' => 'procurement', 'middleware' => 'is_procurement', 'as' => 'procurement.'], function () {
+    //     Route::get('/pageSix', [\App\Http\Controllers\Procurement\DashboardController::class, 'pageSix'])->name('pageSix');
+    //     Route::get('/pageOne', [\App\Http\Controllers\Procurement\DashboardController::class, 'pageOne'])->name('pageOne');
+    //     Route::get('/pageTwo', [\App\Http\Controllers\Procurement\DashboardController::class, 'pageTwo'])->name('pageTwo');
+    //     Route::get('/pageFour', [\App\Http\Controllers\Procurement\DashboardController::class, 'pageFour'])->name('pageFour');
+    //     Route::get('/pageFive', [\App\Http\Controllers\Procurement\DashboardController::class, 'pageFive'])->name('pageFive');
+    //     Route::get('/dashboard', [\App\Http\Controllers\Procurement\DashboardController::class, 'dashboard'])->name('dashboard');
+    //     Route::get('/pageThree', [\App\Http\Controllers\Procurement\DashboardController::class, 'pageThree'])->name('pageThree');
+    //     Route::get('/pageSeven', [\App\Http\Controllers\Procurement\DashboardController::class, 'pageSeven'])->name('pageSeven');
+    // });
 
 
 
@@ -176,16 +182,16 @@ Route::middleware([
     |--------------------------------------------------------------------------
     */
 
-    Route::group(['prefix' => 'accountant_main', 'middleware' => 'is_accountant_main', 'as' => 'accountant_main.'], function () {
-        Route::get('/pageSix', [\App\Http\Controllers\AccountantMain\DashboardController::class, 'pageSix'])->name('pageSix');
-        Route::get('/pageOne', [\App\Http\Controllers\AccountantMain\DashboardController::class, 'pageOne'])->name('pageOne');
-        Route::get('/pageTwo', [\App\Http\Controllers\AccountantMain\DashboardController::class, 'pageTwo'])->name('pageTwo');
-        Route::get('/pageFour', [\App\Http\Controllers\AccountantMain\DashboardController::class, 'pageFour'])->name('pageFour');
-        Route::get('/pageFive', [\App\Http\Controllers\AccountantMain\DashboardController::class, 'pageFive'])->name('pageFive');
-        Route::get('/dashboard', [\App\Http\Controllers\AccountantMain\DashboardController::class, 'dashboard'])->name('dashboard');
-        Route::get('/pageThree', [\App\Http\Controllers\AccountantMain\DashboardController::class, 'pageThree'])->name('pageThree');
-        Route::get('/pageSeven', [\App\Http\Controllers\AccountantMain\DashboardController::class, 'pageSeven'])->name('pageSeven');
-    });
+    // Route::group(['prefix' => 'accountant_main', 'middleware' => 'is_accountant_main', 'as' => 'accountant_main.'], function () {
+    //     Route::get('/pageSix', [\App\Http\Controllers\AccountantMain\DashboardController::class, 'pageSix'])->name('pageSix');
+    //     Route::get('/pageOne', [\App\Http\Controllers\AccountantMain\DashboardController::class, 'pageOne'])->name('pageOne');
+    //     Route::get('/pageTwo', [\App\Http\Controllers\AccountantMain\DashboardController::class, 'pageTwo'])->name('pageTwo');
+    //     Route::get('/pageFour', [\App\Http\Controllers\AccountantMain\DashboardController::class, 'pageFour'])->name('pageFour');
+    //     Route::get('/pageFive', [\App\Http\Controllers\AccountantMain\DashboardController::class, 'pageFive'])->name('pageFive');
+    //     Route::get('/dashboard', [\App\Http\Controllers\AccountantMain\DashboardController::class, 'dashboard'])->name('dashboard');
+    //     Route::get('/pageThree', [\App\Http\Controllers\AccountantMain\DashboardController::class, 'pageThree'])->name('pageThree');
+    //     Route::get('/pageSeven', [\App\Http\Controllers\AccountantMain\DashboardController::class, 'pageSeven'])->name('pageSeven');
+    // });
 
 
 
@@ -195,16 +201,16 @@ Route::middleware([
     |--------------------------------------------------------------------------
     */
 
-    Route::group(['prefix' => 'internal_auditor', 'middleware' => 'is_internal_auditor', 'as' => 'internal_auditor.'], function () {
-        Route::get('/pageSix', [\App\Http\Controllers\InternalAuditor\DashboardController::class, 'pageSix'])->name('pageSix');
-        Route::get('/pageOne', [\App\Http\Controllers\InternalAuditor\DashboardController::class, 'pageOne'])->name('pageOne');
-        Route::get('/pageTwo', [\App\Http\Controllers\InternalAuditor\DashboardController::class, 'pageTwo'])->name('pageTwo');
-        Route::get('/pageFour', [\App\Http\Controllers\InternalAuditor\DashboardController::class, 'pageFour'])->name('pageFour');
-        Route::get('/pageFive', [\App\Http\Controllers\InternalAuditor\DashboardController::class, 'pageFive'])->name('pageFive');
-        Route::get('/dashboard', [\App\Http\Controllers\InternalAuditor\DashboardController::class, 'dashboard'])->name('dashboard');
-        Route::get('/pageThree', [\App\Http\Controllers\InternalAuditor\DashboardController::class, 'pageThree'])->name('pageThree');
-        Route::get('/pageSeven', [\App\Http\Controllers\InternalAuditor\DashboardController::class, 'pageSeven'])->name('pageSeven');
-    });
+    // Route::group(['prefix' => 'internal_auditor', 'middleware' => 'is_internal_auditor', 'as' => 'internal_auditor.'], function () {
+    //     Route::get('/pageSix', [\App\Http\Controllers\InternalAuditor\DashboardController::class, 'pageSix'])->name('pageSix');
+    //     Route::get('/pageOne', [\App\Http\Controllers\InternalAuditor\DashboardController::class, 'pageOne'])->name('pageOne');
+    //     Route::get('/pageTwo', [\App\Http\Controllers\InternalAuditor\DashboardController::class, 'pageTwo'])->name('pageTwo');
+    //     Route::get('/pageFour', [\App\Http\Controllers\InternalAuditor\DashboardController::class, 'pageFour'])->name('pageFour');
+    //     Route::get('/pageFive', [\App\Http\Controllers\InternalAuditor\DashboardController::class, 'pageFive'])->name('pageFive');
+    //     Route::get('/dashboard', [\App\Http\Controllers\InternalAuditor\DashboardController::class, 'dashboard'])->name('dashboard');
+    //     Route::get('/pageThree', [\App\Http\Controllers\InternalAuditor\DashboardController::class, 'pageThree'])->name('pageThree');
+    //     Route::get('/pageSeven', [\App\Http\Controllers\InternalAuditor\DashboardController::class, 'pageSeven'])->name('pageSeven');
+    // });
 
 });
 
