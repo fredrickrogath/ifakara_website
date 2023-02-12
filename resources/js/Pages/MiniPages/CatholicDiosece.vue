@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="preloader d-flex align-items-center justify-content-center">
+        <div v-if="!componentsReady" class="preloader d-flex align-items-center justify-content-center">
         <div class="lds-ellipsis">
             <div></div>
             <div></div>
@@ -982,6 +982,18 @@ import MyCustomLink from "@/Jetstream/MyCustomLink";
 export default {
     components: {
         MyCustomLink,
+    },
+
+    mounted() {
+        // setInterval(() => {
+            this.componentsReady = true;
+        // }, 1000);
+    },
+
+    data(){
+        return {
+            componentsReady: false,
+        }
     },
 
     }

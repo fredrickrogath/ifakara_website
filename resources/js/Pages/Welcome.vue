@@ -1,16 +1,13 @@
 <template>
-    <div
-        class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0"
-    >
-        <!-- <div class="preloader d-flex align-items-center justify-content-center">
+    <div>
+        <div v-if="!componentsReady" class="preloader d-flex align-items-center justify-content-center">
             <div class="lds-ellipsis">
                 <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-        </div> -->
-
+        </div>
         <!-- ##### Header Area Start ##### -->
 
         <header class="header-area" style="background-color: #f9f6ee">
@@ -742,8 +739,7 @@
                                         <div class="col-md-4">
                                             <div
                                                 class="intro-news-filter d-flex justify-content-between"
-                                                style="
-                                                    background-color: #1c2938;
+                                             style="background-color: #1c2938;
                                                     color: #ffff;
                                                 "
                                             >
@@ -1322,6 +1318,7 @@
         </footer>
 
         <!-- ##### Footer Area Start ##### -->
+
     </div>
 </template>
 
@@ -1349,6 +1346,18 @@ import MyCustomLink from "@/Jetstream/MyCustomLink";
 export default {
     components: {
         MyCustomLink,
+    },
+
+    mounted() {
+        setInterval(() => {
+            this.componentsReady = true;
+        }, 1000);
+    },
+
+    data(){
+        return {
+            componentsReady: false,
+        }
     },
 };
 </script>
