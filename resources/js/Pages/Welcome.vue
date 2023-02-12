@@ -1349,9 +1349,9 @@ export default {
     },
 
     mounted() {
-        setInterval(() => {
+        // setInterval(() => {
             this.componentsReady = true;
-        }, 1000);
+        // }, 1000);
     },
 
     data(){
