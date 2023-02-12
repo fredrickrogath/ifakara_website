@@ -1326,6 +1326,24 @@
 </template>
 
 <script>
+//end of inertiajs progress
+import { InertiaProgress } from '@inertiajs/progress'
+InertiaProgress.init({
+  // The delay after which the progress bar will
+  // appear during navigation, in milliseconds.
+  delay: 250,
+
+  // The color of the progress bar.
+  color: '#FBBF24',
+
+  // Whether to include the default NProgress styles.
+  includeCSS: true,
+
+  // Whether the NProgress spinner will be shown.
+  showSpinner: true,
+})
+//end of inertiajs progress
+
 import MyCustomLink from "@/Jetstream/MyCustomLink";
 
 export default {
