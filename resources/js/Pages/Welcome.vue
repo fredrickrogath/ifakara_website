@@ -2,143 +2,19 @@
     <div
         class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0"
     >
-        <div class="preloader d-flex align-items-center justify-content-center">
+        <!-- <div class="preloader d-flex align-items-center justify-content-center">
             <div class="lds-ellipsis">
                 <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-        </div>
+        </div> -->
 
         <!-- ##### Header Area Start ##### -->
 
         <header class="header-area" style="background-color: #f9f6ee">
             <!-- Navbar Area -->
-            <!-- <div class="newsbox-main-menu" style="height:80px; box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;">
-            <div class="classy-nav-container breakpoint-off " style="background-color: 	#F9F6EE">
-                <div class="container-fluid">
-                    <nav class="classy-navbar justify-content-around" id="newsboxNav"
-                        style="height:80px; box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;">
-    
-                        <a href="index.html" class="nav-brand">
-    
-                            <span style="font-weight:600; font-size:13px;">Ifakara Catholic Diocese</span>
-                        </a>
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
-                        </div>
-    
-                        <div class="classy-menu">
-    
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                            </div>
-    
-                            <div class="classynav">
-                                <ul style="font-size:12px;">
-                                    <li class="active"><a href="#"style="font-size:12px;">Home</a></li>
-                                    <li><a href="#" style="font-size:12px;">About Diocese</a></li>
-                                    <li><a href="#" style="font-size:12px;">Catholic Diocese</a>
-                                        <ul class="dropdown">
-                                            <li><a href="index.html">Bishop</a>
-    
-                                            </li>
-                                            <li><a href="catagory.html">Parishes</a></li>
-    
-                                            <li><a href="single-post.html">Prests</a></li>
-    
-                                        </ul>
-                                    </li>
-    
-                                    <li><a href="#"style="font-size:12px;">Schools</a>
-                                        <ul class="dropdown">
-                                            <li><a href="" style="font-size:9px;">St. Augustine Kindergarten </a>
-                                            </li>
-                                            <li><a href="#" style="font-size:9px;">St. Benedict Montessori Nursery
-                                                </a></li>
-                                            <li><a href="#" style="font-size:9px;">Benignis Girls Secondary School</a>
-                                            </li>
-                                            <li><a href="#" style="font-size:9px;">Benignis Kindergarten & Primary
-                                                </a></li>
-                                            <li><a href="#" style="font-size:9px;">St. Mary’s Catholic Nursery
-                                                </a></li>
-                                            <li><a href="#" style="font-size:9px;">St. Raphael Secondary School </a>
-                                            </li>
-                                            <li><a href="#" style="font-size:9px;">Malecela Secondary School</a></li>
-                                            <li><a href="#" style="font-size:9px;">St. Francis Xavier Nursery
-                                                    School</a></li>
-                                            <li><a href="#" style="font-size:9px;">St. Alphonsa Pre and Primary
-                                                    School</a></li>
-                                            <li><a href="#" style="font-size:9px;">Queen Mary Secondary School</a>
-                                            </li>
-                                            <li><a href="#" style="font-size:9px;">St. Martin Girls Secondary
-                                                    School</a></li>
-                                            <li><a href="#" style="font-size:9px;">St. Theresa Nursery school</a></li>
-                                            <li><a href="#" style="font-size:9px;">Mchombe Parish Kindergarten </a>
-                                            </li>
-                                            <li><a href="#" style="font-size:9px;">Kindergarten of St. Teresa of Child
-                                                    Jesus</a></li>
-                                            <li><a href="#"style="font-size:9px;">Sole Secondary School</a></li>
-                                            <li><a href="#"style="font-size:9px;">Compassion Secondary School</a></li>
-                                            <li><a href="#"style="font-size:9px;">Assumption Primary School</a></li>
-                                            <li><a href="#"style="font-size:9px;">Assumption Pre-Primary School</a>
-                                            </li>
-                                            <li><a href="#"style="font-size:9px;">Devine Mercy Minor Seminary</a></li>
-                                            <li><a href="#"style="font-size:9px;">Good news secondary school</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#"style="font-size:12px;">Health Institute</a>
-                                        <ul class="dropdown" style="font-size:9px;">
-                                            <li><a href="#" style="font-size:9px;">St. Francis Referral Hospital </a>
-                                            </li>
-    
-                                            <li><a href="#" style="font-size:9px;">Nazareth Leprosy Hospital</a></li>
-                                            <li><a href="#"style="font-size:9px;">Kisawasawa Health Center </a></li>
-                                            <li><a href="#"style="font-size:9px;">St. Alphonsa Dispensary</a></li>
-                                            <li><a href="#"style="font-size:9px;">Mchombe Parish Dispensary</a></li>
-                                            <li><a href="#"style="font-size:9px;">Merera Parish Dispensary</a></li>
-                                            <li><a href="#"style="font-size:9px;">Taweta Parish Dispensary</a></li>
-                                            <li><a href="#"style="font-size:9px;">Good Samaritan Hospital</a></li>
-                                            <li><a href="#"style="font-size:9px;">Katurukila Dispensary </a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#"style="font-size:12px;">Research Institute</a>
-                                        <ul class="dropdown">
-                                            <li><a href="index.html">Research Institute</a></li>
-                                            <li><a href="catagory.html">Research Institute</a></li>
-                                            <li><a href="single-post.html">Research Institute </a></li>
-                                            <li><a href="contact.html">Research Institute</a></li>
-                                            <li><a href="elements.html">Research Institute</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#"style="font-size:12px;">Departiments</a>
-                                        <ul class="dropdown">
-                                            <li><a href="index.html">ICT</a></li>
-                                            <li><a href="catagory.html">Health</a></li>
-                                            <li><a href="single-post.html">Reaserch </a></li>
-                                            <li><a href="contact.html">Pharmacy</a></li>
-                                            <li><a href="elements.html">Human Resource</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#"style="font-size:12px;">Events </a></li>
-                                    <li><a href="#"style="font-size:12px;">Contact us</a></li>
-                                </ul>
-    
-    
-                                <div class="header-add-area">
-                                    <a href="#">
-                                        <img src="img/bg-img/add.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-    
-    
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>  -->
 
             <div class="">
                 <nav
@@ -161,19 +37,25 @@
                         <div class="collapse navbar-collapse" id="ftco-nav">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a href="index.html" class="nav-link"
-                                        >Home</a
-                                    >
+                                    <my-custom-link
+                                        class="nav-link"
+                                        :href="route('welcome')"
+                                        :active="route().current('welcome')"
+                                        >Home
+                                    </my-custom-link>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a
-                                        href="Catholic_diosece.html"
+                                    <li class="nav-item">
+                                    <my-custom-link
                                         class="nav-link"
-                                        >Catholic Diocese</a
-                                    >
+                                        :href="route('catholic.diosece')"
+                                        :active="route().current('catholic.diosece')"
+                                        >Catholic Diocese
+                                    </my-custom-link>
+                                </li>
                                 </li>
                                 <li class="nav-item dropdown position-static">
                                     <a
@@ -654,16 +536,25 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a
-                                        href="research_institute.html"
+                                    <my-custom-link
                                         class="nav-link"
-                                        >Research Institute</a
-                                    >
+                                        :href="route('research.institute')"
+                                        :active="
+                                            route().current(
+                                                'research.institute'
+                                            )
+                                        "
+                                        >Research Institute
+                                    </my-custom-link>
                                 </li>
+
                                 <li class="nav-item">
-                                    <a href="Depertiment.html" class="nav-link"
-                                        >Departiments</a
-                                    >
+                                    <my-custom-link
+                                        class="nav-link"
+                                        :href="route('departiment')"
+                                        :active="route().current('departiment')"
+                                        >Departiments
+                                    </my-custom-link>
                                 </li>
                             </ul>
                         </div>
@@ -1418,7 +1309,8 @@
                             <p class="copywrite-text">
                                 <a href="#">
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                    Copyright &copy; {{ new Date().getFullYear() }} | Ifakara
+                                    Copyright &copy;
+                                    {{ new Date().getFullYear() }} | Ifakara
                                     Catholic Diocese
                                 </a>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -1432,3 +1324,13 @@
         <!-- ##### Footer Area Start ##### -->
     </div>
 </template>
+
+<script>
+import MyCustomLink from "@/Jetstream/MyCustomLink";
+
+export default {
+    components: {
+        MyCustomLink,
+    },
+};
+</script>

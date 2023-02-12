@@ -42,7 +42,20 @@ Route::get('/', function () {
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
-});
+})->name('welcome');
+
+Route::get("/departiment", function(){
+    return Inertia::render('MiniPages/Dapartiment');
+ })->name('departiment');
+
+Route::get("/research_institute", function(){
+    return Inertia::render('MiniPages/ResearchInstitute');
+ })->name('research.institute');
+ 
+Route::get("/catholic_diosece", function(){
+    return Inertia::render('MiniPages/CatholicDiosece');
+ })->name('catholic.diosece');
+
 
 Route::middleware([
     'auth:sanctum',
@@ -56,12 +69,6 @@ Route::middleware([
     */
 
     Route::get('/dashboard', [\App\Http\Controllers\HomeController::class, 'DetermineUserRole'])->name('dashboard');
-
-
-    Route::get("/page", function(){
-        return Inertia::render('Dashboard', $academicService->dashboardData());
-     });
-
 
     /*
     |--------------------------------------------------------------------------

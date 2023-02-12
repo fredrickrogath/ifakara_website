@@ -15,7 +15,7 @@
     {{-- <link rel="stylesheet" href="{{ mix('css/app.css') }}">> --}}
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="site/img/core-img/favicon.ico">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./site/css/style.css">
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="site/css/animate.css">
     <link rel="stylesheet" href="site/css/classy-nav.css">
     <link rel="stylesheet" href="site/css/magnific-popup.css">
-    <link rel="stylesheet" href="site/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="site/css/owl.carousel.min.css">    
     <link rel="stylesheet" href="site/css/font-awesome.min.css">
     <link rel="stylesheet" href="site/css/custom.css">
 
