@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\SitePagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,5 +25,11 @@ Route::get('/',[HomeController::class, 'index']);
 Route::get('/login',[LoginController::class, 'index']);
 
 Route::get('/admin/dashboard',[DashboardController::class, 'index']);
+
+Route::get('/catholic_diocese',[SitePagesController::class, 'catholic_diocese'])->name('catholic_diocese');
+
+Route::get('/research_institute',[SitePagesController::class,'research'])->name('research_institute');
+
+Route::get('/departiment',[SitePagesController::class,'departiment'])->name('departiment');
 
 

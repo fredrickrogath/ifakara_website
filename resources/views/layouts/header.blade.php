@@ -1,129 +1,6 @@
 <header class="header-area " style="background-color: 	#F9F6EE">
     <!-- Navbar Area -->
-    {{-- <div class="newsbox-main-menu" style="height:80px; box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;">
-        <div class="classy-nav-container breakpoint-off " style="background-color: 	#F9F6EE">
-            <div class="container-fluid">
-                <nav class="classy-navbar justify-content-around" id="newsboxNav"
-                    style="height:80px; box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;">
-
-                    <a href="index.html" class="nav-brand">
-
-                        <span style="font-weight:600; font-size:13px;">Ifakara Catholic Diocese</span>
-                    </a>
-                    <div class="classy-navbar-toggler">
-                        <span class="navbarToggler"><span></span><span></span><span></span></span>
-                    </div>
-
-                    <div class="classy-menu">
-
-                        <div class="classycloseIcon">
-                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                        </div>
-
-                        <div class="classynav">
-                            <ul style="font-size:12px;">
-                                <li class="active"><a href="#"style="font-size:12px;">Home</a></li>
-                                <li><a href="#" style="font-size:12px;">About Diocese</a></li>
-                                <li><a href="#" style="font-size:12px;">Catholic Diocese</a>
-                                    <ul class="dropdown">
-                                        <li><a href="index.html">Bishop</a>
-
-                                        </li>
-                                        <li><a href="catagory.html">Parishes</a></li>
-
-                                        <li><a href="single-post.html">Prests</a></li>
-
-                                    </ul>
-                                </li>
-
-                                <li><a href="#"style="font-size:12px;">Schools</a>
-                                    <ul class="dropdown">
-                                        <li><a href="" style="font-size:9px;">St. Augustine Kindergarten </a>
-                                        </li>
-                                        <li><a href="#" style="font-size:9px;">St. Benedict Montessori Nursery
-                                            </a></li>
-                                        <li><a href="#" style="font-size:9px;">Benignis Girls Secondary School</a>
-                                        </li>
-                                        <li><a href="#" style="font-size:9px;">Benignis Kindergarten & Primary
-                                            </a></li>
-                                        <li><a href="#" style="font-size:9px;">St. Mary’s Catholic Nursery
-                                            </a></li>
-                                        <li><a href="#" style="font-size:9px;">St. Raphael Secondary School </a>
-                                        </li>
-                                        <li><a href="#" style="font-size:9px;">Malecela Secondary School</a></li>
-                                        <li><a href="#" style="font-size:9px;">St. Francis Xavier Nursery
-                                                School</a></li>
-                                        <li><a href="#" style="font-size:9px;">St. Alphonsa Pre and Primary
-                                                School</a></li>
-                                        <li><a href="#" style="font-size:9px;">Queen Mary Secondary School</a>
-                                        </li>
-                                        <li><a href="#" style="font-size:9px;">St. Martin Girls Secondary
-                                                School</a></li>
-                                        <li><a href="#" style="font-size:9px;">St. Theresa Nursery school</a></li>
-                                        <li><a href="#" style="font-size:9px;">Mchombe Parish Kindergarten </a>
-                                        </li>
-                                        <li><a href="#" style="font-size:9px;">Kindergarten of St. Teresa of Child
-                                                Jesus</a></li>
-                                        <li><a href="#"style="font-size:9px;">Sole Secondary School</a></li>
-                                        <li><a href="#"style="font-size:9px;">Compassion Secondary School</a></li>
-                                        <li><a href="#"style="font-size:9px;">Assumption Primary School</a></li>
-                                        <li><a href="#"style="font-size:9px;">Assumption Pre-Primary School</a>
-                                        </li>
-                                        <li><a href="#"style="font-size:9px;">Devine Mercy Minor Seminary</a></li>
-                                        <li><a href="#"style="font-size:9px;">Good news secondary school</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#"style="font-size:12px;">Health Institute</a>
-                                    <ul class="dropdown" style="font-size:9px;">
-                                        <li><a href="#" style="font-size:9px;">St. Francis Referral Hospital </a>
-                                        </li>
-
-                                        <li><a href="#" style="font-size:9px;">Nazareth Leprosy Hospital</a></li>
-                                        <li><a href="#"style="font-size:9px;">Kisawasawa Health Center </a></li>
-                                        <li><a href="#"style="font-size:9px;">St. Alphonsa Dispensary</a></li>
-                                        <li><a href="#"style="font-size:9px;">Mchombe Parish Dispensary</a></li>
-                                        <li><a href="#"style="font-size:9px;">Merera Parish Dispensary</a></li>
-                                        <li><a href="#"style="font-size:9px;">Taweta Parish Dispensary</a></li>
-                                        <li><a href="#"style="font-size:9px;">Good Samaritan Hospital</a></li>
-                                        <li><a href="#"style="font-size:9px;">Katurukila Dispensary </a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#"style="font-size:12px;">Research Institute</a>
-                                    <ul class="dropdown">
-                                        <li><a href="index.html">Research Institute</a></li>
-                                        <li><a href="catagory.html">Research Institute</a></li>
-                                        <li><a href="single-post.html">Research Institute </a></li>
-                                        <li><a href="contact.html">Research Institute</a></li>
-                                        <li><a href="elements.html">Research Institute</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#"style="font-size:12px;">Departiments</a>
-                                    <ul class="dropdown">
-                                        <li><a href="index.html">ICT</a></li>
-                                        <li><a href="catagory.html">Health</a></li>
-                                        <li><a href="single-post.html">Reaserch </a></li>
-                                        <li><a href="contact.html">Pharmacy</a></li>
-                                        <li><a href="elements.html">Human Resource</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#"style="font-size:12px;">Events </a></li>
-                                <li><a href="#"style="font-size:12px;">Contact us</a></li>
-                            </ul>
-
-
-                            <div class="header-add-area">
-                                <a href="#">
-                                    <img src="img/bg-img/add.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div> --}}
+  
 
     <div class="">
         <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
@@ -137,7 +14,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Catholic Diocese</a></li>
+                        <li class="nav-item"><a href="{{route('catholic_diocese')}}" class="nav-link">Catholic Diocese</a></li>
                         <li class="nav-item dropdown position-static">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">Schools</a>
@@ -313,81 +190,16 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown position-static">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown04"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Research
-                                Institute</a>
-                            <div class="dropdown-menu p-4" aria-labelledby="dropdown04">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <a class="dropdown-item" href="#">Page 1</a>
-                                        <a class="dropdown-item" href="#">Page 2</a>
-                                        <a class="dropdown-item" href="#">Page 3</a>
-                                        <a class="dropdown-item" href="#">Page 4</a>
-                                    </div>
-                                    <div class="col-md-3 d-none d-md-block">
-                                        <a href="#" class="img"
-                                            style="background-image: url(images/img-1.jpg);"></a>
-                                        <div class="text">
-                                            <h3><a href="#">Amazing Architecture</a></h3>
-                                            <span>Architect</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 d-none d-md-block">
-                                        <a href="#" class="img"
-                                            style="background-image: url(images/img-2.jpg);"></a>
-                                        <div class="text">
-                                            <h3><a href="#">Amazing Architecture</a></h3>
-                                            <span>Architect</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 d-none d-md-block">
-                                        <a href="#" class="img"
-                                            style="background-image: url(images/img-3.jpg);"></a>
-                                        <div class="text">
-                                            <h3><a href="#">Amazing Architecture</a></h3>
-                                            <span>Architect</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a class="nav-link" href="{{route('research_institute')}}">Research Institute</a>
+                           
                         </li>
                         <li class="nav-item dropdown position-static">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown04"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Departiments</a>
-                            <div class="dropdown-menu p-4" aria-labelledby="dropdown04">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <a class="dropdown-item" href="#">Page 1</a>
-                                        <a class="dropdown-item" href="#">Page 2</a>
-                                        <a class="dropdown-item" href="#">Page 3</a>
-                                        <a class="dropdown-item" href="#">Page 4</a>
-                                    </div>
-                                    <div class="col-md-3 d-none d-md-block">
-                                        <a href="#" class="img"
-                                            style="background-image: url(images/img-1.jpg);"></a>
-                                        <div class="text">
-                                            <h3><a href="#">Amazing Architecture</a></h3>
-                                            <span>Architect</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 d-none d-md-block">
-                                        <a href="#" class="img"
-                                            style="background-image: url(images/img-2.jpg);"></a>
-                                        <div class="text">
-                                            <h3><a href="#">Amazing Architecture</a></h3>
-                                            <span>Architect</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 d-none d-md-block">
-                                        <a href="#" class="img"
-                                            style="background-image: url(images/img-3.jpg);"></a>
-                                        <div class="text">
-                                            <h3><a href="#">Amazing Architecture</a></h3>
-                                            <span>Architect</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a class="nav-link" href="{{route('departiment')}}">Departiments</a>
+                            
+                        </li>
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link" href="#">Contact us</a>
+                            
                         </li>
                     </ul>
                 </div>
