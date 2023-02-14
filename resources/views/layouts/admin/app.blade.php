@@ -38,9 +38,8 @@
     
             <li class="dropdown notification-list topbar-dropdown">
                 <a class="nav-link dropdown-toggle nav-user me-0 waves-effect waves-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                    <img src="../assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
                     <span class="pro-user-name ms-1">
-                        Geneva <i class="mdi mdi-chevron-down"></i> 
+                        Admin <i class="mdi mdi-chevron-down"></i> 
                     </span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end profile-dropdown ">
@@ -121,38 +120,6 @@
                 </a>
                 <!-- End mobile menu toggle-->
             </li>   
-            
-            <li class="dropdown d-none d-xl-block">
-                <a class="nav-link dropdown-toggle waves-effect waves-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                    Create New
-                    <i class="mdi mdi-chevron-down"></i> 
-                </a>
-                <div class="dropdown-menu">
-                    <!-- item-->
-                    <a href="javascript:void(0);" class="dropdown-item">
-                        <i class="fe-briefcase me-1"></i>
-                        <span>New Projects</span>
-                    </a>
-    
-                    <!-- item-->
-                    <a href="javascript:void(0);" class="dropdown-item">
-                        <i class="fe-user me-1"></i>
-                        <span>Create Users</span>
-                    </a>
-    
-                  
-                    <!-- item-->
-                    <a href="javascript:void(0);" class="dropdown-item">
-                        <i class="fe-settings me-1"></i>
-                        <span>Settings</span>
-                    </a>
-    
-                  
-    
-    
-                </div>
-            </li>
-    
            
         </ul>
         <div class="clearfix"></div>
@@ -176,13 +143,6 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box">
-                                    <div class="page-title-right">
-                                        <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">UBold</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">CRM</a></li>
-                                            <li class="breadcrumb-item active">Dashboard</li>
-                                        </ol>
-                                    </div>
                                     <h4 class="page-title">Dashboard</h4>
                                 </div>
                             </div>
@@ -281,15 +241,8 @@
                 <footer class="footer">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-6">
-                                <script>document.write(new Date().getFullYear())</script> &copy; UBold theme by <a href="">Coderthemes</a> 
-                            </div>
-                            <div class="col-md-6">
-                                <div class="text-md-end footer-links d-none d-sm-block">
-                                    <a href="javascript:void(0);">About Us</a>
-                                    <a href="javascript:void(0);">Help</a>
-                                    <a href="javascript:void(0);">Contact Us</a>
-                                </div>
+                            <div class="col-md-12 text-center">
+                                 <b>IFAKARA DIOCESE Ⓒ 2023</b>
                             </div>
                         </div>
                     </div>
