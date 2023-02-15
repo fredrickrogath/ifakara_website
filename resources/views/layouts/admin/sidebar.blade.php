@@ -46,6 +46,8 @@
 
         <ul id="side-menu">
 
+            <li class="menu-title">Navigation</li>
+
             <li>
                 <a href="#sidebarDashboards">
                     <i data-feather="airplay"></i>
@@ -54,6 +56,8 @@
                 </a>
                 
             </li>
+
+            <li class="menu-title">App</li>
             <li>
                 <a href="#sidebarEcommerce" data-bs-toggle="collapse">
                     <i class="fa fa-file" aria-hidden="true"></i>
@@ -63,10 +67,10 @@
                 <div class="collapse" id="sidebarEcommerce">
                     <ul class="nav-second-level">
                         <li>
-                            <a href="ecommerce-dashboard.html">News</a>
+                            <a href="#">News</a>
                         </li>
                         <li>
-                            <a href="ecommerce-products.html">Events</a>
+                            <a href="#">Events</a>
                         </li>
                        
                     </ul>
@@ -83,10 +87,10 @@
                 <div class="collapse" id="sidebarProjects">
                     <ul class="nav-second-level">
                         <li>
-                            <a href="project-list.html">Bishop</a>
+                            <a href="project-list.html">Exacutive staff</a>
                         </li>
                         <li>
-                            <a href="project-detail.html">Secretary</a>
+                            <a href="#">view Staff</a>
                         </li>
                         
                     </ul>
@@ -102,10 +106,10 @@
                 <div class="collapse" id="sidebarTasks">
                     <ul class="nav-second-level">
                         <li>
-                            <a href="task-list.html">Parish Of Moshi</a>
+                            <a href="task-list.html">View Parish</a>
                         </li>
                         <li>
-                            <a href="task-details.html">Parish of Tanga</a>
+                            <a href="task-details.html">Updates Parish</a>
                         </li>
                     </ul>
                 </div>
@@ -147,6 +151,15 @@
                 </div>
             </li>
 
+
+            <li>
+                <a href="#sidebarTickets">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>Contact us </span>
+                   
+                </a>
+              
+            </li>
             <hr>
 
             <li>
