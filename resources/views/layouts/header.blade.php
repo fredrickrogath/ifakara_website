@@ -198,7 +198,7 @@
                             
                         </li>
                         <li class="nav-item dropdown position-static">
-                            <a class="nav-link" href="#">Contact us</a>
+                            <a class="nav-link" href="{{route('contact')}}">Contact us</a>
                             
                         </li>
                     </ul>

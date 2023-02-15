@@ -24,6 +24,10 @@ class SitePagesController extends Controller
     public function departiment(){
         return view('pages.departiment');
     }
+
+    public function contact(){
+        return view ('pages.contact');
+    }
     /**
      * Show the form for creating a new resource.
      *

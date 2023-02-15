@@ -32,4 +32,5 @@ Route::get('/research_institute',[SitePagesController::class,'research'])->name(
 
 Route::get('/departiment',[SitePagesController::class,'departiment'])->name('departiment');
 
+Route::get ('/contact',[SitePagesController::class,'contact'])->name('contact');
 
