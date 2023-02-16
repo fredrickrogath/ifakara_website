@@ -109,19 +109,21 @@
                                             treasury general is Rev. Sr. Patricia Mtunga. The Ifakara Catholic Diocese
                                             ceded from Mahenge Diocese on 14th January 2012. </p>
 
-                                        <div class="bg-secondary justify-content-between p-2">
-                                            <h6>Diocese Almanac </h6>
+                                       <div class="intro-news-filter d-flex justify-content-between"
+                                            style="background-color:#1c2938; color:#ffff">
+                                            <h6 style="color:#fff">Diocese Documents </h6>
 
                                         </div>
-                                        <p style="text-align: justify">Lorem ipsum dolor sit amet consectetur,
+                                        <p style="text-align: justify "><i class="fa fa-file-pdf-o text-danger" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur,
                                             adipisicing elit. Nesciunt sit,
                                             rep
                                         </p>
-                                        <p style="text-align: justify"><span><a href=""><i class="fa fa-book"
+                                        <p style="text-align: justify"><span><a href=""><i class="fa fa-book text-danger"
                                                         aria-hidden="true"></i></a></span> Lorem ipsum dolor sit amet
                                             consectetur adipisicing elit. Tempore, minima veniam. Placeat.</p>
-                                        <p style="text-align: justify"><span><a href=""><i class="fa fa-book"
-                                                        aria-hidden="true"></i></a></span> Lorem ipsum dolor sit amet
+                                            
+                                        <p style="text-align: justify"><span style="font-size: 25px"><a href=""><i class="fa fa-file-pdf-o text-danger" aria-hidden="true"></i>
+                                        </a></span> Lorem ipsum dolor sit amet
                                             consectetur adipisicing elit. Tempore, minima veniam. Placeat.</p>
                                     </div>
                                 </div>
@@ -142,11 +144,11 @@
                     <div class="intro-news-tab">
 
                         <!-- Intro News Filter -->
-                        <div class="intro-news-filter d-flex justify-content-between bg-secondary text-center"
-                            style="height:40px; font-weight:Bold; color:#ffffff">
-                            <h4>About Ifakara Diocese</h4>
+                        <div class="intro-news-filter d-flex justify-content-between"
+                                            style="background-color:#1c2938; color:#ffff">
+                                            <h6 style="color:#fff"> Ifakara Catholic Diocese</h6>
 
-                        </div>
+                                        </div>
 
                         <div class="tab-content" id="nav-tabContent">
 
@@ -209,9 +211,11 @@
                 <!-- Sidebar Widget -->
                 <div class="col-12 col-sm-9 col-md-6 col-lg-4">
                     <div class="sidebar-area">
-                        <div class="bg-secondary p-1 d-flex justify-content-between" style="border-radius: 5px">
-                            <h6 class="text-white-50" style="color: #fff; font-weight:600">BiShop</h6>
-                        </div>
+                        <div class="intro-news-filter d-flex justify-content-between"
+                                            style="background-color:#1c2938; color:#ffff">
+                                            <h6 style="color:#fff">Bishop</h6>
+
+                                        </div>
                         <!-- Add Widget -->
                         <div class="single-widget-area add-widget mt-3 ml-3">
                             <a href="#" class=" justify-content-center">
@@ -236,8 +240,8 @@
                     <div class="intro-news-tab">
 
                         <!-- Intro News Filter -->
-                        <div class="intro-news-filter d-flex justify-content-between">
-                            <h6>All News </h6>
+                        <div class="intro-news-filter d-flex justify-content-between"style="background-color:#1c2938; color:#ffff">
+                            <h6 style="color:#fff">All News </h6>
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <a class="nav-item nav-link active" id="nav1" data-toggle="tab"
@@ -342,8 +346,8 @@
                 <!-- Sidebar Widget -->
                 <div class="col-12 col-sm-9 col-md-6 col-lg-4">
                     <div class="sidebar-area">
-                        <div class="intro-news-filter d-flex justify-content-between">
-                            <h6>Up comming Events</h6>
+                        <div class="intro-news-filter d-flex justify-content-between" style="background-color:#1c2938; color:#ffff">
+                            <h6 style="color:#fff">Galley and Photos</h6>
 
                         </div>
                         <!-- Newsletter Widget -->

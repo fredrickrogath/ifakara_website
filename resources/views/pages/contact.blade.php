@@ -15,7 +15,6 @@
     @include('layouts.header')
 
 
-
     <!-- ##### Intro News Area End ##### -->
     <section class="intro-news-area  mb-70 mt-4">
         <div class="container">
@@ -40,7 +39,7 @@
 
                                 <div class="row mt-3">
 
-                                    <div class="col-lg-12 mt-5">
+                                    <div class="col-lg-6 mt-5">
                                         <form>
                                             <H2 class="text-center"
                                                 style="color:rgb(3, 3, 3); font-size: 30PX; font-weight:700; text-align:center">
@@ -67,6 +66,20 @@
 
                                         </form>
                                     </div>
+                               <div class="col-lg-6 mt-5">
+                                <H4 class="text-center"
+                                                style="color:rgb(3, 3, 3); font-size: 30PX; font-weight:700; text-align:center">
+                                                Contact infomation</H4>
+
+                                                <div class="text-center mt-5">
+                                                    <div><span class="mt-2" style="font-size:25px"> <i class="fa fa-phone"></i> +255 7864 84734 </span></div>
+                                                    <div><span class="mt-2" style="font-size:25px"><i class="fa fa-map-pin"></i>  Ifakara Morogoro , Tanzania</span></div>
+                                                    <div><span class="mt-2" style="font-size:25px"> <i class="fa fa-envelope"></i> support@ifakaradiocese.com</span></div>
+                                                    
+                                                </div>
+                                               
+                                            
+                               </div>
 
                                 </div>
                             </div>
