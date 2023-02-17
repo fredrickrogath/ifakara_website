@@ -58,15 +58,15 @@
                                         </div>
 
                                     </div>
-                                    <form method="POST" action="#">
+                                    <form method="POST" action="{{ route('admin_login') }}">
                                         @csrf
                                         <div class="mb-3">
                                             <label for="user_name" class="form-label">Email address</label>
                                             <input
                                                 class="form-control  form-rounded @error('user_name') is-invalid @enderror"
                                                 type="text" id="user_name" required=""
-                                                placeholder="Enter your username" name="user_name"
-                                                value="" required autocomplete="user_name"
+                                                placeholder="Enter your username" name="name"
+                                                required autocomplete="user_name"
                                                 autofocus>
 
                                            

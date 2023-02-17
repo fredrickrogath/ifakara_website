@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminHomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\SitePagesController;
 
 /*
@@ -23,6 +25,33 @@ use App\Http\Controllers\SitePagesController;
 Route::get('/',[HomeController::class, 'index']);
 
 Route::get('/login',[LoginController::class, 'index']);
+Route::post('/admin_login',[LoginController::class, 'customLogin'])->name('admin_login');
+Route::get('/signout', [LoginController::class, 'signOut']);
+Route::get('dashboard', [LoginController::class, 'dashboard']); 
+
+// Route::group(['namespace' => 'App\Http\Controllers'], function()
+// {   
+//     /**
+//      * Home Routes
+//      */
+//    // Route::get('/login',[AdminHomeController::class, 'index'])->name('cms');
+
+//     Route::group(['middleware' => ['guest']], function() {
+//         /**
+//          * Login Routes
+//          */
+//         Route::get('/login',[LoginController::class, 'index']);
+//         Route::get('/login',[LoginController::class, 'login']);
+
+//     });
+
+//     Route::group(['middleware' => ['auth']], function() {
+//         /**
+//          * Logout Routes
+//          */
+//         Route::get('/logout', [LogoutController::class, 'perform']);
+//     });
+// });
 
 //Admin Route
 Route::get('/admin/dashboard',[DashboardController::class, 'index']);

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    @include('layouts.admin.head')
+    <head>
+        @include('layouts.admin.head')
+    </head>
 
     <!-- body start -->
     <body class="loading" data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "sidebar": { "color": "light", "size": "default", "showuser": false}, "topbar": {"color": "dark"}, "showRightSidebarOnPageLoad": true}'>
