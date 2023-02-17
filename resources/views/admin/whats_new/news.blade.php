@@ -123,97 +123,54 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box">
-                                    <h4 class="page-title">Dashboard</h4>
+                                    <h4 class="page-title">News</h4>
                                 </div>
                             </div>
                         </div>     
                         <!-- end page title --> 
 
                         <div class="row">
-                            <div class="col-lg-6 col-xl-3">
-                                <div class="card bg-pattern">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <div class="avatar-md bg-blue rounded">
-                                                    <i class="fe-layers avatar-title font-22 text-white"></i>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="text-end">
-                                                    <h3 class="text-dark my-1"><span data-plugin="counterup">12,008</span></h3>
-                                                    <p class="text-muted mb-0 text-truncate">Campaign Sent</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end card-->
-                            </div> <!-- end col -->
-
-                            <div class="col-lg-6 col-xl-3">
-                                <div class="card bg-pattern">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <div class="avatar-md bg-success rounded">
-                                                    <i class="fe-award avatar-title font-22 text-white"></i>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="text-end">
-                                                    <h3 class="text-dark my-1"><span data-plugin="counterup">7,410</span></h3>
-                                                    <p class="text-muted mb-0 text-truncate">New Leads</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end card-->
-                            </div> <!-- end col -->
-                            <div class="col-lg-6 col-xl-3">
-                                <div class="card bg-pattern">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <div class="avatar-md bg-danger rounded">
-                                                    <i class="fe-delete avatar-title font-22 text-white"></i>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="text-end">
-                                                    <h3 class="text-dark my-1"><span data-plugin="counterup">2,125</span></h3>
-                                                    <p class="text-muted mb-0 text-truncate">Deals</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end card-->
-                            </div> <!-- end col -->
-                            <div class="col-lg-6 col-xl-3">
-                                <div class="card bg-pattern">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <div class="avatar-md bg-warning rounded">
-                                                    <i class="fe-dollar-sign avatar-title font-22 text-white"></i>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="text-end">
-                                                    <h3 class="text-dark my-1">$<span data-plugin="counterup">256</span>k</h3>
-                                                    <p class="text-muted mb-0 text-truncate">Booked Revenue</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end card-->
-                            </div> <!-- end col -->
-                        </div>
-                        <!-- end row-->
-
-
-                        <!-- end row-->
+                            <div class="col-12">
+                                <button class="btn" ><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+                            </div>
+                        </div> 
                         
-                    </div> <!-- container -->
+                        <div class="form-outline mt-2 mb-2">
+                            <input type="search" class="form-control" id="datatable-search-input" placeholder="Filter">
+                          </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="table table-striped-columns mt-4">
+                                    <thead>
+                                      <tr class="table-info">
+                                        <th scope="col">SN</th>
+                                        <th scope="col">Image</th>
+                                        <th scope="col">Title</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Actions</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td>@mdo</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                        <td>@mdo</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                        <!-- container -->
 
                 </div> <!-- content -->
 

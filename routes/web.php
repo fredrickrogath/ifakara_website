@@ -24,7 +24,10 @@ Route::get('/',[HomeController::class, 'index']);
 
 Route::get('/login',[LoginController::class, 'index']);
 
+//Admin Route
 Route::get('/admin/dashboard',[DashboardController::class, 'index']);
+Route::get('/admin/news',[DashboardController::class, 'news'])->name('news');
+Route::get('/admin/events',[DashboardController::class, 'events'])->name('events');
 
 Route::get('/catholic_diocese',[SitePagesController::class, 'catholic_diocese'])->name('catholic_diocese');
 

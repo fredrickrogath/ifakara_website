@@ -67,10 +67,10 @@
                 <div class="collapse" id="sidebarEcommerce">
                     <ul class="nav-second-level">
                         <li>
-                            <a href="#">News</a>
+                            <a href="{{ route('news') }}">News</a>
                         </li>
                         <li>
-                            <a href="#">Events</a>
+                            <a href="{{ route('events') }}">Events</a>
                         </li>
                        
                     </ul>
