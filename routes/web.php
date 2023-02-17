@@ -6,7 +6,9 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\eventsController;
 use App\Http\Controllers\SitePagesController;
+use App\Http\Controllers\newsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -66,3 +68,8 @@ Route::get('/departiment',[SitePagesController::class,'departiment'])->name('dep
 
 Route::get ('/contact',[SitePagesController::class,'contact'])->name('contact');
 
+//news route
+Route::resource('news', newsController::class);
+
+//events route
+Route::resource('events', eventsController::class);
