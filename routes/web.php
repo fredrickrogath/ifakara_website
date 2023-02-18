@@ -66,6 +66,10 @@ Route::get('/departiment',[SitePagesController::class,'departiment'])->name('dep
 
 Route::get ('/contact',[SitePagesController::class,'contact'])->name('contact');
 
+Route::get('/schools', [SitePagesController::class, 'schools'])->name('schools');
+Route::get('/healths', [SitePagesController::class, 'healths'])->name('healths');
+
+
 //Admin Route
 Route::get('/admin/dashboard',[DashboardController::class, 'index']);
 Route::get('/admin/news',[DashboardController::class, 'news'])->name('news');

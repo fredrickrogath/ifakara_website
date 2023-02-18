@@ -28,6 +28,14 @@ class SitePagesController extends Controller
     public function contact(){
         return view ('pages.contact');
     }
+
+    public function schools(){
+        return view('pages.schools');
+    }
+
+    public function healths(){
+        return view('pages.healths');
+    }
     /**
      * Show the form for creating a new resource.
      *
