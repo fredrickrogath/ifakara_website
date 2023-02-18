@@ -87,7 +87,7 @@
                 <div class="collapse" id="sidebarProjects">
                     <ul class="nav-second-level">
                         <li>
-                            <a href="project-list.html">Exacutive staff</a>
+                            <a href="{{route('exactive_staff')}}">Exacutive staff</a>
                         </li>
                         <li>
                             <a href="#">view Staff</a>
