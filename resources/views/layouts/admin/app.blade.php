@@ -51,10 +51,18 @@
                     <div class="dropdown-divider"></div>
     
                     <!-- item-->
-                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                    <form method="POST" action="{{ route('signout') }}" class="dropdown-item notify-item">
+                        @csrf
+                        <div class="d-flex dropdown-item notify-item">
+                            <i class="fe-log-out"></i>
+                        <button type="submit">Logout</button>
+                        </div>
+                    </form>
+                    
+                    {{-- <a href="javascript:void(0);" class="dropdown-item notify-item">
                         <i class="fe-log-out"></i>
                         <span>Logout</span>
-                    </a>
+                    </a> --}}
     
                 </div>
             </li>

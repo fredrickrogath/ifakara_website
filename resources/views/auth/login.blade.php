@@ -65,7 +65,7 @@
                                             <input
                                                 class="form-control  form-rounded @error('user_name') is-invalid @enderror"
                                                 type="text" id="user_name" required=""
-                                                placeholder="Enter your username" name="name"
+                                                placeholder="Enter your username" name="email"
                                                 required autocomplete="user_name"
                                                 autofocus>
 

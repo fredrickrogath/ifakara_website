@@ -52,6 +52,7 @@ class LoginController extends Controller
   
         return redirect("login")->withSuccess('Login details are not valid');
     }
+
     public function dashboard()
     {
         if(Auth::check()){

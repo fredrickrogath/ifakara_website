@@ -29,7 +29,7 @@ Route::get('/',[HomeController::class, 'index']);
 
 Route::get('/login',[LoginController::class, 'index']);
 Route::post('/admin_login',[LoginController::class, 'customLogin'])->name('admin_login');
-Route::get('/signout', [LoginController::class, 'signOut']);
+Route::post('/signout', [LoginController::class, 'signOut'])->name('signout');
 Route::get('dashboard', [LoginController::class, 'dashboard']); 
 
 // Route::group(['namespace' => 'App\Http\Controllers'], function()
