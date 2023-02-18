@@ -278,7 +278,7 @@
                 <!-- content -->
                   <!-- Modal -->
     <div class="modal fade" id="custom-modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header bg-light">
                     <h4 class="modal-title" id="myCenterModalLabel">Add News</h4>
