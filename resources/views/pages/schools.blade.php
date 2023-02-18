@@ -22,6 +22,12 @@
     <!-- ##### Intro News Area End ##### -->
     <section class="intro-news-area  mb-70 mt-4">
         <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="text-info" style="color:#000; font-weight:700;font-size:15px">CATHOLIC DIOCESE SCHOOLS</h4>
+                </div>
+            </div>
             <div class="row justify-content-center mt-4">
 
                 <!-- Intro News Tabs Area -->
@@ -111,8 +117,8 @@
                                     <h6>
                                         <a role="button" class="collapsed" aria-expanded="true"
                                             aria-controls="collapseTwo" data-parent="#accordion" data-toggle="collapse"
-                                            href="#collapseTwo">Pellentesque
-                                            sit amet velit a libero viverra porta non eu justo
+                                            href="#collapseTwo">St. Benedict Montessori Nursery
+                                            School
                                             <span class="accor-open"><i class="fa fa-plus"
                                                     aria-hidden="true"></i></span>
                                             <span class="accor-close"><i class="fa fa-minus"
@@ -120,25 +126,89 @@
                                         </a>
                                     </h6>
                                     <div id="collapseTwo" class="accordion-content collapse">
-                                        <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus eu dolor
-                                            eu
-                                            quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non lacus.
-                                            Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit, rutrum
-                                            at
-                                            ipsum ac, dignissim iaculis ante.</p>
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <div class="mt-4">
+                                                    <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus
+                                                        eu dolor eu
+                                                        quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non
+                                                        lacus.
+                                                        Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit,
+                                                        rutrum at
+                                                        ipsum ac, dignissim iaculis ante.</p>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                                                        odit magni eveniet. Consequuntur, sequi amet! Expedita,
+                                                        voluptatem nesciunt itaque minima aliquam illum impedit a,
+                                                        distinctio, odit quaerat nostrum facere libero.</p>
+    
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="mt-4">
+                                                    <div id="carouselExampleSlidesOnly" class="carousel slide"
+                                                        data-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <a href="#">
+                                                                    <img class="d-block w-100"
+                                                                        src="{{ asset('site/img/bg-img/school_1.jpg') }}"
+                                                                        alt="First slide">
+    
+                                                                </a>
+                                                                <div class="text mt-3">
+    
+                                                                    <span>Benignis</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <a href="#">
+                                                                    <img class="d-block w-100"
+                                                                        src="{{ asset('site/img/bg-img/school_2.jpg') }}"
+                                                                        alt="Second slide">
+                                                                </a>
+                                                                <div class="text mt-3">
+    
+                                                                    <span>Benignis</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <a href="#">
+                                                                    <img class="d-block w-100"
+                                                                        src="{{ asset('site/img/bg-img/school_3.jpg') }}"
+                                                                        alt="Third slide">
+    
+                                                                </a>
+                                                                <div class="text mt-3">
+                                                                    <span>Benignis Secondary School</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+    
+    
+    
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- single accordian area -->
-                                <div class="panel single-accordion">
-                                    <h6><a role="button" class="" aria-expanded="true" aria-controls="collapsethree"
-                                        data-toggle="collapse" data-parent="#accordion" href="#collapseOne">St.
-                                        Augustine Kindergarten & Primary
-                                        School
-                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
-                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                
+                            </div>
+
+                            <div class="panel single-accordion">
+                                <h6>
+                                    <a role="button" class="collapsed" aria-expanded="true"
+                                        aria-controls="collapseThree" data-parent="#accordion" data-toggle="collapse"
+                                        href="#collapseThree">Benignis Girls Secondary School
+                                        <span class="accor-open"><i class="fa fa-plus"
+                                                aria-hidden="true"></i></span>
+                                        <span class="accor-close"><i class="fa fa-minus"
+                                                aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapsethree" class="accordion-content collapse show">
+                                <div id="collapseThree" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -205,215 +275,892 @@
 
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="panel single-accordion">
+                                <h6>
+                                    <a role="button" class="collapsed" aria-expanded="true"
+                                        aria-controls="collapsefour" data-parent="#accordion" data-toggle="collapse"
+                                        href="#collapsefour">Benignis Kindergarten & Primary
+                                        Schoo
+                                        <span class="accor-open"><i class="fa fa-plus"
+                                                aria-hidden="true"></i></span>
+                                        <span class="accor-close"><i class="fa fa-minus"
+                                                aria-hidden="true"></i></span>
+                                    </a>
+                                </h6>
+                                <div id="collapsefour" class="accordion-content collapse">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="mt-4">
+                                                <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus
+                                                    eu dolor eu
+                                                    quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non
+                                                    lacus.
+                                                    Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit,
+                                                    rutrum at
+                                                    ipsum ac, dignissim iaculis ante.</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                                                    odit magni eveniet. Consequuntur, sequi amet! Expedita,
+                                                    voluptatem nesciunt itaque minima aliquam illum impedit a,
+                                                    distinctio, odit quaerat nostrum facere libero.</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="mt-4">
+                                                <div id="carouselExampleSlidesOnly" class="carousel slide"
+                                                    data-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_1.jpg') }}"
+                                                                    alt="First slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_2.jpg') }}"
+                                                                    alt="Second slide">
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_3.jpg') }}"
+                                                                    alt="Third slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+                                                                <span>Benignis Secondary School</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel single-accordion">
+                                <h6>
+                                    <a role="button" class="collapsed" aria-expanded="true"
+                                        aria-controls="collapsefour" data-parent="#accordion" data-toggle="collapse"
+                                        href="#collapsefour">St. Mary’s Catholic Nursery School
+                                        <span class="accor-open"><i class="fa fa-plus"
+                                                aria-hidden="true"></i></span>
+                                        <span class="accor-close"><i class="fa fa-minus"
+                                                aria-hidden="true"></i></span>
+                                    </a>
+                                </h6>
+                                <div id="collapsefour" class="accordion-content collapse">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="mt-4">
+                                                <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus
+                                                    eu dolor eu
+                                                    quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non
+                                                    lacus.
+                                                    Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit,
+                                                    rutrum at
+                                                    ipsum ac, dignissim iaculis ante.</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                                                    odit magni eveniet. Consequuntur, sequi amet! Expedita,
+                                                    voluptatem nesciunt itaque minima aliquam illum impedit a,
+                                                    distinctio, odit quaerat nostrum facere libero.</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="mt-4">
+                                                <div id="carouselExampleSlidesOnly" class="carousel slide"
+                                                    data-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_1.jpg') }}"
+                                                                    alt="First slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_2.jpg') }}"
+                                                                    alt="Second slide">
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_3.jpg') }}"
+                                                                    alt="Third slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+                                                                <span>Benignis Secondary School</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel single-accordion">
+                                <h6>
+                                    <a role="button" class="collapsed" aria-expanded="true"
+                                        aria-controls="collapsefive" data-parent="#accordion" data-toggle="collapse"
+                                        href="#collapsefive">St. Theresa Nursery school
+                                        <span class="accor-open"><i class="fa fa-plus"
+                                                aria-hidden="true"></i></span>
+                                        <span class="accor-close"><i class="fa fa-minus"
+                                                aria-hidden="true"></i></span>
+                                    </a>
+                                </h6>
+                                <div id="collapsefive" class="accordion-content collapse">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="mt-4">
+                                                <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus
+                                                    eu dolor eu
+                                                    quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non
+                                                    lacus.
+                                                    Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit,
+                                                    rutrum at
+                                                    ipsum ac, dignissim iaculis ante.</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                                                    odit magni eveniet. Consequuntur, sequi amet! Expedita,
+                                                    voluptatem nesciunt itaque minima aliquam illum impedit a,
+                                                    distinctio, odit quaerat nostrum facere libero.</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="mt-4">
+                                                <div id="carouselExampleSlidesOnly" class="carousel slide"
+                                                    data-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_1.jpg') }}"
+                                                                    alt="First slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_2.jpg') }}"
+                                                                    alt="Second slide">
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_3.jpg') }}"
+                                                                    alt="Third slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+                                                                <span>Benignis Secondary School</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel single-accordion">
+                                <h6>
+                                    <a role="button" class="collapsed" aria-expanded="true"
+                                        aria-controls="collapsesix" data-parent="#accordion" data-toggle="collapse"
+                                        href="#collapsesix">Mchombe Parish Kindergarten
+                                        <span class="accor-open"><i class="fa fa-plus"
+                                                aria-hidden="true"></i></span>
+                                        <span class="accor-close"><i class="fa fa-minus"
+                                                aria-hidden="true"></i></span>
+                                    </a>
+                                </h6>
+                                <div id="collapsesix" class="accordion-content collapse">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="mt-4">
+                                                <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus
+                                                    eu dolor eu
+                                                    quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non
+                                                    lacus.
+                                                    Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit,
+                                                    rutrum at
+                                                    ipsum ac, dignissim iaculis ante.</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                                                    odit magni eveniet. Consequuntur, sequi amet! Expedita,
+                                                    voluptatem nesciunt itaque minima aliquam illum impedit a,
+                                                    distinctio, odit quaerat nostrum facere libero.</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="mt-4">
+                                                <div id="carouselExampleSlidesOnly" class="carousel slide"
+                                                    data-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_1.jpg') }}"
+                                                                    alt="First slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_2.jpg') }}"
+                                                                    alt="Second slide">
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_3.jpg') }}"
+                                                                    alt="Third slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+                                                                <span>Benignis Secondary School</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel single-accordion">
+                                <h6>
+                                    <a role="button" class="collapsed" aria-expanded="true"
+                                        aria-controls="collapsesevern" data-parent="#accordion" data-toggle="collapse"
+                                        href="#collapsesevern">St. Raphael Secondary School
+                                        <span class="accor-open"><i class="fa fa-plus"
+                                                aria-hidden="true"></i></span>
+                                        <span class="accor-close"><i class="fa fa-minus"
+                                                aria-hidden="true"></i></span>
+                                    </a>
+                                </h6>
+                                <div id="collapsesevern" class="accordion-content collapse">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="mt-4">
+                                                <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus
+                                                    eu dolor eu
+                                                    quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non
+                                                    lacus.
+                                                    Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit,
+                                                    rutrum at
+                                                    ipsum ac, dignissim iaculis ante.</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                                                    odit magni eveniet. Consequuntur, sequi amet! Expedita,
+                                                    voluptatem nesciunt itaque minima aliquam illum impedit a,
+                                                    distinctio, odit quaerat nostrum facere libero.</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="mt-4">
+                                                <div id="carouselExampleSlidesOnly" class="carousel slide"
+                                                    data-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_1.jpg') }}"
+                                                                    alt="First slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_2.jpg') }}"
+                                                                    alt="Second slide">
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_3.jpg') }}"
+                                                                    alt="Third slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+                                                                <span>Benignis Secondary School</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel single-accordion">
+                                <h6>
+                                    <a role="button" class="collapsed" aria-expanded="true"
+                                        aria-controls="collapse8" data-parent="#accordion" data-toggle="collapse"
+                                        href="#collapse8">Malecela Secondary School
+                                        <span class="accor-open"><i class="fa fa-plus"
+                                                aria-hidden="true"></i></span>
+                                        <span class="accor-close"><i class="fa fa-minus"
+                                                aria-hidden="true"></i></span>
+                                    </a>
+                                </h6>
+                                <div id="collapse8" class="accordion-content collapse">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="mt-4">
+                                                <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus
+                                                    eu dolor eu
+                                                    quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non
+                                                    lacus.
+                                                    Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit,
+                                                    rutrum at
+                                                    ipsum ac, dignissim iaculis ante.</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                                                    odit magni eveniet. Consequuntur, sequi amet! Expedita,
+                                                    voluptatem nesciunt itaque minima aliquam illum impedit a,
+                                                    distinctio, odit quaerat nostrum facere libero.</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="mt-4">
+                                                <div id="carouselExampleSlidesOnly" class="carousel slide"
+                                                    data-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_1.jpg') }}"
+                                                                    alt="First slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_2.jpg') }}"
+                                                                    alt="Second slide">
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_3.jpg') }}"
+                                                                    alt="Third slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+                                                                <span>Benignis Secondary School</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel single-accordion">
+                                <h6>
+                                    <a role="button" class="collapsed" aria-expanded="true"
+                                        aria-controls="collapse9" data-parent="#accordion" data-toggle="collapse"
+                                        href="#collapse9">St. Francis Xavier Nursery School
+                                        <span class="accor-open"><i class="fa fa-plus"
+                                                aria-hidden="true"></i></span>
+                                        <span class="accor-close"><i class="fa fa-minus"
+                                                aria-hidden="true"></i></span>
+                                    </a>
+                                </h6>
+                                <div id="collapse9" class="accordion-content collapse">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="mt-4">
+                                                <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus
+                                                    eu dolor eu
+                                                    quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non
+                                                    lacus.
+                                                    Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit,
+                                                    rutrum at
+                                                    ipsum ac, dignissim iaculis ante.</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                                                    odit magni eveniet. Consequuntur, sequi amet! Expedita,
+                                                    voluptatem nesciunt itaque minima aliquam illum impedit a,
+                                                    distinctio, odit quaerat nostrum facere libero.</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="mt-4">
+                                                <div id="carouselExampleSlidesOnly" class="carousel slide"
+                                                    data-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_1.jpg') }}"
+                                                                    alt="First slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_2.jpg') }}"
+                                                                    alt="Second slide">
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_3.jpg') }}"
+                                                                    alt="Third slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+                                                                <span>Benignis Secondary School</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel single-accordion">
+                                <h6>
+                                    <a role="button" class="collapsed" aria-expanded="true"
+                                        aria-controls="collapse10" data-parent="#accordion" data-toggle="collapse"
+                                        href="#collapse10">Queen Mary Secondary School
+                                        <span class="accor-open"><i class="fa fa-plus"
+                                                aria-hidden="true"></i></span>
+                                        <span class="accor-close"><i class="fa fa-minus"
+                                                aria-hidden="true"></i></span>
+                                    </a>
+                                </h6>
+                                <div id="collapse10" class="accordion-content collapse">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="mt-4">
+                                                <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus
+                                                    eu dolor eu
+                                                    quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non
+                                                    lacus.
+                                                    Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit,
+                                                    rutrum at
+                                                    ipsum ac, dignissim iaculis ante.</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                                                    odit magni eveniet. Consequuntur, sequi amet! Expedita,
+                                                    voluptatem nesciunt itaque minima aliquam illum impedit a,
+                                                    distinctio, odit quaerat nostrum facere libero.</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="mt-4">
+                                                <div id="carouselExampleSlidesOnly" class="carousel slide"
+                                                    data-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_1.jpg') }}"
+                                                                    alt="First slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_2.jpg') }}"
+                                                                    alt="Second slide">
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_3.jpg') }}"
+                                                                    alt="Third slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+                                                                <span>Benignis Secondary School</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel single-accordion">
+                                <h6>
+                                    <a role="button" class="collapsed" aria-expanded="true"
+                                        aria-controls="collapse11" data-parent="#accordion" data-toggle="collapse"
+                                        href="#collapse11">St. Alphonsa Pre and Primary School
+                                        <span class="accor-open"><i class="fa fa-plus"
+                                                aria-hidden="true"></i></span>
+                                        <span class="accor-close"><i class="fa fa-minus"
+                                                aria-hidden="true"></i></span>
+                                    </a>
+                                </h6>
+                                <div id="collapse11" class="accordion-content collapse">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="mt-4">
+                                                <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus
+                                                    eu dolor eu
+                                                    quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non
+                                                    lacus.
+                                                    Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit,
+                                                    rutrum at
+                                                    ipsum ac, dignissim iaculis ante.</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                                                    odit magni eveniet. Consequuntur, sequi amet! Expedita,
+                                                    voluptatem nesciunt itaque minima aliquam illum impedit a,
+                                                    distinctio, odit quaerat nostrum facere libero.</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="mt-4">
+                                                <div id="carouselExampleSlidesOnly" class="carousel slide"
+                                                    data-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_1.jpg') }}"
+                                                                    alt="First slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_2.jpg') }}"
+                                                                    alt="Second slide">
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_3.jpg') }}"
+                                                                    alt="Third slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+                                                                <span>Benignis Secondary School</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel single-accordion">
+                                <h6>
+                                    <a role="button" class="collapsed" aria-expanded="true"
+                                        aria-controls="collapse12" data-parent="#accordion" data-toggle="collapse"
+                                        href="#collapse12">St. Martin Girls Secondary School
+                                        <span class="accor-open"><i class="fa fa-plus"
+                                                aria-hidden="true"></i></span>
+                                        <span class="accor-close"><i class="fa fa-minus"
+                                                aria-hidden="true"></i></span>
+                                    </a>
+                                </h6>
+                                <div id="collapse12" class="accordion-content collapse">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="mt-4">
+                                                <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus
+                                                    eu dolor eu
+                                                    quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non
+                                                    lacus.
+                                                    Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit,
+                                                    rutrum at
+                                                    ipsum ac, dignissim iaculis ante.</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                                                    odit magni eveniet. Consequuntur, sequi amet! Expedita,
+                                                    voluptatem nesciunt itaque minima aliquam illum impedit a,
+                                                    distinctio, odit quaerat nostrum facere libero.</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="mt-4">
+                                                <div id="carouselExampleSlidesOnly" class="carousel slide"
+                                                    data-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_1.jpg') }}"
+                                                                    alt="First slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_2.jpg') }}"
+                                                                    alt="Second slide">
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_3.jpg') }}"
+                                                                    alt="Third slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+                                                                <span>Benignis Secondary School</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel single-accordion">
+                                <h6>
+                                    <a role="button" class="collapsed" aria-expanded="true"
+                                        aria-controls="collapse13" data-parent="#accordion" data-toggle="collapse"
+                                        href="#collapse13">St. Theresa Nursery school
+                                        <span class="accor-open"><i class="fa fa-plus"
+                                                aria-hidden="true"></i></span>
+                                        <span class="accor-close"><i class="fa fa-minus"
+                                                aria-hidden="true"></i></span>
+                                    </a>
+                                </h6>
+                                <div id="collapse13" class="accordion-content collapse">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="mt-4">
+                                                <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus
+                                                    eu dolor eu
+                                                    quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non
+                                                    lacus.
+                                                    Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit,
+                                                    rutrum at
+                                                    ipsum ac, dignissim iaculis ante.</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                                                    odit magni eveniet. Consequuntur, sequi amet! Expedita,
+                                                    voluptatem nesciunt itaque minima aliquam illum impedit a,
+                                                    distinctio, odit quaerat nostrum facere libero.</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="mt-4">
+                                                <div id="carouselExampleSlidesOnly" class="carousel slide"
+                                                    data-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_1.jpg') }}"
+                                                                    alt="First slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_2.jpg') }}"
+                                                                    alt="Second slide">
+                                                            </a>
+                                                            <div class="text mt-3">
+
+                                                                <span>Benignis</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <a href="#">
+                                                                <img class="d-block w-100"
+                                                                    src="{{ asset('site/img/bg-img/school_3.jpg') }}"
+                                                                    alt="Third slide">
+
+                                                            </a>
+                                                            <div class="text mt-3">
+                                                                <span>Benignis Secondary School</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         
-                        <div class="intro-news-tab mt-4">
-
-                            <h4 style="color:rgb(3, 3, 3); font-size: medium;">DEPARTIMENTS</h4>
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-4 col-md-3">
-                                            <div class="single-blog-post style-2 mb-5">
-                                                <!-- Blog Thumbnail -->
-                                                <div class="blog-thumbnail">
-                                                    <a href="#" class=" justify-content-center">
-                                                        <img src="site/img/bg-img/bishop.jpg" alt=""
-                                                            style="width: 60%">
-                                                    </a>
-                                                    <h6 class="mt-3" style="font-weight:600; color: black;">Reaserch
-
-                                                    </h6>
-                                                </div>
-
-                                                <!-- Blog Content -->
-
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-8 col-md-9">
-                                            <div class="single-blog-post style-2 mb-5">
-                                                <p style="text-align: justify; color: black;">Lorem ipsum dolor sit
-                                                    amet,
-                                                    consectetur adipisicing elit. Iusto asperiores neque vitae officiis
-                                                    distinctio a
-                                                    adipisci, amet similique sit fuga ratione possimus temporibus
-                                                    tempore
-                                                    unde, modi nam totam eius qui. Lorem ipsum dolor sit amet
-                                                    consectetur
-                                                    adipisicing elit. Illo voluptatum ipsa tempora incidunt, earum
-                                                    praesentium veritatis eveniet, commodi hic maiores molestias
-                                                    repellendus, natus facere quisquam repellat modi autem delectus
-                                                    fugit.
-                                                </p>
-                                                <p style="text-align: justify; color: black;">Lorem ipsum dolor sit
-                                                    amet
-                                                    consectetur adipisicing elit. Eius sunt voluptates nam in fuga
-                                                    repellat
-                                                    velit aliquam illum cum quasi a eligendi, ratione cupiditate ad sed
-                                                    beatae aut. Amet, distinctio.</p>
-
-                                                <p></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <div class="card mt-2">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-4 col-md-3">
-                                            <div class="single-blog-post style-2 mb-5">
-                                                <!-- Blog Thumbnail -->
-                                                <div class="blog-thumbnail">
-                                                    <a href="#" class=" justify-content-center">
-                                                        <img src="site/img/bg-img/bishop.jpg" alt=""
-                                                            style="width: 60%">
-                                                    </a>
-                                                    <h6 class="mt-3" style="font-weight:600; color: black;">ICT
-
-                                                    </h6>
-                                                </div>
-
-                                                <!-- Blog Content -->
-
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-8 col-md-9">
-                                            <div class="single-blog-post style-2 mb-5">
-                                                <p style="text-align: justify; color: black;">Lorem ipsum dolor sit
-                                                    amet,
-                                                    consectetur adipisicing elit. Iusto asperiores neque vitae officiis
-                                                    distinctio a
-                                                    adipisci, amet similique sit fuga ratione possimus temporibus
-                                                    tempore
-                                                    unde, modi nam totam eius qui. Lorem ipsum dolor sit amet
-                                                    consectetur
-                                                    adipisicing elit. Illo voluptatum ipsa tempora incidunt, earum
-                                                    praesentium veritatis eveniet, commodi hic maiores molestias
-                                                    repellendus, natus facere quisquam repellat modi autem delectus
-                                                    fugit.
-                                                </p>
-                                                <p style="text-align: justify; color: black;">Lorem ipsum dolor sit
-                                                    amet
-                                                    consectetur adipisicing elit. Eius sunt voluptates nam in fuga
-                                                    repellat
-                                                    velit aliquam illum cum quasi a eligendi, ratione cupiditate ad sed
-                                                    beatae aut. Amet, distinctio.</p>
-
-                                                <p></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <div class="card mt-3">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-4 col-md-3">
-                                            <div class="single-blog-post style-2 mb-5">
-                                                <!-- Blog Thumbnail -->
-                                                <div class="blog-thumbnail">
-                                                    <a href="#" class=" justify-content-center">
-                                                        <img src="site/img/bg-img/bishop.jpg" alt=""
-                                                            style="width: 60%">
-                                                    </a>
-                                                    <h6 class="mt-3" style="font-weight:600; color: black;">MEDICINE
-
-                                                    </h6>
-                                                </div>
-
-                                                <!-- Blog Content -->
-
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-8 col-md-9">
-                                            <div class="single-blog-post style-2 mb-5">
-                                                <p style="text-align: justify; color: black;">Lorem ipsum dolor sit
-                                                    amet,
-                                                    consectetur adipisicing elit. Iusto asperiores neque vitae officiis
-                                                    distinctio a
-                                                    adipisci, amet similique sit fuga ratione possimus temporibus
-                                                    tempore
-                                                    unde, modi nam totam eius qui. Lorem ipsum dolor sit amet
-                                                    consectetur
-                                                    adipisicing elit. Illo voluptatum ipsa tempora incidunt, earum
-                                                    praesentium veritatis eveniet, commodi hic maiores molestias
-                                                    repellendus, natus facere quisquam repellat modi autem delectus
-                                                    fugit.
-                                                </p>
-                                                <p style="text-align: justify; color: black;">Lorem ipsum dolor sit
-                                                    amet
-                                                    consectetur adipisicing elit. Eius sunt voluptates nam in fuga
-                                                    repellat
-                                                    velit aliquam illum cum quasi a eligendi, ratione cupiditate ad sed
-                                                    beatae aut. Amet, distinctio.</p>
-
-                                                <p></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <div class="card mt-3">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-4 col-md-3">
-                                            <div class="single-blog-post style-2 mb-5">
-                                                <!-- Blog Thumbnail -->
-                                                <div class="blog-thumbnail">
-                                                    <a href="#" class=" justify-content-center">
-                                                        <img src="site/img/bg-img/bishop.jpg" alt=""
-                                                            style="width: 60%">
-                                                    </a>
-                                                    <h6 class="mt-3" style="font-weight:600; color: black;">PARISH
-
-                                                    </h6>
-                                                </div>
-
-                                                <!-- Blog Content -->
-
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-8 col-md-9">
-                                            <div class="single-blog-post style-2 mb-5">
-                                                <p style="text-align: justify; color: black;">Lorem ipsum dolor sit
-                                                    amet,
-                                                    consectetur adipisicing elit. Iusto asperiores neque vitae officiis
-                                                    distinctio a
-                                                    adipisci, amet similique sit fuga ratione possimus temporibus
-                                                    tempore
-                                                    unde, modi nam totam eius qui. Lorem ipsum dolor sit amet
-                                                    consectetur
-                                                    adipisicing elit. Illo voluptatum ipsa tempora incidunt, earum
-                                                    praesentium veritatis eveniet, commodi hic maiores molestias
-                                                    repellendus, natus facere quisquam repellat modi autem delectus
-                                                    fugit.
-                                                </p>
-                                                <p style="text-align: justify; color: black;">Lorem ipsum dolor sit
-                                                    amet
-                                                    consectetur adipisicing elit. Eius sunt voluptates nam in fuga
-                                                    repellat
-                                                    velit aliquam illum cum quasi a eligendi, ratione cupiditate ad sed
-                                                    beatae aut. Amet, distinctio.</p>
-
-                                                <p></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
+                       
 
 
                     </div>
