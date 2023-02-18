@@ -10,6 +10,10 @@ use App\Http\Requests\LoginRequest;
 
 class LoginController extends Controller
 {
+    public function __construct(){
+        $this->middleware('guest')->only(['index', 'customLogin']);
+    }
+
     /**
      * Display a listing of the resource.
      *

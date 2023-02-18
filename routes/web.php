@@ -27,7 +27,7 @@ use App\Http\Controllers\newsController;
 
 Route::get('/',[HomeController::class, 'index']);
 
-Route::get('/login',[LoginController::class, 'index']);
+Route::get('/login',[LoginController::class, 'index'])->name('login');
 Route::post('/admin_login',[LoginController::class, 'customLogin'])->name('admin_login');
 Route::post('/signout', [LoginController::class, 'signOut'])->name('signout');
 Route::get('dashboard', [LoginController::class, 'dashboard']); 
