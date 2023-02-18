@@ -152,8 +152,8 @@
                                             <div class="text-sm-end">
                                                 {{-- <button type="button" class="btn btn-danger waves-effect waves-light mb-2" data-bs-toggle="modal" data-bs-target="#custom-modal">Add Contact</button> --}}
                                                 <Span class="bg-info p-2" style="color:#fff" data-bs-toggle="modal"
-                                                    data-bs-target="#custom-modal"><a href="#"
-                                                        data-bs-toggle="modal" data-bs-target="#custom-modal"
+                                                    data-bs-target="#custom-modal-news"><a href="#"
+                                                        data-bs-toggle="modal" data-bs-target="#custom-modal-news"
                                                         style="color:#fff">Add news</a> </Span>
                                             </div>
                                         </div>
@@ -167,84 +167,29 @@
                                                     <th>sn</th>
                                                     <th>title</th>
                                                     <th>Image</th>
+                                                    <th>Initial Discription</th>
                                                     <th>Discription</th>
-                                                    <th>Created Date</th>
                                                     <th style="width: 82px;">Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td class="table-user">
-                                                        <img src="../assets/images/users/user-4.jpg" alt="table-user"
-                                                            class="me-2 rounded-circle">
-                                                        <a href="javascript:void(0);"
-                                                            class="text-body fw-semibold">Paul J. Friend</a>
-                                                    </td>
-                                                    <td>
-                                                        937-330-1634
-                                                    </td>
-                                                    <td>
-                                                        pauljfrnd@jourrapide.com
+                                                        1
                                                     </td>
                                                     <td>
                                                         Vine Corporation
                                                     </td>
                                                     <td>
-                                                        07/07/2018
-                                                    </td>
-                                                    <td>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i
-                                                                class="mdi mdi-square-edit-outline"></i></a>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i
-                                                                class="mdi mdi-delete"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="table-user">
-                                                        <img src="../assets/images/users/user-3.jpg" alt="table-user"
+                                                        
+                                                        <img src="../assets/images/users/user-4.jpg" alt="table-user"
                                                             class="me-2 rounded-circle">
-                                                        <a href="javascript:void(0);"
-                                                            class="text-body fw-semibold">Bryan J. Luellen</a>
                                                     </td>
                                                     <td>
-                                                        215-302-3376
+                                                        Uzinduzi wa kigango cha Mt. Francis Ifakara.
                                                     </td>
                                                     <td>
-                                                        bryuellen@dayrep.com
-                                                    </td>
-                                                    <td>
-                                                        Blue Motors
-                                                    </td>
-                                                    <td>
-                                                        09/12/2018
-                                                    </td>
-                                                    <td>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i
-                                                                class="mdi mdi-square-edit-outline"></i></a>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i
-                                                                class="mdi mdi-delete"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="table-user">
-                                                        <img src="../assets/images/users/user-3.jpg" alt="table-user"
-                                                            class="me-2 rounded-circle">
-                                                        <a href="javascript:void(0);"
-                                                            class="text-body fw-semibold">Kathryn S. Collier</a>
-                                                    </td>
-                                                    <td>
-                                                        828-216-2190
-                                                    </td>
-                                                    <td>
-                                                        collier@jourrapide.com
-                                                    </td>
-                                                    <td>
-                                                        Arcanetworks
-                                                    </td>
-                                                    <td>
-                                                        06/30/2018
+                                                        Uzinduzi wa kigango cha Mt. Francis Ifakara.
                                                     </td>
                                                     <td>
                                                         <a href="javascript:void(0);" class="action-icon"> <i
@@ -303,7 +248,7 @@
             </div>
             <!-- content -->
             <!-- Modal -->
-            <div class="modal fade" id="custom-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal fade" id="custom-modal-news" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
                         <div class="modal-header bg-light">
