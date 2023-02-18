@@ -49,7 +49,7 @@
             <li class="menu-title">Navigation</li>
 
             <li>
-                <a href="#sidebarDashboards">
+                <a href="{{route('dashboard')}}">
                     <i data-feather="airplay"></i>
                    
                     <span> Dashboards </span>

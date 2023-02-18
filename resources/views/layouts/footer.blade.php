@@ -9,10 +9,10 @@
                     <!-- Footer Nav -->
                     <div class="footer-nav">
                         <ul>
-                            <li><a href="/drp/login">DRP</a></li>
-                            <li><a href="/fmcs/login">FMCS</a></li>
-                            <li><a href="/ses/login">SES</a></li>
-                            <li><a href="/ors/login">ORS</a></li>
+                            <li><a href="/login">DRP</a></li>
+                            <li><a href="/login">FMCS</a></li>
+                            <li><a href="/login">SES</a></li>
+                            <li><a href="/login">ORS</a></li>
                         </ul>
                     </div>
                     <!-- Social Info -->
