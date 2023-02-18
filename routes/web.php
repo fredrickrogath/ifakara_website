@@ -27,37 +27,13 @@ use App\Http\Controllers\newsController;
 
 Route::get('/',[HomeController::class, 'index']);
 
+//Auth Admin Route
 Route::get('/login',[LoginController::class, 'index'])->name('login');
-Route::post('/admin_login',[LoginController::class, 'customLogin'])->name('admin_login');
+Route::post('/admin_login',[LoginController::class, 'Admin_Login'])->name('admin_login');
 Route::post('/signout', [LoginController::class, 'signOut'])->name('signout');
-Route::get('dashboard', [LoginController::class, 'dashboard']); 
-
-// Route::group(['namespace' => 'App\Http\Controllers'], function()
-// {   
-//     /**
-//      * Home Routes
-//      */
-//    // Route::get('/login',[AdminHomeController::class, 'index'])->name('cms');
-
-//     Route::group(['middleware' => ['guest']], function() {
-//         /**
-//          * Login Routes
-//          */
-//         Route::get('/login',[LoginController::class, 'index']);
-//         Route::get('/login',[LoginController::class, 'login']);
-
-//     });
-
-//     Route::group(['middleware' => ['auth']], function() {
-//         /**
-//          * Logout Routes
-//          */
-//         Route::get('/logout', [LogoutController::class, 'perform']);
-//     });
-// });
+Route::get('/dashboard', [LoginController::class, 'dashboard']); 
 
 //site controllers
-
 Route::get('/catholic_diocese',[SitePagesController::class, 'catholic_diocese'])->name('catholic_diocese');
 
 Route::get('/research_institute',[SitePagesController::class,'research'])->name('research_institute');
@@ -71,17 +47,10 @@ Route::get('/healths', [SitePagesController::class, 'healths'])->name('healths')
 
 
 //Admin Route
-Route::get('/admin/dashboard',[DashboardController::class, 'index']);
+//Route::get('/admin/dashboard',[DashboardController::class, 'index']);
 Route::get('/admin/news',[DashboardController::class, 'news'])->name('news');
 Route::get('/admin/events',[DashboardController::class, 'events'])->name('events');
 Route::get('/admin/exactives',[ExactiveController::class,'index'])->name('exactive_staff');
-
-
-//news route
-Route::resource('news', newsController::class);
-
-//events route
-Route::resource('events', eventsController::class);
 
 
 
