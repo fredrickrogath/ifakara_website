@@ -113,14 +113,13 @@
                     </ul>
                 </div>
             </li>
-
             <li>
-                <a href="#sidebarContacts" data-bs-toggle="collapse">
+                <a href="#sidebarLayouts" data-bs-toggle="collapse">
                     <i class="fa fa-book" aria-hidden="true"></i>
                     <span> Documents </span>
                     <span class="menu-arrow"></span>
                 </a>
-                <div class="collapse" id="sidebarContacts">
+                <div class="collapse" id="sidebarLayouts">
                     <ul class="nav-second-level">
                         <li>
                             <a href="{{route('admin_research')}}">Research</a>
