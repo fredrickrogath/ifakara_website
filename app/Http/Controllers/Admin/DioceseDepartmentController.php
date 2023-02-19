@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class eventsController extends Controller
+class DioceseDepartmentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,7 @@ class eventsController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.pages.Department.dioceseDeprtment');
     }
 
     /**

@@ -15,18 +15,6 @@ class DashboardController extends Controller
     {
         return view('admin.dashboard');
     }
-
-    //what's new functions
-    public function news()
-    {
-        return view('admin.whats_new.news');
-    }
-
-    public function events()
-    {
-        return view('admin.whats_new.events');
-    }
-
     
     public function create()
     {

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ExactiveController extends Controller
+class ResearchController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class ExactiveController extends Controller
      */
     public function index()
     {
-        return view('admin.pages.Staff.exactivestaff');
+        return view('admin.pages.Documents.research');
     }
 
     /**

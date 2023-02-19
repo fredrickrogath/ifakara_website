@@ -67,10 +67,10 @@
                 <div class="collapse" id="sidebarEcommerce">
                     <ul class="nav-second-level">
                         <li>
-                            <a href="{{ route('news') }}">News</a>
+                            <a href="{{ route('admin_news') }}">News</a>
                         </li>
                         <li>
-                            <a href="{{ route('events') }}">Events</a>
+                            <a href="{{ route('admin_events') }}">Events</a>
                         </li>
                        
                     </ul>
@@ -87,12 +87,8 @@
                 <div class="collapse" id="sidebarProjects">
                     <ul class="nav-second-level">
                         <li>
-                            <a href="{{route('exactive_staff')}}">Exacutive staff</a>
+                            <a href="{{route('admin_exactive_staff')}}">Exacutive staff</a>
                         </li>
-                        <li>
-                            <a href="#">view Staff</a>
-                        </li>
-                        
                     </ul>
                 </div>
             </li>
@@ -100,16 +96,19 @@
             <li>
                 <a href="#sidebarTasks" data-bs-toggle="collapse">
                     <i class="fa fa-home" aria-hidden="true"></i>
-                    <span> Parish </span>
+                    <span> Diocese </span>
                     <span class="menu-arrow"></span>
                 </a>
                 <div class="collapse" id="sidebarTasks">
                     <ul class="nav-second-level">
                         <li>
-                            <a href="task-list.html">View Parish</a>
+                            <a href="{{route('admin_parish')}}">Parish</a>
                         </li>
                         <li>
-                            <a href="task-details.html">Updates Parish</a>
+                            <a href="{{route('admin_schools')}}">School</a>
+                        </li>
+                        <li>
+                            <a href="{{route('admin_healths')}}">Health</a>
                         </li>
                     </ul>
                 </div>
@@ -124,10 +123,24 @@
                 <div class="collapse" id="sidebarContacts">
                     <ul class="nav-second-level">
                         <li>
-                            <a href="contacts-list.html">Members List</a>
+                            <a href="{{route('admin_research')}}">Research</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#sidebarContacts" data-bs-toggle="collapse">
+                    <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
+                    <span> Department </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidebarContacts">
+                    <ul class="nav-second-level">
+                        <li>
+                            <a href="{{route('admin_DioceseDepartment')}}">Diocese Department</a>
                         </li>
                         <li>
-                            <a href="contacts-profile.html">Profile</a>
+                            <a href="{{route('admin_ParishDepartment')}}">Parish Department</a>
                         </li>
                     </ul>
                 </div>

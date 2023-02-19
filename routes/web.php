@@ -1,15 +1,21 @@
 <?php
 
-use App\Http\Controllers\Admin\AdminHomeController;
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\DepartmentController;
+use App\Http\Controllers\Admin\DioceseDepartmentController;
+use App\Http\Controllers\Admin\EventsController;
 use App\Http\Controllers\Admin\ExactiveController;
-use App\Http\Controllers\Auth\LogoutController;
-use App\Http\Controllers\eventsController;
+use App\Http\Controllers\Admin\HealthsController;
+use App\Http\Controllers\Admin\NewsController;
+use App\Http\Controllers\Admin\ParishController;
+use App\Http\Controllers\Admin\ParishDepartmentController;
+use App\Http\Controllers\Admin\ResearchController;
+use App\Http\Controllers\Admin\SchoolsController;
 use App\Http\Controllers\SitePagesController;
-use App\Http\Controllers\newsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,9 +54,15 @@ Route::get('/healths', [SitePagesController::class, 'healths'])->name('healths')
 
 //Admin Route
 //Route::get('/admin/dashboard',[DashboardController::class, 'index']);
-Route::get('/admin/news',[DashboardController::class, 'news'])->name('news');
-Route::get('/admin/events',[DashboardController::class, 'events'])->name('events');
-Route::get('/admin/exactives',[ExactiveController::class,'index'])->name('exactive_staff');
+Route::get('/admin/news',[NewsController::class, 'index'])->name('admin_news');
+Route::get('/admin/events',[EventsController::class, 'index'])->name('admin_events');
+Route::get('/admin/exactives',[ExactiveController::class,'index'])->name('admin_exactive_staff');
+Route::get('/admin/parish',[ParishController::class,'index'])->name('admin_parish');
+Route::get('/admin/schools',[SchoolsController::class,'index'])->name('admin_schools');
+Route::get('/admin/healths',[HealthsController::class,'index'])->name('admin_healths');
+Route::get('/admin/research',[ResearchController::class,'index'])->name('admin_research');
+Route::get('/admin/Diocese_Department',[ParishDepartmentController::class,'index'])->name('admin_ParishDepartment');
+Route::get('/admin/Parish_Department',[DioceseDepartmentController::class,'index'])->name('admin_DioceseDepartment');
 
 
 
