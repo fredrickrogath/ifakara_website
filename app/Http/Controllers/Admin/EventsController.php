@@ -14,7 +14,7 @@ class EventsController extends Controller
      */
     public function index()
     {
-        return view('admin.pages.whats_new.events');
+        return view('admin.pages.whats_new.events.events');
     }
 
     /**

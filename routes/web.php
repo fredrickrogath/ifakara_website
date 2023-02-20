@@ -55,6 +55,11 @@ Route::get('/healths', [SitePagesController::class, 'healths'])->name('healths')
 //Admin Route
 //Route::get('/admin/dashboard',[DashboardController::class, 'index']);
 Route::get('/admin/news',[NewsController::class, 'index'])->name('admin_news');
+Route::post('/admin/add_news',[NewsController::class, 'store'])->name('admin_addnews');
+Route::get('/admin/delete_news/{id}', [NewsController::class, 'destroy'])->name('admin_deletenews');
+Route::put('/admin/update_news/{id}', [NewsController::class, 'update'])->name('admin_updatenews');
+
+
 Route::get('/admin/events',[EventsController::class, 'index'])->name('admin_events');
 Route::get('/admin/exactives',[ExactiveController::class,'index'])->name('admin_exactive_staff');
 Route::get('/admin/parish',[ParishController::class,'index'])->name('admin_parish');

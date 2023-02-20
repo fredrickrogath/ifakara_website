@@ -77,36 +77,33 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                @foreach ($news as $item)
                                                 <tr>
                                                     <td class="table-user">
-                                                        1
+                                                        {{ $item->id }}
                                                     </td>
                                                     <td>
-                                                        Vine Corporation
+                                                        {{ $item->news_title }}
                                                     </td>
                                                     <td>
                                                         
-                                                        <img src="../assets/images/users/user-4.jpg" alt="table-user"
-                                                            class="me-2 rounded-circle">
+                                                        <img src="{{ asset('admin/assets/images/news/' . $item->image) }}" alt="table-user"
+                                                            class="me-2" width="100px" height="50px">
                                                     </td>
                                                     <td>
-                                                        Uzinduzi wa kigango cha Mt. Francis Ifakara.
+                                                        {{ $item->initial_description }}
                                                     </td>
                                                     <td>
-                                                        Uzinduzi wa kigango cha Mt. Francis Ifakara.
+                                                        {{ $item->news_description }}
                                                     </td>
                                                     <td>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i
+                                                        <a href="#" data-bs-target="#custom-modal-update_news" data-bs-toggle="modal" class="action-icon"> <i
                                                                 class="mdi mdi-square-edit-outline"></i></a>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i
+                                                        <a href="{{ url('admin/delete_news/'.$item->id) }}" class="action-icon"> <i
                                                                 class="mdi mdi-delete"></i></a>
                                                     </td>
                                                 </tr>
-
-
-
-
-
+                                                @endforeach
                                             </tbody>
                                         </table>
                                     </div>
@@ -151,7 +148,7 @@
 
             </div>
             <!-- content -->
-            <!-- Modal -->
+            <!--Add Modal -->
             <div class="modal fade" id="custom-modal-news" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
@@ -161,24 +158,25 @@
                                 aria-label="Close"></button>
                         </div>
                         <div class="modal-body p-4">
-                            <form>
+                            <form action="{{ url('/admin/add_news') }}" method="POST" enctype="multipart/form-data">
+                                @csrf
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Title</label>
-                                    <input type="text" class="form-control" id="name"
+                                    <input type="text" class="form-control" id="name" name="news_title" required
                                         placeholder="Enter name">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Image</label>
-                                    <input type="file" class="form-control" id="exampleInputEmail1"
+                                    <input type="file" class="form-control" id="exampleInputEmail1" name="image" required
                                         placeholder="Enter email">
                                 </div>
                                 <div class="mb-3">
                                     <label for="position" class="form-label">Initial description</label>
-                                    <textarea name="initial description" id="" cols="12" rows="3" class="form-control"></textarea>
+                                    <textarea name="initial_description" id="" cols="12" rows="3" class="form-control" required></textarea>
                                 </div>
                                 <div class="mb-3">
                                     <label for="company" class="form-label">Description</label>
-                                    <textarea name="news descripiton" id="" cols="30" rows="10" class="form-control"></textarea>
+                                    <textarea name="news_description" id="" cols="12" rows="10" class="form-control" required></textarea>
                                 </div>
 
                                 <div class="text-end">
@@ -192,6 +190,56 @@
                 <!-- /.modal-dialog -->
             </div>
             <!-- /.modal -->
+
+            {{-- Update Modal --}}
+            <div class="modal fade" id="custom-modal-update_news" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header bg-light">
+                            <h4 class="modal-title" id="myCenterModalLabel">Update News</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <form action="{{ url('/admin/update_news/'.$item->id) }}" method="POST" enctype="multipart/form-data">
+                                @csrf
+                                
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Title</label>
+                                    <input type="text" class="form-control" id="name" name="news_title" required
+                                    value="{{ $item->news_title }}">
+                                </div>
+                                {{-- <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Image</label>
+                                    <input type="file" class="form-control" id="exampleInputEmail1" name="image" required
+                                        placeholder="Enter email">
+                                </div> --}}
+                                @if ($item->image)
+                                <img src="{{ asset('admin/assets/images/news/'.$item->image) }}" alt="News image" width="200" height="150" class="edicat-image">
+                                 @endif
+                                <div class="col-md-12 mb-3">
+                                <input type="file" name="image" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="position" class="form-label">Initial description</label>
+                                    <textarea name="initial_description" id="" cols="12" rows="3" class="form-control" required>{{ $item->initial_description }}</textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="company" class="form-label">Description</label>
+                                    <textarea name="news_description" id="" cols="20" rows="10" class="form-control" required>{{ $item->news_description }}</textarea>
+                                </div>
+
+                                <div class="text-end">
+                                    <button type="submit" class="bg-info p-2">Publish </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            {{-- end Modal --}}
 
             <!-- Footer Start -->
             @include('layouts.admin.footer')
