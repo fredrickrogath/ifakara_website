@@ -18,7 +18,7 @@ class NewsController extends Controller
     {
        $news = news::all();
        $item = news::all();
-        return view('admin.pages.whats_new.news.news', compact('news',$item));
+        return view('admin.pages.whats_new.news', compact('news',$item));
     }
 
     /**
