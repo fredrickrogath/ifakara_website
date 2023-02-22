@@ -73,40 +73,40 @@
                                                     <th>Image</th>
                                                     <th>Head of School</th>
                                                     <th>Location</th>
+                                                    <th>P. O. Box</th>
                                                     <th style="width: 82px;">Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                @foreach ($schools as $school)
                                                 <tr>
-                                                    <td class="table-user">
-                                                        1
-                                                    </td>
-                                                    <td>
-                                                        Ifakara Seminary
-                                                    </td>
-                                                    <td>
-                                                        
-                                                        <img src="../assets/images/users/user-4.jpg" alt="table-user"
-                                                            class="me-2 rounded-circle">
-                                                    </td>
-                                                    <td>
-                                                        Fr. Peter
-                                                    </td>
-                                                    <td>
-                                                        Ifakara.
-                                                    </td>
-                                                    <td>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i
-                                                                class="mdi mdi-square-edit-outline"></i></a>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i
-                                                                class="mdi mdi-delete"></i></a>
-                                                    </td>
-                                                </tr>
-
-
-
-
-
+                                                 <td class="table-user">
+                                                     {{ $school->id }}
+                                                 </td>
+                                                 <td>
+                                                     {{ $school->name }}
+                                                 </td>
+                                                 <td>
+                                                     <img src="{{ asset('admin/assets/images/school/' . $school->image) }}" alt="table-user"
+                                                     class="me-2" width="100px" height="50px">
+                                                 </td>
+                                                 <td>
+                                                     {{ $school->head }}
+                                                 </td>
+                                                 <td>
+                                                     {{ $school->location }}
+                                                 </td>
+                                                 <td>
+                                                     {{ $school->p_o_box }}
+                                                 </td>
+                                                 <td>
+                                                     <a href="{{ url('admin/edit_school/'. $school->id) }}" class="action-icon"> <i
+                                                             class="mdi mdi-square-edit-outline"></i></a>
+                                                     <a href="{{ url('admin/delete_school/'.$school->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
+                                                             class="mdi mdi-delete"></i></a>
+                                                 </td>
+                                             </tr> 
+                                                @endforeach
                                             </tbody>
                                         </table>
                                     </div>
@@ -161,27 +161,33 @@
                                 aria-label="Close"></button>
                         </div>
                         <div class="modal-body p-4">
-                            <form>
+                            <form action="{{ url('admin/add_school') }}" method="POST" enctype="multipart/form-data">
+                                @csrf
                                 <div class="row">
                                     <div class="mb-3 col-12">
                                         <label for="name" class="form-label">School Name</label>
                                         <input type="text" class="form-control" id="name"
-                                            placeholder="Enter School Name">
+                                            placeholder="Enter School Name" name="name">
                                     </div>
                                     <div class="mb-3 col-12">
                                         <label for="exampleInputEmail1" class="form-label">Image</label>
                                         <input type="file" class="form-control" id="exampleInputEmail1"
-                                            placeholder="Enter email">
+                                            name="image">
                                     </div>
                                     <div class="mb-3 col-12">
                                         <label for="name" class="form-label">Head of School</label>
                                         <input type="text" class="form-control" id="name"
-                                            placeholder="Enter Head Name">
+                                            placeholder="Enter Head Name" name="head">
                                     </div>
                                     <div class="mb-3 col-12">
                                         <label for="name" class="form-label">Location</label>
                                         <input type="text" class="form-control" id="name"
-                                            placeholder="Enter School Location">
+                                            placeholder="Enter School Location" name="location">
+                                    </div>
+                                    <div class="mb-3 col-12">
+                                        <label for="name" class="form-label">P. O. Box</label>
+                                        <input type="text" class="form-control" id="name"
+                                            placeholder="Enter School Location" name="p_o_box">
                                     </div>
     
                                     <div class="text-end">

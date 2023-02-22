@@ -108,7 +108,7 @@
                                                         {{ $event->end_date }}
                                                     </td>
                                                     <td>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i
+                                                        <a href="{{ url('admin/edit_events/'. $event->id) }}" class="action-icon"> <i
                                                                 class="mdi mdi-square-edit-outline"></i></a>
                                                         <a href="{{ url('admin/delete_events/'.$event->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
                                                                 class="mdi mdi-delete"></i></a>

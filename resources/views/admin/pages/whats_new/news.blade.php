@@ -97,7 +97,7 @@
                                                         {{ $item->news_description }}
                                                     </td>
                                                     <td>
-                                                        <a href="javascript:void(0)" data-bs-target="#custom-modal-update_news" data-bs-toggle="modal" class="action-icon"> <i
+                                                        <a href="{{ url('admin/edit_news/'. $item->id) }}" class="action-icon"> <i
                                                                 class="mdi mdi-square-edit-outline"></i></a>
                                                         <a href="{{ url('admin/delete_news/'.$item->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
                                                                 class="mdi mdi-delete"></i></a>

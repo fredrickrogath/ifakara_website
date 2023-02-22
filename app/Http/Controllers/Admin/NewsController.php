@@ -17,8 +17,7 @@ class NewsController extends Controller
     public function index()
     {
        $news = news::all();
-       $item = news::all();
-        return view('admin.pages.whats_new.news', compact('news',$item));
+        return view('admin.pages.whats_new.news', compact('news'));
     }
 
     /**
@@ -74,6 +73,8 @@ class NewsController extends Controller
      */
     public function edit($id)
     {
+        $news = news::find($id);
+        return view('admin.pages.whats_new.edit_news', compact('news'));
     }
     /**
      * Update the specified resource in storage.

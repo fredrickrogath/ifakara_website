@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\parish;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class ParishController extends Controller
 {
@@ -14,7 +16,8 @@ class ParishController extends Controller
      */
     public function index()
     {
-        return view('admin.pages.Diocese.parish');
+        $parishes = parish::all();
+        return view('admin.pages.Diocese.parish', compact('parishes'));
     }
 
     /**
@@ -35,7 +38,21 @@ class ParishController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $parish = new parish();
+        if($request->hasFile('image')){
+            $file = $request->file('image');
+            $ext = $file->getClientOriginalExtension();
+            $filename = time().'.'.$ext;
+            $file->move('admin/assets/images/parish',$filename);
+            $parish->image = $filename;
+        }
+        $parish->name = $request->input('name');
+        $parish->p_o_box = $request->input('p_o_box');
+        $parish->head = $request->input('head');
+        $parish->location = $request->input('location');
+        if($parish->save()){
+            return redirect('/admin/parish')->with('status', 'Parish Added SuccessFully!');
+        }
     }
 
     /**
@@ -57,7 +74,8 @@ class ParishController extends Controller
      */
     public function edit($id)
     {
-        //
+        $parish = parish::find($id);
+        return view('admin.pages.Diocese.edit_parish', compact('parish'));
     }
 
     /**
@@ -69,7 +87,24 @@ class ParishController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $parish = parish::find($id);
+        if($request->hasFile('image')){
+            $path = 'admin/assets/images/parish'.$parish->image;
+            if(File::exists($path)){
+                File::delete($path);
+            }
+            $file = $request->file('image');
+            $ext = $file->getClientOriginalExtension();
+            $filename = time().'.'.$ext;    
+            $file->move('admin/assets/images/parish',$filename);
+            $parish->image = $filename;
+        }
+        $parish->name = $request->input('name');
+        $parish->p_o_box = $request->input('p_o_box');
+        $parish->head = $request->input('head');
+        $parish->location = $request->input('location');
+        $parish->update();
+        return redirect('/admin/parish')->with('status', 'Parish was Updated successfully!');
     }
 
     /**
@@ -80,6 +115,14 @@ class ParishController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $parish = parish::find($id);
+        if($parish->image){
+            $path = 'admin/assets/images/parish/'.$parish->image;
+            if(File::exists($path)){
+                File::delete($path);
+            }
+        }
+        $parish->delete();
+        return redirect('/admin/parish')->with('status', 'Parish deleted Successfully');
     }
 }

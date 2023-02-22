@@ -31,7 +31,7 @@
                         <div class="col-12">
                             <div class="page-title-box">
 
-                                <h4 class="page-title">Parishs</h4>
+                                <h4 class="page-title">Parish</h4>
                             </div>
                         </div>
                     </div>
@@ -70,41 +70,43 @@
                                                 <tr>
                                                     <th>sn</th>
                                                     <th>Parish Name</th>
+                                                    <th>Image</th>
                                                     <th>Head of Parish</th>
-                                                    <th>Parish Community</th>
                                                     <th>Location</th>
+                                                    <th>P. O. Box</th>
                                                     <th style="width: 82px;">Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                @foreach ($parishes as $parish)
                                                 <tr>
-                                                    <td class="table-user">
-                                                        1
-                                                    </td>
-                                                    <td>
-                                                        Francisco Of Asis
-                                                    </td>
-                                                    <td>
-                                                        Father Thobias
-                                                    </td>
-                                                    <td>
-                                                        24
-                                                    </td>
-                                                    <td>
-                                                        Ifakara.
-                                                    </td>
-                                                    <td>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i
-                                                                class="mdi mdi-square-edit-outline"></i></a>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i
-                                                                class="mdi mdi-delete"></i></a>
-                                                    </td>
-                                                </tr>
-
-
-
-
-
+                                                 <td class="table-user">
+                                                     {{ $parish->id }}
+                                                 </td>
+                                                 <td>
+                                                     {{ $parish->name }}
+                                                 </td>
+                                                 <td>
+                                                     <img src="{{ asset('admin/assets/images/parish/' . $parish->image) }}" alt="table-user"
+                                                     class="me-2" width="100px" height="50px">
+                                                 </td>
+                                                 <td>
+                                                     {{ $parish->head }}
+                                                 </td>
+                                                 <td>
+                                                     {{ $parish->location }}
+                                                 </td>
+                                                 <td>
+                                                     {{ $parish->p_o_box }}
+                                                 </td>
+                                                 <td>
+                                                     <a href="{{ url('admin/edit_parish/'. $parish->id) }}" class="action-icon"> <i
+                                                             class="mdi mdi-square-edit-outline"></i></a>
+                                                     <a href="{{ url('admin/delete_parish/'.$parish->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
+                                                             class="mdi mdi-delete"></i></a>
+                                                 </td>
+                                             </tr> 
+                                                @endforeach
                                             </tbody>
                                         </table>
                                     </div>
@@ -159,27 +161,33 @@
                                 aria-label="Close"></button>
                         </div>
                         <div class="modal-body p-4">
-                            <form>
+                            <form action="{{ url('/admin/add_parish') }}" method="POST" enctype="multipart/form-data">
+                                @csrf
                                 <div class="row">
                                     <div class="mb-3 col-12">
                                         <label for="name" class="form-label">Parish Name</label>
                                         <input type="text" class="form-control" id="name"
-                                            placeholder="Enter Parish Name">
+                                            placeholder="Enter Parish Name" name="name">
                                     </div>
                                     <div class="mb-3 col-12">
                                         <label for="name" class="form-label">Head of Parish</label>
                                         <input type="text" class="form-control" id="name"
-                                            placeholder="Enter Head Parish">
+                                            placeholder="Enter Head Parish" name="head">
                                     </div>
-                                    <div class="mb-3 col-6">
+                                    <div class="mb-3 col-12">
+                                        <label for="exampleInputEmail1" class="form-label">Image</label>
+                                        <input type="file" class="form-control" id="exampleInputEmail1"
+                                            name="image">
+                                    </div>
+                                    <div class="mb-3 col-12">
                                         <label for="name" class="form-label">Location</label>
                                         <input type="text" class="form-control" id="name"
-                                            placeholder="Enter Parish Location">
+                                            placeholder="Enter Parish Location" name="location">
                                     </div>
-                                    <div class="mb-3 col-6">
-                                        <label for="name" class="form-label">Number of community</label>
-                                        <input type="number" class="form-control" id="name"
-                                        placeholder="Enter Parish Community Number">
+                                    <div class="mb-3 col-12">
+                                        <label for="name" class="form-label">P. O. Box</label>
+                                        <input type="text" class="form-control" id="name"
+                                        placeholder="Enter Parish P. O. Box" name="p_o_box">
                                     </div>
                                     
     

@@ -76,7 +76,8 @@ class EventsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $events = events::find($id);
+        return view('admin.pages.whats_new.edit_events', compact('events'));
     }
 
     /**
@@ -88,7 +89,27 @@ class EventsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $events = events::find($id);
+        if($request->hasFile('image')){
+            $path = 'admin/assets/images/events'.$events->image;
+            if(File::exists($path)){
+                File::delete($path);
+            }
+            $file = $request->file('image');
+            $ext = $file->getClientOriginalExtension();
+            $filename = time().'.'.$ext;    
+            $file->move('admin/assets/images/events',$filename);
+            $events->image = $filename;
+        }
+        $events->events_title = $request->input('events_title');
+        $events->events_description = $request->input('events_description');
+        $events->location = $request->input('location');
+        $events->start_date = $request->input('start_date');
+        $events->end_date = $request->input('end_date');
+        $events->guest_of_honor = $request->input('guest_of_honor');
+        
+        $events->update();
+        return redirect('/admin/events')->with('status', 'Events was Updated successfully!');
     }
 
     /**
