@@ -54,17 +54,44 @@ Route::get('/healths', [SitePagesController::class, 'healths'])->name('healths')
 
 //Admin Route
 //Route::get('/admin/dashboard',[DashboardController::class, 'index']);
+
+//news routes
 Route::get('/admin/news',[NewsController::class, 'index'])->name('admin_news');
 Route::post('/admin/add_news',[NewsController::class, 'store'])->name('admin_addnews');
+Route::get('/admin/edit_news/{id}', [NewsController::class, 'edit'])->name('admin_editnews');
 Route::get('/admin/delete_news/{id}', [NewsController::class, 'destroy'])->name('admin_deletenews');
 Route::put('/admin/update_news/{id}', [NewsController::class, 'update'])->name('admin_updatenews');
 
-
+//events route
 Route::get('/admin/events',[EventsController::class, 'index'])->name('admin_events');
+Route::post('/admin/add_events',[EventsController::class, 'store'])->name('admin_addevents');
+Route::get('/admin/edit_events/{id}', [EventsController::class, 'edit'])->name('admin_editevents');
+Route::get('/admin/delete_events/{id}', [EventsController::class, 'destroy'])->name('admin_deleteevents');
+Route::put('/admin/update_events/{id}', [EventsController::class, 'update'])->name('admin_updateevents');
+
+//parish route
+Route::get('/admin/parish',[ParishController::class, 'index'])->name('admin_parish');
+Route::post('/admin/add_parish',[ParishController::class, 'store'])->name('admin_addparish');
+Route::get('/admin/edit_parish/{id}', [ParishController::class, 'edit'])->name('admin_editparish');
+Route::get('/admin/delete_parish/{id}', [ParishController::class, 'destroy'])->name('admin_deleteparish');
+Route::put('/admin/update_parish/{id}', [ParishController::class, 'update'])->name('admin_updateparish');
+
+//school route
+Route::get('/admin/school',[SchoolsController::class, 'index'])->name('admin_school');
+Route::post('/admin/add_school',[SchoolsController::class, 'store'])->name('admin_addschool');
+Route::get('/admin/edit_school/{id}', [SchoolsController::class, 'edit'])->name('admin_editschool');
+Route::get('/admin/delete_school/{id}', [SchoolsController::class, 'destroy'])->name('admin_deleteschool');
+Route::put('/admin/update_school/{id}', [SchoolsController::class, 'update'])->name('admin_updateschool');
+
+//health institute route
+Route::get('/admin/health',[HealthsController::class, 'index'])->name('admin_health');
+Route::post('/admin/add_health',[HealthsController::class, 'store'])->name('admin_addhealth');
+Route::get('/admin/edit_health/{id}', [HealthsController::class, 'edit'])->name('admin_edithealth');
+Route::get('/admin/delete_health/{id}', [HealthsController::class, 'destroy'])->name('admin_deletehealth');
+Route::put('/admin/update_health/{id}', [HealthsController::class, 'update'])->name('admin_updatehealth');
+
+
 Route::get('/admin/exactives',[ExactiveController::class,'index'])->name('admin_exactive_staff');
-Route::get('/admin/parish',[ParishController::class,'index'])->name('admin_parish');
-Route::get('/admin/schools',[SchoolsController::class,'index'])->name('admin_schools');
-Route::get('/admin/healths',[HealthsController::class,'index'])->name('admin_healths');
 Route::get('/admin/research',[ResearchController::class,'index'])->name('admin_research');
 Route::get('/admin/Diocese_Department',[ParishDepartmentController::class,'index'])->name('admin_ParishDepartment');
 Route::get('/admin/Parish_Department',[DioceseDepartmentController::class,'index'])->name('admin_DioceseDepartment');

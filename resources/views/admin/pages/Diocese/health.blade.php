@@ -73,40 +73,40 @@
                                                     <th>Image</th>
                                                     <th>Head of Institute</th>
                                                     <th>Location</th>
+                                                    <th>P. O. Box</th>
                                                     <th style="width: 82px;">Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td class="table-user">
-                                                        1
-                                                    </td>
-                                                    <td>
-                                                        St. Faustina Health Center
-                                                    </td>
-                                                    <td>
-                                                        
-                                                        <img src="../assets/images/users/user-4.jpg" alt="table-user"
-                                                            class="me-2 rounded-circle">
-                                                    </td>
-                                                    <td>
-                                                        Fr. John Chuwa
-                                                    </td>
-                                                    <td>
-                                                        Ifakara.
-                                                    </td>
-                                                    <td>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i
-                                                                class="mdi mdi-square-edit-outline"></i></a>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i
-                                                                class="mdi mdi-delete"></i></a>
-                                                    </td>
-                                                </tr>
-
-
-
-
-
+                                               @foreach ($health_institutes as $health_institute)
+                                               <tr>
+                                                <td class="table-user">
+                                                    {{ $health_institute->id }}
+                                                </td>
+                                                <td>
+                                                    {{ $health_institute->name }}
+                                                </td>
+                                                <td>
+                                                    <img src="{{ asset('admin/assets/images/health/' . $health_institute->image) }}" alt="table-user"
+                                                    class="me-2" width="100px" height="50px">
+                                                </td>
+                                                <td>
+                                                    {{ $health_institute->head }}
+                                                </td>
+                                                <td>
+                                                    {{ $health_institute->location }}
+                                                </td>
+                                                <td>
+                                                    {{ $health_institute->p_o_box }}
+                                                </td>
+                                                <td>
+                                                    <a href="{{ url('admin/edit_health/'. $health_institute->id) }}" class="action-icon"> <i
+                                                            class="mdi mdi-square-edit-outline"></i></a>
+                                                    <a href="{{ url('admin/delete_health/'.$health_institute->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
+                                                            class="mdi mdi-delete"></i></a>
+                                                </td>
+                                            </tr> 
+                                               @endforeach
                                             </tbody>
                                         </table>
                                     </div>
@@ -161,29 +161,34 @@
                                 aria-label="Close"></button>
                         </div>
                         <div class="modal-body p-4">
-                            <form>
+                            <form action="{{ url('/admin/add_health') }}" method="POST" enctype="multipart/form-data">
+                                @csrf
                                 <div class="row">
                                     <div class="mb-3 col-12">
-                                        <label for="name" class="form-label">Institute Title</label>
+                                        <label for="name" class="form-label">Institute Name</label>
                                         <input type="text" class="form-control" id="name"
-                                            placeholder="Enter Event Title">
+                                            placeholder="Enter Institute Name" name="name">
                                     </div>
                                     <div class="mb-3 col-12">
                                         <label for="exampleInputEmail1" class="form-label">Image</label>
                                         <input type="file" class="form-control" id="exampleInputEmail1"
-                                            placeholder="Enter email">
+                                             name="image">
                                     </div>
                                     <div class="mb-3 col-12">
                                         <label for="name" class="form-label">Head Of Center</label>
                                         <input type="text" class="form-control" id="name"
-                                            placeholder="Enter Guest Name">
+                                            placeholder="Enter Head Name" name="head">
                                     </div>
                                     <div class="mb-3 col-12">
                                         <label for="name" class="form-label">Location</label>
                                         <input type="text" class="form-control" id="name"
-                                            placeholder="Enter Event Location">
+                                            placeholder="Enter Location" name="location">
                                     </div>
-    
+                                    <div class="mb-3 col-12">
+                                        <label for="name" class="form-label">P. O. Box</label>
+                                        <input type="text" class="form-control" id="name"
+                                            placeholder="Enter Health P. O. Box" name="p_o_box">
+                                    </div>
                                     <div class="text-end">
                                         <button type="submit" class="bg-info p-2">Publish </button>
                                     </div>

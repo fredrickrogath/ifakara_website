@@ -105,10 +105,10 @@
                             <a href="{{route('admin_parish')}}">Parish</a>
                         </li>
                         <li>
-                            <a href="{{route('admin_schools')}}">School</a>
+                            <a href="{{route('admin_school')}}">School</a>
                         </li>
                         <li>
-                            <a href="{{route('admin_healths')}}">Health</a>
+                            <a href="{{route('admin_health')}}">Health</a>
                         </li>
                     </ul>
                 </div>

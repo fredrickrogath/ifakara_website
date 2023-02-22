@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\school;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class SchoolsController extends Controller
 {
@@ -14,7 +16,8 @@ class SchoolsController extends Controller
      */
     public function index()
     {
-        return view('admin.pages.Diocese.school');
+        $schools = school::all();
+        return view('admin.pages.Diocese.school', compact('schools'));
     }
 
     /**
@@ -24,7 +27,7 @@ class SchoolsController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -35,7 +38,21 @@ class SchoolsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $school = new school();
+        if($request->hasFile('image')){
+            $file = $request->file('image');
+            $ext = $file->getClientOriginalExtension();
+            $filename = time().'.'.$ext;
+            $file->move('admin/assets/images/school',$filename);
+            $school->image = $filename;
+        }
+        $school->name = $request->input('name');
+        $school->p_o_box = $request->input('p_o_box');
+        $school->head = $request->input('head');
+        $school->location = $request->input('location');
+        if($school->save()){
+            return redirect('/admin/school')->with('status', 'School Added SuccessFully!');
+        }
     }
 
     /**
@@ -57,7 +74,8 @@ class SchoolsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $school = school::find($id);
+        return view('admin.pages.Diocese.edit_school', compact('school'));
     }
 
     /**
@@ -69,7 +87,24 @@ class SchoolsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $school = school::find($id);
+        if($request->hasFile('image')){
+            $path = 'admin/assets/images/school'.$school->image;
+            if(File::exists($path)){
+                File::delete($path);
+            }
+            $file = $request->file('image');
+            $ext = $file->getClientOriginalExtension();
+            $filename = time().'.'.$ext;    
+            $file->move('admin/assets/images/school',$filename);
+            $school->image = $filename;
+        }
+        $school->name = $request->input('name');
+        $school->p_o_box = $request->input('p_o_box');
+        $school->head = $request->input('head');
+        $school->location = $request->input('location');
+        $school->update();
+        return redirect('/admin/school')->with('status', 'School was Updated successfully!');
     }
 
     /**
@@ -80,6 +115,14 @@ class SchoolsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $school = school::find($id);
+        if($school->image){
+            $path = 'admin/assets/images/school/'.$school->image;
+            if(File::exists($path)){
+                File::delete($path);
+            }
+        }
+        $school->delete();
+        return redirect('/admin/school')->with('School', 'Parish deleted Successfully');
     }
 }
