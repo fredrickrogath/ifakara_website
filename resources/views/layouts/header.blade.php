@@ -1,4 +1,4 @@
-<header class="header-area " style="background-color: 	#F9F6EE">
+<header class="header-area bg-danger" style="background-color: 	#F9F6EE">
     <!-- Navbar Area -->
   
 
