@@ -1,8 +1,8 @@
-<header class="header-area bg-danger" style="background-color: 	#F9F6EE">
+<header class="header-area" style="background-color: 	#F9F6EE">
     <!-- Navbar Area -->
   
 
-    <div class="">
+    <div class="" >
         <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
             <div class="container">
                 <a class="navbar-brand" href="#">LOGO</a>
@@ -12,25 +12,25 @@
                 </button>
                 <div class="collapse navbar-collapse" id="ftco-nav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="{{route('catholic_diocese')}}" class="nav-link">Catholic Diocese</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{route('schools')}}" >Schools</a></li>
+                        <li class="nav-item"><a href="/" class="nav-link" style="font-weight:600">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"  style="font-weight:600">About</a></li>
+                        <li class="nav-item"><a href="{{route('catholic_diocese')}}" class="nav-link"  style="font-weight:600">Catholic Diocese</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{route('schools')}}"   style="font-weight:600">Schools</a></li>
                         <li class="nav-item">
-                            <a class="nav-link " href="{{route('healths')}}" >Health
+                            <a class="nav-link " href="{{route('healths')}}"  style="font-weight:600">Health
                                 Institute</a>
                            
                         </li>
                         <li class="nav-item dropdown position-static">
-                            <a class="nav-link" href="{{route('research_institute')}}">Research Institute</a>
+                            <a class="nav-link" href="{{route('research_institute')}}"  style="font-weight:600">Research Institute</a>
                            
                         </li>
                         <li class="nav-item dropdown position-static">
-                            <a class="nav-link" href="{{route('departiment')}}">Departiments</a>
+                            <a class="nav-link" href="{{route('departiment')}}"  style="font-weight:600">Departiments</a>
                             
                         </li>
                         <li class="nav-item dropdown position-static">
-                            <a class="nav-link" href="{{route('contact')}}">Contact us</a>
+                            <a class="nav-link" href="{{route('contact')}}"  style="font-weight:600">Contact us</a>
                             
                         </li>
                     </ul>

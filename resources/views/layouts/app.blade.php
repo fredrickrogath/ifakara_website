@@ -28,8 +28,8 @@
 
                         <!-- Intro News Filter -->
                         <div class="intro-news-filter d-flex justify-content-between"
-                                            style="background-color:#1c2938; color:#ffff">
-                                            <h6 style="color:#fff"> Ifakara Catholic Diocese</h6>
+                                            style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
+                                            <h6 style="color:#FF0000; font-weight:700"> Ifakara Catholic Diocese</h6>
 
                                         </div>
 
@@ -95,10 +95,10 @@
                 <div class="col-12 col-sm-9 col-md-6 col-lg-4">
                     <div class="sidebar-area">
                         <div class="intro-news-filter d-flex justify-content-between"
-                                            style="background-color:#1c2938; color:#ffff">
-                                            <h6 style="color:#fff">Bishop</h6>
+                        style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
+                        <h6 style="color:#FF0000; font-weight:700">BISHOP</h6>
 
-                                        </div>
+                      </div>
                         <!-- Add Widget -->
                         <div class="single-widget-area add-widget mt-3 ml-3">
                             <a href="#" class=" justify-content-center">

@@ -126,7 +126,7 @@
                     <!-- Add Widget -->
                     <div class="single-widget-area add-widget mb-30">
                         <a href="#">
-                            <img src="img/bg-img/add3.png" alt="">
+                            <img src="{{asset('site/img/bg-img/n-1.jpeg')}}" alt="">
                         </a>
                     </div>
 
@@ -138,7 +138,7 @@
                         <div class="single-blog-post d-flex style-4 mb-30">
                             <!-- Blog Thumbnail -->
                             <div class="blog-thumbnail">
-                                <a href="#"><img src="img/bg-img/16.jpg" alt=""></a>
+                                <a href="#"><img src="{{asset('site/img/bg-img/n-2.jpeg')}}" alt=""></a>
                             </div>
 
                             <!-- Blog Content -->
@@ -152,7 +152,7 @@
                         <div class="single-blog-post d-flex style-4 mb-30">
                             <!-- Blog Thumbnail -->
                             <div class="blog-thumbnail">
-                                <a href="#"><img src="img/bg-img/17.jpg" alt=""></a>
+                                <a href="#"><img src="{{asset('site/img/bg-img/n-4.jpg')}}" alt=""></a>
                             </div>
 
                             <!-- Blog Content -->
@@ -166,7 +166,7 @@
                         <div class="single-blog-post d-flex style-4 mb-30">
                             <!-- Blog Thumbnail -->
                             <div class="blog-thumbnail">
-                                <a href="#"><img src="img/bg-img/18.jpg" alt=""></a>
+                                <a href="#"><img src="{{asset('site/img/bg-img/g-3.jpg')}}" alt=""></a>
                             </div>
 
                             <!-- Blog Content -->
@@ -177,35 +177,7 @@
                             </div>
                         </div>
 
-                        <!-- Single News Area -->
-                        <div class="single-blog-post d-flex style-4 mb-30">
-                            <!-- Blog Thumbnail -->
-                            <div class="blog-thumbnail">
-                                <a href="#"><img src="img/bg-img/19.jpg" alt=""></a>
-                            </div>
-
-                            <!-- Blog Content -->
-                            <div class="blog-content">
-                                <span class="post-date">June 20, 2018</span>
-                                <a href="#" class="post-title">Top bitcoin exchange says over $30 million
-                                    stolen</a>
-                            </div>
-                        </div>
-
-                        <!-- Single News Area -->
-                        <div class="single-blog-post d-flex style-4 mb-30">
-                            <!-- Blog Thumbnail -->
-                            <div class="blog-thumbnail">
-                                <a href="#"><img src="img/bg-img/20.jpg" alt=""></a>
-                            </div>
-
-                            <!-- Blog Content -->
-                            <div class="blog-content">
-                                <span class="post-date">June 20, 2018</span>
-                                <a href="#" class="post-title">Dow falls 287 points as trade war fears
-                                    escalate</a>
-                            </div>
-                        </div>
+                     
                     </div>
 
                 </div>
