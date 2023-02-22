@@ -17,7 +17,7 @@ class NewsController extends Controller
     public function index()
     {
         $news = news::all();
-        return view('admin.pages.whats_new.news.news', compact('news'));
+        return view('admin.pages.whats_new.news', compact('news'));
     }
 
     /**
@@ -73,10 +73,7 @@ class NewsController extends Controller
      */
     public function edit($id)
     {
-        $news = news::find($id);
-        return view("admin.pages.whats_new.news.editnews", compact('news'));
     }
-
     /**
      * Update the specified resource in storage.
      *
@@ -116,7 +113,7 @@ class NewsController extends Controller
     {
         $news = news::find($id);
         if($news->image){
-            $path = 'assets/uploads/category/'.$news->image;
+            $path = 'admin/assets/images/news/'.$news->image;
             if(File::exists($path)){
                 File::delete($path);
             }

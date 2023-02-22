@@ -68,8 +68,8 @@
                                         <table class="table table-centered table-nowrap table-hover mb-0">
                                             <thead>
                                                 <tr>
-                                                    <th>sn</th>
-                                                    <th>title</th>
+                                                    <th>Sn</th>
+                                                    <th>Title</th>
                                                     <th>Image</th>
                                                     <th>Initial Discription</th>
                                                     <th>Discription</th>
@@ -97,9 +97,9 @@
                                                         {{ $item->news_description }}
                                                     </td>
                                                     <td>
-                                                        <a href="#" data-bs-target="#custom-modal-update_news" data-bs-toggle="modal" class="action-icon"> <i
+                                                        <a href="javascript:void(0)" data-bs-target="#custom-modal-update_news" data-bs-toggle="modal" class="action-icon"> <i
                                                                 class="mdi mdi-square-edit-outline"></i></a>
-                                                        <a href="{{ url('admin/delete_news/'.$item->id) }}" class="action-icon"> <i
+                                                        <a href="{{ url('admin/delete_news/'.$item->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
                                                                 class="mdi mdi-delete"></i></a>
                                                     </td>
                                                 </tr>
@@ -191,8 +191,8 @@
             </div>
             <!-- /.modal -->
 
-            {{-- Update Modal --}}
-            <div class="modal fade" id="custom-modal-update_news" tabindex="-1" role="dialog" aria-hidden="true">
+             {{-- Update Modal --}}
+             <div class="modal fade" id="custom-modal-update_news" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
                         <div class="modal-header bg-light">
@@ -201,9 +201,10 @@
                                 aria-label="Close"></button>
                         </div>
                         <div class="modal-body p-4">
+                            
                             <form action="{{ url('/admin/update_news/'.$item->id) }}" method="POST" enctype="multipart/form-data">
                                 @csrf
-                                
+                                @method('PUT')
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Title</label>
                                     <input type="text" class="form-control" id="name" name="news_title" required
@@ -226,13 +227,14 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="company" class="form-label">Description</label>
-                                    <textarea name="news_description" id="" cols="20" rows="10" class="form-control" required>{{ $item->news_description }}</textarea>
+                                    <textarea name="news_description" id="" cols="20" rows="5" class="form-control" required>{{ $item->news_description }}</textarea>
                                 </div>
 
                                 <div class="text-end">
                                     <button type="submit" class="bg-info p-2">Publish </button>
                                 </div>
                             </form>
+                        
                         </div>
                     </div>
                     <!-- /.modal-content -->
@@ -240,6 +242,8 @@
                 <!-- /.modal-dialog -->
             </div>
             {{-- end Modal --}}
+
+            
 
             <!-- Footer Start -->
             @include('layouts.admin.footer')

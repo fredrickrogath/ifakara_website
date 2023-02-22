@@ -68,9 +68,10 @@
                                         <table class="table table-centered table-nowrap table-hover mb-0">
                                             <thead>
                                                 <tr>
-                                                    <th>sn</th>
-                                                    <th>title</th>
+                                                    <th>Sn</th>
                                                     <th>Image</th>
+                                                    <th>Title</th>
+                                                    <th>Guest</th>
                                                     <th>Discription</th>
                                                     <th>Location</th>
                                                     <th>Start Date</th>
@@ -79,42 +80,41 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                @foreach ($events as $event)
                                                 <tr>
                                                     <td class="table-user">
-                                                        1
+                                                        {{ $event->id }}
                                                     </td>
                                                     <td>
-                                                        Vine Corporation
+                                                        <img src="{{ asset('admin/assets/images/events/' . $event->image) }}" alt="table-user"
+                                                            class="me-2" width="100px" height="50px">
                                                     </td>
                                                     <td>
-                                                        
-                                                        <img src="../assets/images/users/user-4.jpg" alt="table-user"
-                                                            class="me-2 rounded-circle">
+                                                        {{ $event->events_title }}
                                                     </td>
                                                     <td>
-                                                        Uzinduzi wa kigango cha Mt. Francis Ifakara.
+                                                        {{ $event->guest_of_honor }}
                                                     </td>
                                                     <td>
-                                                        Ifakara.
+                                                        {{ $event->events_description }}
                                                     </td>
                                                     <td>
-                                                        Tar: 12-4-2023
+                                                        {{ $event->location }}
                                                     </td>
                                                     <td>
-                                                        Tar: 16-4-2023
+                                                        {{ $event->start_date }}
+                                                    </td>
+                                                    <td>
+                                                        {{ $event->end_date }}
                                                     </td>
                                                     <td>
                                                         <a href="javascript:void(0);" class="action-icon"> <i
                                                                 class="mdi mdi-square-edit-outline"></i></a>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i
+                                                        <a href="{{ url('admin/delete_events/'.$event->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
                                                                 class="mdi mdi-delete"></i></a>
                                                     </td>
                                                 </tr>
-
-
-
-
-
+                                                @endforeach
                                             </tbody>
                                         </table>
                                     </div>
@@ -169,31 +169,42 @@
                                 aria-label="Close"></button>
                         </div>
                         <div class="modal-body p-4">
-                            <form>
+                            <form action="{{ url('/admin/add_events') }}" method="POST" enctype="multipart/form-data">
+                                @csrf
                                 <div class="row">
                                     <div class="mb-3 col-12">
                                         <label for="name" class="form-label">Title</label>
                                         <input type="text" class="form-control" id="name"
-                                            placeholder="Enter Event Title">
+                                            placeholder="Enter Event Title" name="events_title">
                                     </div>
                                     <div class="mb-3 col-12">
                                         <label for="exampleInputEmail1" class="form-label">Image</label>
                                         <input type="file" class="form-control" id="exampleInputEmail1"
-                                            placeholder="Enter email">
+                                            placeholder="Enter email" name="image">
                                     </div>
                                     <div class="mb-3 col-6">
                                         <label for="name" class="form-label">Guest</label>
                                         <input type="text" class="form-control" id="name"
-                                            placeholder="Enter Guest Name">
+                                            placeholder="Enter Guest Name" name="guest_of_honor">
                                     </div>
                                     <div class="mb-3 col-6">
                                         <label for="name" class="form-label">Location</label>
                                         <input type="text" class="form-control" id="name"
-                                            placeholder="Enter Event Location">
+                                            placeholder="Enter Event Location" name="location">
                                     </div>
                                     <div class="mb-3 col-12">
                                         <label for="position" class="form-label">Description</label>
-                                        <textarea name="Description" id="" cols="12" rows="4" class="form-control"></textarea>
+                                        <textarea name="events_description" id="" cols="12" rows="4" class="form-control"></textarea>
+                                    </div>
+                                    <div class="mb-3 col-6">
+                                        <label for="name" class="form-label">Start Date</label>
+                                        <input type="date" class="form-control" id="name"
+                                        name="start_date" >
+                                    </div>
+                                    <div class="mb-3 col-6">
+                                        <label for="name" class="form-label">End Date</label>
+                                        <input type="date" class="form-control" id="name"
+                                        name="end_date"  >
                                     </div>
     
                                     <div class="text-end">
