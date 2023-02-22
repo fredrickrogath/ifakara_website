@@ -192,7 +192,7 @@
             <!-- /.modal -->
 
             {{-- Update Modal --}}
-            <div class="modal fade" id="custom-modal-update_news" tabindex="-1" role="dialog" aria-hidden="true">
+            {{-- <div class="modal fade" id="custom-modal-update_news" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
                         <div class="modal-header bg-light">
@@ -209,11 +209,7 @@
                                     <input type="text" class="form-control" id="name" name="news_title" required
                                     value="{{ $item->news_title }}">
                                 </div>
-                                {{-- <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Image</label>
-                                    <input type="file" class="form-control" id="exampleInputEmail1" name="image" required
-                                        placeholder="Enter email">
-                                </div> --}}
+                            
                                 @if ($item->image)
                                 <img src="{{ asset('admin/assets/images/news/'.$item->image) }}" alt="News image" width="200" height="150" class="edicat-image">
                                  @endif
@@ -237,8 +233,8 @@
                     </div>
                     <!-- /.modal-content -->
                 </div>
-                <!-- /.modal-dialog -->
-            </div>
+               
+            </div> --}}
             {{-- end Modal --}}
 
             <!-- Footer Start -->

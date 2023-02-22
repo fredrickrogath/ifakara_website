@@ -16,8 +16,9 @@ class NewsController extends Controller
      */
     public function index()
     {
-        $news = news::all();
-        return view('admin.pages.whats_new.news.news', compact('news'));
+       $news = news::all();
+       $item = news::all();
+        return view('admin.pages.whats_new.news.news', compact('news',$item));
     }
 
     /**
@@ -94,7 +95,7 @@ class NewsController extends Controller
             }
             $file = $request->file('image');
             $ext = $file->getClientOriginalExtension();
-            $filename = time().'.'.$ext;
+            $filename = time().'.'.$ext;    
             $file->move('admin/assets/images/news',$filename);
             $news->image = $filename;
         }
