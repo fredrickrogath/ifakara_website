@@ -104,12 +104,9 @@
 
                         <!-- ##### Google Maps ##### -->
                         <div class="map-area mb-100">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7809.465404387681!2d36.6844169071766!3d-8.09093028189693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1857ad8fbf043b99%3A0xe48c35ce0a33d4cf!2sCatholic%20Diocese%20of%20Ifakara%20land!5e0!3m2!1sen!2stz!4v1676485455871!5m2!1sen!2stz"
-                                width="1070" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.5893635456237!2d36.67983421143938!3d-8.143217683218515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1857b230bc958119%3A0x794379c8d8ac1a70!2sSt.%20Andrew%20Catholic%20Church%20-%20Ifakara!5e0!3m2!1sen!2stz!4v1677315858886!5m2!1sen!2stz"width="1070" height="450"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+                        </div>
                     </div>
                 </div>
 
