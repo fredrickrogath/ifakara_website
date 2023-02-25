@@ -16,7 +16,7 @@
     <!-- ##### Header Area End ##### -->
 
 
-   @include('layouts.slider')
+    @include('layouts.slider')
 
     <!-- ##### Intro News Area End ##### -->
     <section class="intro-news-area  mb-70" style="margin-top: -6%">
@@ -28,10 +28,10 @@
 
                         <!-- Intro News Filter -->
                         <div class="intro-news-filter d-flex justify-content-between"
-                                            style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
-                                            <h6 style="color:#FF0000; font-weight:700"> Ifakara Catholic Diocese</h6>
+                            style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
+                            <h6 style="color:#FF0000; font-weight:700"> Ifakara Catholic Diocese</h6>
 
-                                        </div>
+                        </div>
 
                         <div class="tab-content" id="nav-tabContent">
 
@@ -66,8 +66,7 @@
                                         <div class="single-blog-post style-2 mb-5">
                                             <!-- Blog Thumbnail -->
                                             <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{ asset('site/img/bg-img/bg-4.jpg') }}"
-                                                        alt=""></a>
+                                                <a href="#"><img src="{{ asset('site/img/bg-img/ifakarachurch.jpg') }}" alt="" style="height:300px"></a>
                                             </div>
 
                                             <!-- Blog Content -->
@@ -95,10 +94,10 @@
                 <div class="col-12 col-sm-9 col-md-6 col-lg-4">
                     <div class="sidebar-area">
                         <div class="intro-news-filter d-flex justify-content-between"
-                        style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
-                        <h6 style="color:#FF0000; font-weight:700">BISHOP</h6>
+                            style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
+                            <h6 style="color:#FF0000; font-weight:700">BISHOP</h6>
 
-                      </div>
+                        </div>
                         <!-- Add Widget -->
                         <div class="single-widget-area add-widget mt-3 ml-3">
                             <a href="#" class=" justify-content-center">
@@ -114,9 +113,143 @@
             </div>
         </div>
     </section>
+
+    <section class="elements-area section-padding-100-0">
+        <div class="container">
+            <div class="row" style="margin-top:-10%">
+                <div class="col-12">
+                    <div class="elements-title mb-30">
+                       <p class="text-center"style="font-size:18px">We have a fun facts far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="newsbox-cool-facts-area">
+                        <div class="row mt-2">
+
+                            <!-- Single Cool Facts -->
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="single-cool-fact mb-100">
+                                    <div class="scf-icon">
+                                        <img src="{{asset('site/img/core-img/idea.png')}}" alt="">
+                                    </div>
+                                    <div class="scf-text">
+                                        <h2><span class="counter">149</span></h2>
+                                        <p>Members</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Cool Facts -->
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="single-cool-fact mb-100">
+                                    <div class="scf-icon">
+                                        <img src="{{asset('site/img/core-img/list.png')}}" alt="">
+                                    </div>
+                                    <div class="scf-text">
+                                        <h2><span class="counter">2391</span></h2>
+                                        <p>Parishies</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Cool Facts -->
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="single-cool-fact mb-100">
+                                    <div class="scf-icon">
+                                        <img src="{{asset('site/img/core-img/id-card.png')}}" alt="">
+                                    </div>
+                                    <div class="scf-text">
+                                        <h2><span class="counter">245</span></h2>
+                                        <p>Schools</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Cool Facts -->
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="single-cool-fact mb-100">
+                                    <div class="scf-icon">
+                                        <img src="{{asset('site/img/core-img/diamond.png')}}" alt="">
+                                    </div>
+                                    <div class="scf-text">
+                                        <h2><span class="counter">128</span></h2>
+                                        <p>Healths Centers</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="intro-news-filter d-flex justify-content-between"
+                    style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
+                    <h6 style="color:#FF0000; font-weight:700">Our Offers</h6>
+
+                </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="row">
+
+                        <!-- Single Service Area -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="single-service-area mb-100">
+                                <div class="icon mb-30">
+                                    <img src="{{asset('site/img/core-img/id-card2.png')}}" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5>Health Activities</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
+                                        facilisis, volutpat nulla placerat, tincidunt mi.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Service Area -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="single-service-area mb-100">
+                                <div class="icon mb-30">
+                                    <img src="{{asset('site/img/core-img/file.png')}}" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5>Educations Studys</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
+                                        facilisis, volutpat nulla placerat, tincidunt mi.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Service Area -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="single-service-area mb-100">
+                                <div class="icon mb-30">
+                                    <img src="{{asset('site/img/core-img/archive.png')}}" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5>Livehood Activities</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
+                                        facilisis, volutpat nulla placerat, tincidunt mi.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
     <!-- ##### Intro News Area Start ##### -->
-   @include('layouts.newsite')
-  
+    @include('layouts.newsite')
+
 
     <!-- ##### Add Area End ##### -->
 

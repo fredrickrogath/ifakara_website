@@ -1,4 +1,4 @@
-<section class="intro-news-area mb-70" style="margin-top: -5%">
+<section class="intro-news-area mb-70" style="margin-top: 5%">
     <div class="container">
         <div class="row justify-content-center">
             <!-- Intro News Tabs Area -->
