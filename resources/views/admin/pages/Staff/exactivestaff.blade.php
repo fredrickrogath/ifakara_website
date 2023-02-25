@@ -172,7 +172,7 @@
                 <!-- end row -->
 
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                         <div class="card bg-pattern">
                             <div class="card-body">
                                 <div class="text-center">
@@ -209,7 +209,7 @@
                         </div> <!-- end card -->
                     </div><!-- end col -->
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                         <div class="card bg-pattern">
                             <div class="card-body">
                                 <div class="text-center">
@@ -247,7 +247,44 @@
                     </div><!-- end col -->
 
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
+                        <div class="card bg-pattern">
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <img src="{{ asset('site/img/bg-img/bishop.jpg') }}" alt="logo"
+                                        class="avatar-xl rounded-circle mb-3">
+                                    <h4 class="mb-1 font-20">Hakimu Ndaba.</h4>
+                                    <p class="text-muted  font-14">General Secretary</p>
+                                </div>
+
+                                <p class="font-14 text-justify text-muted">
+                                    Amazon.com, Inc., doing business as Amazon, is an American electronic commerce
+                                    and cloud computing company based in Seattle..
+                                </p>
+                                <p class="font-14 text-justify text-muted">
+                                    Amazon.com, Inc., doing business as Amazon, is an American electronic commerce
+                                    and cloud computing company based in Seattle..
+                                </p>
+
+
+
+
+                                <div class="row mt-4 text-center">
+                                    <div class="col-6">
+                                        <a href="javascript:void(0);" class="action-icon"> <i
+                                                class="mdi mdi-square-edit-outline"></i></a>
+
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="javascript:void(0);" class="action-icon"> <i
+                                                class="mdi mdi-delete"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end card -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-3">
                         <div class="card bg-pattern">
                             <div class="card-body">
                                 <div class="text-center">
