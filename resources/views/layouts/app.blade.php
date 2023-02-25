@@ -119,77 +119,11 @@
     <section class="elements-area section-padding-100-0">
         <div class="container">
             <div class="row" style="margin-top:-10%">
-                <div class="col-12">
-                    <div class="elements-title mb-30">
-                        <p class="text-center"style="font-size:18px">We have a fun facts far far away, behind the word
-                            mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <div class="newsbox-cool-facts-area">
-                        <div class="row mt-2">
-
-                            <!-- Single Cool Facts -->
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-cool-fact mb-100">
-                                    <div class="scf-icon">
-                                        <img src="{{ asset('site/img/core-img/idea.png') }}" alt="">
-                                    </div>
-                                    <div class="scf-text">
-                                        <h2><span class="counter">149</span></h2>
-                                        <p>Members</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Cool Facts -->
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-cool-fact mb-100">
-                                    <div class="scf-icon">
-                                        <img src="{{ asset('site/img/core-img/list.png') }}" alt="">
-                                    </div>
-                                    <div class="scf-text">
-                                        <h2><span class="counter">2391</span></h2>
-                                        <p>Parishies</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Cool Facts -->
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-cool-fact mb-100">
-                                    <div class="scf-icon">
-                                        <img src="{{ asset('site/img/core-img/id-card.png') }}" alt="">
-                                    </div>
-                                    <div class="scf-text">
-                                        <h2><span class="counter">245</span></h2>
-                                        <p>Schools</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Cool Facts -->
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-cool-fact mb-100">
-                                    <div class="scf-icon">
-                                        <img src="{{ asset('site/img/core-img/diamond.png') }}" alt="">
-                                    </div>
-                                    <div class="scf-text">
-                                        <h2><span class="counter">128</span></h2>
-                                        <p>Healths Centers</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
+                             
                 <div class="col-12">
                     <div class="intro-news-filter d-flex justify-content-between"
                         style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
-                        <h6 style="color:#FF0000; font-weight:700">Our Offers</h6>
+                        <h6 style="color:#FF0000; font-weight:700">Our Service</h6>
 
                     </div>
                 </div>
@@ -355,6 +289,82 @@
 
     <!-- ##### Intro News Area Start ##### -->
     @include('layouts.newsite')
+
+    <section class="elements-area section-padding-100-0">
+        <div class="container">
+            <div class="row" style="margin-top:-10%">
+                <div class="col-12">
+                    <div class="elements-title mb-30">
+                        <p class="text-center"style="font-size:18px; font-weight:700;color:#000000">We have a fun facts far far away, behind the word
+                            mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="newsbox-cool-facts-area">
+                        <div class="row mt-2">
+
+                            <!-- Single Cool Facts -->
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="single-cool-fact mb-100">
+                                    <div class="scf-icon">
+                                        <img src="{{ asset('site/img/core-img/idea.png') }}" alt="">
+                                    </div>
+                                    <div class="scf-text">
+                                        <h2><span class="counter">149</span></h2>
+                                        <p style="color:#FF0000; font-weight:700">Members</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Cool Facts -->
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="single-cool-fact mb-100">
+                                    <div class="scf-icon">
+                                        <img src="{{ asset('site/img/core-img/list.png') }}" alt="">
+                                    </div>
+                                    <div class="scf-text">
+                                        <h2><span class="counter">2391</span></h2>
+                                        <p  style="color:#FF0000; font-weight:700">Parishies</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Cool Facts -->
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="single-cool-fact mb-100">
+                                    <div class="scf-icon">
+                                        <img src="{{ asset('site/img/core-img/id-card.png') }}" alt="">
+                                    </div>
+                                    <div class="scf-text">
+                                        <h2><span class="counter">245</span></h2>
+                                        <p  style="color:#FF0000; font-weight:700">Schools</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Cool Facts -->
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="single-cool-fact mb-100">
+                                    <div class="scf-icon">
+                                        <img src="{{ asset('site/img/core-img/diamond.png') }}" alt="">
+                                    </div>
+                                    <div class="scf-text">
+                                        <h2><span class="counter">128</span></h2>
+                                        <p  style="color:#FF0000; font-weight:700">Healths Centers</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+
+        </div>
+
+    </section>
 
 
     <!-- ##### Add Area End ##### -->

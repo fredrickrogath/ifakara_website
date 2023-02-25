@@ -3,16 +3,15 @@
         <div class="row justify-content-center">
             <!-- Intro News Tabs Area -->
             <div class="col-12 col-lg-8">
-                <div class="intro-news-tab">
-
+                <div class="intro-news-tab">   
                     <!-- Intro News Filter -->
-                    <div class="intro-news-filter d-flex justify-content-between"style="background-color:#1c2938; color:#ffff">
-                        <h6 style="color:#fff">All News </h6>
-                        <nav>
+                    <div class="intro-news-filter d-flex justify-content-between"style="background-color:#ffff; color:#ffff; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
+                        <h6 style="color:#FF0000;font-weight:700">All News </h6>
+                        <nav style="background-color: #000">
                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                 <a class="nav-item nav-link active" id="nav1" data-toggle="tab"
                                     href="#nav-1" role="tab" aria-controls="nav-1"
-                                    aria-selected="true">Latest</a>
+                                    aria-selected="true" style="color:#000">Latest</a>
 
 
                             </div>
@@ -112,8 +111,8 @@
             <!-- Sidebar Widget -->
             <div class="col-12 col-sm-9 col-md-6 col-lg-4">
                 <div class="sidebar-area">
-                    <div class="intro-news-filter d-flex justify-content-between" style="background-color:#1c2938; color:#ffff">
-                        <h6 style="color:#fff">Galley and Photos</h6>
+                    <div class="intro-news-filter d-flex justify-content-between" style="background-color:#fff; color:#ffff;  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
+                        <h6 style="color:#FF0000;font-weight:700">Galley and Photos</h6>
 
                     </div>
                     <!-- Newsletter Widget -->
