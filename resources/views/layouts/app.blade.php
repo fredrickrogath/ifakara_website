@@ -66,8 +66,7 @@
                                         <div class="single-blog-post style-2 mb-5">
                                             <!-- Blog Thumbnail -->
                                             <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{ asset('site/img/bg-img/bg-4.jpg') }}"
-                                                        alt=""></a>
+                                                <a href="#"><img src="{{ asset('site/img/bg-img/ifakarachurch.jpg') }}" alt="" style="height:300px"></a>
                                             </div>
 
                                             <!-- Blog Content -->
@@ -120,7 +119,7 @@
             <div class="row" style="margin-top:-10%">
                 <div class="col-12">
                     <div class="elements-title mb-30">
-                       <p class="text-center"style="font-size:20px">We have a fun facts far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                       <p class="text-center"style="font-size:18px">We have a fun facts far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     </div>
                 </div>
 
@@ -185,9 +184,11 @@
                 </div>
 
                 <div class="col-12">
-                    <div class="elements-title mb-30">
-                        <h2>Our Offers</h2>
-                    </div>
+                    <div class="intro-news-filter d-flex justify-content-between"
+                    style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
+                    <h6 style="color:#FF0000; font-weight:700">Our Offers</h6>
+
+                </div>
                 </div>
 
                 <div class="col-12">
