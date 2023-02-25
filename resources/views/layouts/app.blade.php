@@ -49,7 +49,7 @@
                                             of the whole part of Kilombero district. </p>
 
                                     </div>
-                                    <div class="col-12 col-sm-6">
+                                    <div class="col-12 col-sm-8">
                                         <div class="single-blog-post style-2 mb-5">
                                             <p style="text-align: justify">Ifakara Catholic Diocese was started with 19
                                                 parishes. Now the diocese has 26 parishes and 01 elected parish. The
@@ -62,13 +62,13 @@
                                     </div>
 
                                     <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
+                                    <div class="col-12 col-sm-4">
                                         <div class="single-blog-post style-2 mb-5">
                                             <!-- Blog Thumbnail -->
                                             <div class="blog-thumbnail">
                                                 <a href="#"><img
                                                         src="{{ asset('site/img/bg-img/ifakarachurch.jpg') }}"
-                                                        alt="" style="height:300px"></a>
+                                                        alt="" style="height:250px; width:200px"></a>
                                             </div>
 
                                             <!-- Blog Content -->
@@ -260,6 +260,14 @@
     <section>
         <div class="container">
             <div class="row">
+                <div class="col-12">
+                    <div class="intro-news-filter d-flex justify-content-between"
+                        style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
+                        <h6 style="color:#FF0000; font-weight:700">Sunday Qoutes</h6>
+
+                    </div>
+                </div>
+
                 <div class="col-12">
                     <!-- Video Slides -->
                     <div class="video-slides owl-carousel">
