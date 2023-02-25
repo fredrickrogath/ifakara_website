@@ -49,7 +49,7 @@
                                             of the whole part of Kilombero district. </p>
 
                                     </div>
-                                    <div class="col-12 col-sm-6">
+                                    <div class="col-12 col-sm-8">
                                         <div class="single-blog-post style-2 mb-5">
                                             <p style="text-align: justify">Ifakara Catholic Diocese was started with 19
                                                 parishes. Now the diocese has 26 parishes and 01 elected parish. The
@@ -62,11 +62,13 @@
                                     </div>
 
                                     <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
+                                    <div class="col-12 col-sm-4">
                                         <div class="single-blog-post style-2 mb-5">
                                             <!-- Blog Thumbnail -->
                                             <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{ asset('site/img/bg-img/ifakarachurch.jpg') }}" alt="" style="height:300px"></a>
+                                                <a href="#"><img
+                                                        src="{{ asset('site/img/bg-img/ifakarachurch.jpg') }}"
+                                                        alt="" style="height:250px; width:200px"></a>
                                             </div>
 
                                             <!-- Blog Content -->
@@ -117,78 +119,13 @@
     <section class="elements-area section-padding-100-0">
         <div class="container">
             <div class="row" style="margin-top:-10%">
-                <div class="col-12">
-                    <div class="elements-title mb-30">
-                       <p class="text-center"style="font-size:18px">We have a fun facts far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <div class="newsbox-cool-facts-area">
-                        <div class="row mt-2">
-
-                            <!-- Single Cool Facts -->
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-cool-fact mb-100">
-                                    <div class="scf-icon">
-                                        <img src="{{asset('site/img/core-img/idea.png')}}" alt="">
-                                    </div>
-                                    <div class="scf-text">
-                                        <h2><span class="counter">149</span></h2>
-                                        <p>Members</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Cool Facts -->
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-cool-fact mb-100">
-                                    <div class="scf-icon">
-                                        <img src="{{asset('site/img/core-img/list.png')}}" alt="">
-                                    </div>
-                                    <div class="scf-text">
-                                        <h2><span class="counter">2391</span></h2>
-                                        <p>Parishies</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Cool Facts -->
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-cool-fact mb-100">
-                                    <div class="scf-icon">
-                                        <img src="{{asset('site/img/core-img/id-card.png')}}" alt="">
-                                    </div>
-                                    <div class="scf-text">
-                                        <h2><span class="counter">245</span></h2>
-                                        <p>Schools</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Cool Facts -->
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-cool-fact mb-100">
-                                    <div class="scf-icon">
-                                        <img src="{{asset('site/img/core-img/diamond.png')}}" alt="">
-                                    </div>
-                                    <div class="scf-text">
-                                        <h2><span class="counter">128</span></h2>
-                                        <p>Healths Centers</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
+                             
                 <div class="col-12">
                     <div class="intro-news-filter d-flex justify-content-between"
-                    style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
-                    <h6 style="color:#FF0000; font-weight:700">Our Offers</h6>
+                        style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
+                        <h6 style="color:#FF0000; font-weight:700">Our Service</h6>
 
-                </div>
+                    </div>
                 </div>
 
                 <div class="col-12">
@@ -198,14 +135,15 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="single-service-area mb-100">
                                 <div class="icon mb-30">
-                                    <img src="{{asset('site/img/core-img/id-card2.png')}}" alt="">
+                                    <img src="{{ asset('site/img/core-img/id-card2.png') }}" alt="">
                                 </div>
                                 <div class="text">
                                     <h5>Health Activities</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
                                         facilisis, volutpat nulla placerat, tincidunt mi.</p>
                                 </div>
-                                <a href="#">Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                <a href="#">Read more <i class="fa fa-long-arrow-right"
+                                        aria-hidden="true"></i></a>
 
                             </div>
                         </div>
@@ -214,14 +152,15 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="single-service-area mb-100">
                                 <div class="icon mb-30">
-                                    <img src="{{asset('site/img/core-img/file.png')}}" alt="">
+                                    <img src="{{ asset('site/img/core-img/file.png') }}" alt="">
                                 </div>
                                 <div class="text">
                                     <h5>Educations Studys</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
                                         facilisis, volutpat nulla placerat, tincidunt mi.</p>
                                 </div>
-                                <a href="#">Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                <a href="#">Read more <i class="fa fa-long-arrow-right"
+                                        aria-hidden="true"></i></a>
 
                             </div>
                         </div>
@@ -230,14 +169,15 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="single-service-area mb-100">
                                 <div class="icon mb-30">
-                                    <img src="{{asset('site/img/core-img/archive.png')}}" alt="">
+                                    <img src="{{ asset('site/img/core-img/archive.png') }}" alt="">
                                 </div>
                                 <div class="text">
                                     <h5>Livehood Activities</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
                                         facilisis, volutpat nulla placerat, tincidunt mi.</p>
                                 </div>
-                                <a href="#">Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                <a href="#">Read more <i class="fa fa-long-arrow-right"
+                                        aria-hidden="true"></i></a>
                             </div>
                         </div>
 
@@ -255,114 +195,176 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                    <div class="intro-news-filter d-flex justify-content-between"
+                        style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
+                        <h6 style="color:#FF0000; font-weight:700">Sunday Qoutes</h6>
+
+                    </div>
+                </div>
+
+                <div class="col-12">
                     <!-- Video Slides -->
                     <div class="video-slides owl-carousel">
-
                         <!-- Single News Area -->
-                        <div class="single-blog-post style-3">
-                            <!-- Blog Thumbnail -->
-                            <div class="blog-thumbnail">
-                                <a href="#"><img src="{{asset('site/img/bg-img/11.jpg')}}" alt=""></a>
-                                <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-                            </div>
 
-                            <!-- Blog Content -->
-                            <div class="blog-content">
-                                <span class="post-date">June 20, 2018</span>
-                                <p class="post-title">Elon Musk: Tesla worker admitted to sabotage</p>
-                                <a href="#" class="post-author">By Michael Smith</a>
+                        <div class="single-blog-post style-3" style="background-color:#2c3e50;">
+                            <!-- Blog Thumbnail -->
+                            <div class="card-body">
+                                <div class="blog-thumbnail" style="text-align: justify">
+
+                                    <blockquote>
+                                        <p style="color:#fff; font-weight:700; font-size:15px">&ldquo;For God so loved the world, that he gave his only begotten Son, that
+                                            whosoever believeth in him should not perish, but have everlasting life.&rdquo;
+                                        </p>
+                                        <span style="color:#b21818; font-weight:700; font-size:18px">John 3:16</span>
+                                    </blockquote>
+                                    {{-- <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a> --}}
+                                </div>
                             </div>
+                            
                         </div>
 
                         <!-- Single News Area -->
-                        <div class="single-blog-post style-3">
+                        <div class="single-blog-post style-3" style="background-color:#2c3e50;">
                             <!-- Blog Thumbnail -->
-                            <div class="blog-thumbnail">
-                                <a href="#"><img src="{{asset('site/img/bg-img/12.jpg')}}" alt=""></a>
-                                <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-                            </div>
 
-                            <!-- Blog Content -->
-                            <div class="blog-content">
-                                <span class="post-date">June 20, 2018</span>
-                                <p class="post-title">Rachel Sm ith breaks down while discussing border crisis </p>
-                                <a href="#" class="post-author">By Michael Smith</a>
+                            <div class="card-body">
+                                <div class="blog-thumbnail">
+                                    <blockquote>
+                                        <p style="color:#fff; font-weight:700; font-size:15px">&ldquo;The LORD [is] my strength and my shield; my heart trusted in him, and I am
+                                            helped: therefore my heart greatly rejoiceth; and with my song will I praise
+                                            him.&rdquo;</p>
+                                        <span style="color:#b21818; font-weight:700; font-size:18px">Psalms 28:7</span>
+                                    </blockquote>
+                                </div>
+    
                             </div>
+                            
+                            
                         </div>
 
                         <!-- Single News Area -->
-                        <div class="single-blog-post style-3">
+                        <div
+                            class="single-blog-post style-3"style="background-color:#2c3e50;">
                             <!-- Blog Thumbnail -->
-                            <div class="blog-thumbnail">
-                                <a href="#"><img src="{{asset('site/img/bg-img/13.jpg')}}" alt=""></a>
-                                <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                            <div class="card-body">
+                                <div class="blog-thumbnail" >
+                                    <blockquote>
+                                        <p style="color:#fff; font-weight:700; font-size:15px">&ldquo;And we have known and believed the love that God hath to us. God is love;
+                                            and he that dwelleth in love dwelleth in God, and God in him.&rdquo;</p>
+                                        <span style="color:#b21818; font-weight:700; font-size:18px">1 John 4:16</span>
+                                    </blockquote>
+                                </div>
+    
                             </div>
-
-                            <!-- Blog Content -->
-                            <div class="blog-content">
-                                <span class="post-date">June 20, 2018</span>
-                                <p class="post-title">Dow falls 287 points as trade war fears escalate</p>
-                                <a href="#" class="post-author">By Michael Smith</a>
-                            </div>
+                            
+                            
                         </div>
 
                         <!-- Single News Area -->
-                        <div class="single-blog-post style-3">
+                        <div class="single-blog-post style-3" style="background-color:#2c3e50;">
                             <!-- Blog Thumbnail -->
-                            <div class="blog-thumbnail">
-                                <a href="#"><img src="{{asset('site/img/bg-img/11.jpg')}}" alt=""></a>
-                                <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                            <div class="card-body">
+                                <div class="blog-thumbnail">
+                                        <blockquote>
+                                            <p style="color:#fff; font-weight:700; font-size:15px">&ldquo;The LORD [is] my strength and my shield; my heart trusted in him, and I am
+                                            helped: therefore my heart greatly rejoiceth; and with my song will I praise
+                                            him.&rdquo;</p>
+                                        <span style="color:#b21818; font-weight:700; font-size:18px">Psalms 28:7</span>
+                                    </blockquote>
+                                </div>
+    
                             </div>
-
-                            <!-- Blog Content -->
-                            <div class="blog-content">
-                                <span class="post-date">June 20, 2018</span>
-                                <p class="post-title">Elon Musk: Tesla worker admitted to sabotage</p>
-                                <a href="#" class="post-author">By Michael Smith</a>
-                            </div>
+                          
                         </div>
 
-                        <!-- Single News Area -->
-                        <div class="single-blog-post style-3">
-                            <!-- Blog Thumbnail -->
-                            <div class="blog-thumbnail">
-                                <a href="#"><img src="{{asset('site/img/bg-img/12.jpg')}}" alt=""></a>
-                                <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-                            </div>
 
-                            <!-- Blog Content -->
-                            <div class="blog-content">
-                                <span class="post-date">June 20, 2018</span>
-                                <p class="post-title">Rachel Sm ith breaks down while discussing border crisis </p>
-                                <a href="#" class="post-author">By Michael Smith</a>
-                            </div>
-                        </div>
-
-                        <!-- Single News Area -->
-                        <div class="single-blog-post style-3">
-                            <!-- Blog Thumbnail -->
-                            <div class="blog-thumbnail">
-                                <a href="#"><img src="{{asset('site/img/bg-img/13.jpg')}}" alt=""></a>
-                                <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-                            </div>
-
-                            <!-- Blog Content -->
-                            <div class="blog-content">
-                                <span class="post-date">June 20, 2018</span>
-                                <p class="post-title">Dow falls 287 points as trade war fears escalate</p>
-                                <a href="#" class="post-author">By Michael Smith</a>
-                            </div>
-                        </div>
 
                     </div>
                 </div>
             </div>
         </div>
     </section>
-     
+
 
     <!-- ##### Intro News Area Start ##### -->
     @include('layouts.newsite')
+
+    <section class="elements-area section-padding-100-0">
+        <div class="container">
+            <div class="row" style="margin-top:-10%">
+                <div class="col-12">
+                    <div class="elements-title mb-30">
+                        <p class="text-center"style="font-size:18px; font-weight:700;color:#000000">We have a fun facts far far away, behind the word
+                            mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="newsbox-cool-facts-area">
+                        <div class="row mt-2">
+
+                            <!-- Single Cool Facts -->
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="single-cool-fact mb-100">
+                                    <div class="scf-icon">
+                                        <img src="{{ asset('site/img/core-img/idea.png') }}" alt="">
+                                    </div>
+                                    <div class="scf-text">
+                                        <h2><span class="counter">149</span></h2>
+                                        <p style="color:#FF0000; font-weight:700">Members</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Cool Facts -->
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="single-cool-fact mb-100">
+                                    <div class="scf-icon">
+                                        <img src="{{ asset('site/img/core-img/list.png') }}" alt="">
+                                    </div>
+                                    <div class="scf-text">
+                                        <h2><span class="counter">2391</span></h2>
+                                        <p  style="color:#FF0000; font-weight:700">Parishies</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Cool Facts -->
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="single-cool-fact mb-100">
+                                    <div class="scf-icon">
+                                        <img src="{{ asset('site/img/core-img/id-card.png') }}" alt="">
+                                    </div>
+                                    <div class="scf-text">
+                                        <h2><span class="counter">245</span></h2>
+                                        <p  style="color:#FF0000; font-weight:700">Schools</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Cool Facts -->
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="single-cool-fact mb-100">
+                                    <div class="scf-icon">
+                                        <img src="{{ asset('site/img/core-img/diamond.png') }}" alt="">
+                                    </div>
+                                    <div class="scf-text">
+                                        <h2><span class="counter">128</span></h2>
+                                        <p  style="color:#FF0000; font-weight:700">Healths Centers</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+
+        </div>
+
+    </section>
 
 
     <!-- ##### Add Area End ##### -->
