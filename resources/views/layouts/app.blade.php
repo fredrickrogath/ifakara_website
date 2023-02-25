@@ -205,6 +205,8 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
                                         facilisis, volutpat nulla placerat, tincidunt mi.</p>
                                 </div>
+                                <a href="#">Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+
                             </div>
                         </div>
 
@@ -219,6 +221,8 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
                                         facilisis, volutpat nulla placerat, tincidunt mi.</p>
                                 </div>
+                                <a href="#">Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+
                             </div>
                         </div>
 
@@ -233,6 +237,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
                                         facilisis, volutpat nulla placerat, tincidunt mi.</p>
                                 </div>
+                                <a href="#">Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
 
@@ -246,6 +251,115 @@
 
     </section>
 
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Video Slides -->
+                    <div class="video-slides owl-carousel">
+
+                        <!-- Single News Area -->
+                        <div class="single-blog-post style-3">
+                            <!-- Blog Thumbnail -->
+                            <div class="blog-thumbnail">
+                                <a href="#"><img src="{{asset('site/img/bg-img/11.jpg')}}" alt=""></a>
+                                <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                            </div>
+
+                            <!-- Blog Content -->
+                            <div class="blog-content">
+                                <span class="post-date">June 20, 2018</span>
+                                <p class="post-title">Elon Musk: Tesla worker admitted to sabotage</p>
+                                <a href="#" class="post-author">By Michael Smith</a>
+                            </div>
+                        </div>
+
+                        <!-- Single News Area -->
+                        <div class="single-blog-post style-3">
+                            <!-- Blog Thumbnail -->
+                            <div class="blog-thumbnail">
+                                <a href="#"><img src="{{asset('site/img/bg-img/12.jpg')}}" alt=""></a>
+                                <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                            </div>
+
+                            <!-- Blog Content -->
+                            <div class="blog-content">
+                                <span class="post-date">June 20, 2018</span>
+                                <p class="post-title">Rachel Sm ith breaks down while discussing border crisis </p>
+                                <a href="#" class="post-author">By Michael Smith</a>
+                            </div>
+                        </div>
+
+                        <!-- Single News Area -->
+                        <div class="single-blog-post style-3">
+                            <!-- Blog Thumbnail -->
+                            <div class="blog-thumbnail">
+                                <a href="#"><img src="{{asset('site/img/bg-img/13.jpg')}}" alt=""></a>
+                                <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                            </div>
+
+                            <!-- Blog Content -->
+                            <div class="blog-content">
+                                <span class="post-date">June 20, 2018</span>
+                                <p class="post-title">Dow falls 287 points as trade war fears escalate</p>
+                                <a href="#" class="post-author">By Michael Smith</a>
+                            </div>
+                        </div>
+
+                        <!-- Single News Area -->
+                        <div class="single-blog-post style-3">
+                            <!-- Blog Thumbnail -->
+                            <div class="blog-thumbnail">
+                                <a href="#"><img src="{{asset('site/img/bg-img/11.jpg')}}" alt=""></a>
+                                <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                            </div>
+
+                            <!-- Blog Content -->
+                            <div class="blog-content">
+                                <span class="post-date">June 20, 2018</span>
+                                <p class="post-title">Elon Musk: Tesla worker admitted to sabotage</p>
+                                <a href="#" class="post-author">By Michael Smith</a>
+                            </div>
+                        </div>
+
+                        <!-- Single News Area -->
+                        <div class="single-blog-post style-3">
+                            <!-- Blog Thumbnail -->
+                            <div class="blog-thumbnail">
+                                <a href="#"><img src="{{asset('site/img/bg-img/12.jpg')}}" alt=""></a>
+                                <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                            </div>
+
+                            <!-- Blog Content -->
+                            <div class="blog-content">
+                                <span class="post-date">June 20, 2018</span>
+                                <p class="post-title">Rachel Sm ith breaks down while discussing border crisis </p>
+                                <a href="#" class="post-author">By Michael Smith</a>
+                            </div>
+                        </div>
+
+                        <!-- Single News Area -->
+                        <div class="single-blog-post style-3">
+                            <!-- Blog Thumbnail -->
+                            <div class="blog-thumbnail">
+                                <a href="#"><img src="{{asset('site/img/bg-img/13.jpg')}}" alt=""></a>
+                                <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                            </div>
+
+                            <!-- Blog Content -->
+                            <div class="blog-content">
+                                <span class="post-date">June 20, 2018</span>
+                                <p class="post-title">Dow falls 287 points as trade war fears escalate</p>
+                                <a href="#" class="post-author">By Michael Smith</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     
 
     <!-- ##### Intro News Area Start ##### -->
     @include('layouts.newsite')
