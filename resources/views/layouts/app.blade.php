@@ -19,7 +19,7 @@
     @include('layouts.slider')
 
     <!-- ##### Intro News Area End ##### -->
-    <section class="intro-news-area  mb-70" style="margin-top: -6%">
+    <section class="intro-news-area  mb-50" style="margin-top: -6%">
         <div class="container">
             <div class="row justify-content-center">
                 <!-- Intro News Tabs Area -->
@@ -29,7 +29,7 @@
                         <!-- Intro News Filter -->
                         <div class="intro-news-filter d-flex justify-content-between"
                             style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
-                            <h6 style="color:#FF0000; font-weight:700"> Ifakara Catholic Diocese</h6>
+                            <h6 style="color:#FF0000; font-weight:700; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Ifakara Catholic Diocese</h6>
 
                         </div>
 
@@ -40,7 +40,7 @@
                                 <div class="row">
                                     <!-- Single News Area -->
                                     <div class="col-md-12 col-12">
-                                        <p style="text-align: justify">The Ifakara Catholic Diocese ceded from Mahenge
+                                        <p style="text-align: justify; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">The Ifakara Catholic Diocese ceded from Mahenge
                                             Diocese on 14th January 2012. It was officially inaugurated on 19th March
                                             2012. The first bishop is the Rit. Rev. Salutaris M. Libena. The Vicar
                                             General is Rev. Fr. Hospitio Itatilo, the Secretary General is Rev. Godfrey
@@ -51,7 +51,7 @@
                                     </div>
                                     <div class="col-12 col-sm-8">
                                         <div class="single-blog-post style-2 mb-5">
-                                            <p style="text-align: justify">Ifakara Catholic Diocese was started with 19
+                                            <p style="text-align: justify; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Ifakara Catholic Diocese was started with 19
                                                 parishes. Now the diocese has 26 parishes and 01 elected parish. The
                                                 diocese has 32 diocesan priests and 27 religious priests. Also there are
                                                 different religious institutions of men and women. The diocese also is
@@ -97,7 +97,7 @@
                     <div class="sidebar-area">
                         <div class="intro-news-filter d-flex justify-content-between"
                             style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
-                            <h6 style="color:#FF0000; font-weight:700">BISHOP</h6>
+                            <h6 style="color:#FF0000; font-weight:700; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">BISHOP</h6>
 
                         </div>
                         <!-- Add Widget -->
@@ -115,23 +115,101 @@
             </div>
         </div>
     </section>
-
-    <section class="elements-area section-padding-100-0">
+    <section>
         <div class="container">
-            <div class="row" style="margin-top:-15%">
-                             
-                <div class="col-12">
+            <div class="row justify-content-center">
+                {{-- <div class="col-12">
                     <div class="intro-news-filter d-flex justify-content-between"
                         style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
-                        <h6 style="color:#FF0000; font-weight:700">Our Service</h6>
+                        <h6 style="color:#FF0000; font-weight:700">VERSE OF THE WEEK</h6>
 
                     </div>
+                </div> --}}
+
+                <div class="col-lg-8 mb-70">
+                    <!-- Video Slides -->
+                    {{-- <div class="video-slides owl-carousel"> --}}
+                        <!-- Single News Area -->
+                        <h3 style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Verse Of The Day</h3>
+                        <div class="single-blog-post style-3" style="background-color:rgb(237, 186, 86);; border-radius: 50px;">
+                            <!-- Blog Thumbnail -->
+                            
+                            <div class="card-body">
+                                
+                                <div class="blog-thumbnail" style="text-align: justify">
+                                    
+                                    <blockquote>
+                                        <p style="color:#fff; font-weight:700; font-size:15px; padding: 10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">&ldquo;For God so loved the world, that he gave his only begotten Son, that
+                                            whosoever believeth in him should not perish, but have everlasting life.&rdquo;
+                                        </p>
+                                        <h4 style="color:#b21818; font-weight:700; font-size:18px; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">John 3:166</h4>
+                                    </blockquote>
+                                    {{-- <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a> --}}
+                                </div>
+                            </div>
+                            
+                        </div>
+                    {{-- </div> --}}
                 </div>
-
-                <div class="col-12">
-                    <div class="row">
-
+                <div class="col-lg-12">
+                    <div id="fh5co-sermon">
+                        <div class="row animate-box">
+                            <div class="col-md-12 col-md-offset-3 text-center fh5co-heading">
+                                <h2 style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Our Sermons</h2>
+                                <h5 style="font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Message from GOD</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 text-center animate-box">
+                                <div class="sermon-entry">
+                                    <div class="sermon">
+                                        <img src="{{ asset('admin/assets/images/companies/apple.png') }}" alt="">
+                                        <div class="play">
+                                            <a class="popup-vimeo" href="https://vimeo.com/channels/staffpicks/93951774"><i class="icon-play3"></i></a>
+                                        </div>
+                                    </div>
+                                    <h3>Soul Winning</h3>
+                                    <span>Pstr. John Doe</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center animate-box">
+                                <div class="sermon-entry">
+                                    <div class="sermon">
+                                        <img src="{{ asset('admin/assets/images/companies/apple.png') }}" alt="">
+                                        <div class="play">
+                                            <a class="popup-vimeo" href="https://vimeo.com/channels/staffpicks/93951774"><i class="icon-play3"></i></a>
+                                        </div>
+                                    </div>
+                                    <h3>Message From God</h3>
+                                    <span>Pstr. John Doe</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center animate-box">
+                                <div class="sermon-entry">
+                                    <div class="sermon">
+                                        <img src="{{ asset('admin/assets/images/companies/apple.png') }}" alt="">
+                                        <div class="play">
+                                            <a class="popup-vimeo" href="https://vimeo.com/channels/staffpicks/93951774"><i class="icon-play3"></i></a>
+                                        </div>
+                                    </div>
+                                    <h3>Our World Today</h3>
+                                    <span>Pstr. John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="elements-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                {{-- <div class="col-12"> --}}
+                    {{-- <div class="row"> --}}
                         <!-- Single Service Area -->
+                        <h2 class="col-12" style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Our Services</h2>
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="single-service-area mb-100">
                                 <div class="icon mb-30">
@@ -181,132 +259,36 @@
                             </div>
                         </div>
 
-                    </div>
-                </div>
+                    {{-- </div> --}}
+                {{-- </div> --}}
             </div>
 
 
 
         </div>
 
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="intro-news-filter d-flex justify-content-between"
-                        style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
-                        <h6 style="color:#FF0000; font-weight:700">Sunday Qoutes</h6>
-
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <!-- Video Slides -->
-                    <div class="video-slides owl-carousel">
-                        <!-- Single News Area -->
-
-                        <div class="single-blog-post style-3" style="background-color:#2c3e50;">
-                            <!-- Blog Thumbnail -->
-                            <div class="card-body">
-                                <div class="blog-thumbnail" style="text-align: justify">
-
-                                    <blockquote>
-                                        <p style="color:#fff; font-weight:700; font-size:15px">&ldquo;For God so loved the world, that he gave his only begotten Son, that
-                                            whosoever believeth in him should not perish, but have everlasting life.&rdquo;
-                                        </p>
-                                        <span style="color:#b21818; font-weight:700; font-size:18px">John 3:16</span>
-                                    </blockquote>
-                                    {{-- <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a> --}}
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                        <!-- Single News Area -->
-                        <div class="single-blog-post style-3" style="background-color:#2c3e50;">
-                            <!-- Blog Thumbnail -->
-
-                            <div class="card-body">
-                                <div class="blog-thumbnail">
-                                    <blockquote>
-                                        <p style="color:#fff; font-weight:700; font-size:15px">&ldquo;The LORD [is] my strength and my shield; my heart trusted in him, and I am
-                                            helped: therefore my heart greatly rejoiceth; and with my song will I praise
-                                            him.&rdquo;</p>
-                                        <span style="color:#b21818; font-weight:700; font-size:18px">Psalms 28:7</span>
-                                    </blockquote>
-                                </div>
-    
-                            </div>
-                            
-                            
-                        </div>
-
-                        <!-- Single News Area -->
-                        <div
-                            class="single-blog-post style-3"style="background-color:#2c3e50;">
-                            <!-- Blog Thumbnail -->
-                            <div class="card-body">
-                                <div class="blog-thumbnail" >
-                                    <blockquote>
-                                        <p style="color:#fff; font-weight:700; font-size:15px">&ldquo;And we have known and believed the love that God hath to us. God is love;
-                                            and he that dwelleth in love dwelleth in God, and God in him.&rdquo;</p>
-                                        <span style="color:#b21818; font-weight:700; font-size:18px">1 John 4:16</span>
-                                    </blockquote>
-                                </div>
-    
-                            </div>
-                            
-                            
-                        </div>
-
-                        <!-- Single News Area -->
-                        <div class="single-blog-post style-3" style="background-color:#2c3e50;">
-                            <!-- Blog Thumbnail -->
-                            <div class="card-body">
-                                <div class="blog-thumbnail">
-                                        <blockquote>
-                                            <p style="color:#fff; font-weight:700; font-size:15px">&ldquo;The LORD [is] my strength and my shield; my heart trusted in him, and I am
-                                            helped: therefore my heart greatly rejoiceth; and with my song will I praise
-                                            him.&rdquo;</p>
-                                        <span style="color:#b21818; font-weight:700; font-size:18px">Psalms 28:7</span>
-                                    </blockquote>
-                                </div>
-    
-                            </div>
-                          
-                        </div>
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
 
     <!-- ##### Intro News Area Start ##### -->
     @include('layouts.newsite')
 
-    <section class="elements-area section-padding-100-0">
+    <section class="elements-area section-padding-10-0">
         <div class="container">
-            <div class="row" style="margin-top:-10%">
+            <div class="row" style="margin: 5px;">
                 <div class="col-12">
-                    <div class="elements-title mb-30">
-                        <p class="text-center"style="font-size:18px; font-weight:700;color:#000000">We have a fun facts far far away, behind the word
-                            mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <div class="elements-title mb-3">
+                        <h2 class="col-12" style="color:#ff7b00; font-weight:700; text-align:center;">Summary</h2>
                     </div>
                 </div>
 
                 <div class="col-12">
                     <div class="newsbox-cool-facts-area">
-                        <div class="row mt-2">
+                        <div class="row mt-1">
 
                             <!-- Single Cool Facts -->
                             <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-cool-fact mb-100">
+                                <div class="single-cool-fact mb-10">
                                     <div class="scf-icon">
                                         <img src="{{ asset('site/img/core-img/idea.png') }}" alt="">
                                     </div>
@@ -319,7 +301,7 @@
 
                             <!-- Single Cool Facts -->
                             <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-cool-fact mb-100">
+                                <div class="single-cool-fact mb-10">
                                     <div class="scf-icon">
                                         <img src="{{ asset('site/img/core-img/list.png') }}" alt="">
                                     </div>
@@ -332,7 +314,7 @@
 
                             <!-- Single Cool Facts -->
                             <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-cool-fact mb-100">
+                                <div class="single-cool-fact mb-10">
                                     <div class="scf-icon">
                                         <img src="{{ asset('site/img/core-img/id-card.png') }}" alt="">
                                     </div>
@@ -345,7 +327,7 @@
 
                             <!-- Single Cool Facts -->
                             <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-cool-fact mb-100">
+                                <div class="single-cool-fact mb-10">
                                     <div class="scf-icon">
                                         <img src="{{ asset('site/img/core-img/diamond.png') }}" alt="">
                                     </div>

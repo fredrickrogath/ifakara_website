@@ -2,7 +2,7 @@
     <!-- Navbar Area -->
   
 
-    <div class="" >
+    <div class="fixed-nav-bar" style="position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: 70px;">
         <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
             <div class="container">
                 <a class="navbar-brand" href="#" style="color:black">LOGO</a>
@@ -12,25 +12,25 @@
                 </button>
                 <div class="collapse navbar-collapse" id="ftco-nav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a href="/" class="nav-link" style="font-weight:600">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"  style="font-weight:600">About</a></li>
-                        <li class="nav-item"><a href="{{route('catholic_diocese')}}" class="nav-link"  style="font-weight:600">Catholic Diocese</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{route('schools')}}"   style="font-weight:600">Schools</a></li>
+                        <li class="nav-item"><a href="/" class="nav-link" style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">About</a></li>
+                        <li class="nav-item"><a href="{{route('catholic_diocese')}}" class="nav-link"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Catholic Diocese</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{route('schools')}}"   style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Schools</a></li>
                         <li class="nav-item">
-                            <a class="nav-link " href="{{route('healths')}}"  style="font-weight:600">Health
+                            <a class="nav-link " href="{{route('healths')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Health
                                 Institute</a>
                            
                         </li>
                         <li class="nav-item dropdown position-static">
-                            <a class="nav-link" href="{{route('research_institute')}}"  style="font-weight:600">Research Institute</a>
+                            <a class="nav-link" href="{{route('research_institute')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Research Institute</a>
                            
                         </li>
                         <li class="nav-item dropdown position-static">
-                            <a class="nav-link" href="{{route('departiment')}}"  style="font-weight:600">Departiments</a>
+                            <a class="nav-link" href="{{route('departiment')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Departiments</a>
                             
                         </li>
                         <li class="nav-item dropdown position-static">
-                            <a class="nav-link" href="{{route('contact')}}"  style="font-weight:600">Contact us</a>
+                            <a class="nav-link" href="{{route('contact')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Contact us</a>
                             
                         </li>
                     </ul>
