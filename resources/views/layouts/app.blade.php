@@ -68,7 +68,7 @@
                                             <div class="blog-thumbnail">
                                                 <a href="#"><img
                                                         src="{{ asset('site/img/bg-img/ifakarachurch.jpg') }}"
-                                                        alt="" style="height:250px; width:200px"></a>
+                                                        alt="" style="height:150px; width:250px; border-radius: 20px;"></a>
                                             </div>
 
                                             <!-- Blog Content -->
@@ -103,11 +103,11 @@
                         <!-- Add Widget -->
                         <div class="single-widget-area add-widget mt-3 ml-3">
                             <a href="#" class=" justify-content-center">
-                                <img src="{{ asset('site/img/bg-img/bishop_img.jpg') }}" alt="">
+                                <img src="{{ asset('site/img/bg-img/bishop_img.jpg') }}" alt="" style="border-radius: 20px; height: 200px;">
                             </a>
-                            <h6 class="text-center mt-3" style="font-weight:600; color:#000">Right Rev. Salutaris Melchior Libena
+                            <h6 class="text-center mt-3" style="font-weight:600; color:#000; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Right Rev. Salutaris Melchior Libena
                             </h6>
-                            <p style="color:#FF0000; text-align:center">The Bishop of  Roman Catholic Diocese of  Ifakara </p>
+                            <p style="color:#ff7b00; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">The Bishop of  Roman Catholic Diocese of  Ifakara </p>
                         </div>
 
                     </div>
@@ -168,7 +168,7 @@
                                             <a class="popup-vimeo" href="https://vimeo.com/channels/staffpicks/93951774"><i class="icon-play3"></i></a>
                                         </div>
                                     </div>
-                                    <h3>Soul Winning</h3>
+                                    <h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Soul Winning</h3>
                                     <span>Pstr. John Doe</span>
                                 </div>
                             </div>
@@ -180,7 +180,7 @@
                                             <a class="popup-vimeo" href="https://vimeo.com/channels/staffpicks/93951774"><i class="icon-play3"></i></a>
                                         </div>
                                     </div>
-                                    <h3>Message From God</h3>
+                                    <h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Message From God</h3>
                                     <span>Pstr. John Doe</span>
                                 </div>
                             </div>
@@ -192,7 +192,7 @@
                                             <a class="popup-vimeo" href="https://vimeo.com/channels/staffpicks/93951774"><i class="icon-play3"></i></a>
                                         </div>
                                     </div>
-                                    <h3>Our World Today</h3>
+                                    <h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Our World Today</h3>
                                     <span>Pstr. John Doe</span>
                                 </div>
                             </div>
