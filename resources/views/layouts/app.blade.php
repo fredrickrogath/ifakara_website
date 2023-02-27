@@ -102,8 +102,8 @@
                         </div>
                         <!-- Add Widget -->
                         <div class="single-widget-area add-widget mt-3 ml-3">
-                            <a href="#" class=" justify-content-center">
-                                <img src="{{ asset('site/img/bg-img/bishop_img.jpg') }}" alt="" style="border-radius: 20px; height: 200px;">
+                            <a href="#" class="justify-content-center">
+                                <img src="{{ asset('site/img/bg-img/bishop_img.jpg') }}" alt="" style="border-radius: 20px; height: 200px; width: 200px;">
                             </a>
                             <h6 class="text-center mt-3" style="font-weight:600; color:#000; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Right Rev. Salutaris Melchior Libena
                             </h6>
