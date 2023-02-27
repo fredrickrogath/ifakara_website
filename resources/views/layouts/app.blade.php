@@ -30,7 +30,7 @@
                         <div class="intro-news-filter d-flex justify-content-between"
                             style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
                             <h6
-                                style="color:#FF0000; font-weight:700; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                                 Ifakara Catholic Diocese</h6>
 
                         </div>
@@ -105,7 +105,7 @@
                         <div class="intro-news-filter d-flex justify-content-between"
                             style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
                             <h6
-                                style="color:#FF0000; font-weight:700; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                style="color:#ff7b00;font-weight:700; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                                 BISHOP</h6>
 
                         </div>
@@ -230,8 +230,8 @@
                             <img src="{{ asset('site/img/core-img/id-card2.png') }}" alt="">
                         </div>
                         <div class="text">
-                            <h5>Health Activities</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
+                            <h5 style="font-weight:700">Health Activities</h5>
+                            <p style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#000; font-size:17px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
                                 facilisis, volutpat nulla placerat, tincidunt mi.</p>
                         </div>
                         <a href="#">Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
@@ -246,8 +246,8 @@
                             <img src="{{ asset('site/img/core-img/file.png') }}" alt="">
                         </div>
                         <div class="text">
-                            <h5>Educations Studys</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
+                            <h5 style="font-weight:700">Educations Studys</h5>
+                            <p style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#000; font-size:17px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
                                 facilisis, volutpat nulla placerat, tincidunt mi.</p>
                         </div>
                         <a href="#">Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
@@ -262,8 +262,8 @@
                             <img src="{{ asset('site/img/core-img/archive.png') }}" alt="">
                         </div>
                         <div class="text">
-                            <h5>Livehood Activities</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
+                            <h5 style="font-weight:700">Livehood Activities</h5>
+                            <p style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#000; font-size:17px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
                                 facilisis, volutpat nulla placerat, tincidunt mi.</p>
                         </div>
                         <a href="#">Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
@@ -370,18 +370,24 @@
                                 Diocese Documents </h6>
 
                         </div>
-                        <p style="text-align: justify;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:17px;color:#000;"><i class="fa fa-file-pdf-o text-danger"
-                                aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur,
+                        <p
+                            style="text-align: justify;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:17px;color:#000;">
+                            <i class="fa fa-file-pdf-o text-danger" aria-hidden="true"></i> Lorem ipsum dolor sit amet
+                            consectetur,
                             adipisicing elit. Nesciunt sit,
                             rep
                         </p>
-                        <p style="text-align: justify;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:17px;color:#000;"><span><a href=""><i class="fa fa-book text-danger"
+                        <p
+                            style="text-align: justify;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:17px;color:#000;">
+                            <span><a href=""><i class="fa fa-book text-danger"
                                         aria-hidden="true"></i></a></span>
                             Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Tempore, minima veniam. Placeat.</p>
 
-                        <p style="text-align: justify;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:17px;color:#000;"><span style="font-size: 25px"><a href=""><i
-                                        class="fa fa-file-pdf-o text-danger" aria-hidden="true"></i>
+                        <p
+                            style="text-align: justify;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:17px;color:#000;">
+                            <span style="font-size: 25px"><a href=""><i class="fa fa-file-pdf-o text-danger"
+                                        aria-hidden="true"></i>
                                 </a></span> Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Tempore, minima veniam. Placeat.</p>
                     </div>
@@ -398,12 +404,16 @@
     <!-- ##### Intro News Area Start ##### -->
     @include('layouts.newsite')
 
-    <section class="elements-area section-padding-10-0">
+    <section class="elements-area section-padding-10-0" style="margin-top:-3%;">
         <div class="container">
-            <div class="row" style="margin: 5px;">
+            <div class="row"s>
                 <div class="col-12">
-                    <div class="elements-title mb-3">
-                        <h2 class="col-12" style="color:#ff7b00; font-weight:700; text-align:center;">Summary</h2>
+                    <div class="intro-news-filter d-flex justify-content-between"
+                        style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
+                        <h6
+                            style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                            Diocese Summary</h6>
+
                     </div>
                 </div>
 
@@ -419,7 +429,7 @@
                                     </div>
                                     <div class="scf-text">
                                         <h2><span class="counter">149</span></h2>
-                                        <p style="color:#FF0000; font-weight:700">Members</p>
+                                        <p style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Members</p>
                                     </div>
                                 </div>
                             </div>
@@ -432,7 +442,7 @@
                                     </div>
                                     <div class="scf-text">
                                         <h2><span class="counter">2391</span></h2>
-                                        <p style="color:#FF0000; font-weight:700">Parishies</p>
+                                        <p style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Parishies</p>
                                     </div>
                                 </div>
                             </div>
@@ -445,7 +455,7 @@
                                     </div>
                                     <div class="scf-text">
                                         <h2><span class="counter">245</span></h2>
-                                        <p style="color:#FF0000; font-weight:700">Schools</p>
+                                        <p style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Schools</p>
                                     </div>
                                 </div>
                             </div>
@@ -458,7 +468,7 @@
                                     </div>
                                     <div class="scf-text">
                                         <h2><span class="counter">128</span></h2>
-                                        <p style="color:#FF0000; font-weight:700">Healths Centers</p>
+                                        <p style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Healths Centers</p>
                                     </div>
                                 </div>
                             </div>
