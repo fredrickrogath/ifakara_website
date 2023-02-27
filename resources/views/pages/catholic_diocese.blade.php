@@ -18,7 +18,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <!-- Intro News Tabs Area -->
-                <div class="col-12 col-lg-12">
+                <div class="col-12 col-lg-12 col-md-12 col-sm-12">
                     <div class="intro-news-tab">
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade show active">
@@ -34,13 +34,12 @@
                                                         <div class="carousel-item active">
 
                                                             <img class="d-block w-100 h-50"
-                                                                src="{{ asset('site/img/bg-img/bg-cathedrol.jpg') }}"
+                                                                src="{{ asset('site/img/bg-img/cathedal_church.jpg') }}"
                                                                 alt="First slide">
                                                             <div class="carousel-caption d-none d-md-block py-1"
                                                                 style="background-color: rgb(170, 167, 167); opacity:0.8; ">
-                                                                <h5 style="color:black; font-weight:700"> Mafunzo ya
-                                                                    walimu
-                                                                    CBC </h5>
+                                                                <h5 style="color:black; font-weight:700">Kanisa Kuu la Ifakara
+                                                                     </h5>
                                                                 <h6
                                                                     style="color:#0b0b0a; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                                                                     Ufununguzi la mafunzo ya walimu kuhusu kufundisha
@@ -95,7 +94,7 @@
                                                 <a href="#" class=" justify-content-center">
                                                     <img src="{{ asset('site/img/bg-img/bishop_img.jpg') }}"
                                                         alt=""
-                                                        style="border-radius: 5px; height: 290px; text-align:center">
+                                                        style="text-align:center">
                                                 </a>
                                                 <h6 class="text-center mt-3" style="font-weight:600; color:#000; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                                                     Right Rev. Salutaris
@@ -199,24 +198,25 @@
                 <!-- Sidebar Widget -->
                 <div class="col-12 col-sm-9 col-md-6 col-lg-4">
                     <div class="sidebar-area">
-                        <div class="p-1 d-flex justify-content-between"
-                            style="border-radius: 5px;background-color:#1c2938; color:#ffff">
-                            <h6 class="text-white-50" style="color: #fff; font-weight:600">BiShop</h6>
-                        </div>
+                        <div class="intro-news-filter d-flex justify-content-between"
+                        style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
+                        <h6
+                            style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                            IFakara Catholic History</h6>
+
+                    </div>
 
                         <!-- Add Widget -->
                         <div class="single-widget-area add-widget mt-3 ml-3">
                             <a href="#" class=" justify-content-center">
-                                <img src="site/img/bg-img/bishop.jpg" alt="">
+                                <img src="{{asset('site/img/bg-img/catholic_history.jpg')}}" alt="">
                             </a>
-                            <h6 class="text-center mt-3" style="font-weight:600">Right Rev. Salutaris Melchior Libena
+                            <h6 class="text-center mt-3" style="font-weight:600;color:#000000; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Historia ya Jimbo kuu la Ifakara
                             </h6>
-                            <p>the Bishop of the Ifakara Cathedrol Diocese</p>
+                            <a href="#" class="text-center" style="text-align: center">Soma zaidi <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                         </div>
 
                     </div>
-
-
 
 
                     <div class="card">
