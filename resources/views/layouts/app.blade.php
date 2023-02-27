@@ -23,7 +23,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <!-- Intro News Tabs Area -->
-                <div class="col-12 col-lg-8">
+                <div class="col-12 col-lg-9">
                     <div class="intro-news-tab">
 
                         <!-- Intro News Filter -->
@@ -93,7 +93,7 @@
                 </div>
 
                 <!-- Sidebar Widget -->
-                <div class="col-12 col-sm-9 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-9 col-md-6 col-lg-3">
                     <div class="sidebar-area">
                         <div class="intro-news-filter d-flex justify-content-between"
                             style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
@@ -103,11 +103,11 @@
                         <!-- Add Widget -->
                         <div class="single-widget-area add-widget mt-3 ml-3">
                             <a href="#" class=" justify-content-center">
-                                <img src="{{ asset('site/img/bg-img/bishop.jpg') }}" alt="">
+                                <img src="{{ asset('site/img/bg-img/bishop_img.jpg') }}" alt="">
                             </a>
-                            <h6 class="text-center mt-3" style="font-weight:600">Right Rev. Salutaris Melchior Libena
+                            <h6 class="text-center mt-3" style="font-weight:600; color:#000">Right Rev. Salutaris Melchior Libena
                             </h6>
-                            <p>the Bishop of the Ifakara Cathedrol Diocese</p>
+                            <p style="color:#FF0000; text-align:center">The Bishop of  Roman Catholic Diocese of  Ifakara </p>
                         </div>
 
                     </div>
@@ -118,7 +118,7 @@
 
     <section class="elements-area section-padding-100-0">
         <div class="container">
-            <div class="row" style="margin-top:-10%">
+            <div class="row" style="margin-top:-15%">
                              
                 <div class="col-12">
                     <div class="intro-news-filter d-flex justify-content-between"
