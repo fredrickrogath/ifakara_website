@@ -204,9 +204,9 @@
                         </div>
                     </div>
                 </div>
-                
-                
-             
+
+
+
 
             </div>
         </div>
@@ -214,7 +214,7 @@
     <section class="elements-area section-padding-100-0" style="margin-top:-2%">
         <div class="container">
             <div class="row">
-            
+
                 <div class="col-12">
                     <div class="intro-news-filter d-flex justify-content-between"
                         style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
@@ -270,41 +270,121 @@
                     </div>
                 </div>
 
-                {{-- </div> --}}
-                {{-- </div> --}}
-
-                <div class="col-12 col-md-12 col-sm-12">
-                    <!-- Video Slides -->
-                    {{-- <div class="video-slides owl-carousel"> --}}
-                    <!-- Single News Area -->
-                    <h3
-                        style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                        Verse Of The Day</h3>
-                    <div class="single-blog-post style-3"
-                        style="background-color:rgb(237, 186, 86);; border-radius: 20px;">
-                        <!-- Blog Thumbnail -->
-
-                        <div class="card-body">
-
-                            <div class="blog-thumbnail" style="text-align: justify">
 
 
-                                <blockquote>
-                                    <p
-                                        style="color:#fff; font-weight:700; font-size:15px; padding: 10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                        &ldquo;For God so loved the world, that he gave his only begotten Son, that
-                                        whosoever believeth in him should not perish, but have everlasting life.&rdquo;
-                                    </p>
-                                    <h4
-                                        style="color:#b21818; font-weight:700; font-size:18px; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                        John 3:166</h4>
-                                </blockquote>
-                                {{-- <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a> --}}
-                            </div>
+
+
+
+                <div class="row">
+                    <div class="col-12 col-md-7 col-sm-8">
+
+                        <div class="intro-news-filter d-flex justify-content-between"
+                            style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
+                            <h6
+                                style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                Verse of the day</h6>
+
                         </div>
+                        <div class="single-blog-post style-3"
+                            style="background-color:rgb(237, 186, 86);; border-radius: 20px;">
+                            <!-- Blog Thumbnail -->
 
+                            <div class="card-body">
+                                <!-- Add Widget -->
+                                <div class="single-widget-area add-widget mb-30">
+                                    <a href="#">
+                                    </a>
+                                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <a href="#">
+                                                    <blockquote>
+                                                        <p
+                                                            style="color:#fff; font-weight:700; font-size:15px; padding: 10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                            &ldquo;For God so loved the world, that he gave his only
+                                                            begotten Son, that
+                                                            whosoever believeth in him should not perish, but have
+                                                            everlasting
+                                                            life.&rdquo;
+                                                        </p>
+                                                        <h4
+                                                            style="color:#b21818; font-weight:700; font-size:18px; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                            John 3:166</h4>
+                                                    </blockquote>
+                                                </a>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <a href="#">
+                                                    <blockquote>
+                                                        <p
+                                                            style="color:#fff; font-weight:700; font-size:15px; padding: 10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                            &ldquo;For God so loved the world, that he gave his only
+                                                            begotten Son, that
+                                                            whosoever believeth in him should not perish, but have
+                                                            everlasting
+                                                            life.&rdquo;
+                                                        </p>
+                                                        <h4
+                                                            style="color:#b21818; font-weight:700; font-size:18px; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                            John 3:166</h4>
+                                                    </blockquote>
+                                                </a>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <blockquote>
+                                                    <p
+                                                        style="color:#fff; font-weight:700; font-size:15px; padding: 10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                        &ldquo;For God so loved the world, that he gave his only
+                                                        begotten Son, that
+                                                        whosoever believeth in him should not perish, but have
+                                                        everlasting
+                                                        life.&rdquo;
+                                                    </p>
+                                                    <h4
+                                                        style="color:#b21818; font-weight:700; font-size:18px; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                        John 3:166</h4>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="blog-thumbnail" style="text-align: justify">
+
+
+
+                                    {{-- <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a> --}}
+                                </div>
+                            </div>
+
+                        </div>
+                        {{-- </div> --}}
                     </div>
-                    {{-- </div> --}}
+                    <div class="col-md-5 col-sm-4">
+
+
+                        <div class="intro-news-filter d-flex justify-content-between"
+                            style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
+                            <h6
+                                style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                Diocese Documents </h6>
+
+                        </div>
+                        <p style="text-align: justify;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:17px;color:#000;"><i class="fa fa-file-pdf-o text-danger"
+                                aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Nesciunt sit,
+                            rep
+                        </p>
+                        <p style="text-align: justify;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:17px;color:#000;"><span><a href=""><i class="fa fa-book text-danger"
+                                        aria-hidden="true"></i></a></span>
+                            Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Tempore, minima veniam. Placeat.</p>
+
+                        <p style="text-align: justify;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:17px;color:#000;"><span style="font-size: 25px"><a href=""><i
+                                        class="fa fa-file-pdf-o text-danger" aria-hidden="true"></i>
+                                </a></span> Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Tempore, minima veniam. Placeat.</p>
+                    </div>
                 </div>
             </div>
 

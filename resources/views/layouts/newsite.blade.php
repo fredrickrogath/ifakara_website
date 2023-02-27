@@ -6,7 +6,7 @@
                 <div class="intro-news-tab">   
                     <!-- Intro News Filter -->
                     <div class="intro-news-filter d-flex justify-content-between"style="background-color:#ffff; color:#ffff; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
-                        <h6 style="color:#FF0000;font-weight:700">All News </h6>
+                        <h6 s style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">All News </h6>
                         <nav style="background-color: #000">
                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                 <a class="nav-item nav-link active" id="nav1" data-toggle="tab"
