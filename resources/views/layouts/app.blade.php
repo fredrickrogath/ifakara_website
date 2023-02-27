@@ -163,7 +163,7 @@
                             <div class="col-md-4 text-center animate-box">
                                 <div class="sermon-entry">
                                     <div class="sermon">
-                                        <img src="{{ asset('admin/assets/images/companies/apple.png') }}" alt="">
+                                        <img src="{{ asset('site/img/bg-img/bg-3.jpg') }}" alt="" style="border-radius: 10px">
                                         <div class="play">
                                             <a class="popup-vimeo" href="https://vimeo.com/channels/staffpicks/93951774"><i class="icon-play3"></i></a>
                                         </div>
@@ -175,7 +175,7 @@
                             <div class="col-md-4 text-center animate-box">
                                 <div class="sermon-entry">
                                     <div class="sermon">
-                                        <img src="{{ asset('admin/assets/images/companies/apple.png') }}" alt="">
+                                        <img src="{{ asset('site/img/bg-img/n-1.jpeg') }}" alt="" style="border-radius: 10px">
                                         <div class="play">
                                             <a class="popup-vimeo" href="https://vimeo.com/channels/staffpicks/93951774"><i class="icon-play3"></i></a>
                                         </div>
@@ -187,7 +187,7 @@
                             <div class="col-md-4 text-center animate-box">
                                 <div class="sermon-entry">
                                     <div class="sermon">
-                                        <img src="{{ asset('admin/assets/images/companies/apple.png') }}" alt="">
+                                        <img src="{{ asset('site/img/bg-img/n-2.jpeg') }}" alt="" style="border-radius: 10px">
                                         <div class="play">
                                             <a class="popup-vimeo" href="https://vimeo.com/channels/staffpicks/93951774"><i class="icon-play3"></i></a>
                                         </div>
