@@ -17,10 +17,61 @@
     @include('layouts.header')
     <!-- ##### Header Area End ##### -->
     <!-- ##### Header Area End ##### -->
+    <section class="intro-news-area mt-4 mb-70">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Intro News Tabs Area -->
+                <div class="col-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="intro-news-tab">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-8 col-md-12">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail " style="width: 100%">
+                                                <div id="carouselExampleIndicators" class="carousel slide"
+                                                    data-ride="carousel">
+
+                                                    <div class="carousel-inner" style="margin-top: 80px;">
+                                                        <div class="carousel-item active">
+
+                                                            <img class="d-block w-100 h-50"
+                                                                src="{{ asset('site/img/bg-img/schools.jpg') }}"
+                                                                alt="First slide">
+                                                            <div class="carousel-caption d-none d-md-block py-1"
+                                                                style="background-color: rgb(170, 167, 167); opacity:0.8; ">
+                                                                <h5 style="color:black; font-weight:700">Kanisa Kuu la Ifakara
+                                                                     </h5>
+                                                                <h6
+                                                                    style="color:#0b0b0a; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                                    Ufununguzi la mafunzo ya walimu kuhusu kufundisha
+                                                                    kwa
+                                                                    kufata mutaala unaozingatia uamahili</h6>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- ##### Intro News Area End ##### -->
-    <section class="intro-news-area  mb-70 mt-4">
+    <section class="intro-news-area">
         <div class="container">
 
             <div class="row">

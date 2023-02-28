@@ -13,7 +13,6 @@
                 <div class="collapse navbar-collapse" id="ftco-nav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a href="/" class="nav-link" style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">About</a></li>
                         <li class="nav-item"><a href="{{route('catholic_diocese')}}" class="nav-link"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Catholic Diocese</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{route('schools')}}"   style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Schools</a></li>
                         <li class="nav-item">
