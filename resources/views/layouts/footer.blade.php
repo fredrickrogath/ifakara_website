@@ -1,4 +1,4 @@
-<footer class="footer-area" style="background-color: 	#FFFFB7">
+<footer class="footer-area mt-5" style="background-color: 	#eef2f3">
     <!-- Footer Logo -->
 
     <!-- Footer Content -->
