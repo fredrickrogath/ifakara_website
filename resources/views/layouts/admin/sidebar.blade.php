@@ -67,12 +67,20 @@
                 <div class="collapse" id="sidebarEcommerce">
                     <ul class="nav-second-level">
                         <li>
+                            <a href="{{ route('admin_events') }}">Events</a>
+                        </li>
+                        <li>
                             <a href="{{ route('admin_news') }}">News</a>
                         </li>
                         <li>
-                            <a href="{{ route('admin_events') }}">Events</a>
+                            <a href="{{ route('admin_verse') }}">Verse of Day</a>
                         </li>
-                       
+                        <li>
+                            <a href="{{ route('admin_sermons') }}">Sermons</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('admin_gallery') }}">Gallery</a>
+                        </li>
                     </ul>
                 </div>
             </li>
@@ -154,7 +162,7 @@
                 <div class="collapse" id="sidebarTickets">
                     <ul class="nav-second-level">
                         <li>
-                            <a href="tickets-list.html">List</a>
+                            <a href="{{ route('diocese_summary') }}">Diocese Summary</a>
                         </li>
                         <li>
                             <a href="tickets-detail.html">Detail</a>

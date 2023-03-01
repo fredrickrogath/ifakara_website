@@ -11,7 +11,7 @@
     <!-- App css -->
     <link href="{{asset('admin/assets/css/config/default/bootstrap.min.css')}}" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
     <link href="{{asset('admin/assets/css/config/default/app.min.css')}}" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('admin/assets/css/config/admin/admin.css') }}">
+    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('admin/assets/css/config/admin/admin.css') }}"> --}}
 
     <link href="{{asset('admin/assets/css/config/default/bootstrap-dark.min.css')}}" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" />
     <link href="{{asset('admin/assets/css/config/default/app-dark.min.css')}}" rel="stylesheet" type="text/css" id="app-dark-stylesheet" />

@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Http\Controllers\Admin\AboutUsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
@@ -9,12 +9,15 @@ use App\Http\Controllers\Admin\DepartmentController;
 use App\Http\Controllers\Admin\DioceseDepartmentController;
 use App\Http\Controllers\Admin\EventsController;
 use App\Http\Controllers\Admin\ExactiveController;
+use App\Http\Controllers\Admin\GalleryController;
 use App\Http\Controllers\Admin\HealthsController;
 use App\Http\Controllers\Admin\NewsController;
 use App\Http\Controllers\Admin\ParishController;
 use App\Http\Controllers\Admin\ParishDepartmentController;
 use App\Http\Controllers\Admin\ResearchController;
 use App\Http\Controllers\Admin\SchoolsController;
+use App\Http\Controllers\Admin\SermonsController;
+use App\Http\Controllers\Admin\VerseController;
 use App\Http\Controllers\SitePagesController;
 
 /*
@@ -90,6 +93,21 @@ Route::get('/admin/edit_health/{id}', [HealthsController::class, 'edit'])->name(
 Route::get('/admin/delete_health/{id}', [HealthsController::class, 'destroy'])->name('admin_deletehealth');
 Route::put('/admin/update_health/{id}', [HealthsController::class, 'update'])->name('admin_updatehealth');
 
+//About us route
+Route::get('/admin/summary',[AboutUsController::class, 'summary'])->name('diocese_summary');
+Route::post('/admin/add_summary',[AboutUsController::class, 'store'])->name('add_summary');
+
+//Sermons route
+Route::get('/admin/sermons',[SermonsController::class, 'index'])->name('admin_sermons');
+Route::post('/admin/add_sermons',[SermonsController::class, 'store'])->name('add_sermons');
+
+//Verse of day route
+Route::get('/admin/verse',[VerseController::class, 'index'])->name('admin_verse');
+Route::post('/admin/add_verse',[VerseController::class, 'store'])->name('add_verse');
+
+//Gallery route
+Route::get('/admin/gallery',[GalleryController::class, 'index'])->name('admin_gallery');
+Route::post('/admin/add_gallery',[VerseController::class, 'store'])->name('add_gallery');
 
 Route::get('/admin/exactives',[ExactiveController::class,'index'])->name('admin_exactive_staff');
 Route::get('/admin/research',[ResearchController::class,'index'])->name('admin_research');
