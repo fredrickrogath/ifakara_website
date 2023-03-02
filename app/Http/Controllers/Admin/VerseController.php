@@ -64,7 +64,7 @@ class VerseController extends Controller
      */
     public function edit($id)
     {
-        $verses = verse::all();
+        $verses = verse::find($id);
         return view('admin.pages.whats_new.edit_verse', compact('verses')); 
     }
 

@@ -39,15 +39,14 @@ class SermonsController extends Controller
     public function store(Request $request)
     {
         $sermons = new sermon();
-        if($request->hasFile('image')){
-            $file = $request->file('image');
+        if($request->hasFile('video')){
+            $file = $request->file('video');
             $ext = $file->getClientOriginalExtension();
             $filename = time().'.'.$ext;
-            $file->move('admin/assets/images/sermons',$filename);
-            $sermons->image = $filename;
+            $file->move('admin/assets/video/sermons',$filename);
+            $sermons->video = $filename;
         }
         $sermons->sermons_title = $request->input('sermons_title');
-        $sermons->video = $request->input('video');
         $sermons->name = $request->input('name');
         if($sermons->save()){
             return redirect('/admin/sermons')->with('status', 'Sermons Added SuccessFully!');
@@ -73,7 +72,7 @@ class SermonsController extends Controller
      */
     public function edit($id)
     {
-        $sermons = sermon::all();
+        $sermons = sermon::find($id);
         return view('admin.pages.whats_new.edit_sermon', compact('sermons'));   
     }
 
@@ -87,19 +86,18 @@ class SermonsController extends Controller
     public function update(Request $request, $id)
     {
         $sermons = sermon::find($id);
-        if($request->hasFile('image')){
-            $path = 'admin/assets/images/sermons'.$sermons->image;
+        if($request->hasFile('video')){
+            $path = 'admin/assets/video/sermons'.$sermons->image;
             if(File::exists($path)){
                 File::delete($path);
             }
-            $file = $request->file('image');
+            $file = $request->file('video');
             $ext = $file->getClientOriginalExtension();
             $filename = time().'.'.$ext;    
-            $file->move('admin/assets/images/sermons',$filename);
-            $sermons->image = $filename;
+            $file->move('admin/assets/video/sermons',$filename);
+            $sermons->video = $filename;
         }
         $sermons->sermons_title = $request->input('sermons_title');
-        $sermons->video = $request->input('video');
         $sermons->name = $request->input('name');
         
         $sermons->update();

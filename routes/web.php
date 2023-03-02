@@ -100,14 +100,23 @@ Route::post('/admin/add_summary',[AboutUsController::class, 'store'])->name('add
 //Sermons route
 Route::get('/admin/sermons',[SermonsController::class, 'index'])->name('admin_sermons');
 Route::post('/admin/add_sermons',[SermonsController::class, 'store'])->name('add_sermons');
+Route::get('/admin/edit_sermons/{id}', [SermonsController::class, 'edit'])->name('edit_sermons');
+Route::get('/admin/delete_sermons/{id}', [SermonsController::class, 'destroy'])->name('delete_sermons');
+Route::put('/admin/update_sermons/{id}', [SermonsController::class, 'update'])->name('update_sermons');
 
 //Verse of day route
 Route::get('/admin/verse',[VerseController::class, 'index'])->name('admin_verse');
 Route::post('/admin/add_verse',[VerseController::class, 'store'])->name('add_verse');
+Route::get('/admin/edit_verse/{id}', [VerseController::class, 'edit'])->name('edit_verse');
+Route::get('/admin/delete_verse/{id}', [VerseController::class, 'destroy'])->name('delete_verse');
+Route::put('/admin/update_verse/{id}', [VerseController::class, 'update'])->name('update_verse');
 
 //Gallery route
 Route::get('/admin/gallery',[GalleryController::class, 'index'])->name('admin_gallery');
-Route::post('/admin/add_gallery',[VerseController::class, 'store'])->name('add_gallery');
+Route::post('/admin/add_gallery',[GalleryController::class, 'store'])->name('add_gallery');
+Route::get('/admin/edit_gallery/{id}', [GalleryController::class, 'edit'])->name('edit_gallery');
+Route::get('/admin/delete_gallery/{id}', [GalleryController::class, 'destroy'])->name('delete_gallery');
+Route::put('/admin/update_gallery/{id}', [GalleryController::class, 'update'])->name('update_gallery');
 
 Route::get('/admin/exactives',[ExactiveController::class,'index'])->name('admin_exactive_staff');
 Route::get('/admin/research',[ResearchController::class,'index'])->name('admin_research');

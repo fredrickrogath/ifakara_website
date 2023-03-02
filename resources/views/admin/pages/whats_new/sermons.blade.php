@@ -76,33 +76,29 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                {{-- @foreach ($news as $item)
+                                                @foreach ($sermons as $sermons)
                                                 <tr>
                                                     <td class="table-user">
-                                                        {{ $item->id }}
+                                                        {{ $sermons->id }}
                                                     </td>
                                                     <td>
-                                                        {{ $item->news_title }}
+                                                        {{ $sermons->sermons_title }}
                                                     </td>
                                                     <td>
-                                                        
-                                                        <img src="{{ asset('admin/assets/images/news/' . $item->image) }}" alt="table-user"
-                                                            class="me-2" width="100px" height="50px">
+                                                        <video src="{{ asset('admin/assets/video/sermons/' . $sermons->video) }}" style="border-radius: 10px"
+                                                         height="80" width="150" controls></video>
                                                     </td>
                                                     <td>
-                                                        {{ $item->initial_description }}
+                                                        {{ $sermons->name }}
                                                     </td>
                                                     <td>
-                                                        {{ $item->news_description }}
-                                                    </td>
-                                                    <td>
-                                                        <a href="{{ url('admin/edit_news/'. $item->id) }}" class="action-icon"> <i
+                                                        <a href="{{ url('admin/edit_sermons/'. $sermons->id) }}" class="action-icon"> <i
                                                                 class="mdi mdi-square-edit-outline"></i></a>
-                                                        <a href="{{ url('admin/delete_news/'.$item->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
+                                                        <a href="{{ url('admin/delete_sermons/'.$sermons->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
                                                                 class="mdi mdi-delete"></i></a>
                                                     </td>
                                                 </tr>
-                                                @endforeach --}}
+                                                @endforeach
                                             </tbody>
                                         </table>
                                     </div>
@@ -157,7 +153,7 @@
                                 aria-label="Close"></button>
                         </div>
                         <div class="modal-body p-4">
-                            <form action="{{ url('/admin/add_sermons') }}" method="POST" enctype="multipart/form-data">
+                            <form action="{{ url('/admin/add_sermons') }}" method="POST" enctype="multipart/form-data" accept="mp4">
                                 @csrf
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Sermons Title</label>

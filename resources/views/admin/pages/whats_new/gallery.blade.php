@@ -57,7 +57,7 @@
 
                                     <ul class="nav nav-tabs nav-bordered nav-justified">
                                         <li class="nav-item">
-                                            <a href="#home-b2" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
+                                            <a href="#home-b2" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
                                                 Photos
                                             </a>
                                         </li>
@@ -86,33 +86,30 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        {{-- @foreach ($news as $item)
+                                                        @foreach ($photos as $photo)
                                                         <tr>
                                                             <td class="table-user">
-                                                                {{ $item->id }}
+                                                                {{ $photo->id }}
                                                             </td>
                                                             <td>
-                                                                {{ $item->news_title }}
+                                                                {{ $photo->name }}
                                                             </td>
                                                             <td>
                                                                 
-                                                                <img src="{{ asset('admin/assets/images/news/' . $item->image) }}" alt="table-user"
+                                                                <img src="{{ asset('admin/assets/images/gallery/' . $photo->media) }}" alt="table-user"
                                                                     class="me-2" width="100px" height="50px">
                                                             </td>
                                                             <td>
-                                                                {{ $item->initial_description }}
+                                                                {{ $photo->description }}
                                                             </td>
                                                             <td>
-                                                                {{ $item->news_description }}
-                                                            </td>
-                                                            <td>
-                                                                <a href="{{ url('admin/edit_news/'. $item->id) }}" class="action-icon"> <i
+                                                                <a href="{{ url('admin/edit_gallery/'. $photo->id) }}" class="action-icon"> <i
                                                                         class="mdi mdi-square-edit-outline"></i></a>
-                                                                <a href="{{ url('admin/delete_news/'.$item->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
+                                                                <a href="{{ url('admin/delete_gallery/'.$photo->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
                                                                         class="mdi mdi-delete"></i></a>
                                                             </td>
                                                         </tr>
-                                                        @endforeach --}}
+                                                        @endforeach
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -130,33 +127,29 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        {{-- @foreach ($news as $item)
+                                                        @foreach ($videos as $video)
                                                         <tr>
                                                             <td class="table-user">
-                                                                {{ $item->id }}
+                                                                {{ $video->id }}
                                                             </td>
                                                             <td>
-                                                                {{ $item->news_title }}
+                                                                {{ $video->name }}
                                                             </td>
                                                             <td>
-                                                                
-                                                                <img src="{{ asset('admin/assets/images/news/' . $item->image) }}" alt="table-user"
-                                                                    class="me-2" width="100px" height="50px">
+                                                                <video src="{{ asset('admin/assets/images/gallery/' . $video->media) }}" style="border-radius: 10px"
+                                                                    height="80" width="150" controls></video>
                                                             </td>
                                                             <td>
-                                                                {{ $item->initial_description }}
+                                                                {{ $video->description }}
                                                             </td>
                                                             <td>
-                                                                {{ $item->news_description }}
-                                                            </td>
-                                                            <td>
-                                                                <a href="{{ url('admin/edit_news/'. $item->id) }}" class="action-icon"> <i
+                                                                <a href="{{ url('admin/edit_gallery/'. $video->id) }}" class="action-icon"> <i
                                                                         class="mdi mdi-square-edit-outline"></i></a>
-                                                                <a href="{{ url('admin/delete_news/'.$item->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
+                                                                <a href="{{ url('admin/delete_gallery/'.$video->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
                                                                         class="mdi mdi-delete"></i></a>
                                                             </td>
                                                         </tr>
-                                                        @endforeach --}}
+                                                        @endforeach
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -174,33 +167,29 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        {{-- @foreach ($news as $item)
+                                                        @foreach ($audios as $audio)
                                                         <tr>
                                                             <td class="table-user">
-                                                                {{ $item->id }}
+                                                                {{ $audio->id }}
                                                             </td>
                                                             <td>
-                                                                {{ $item->news_title }}
+                                                                {{ $audio->name }}
                                                             </td>
                                                             <td>
-                                                                
-                                                                <img src="{{ asset('admin/assets/images/news/' . $item->image) }}" alt="table-user"
-                                                                    class="me-2" width="100px" height="50px">
+                                                                <audio src="{{ asset('admin/assets/images/gallery/' . $audio->media) }}"
+                                                                     controls></audio>
                                                             </td>
                                                             <td>
-                                                                {{ $item->initial_description }}
+                                                                {{ $audio->description }}
                                                             </td>
                                                             <td>
-                                                                {{ $item->news_description }}
-                                                            </td>
-                                                            <td>
-                                                                <a href="{{ url('admin/edit_news/'. $item->id) }}" class="action-icon"> <i
+                                                                <a href="{{ url('admin/edit_gallery/'. $audio->id) }}" class="action-icon"> <i
                                                                         class="mdi mdi-square-edit-outline"></i></a>
-                                                                <a href="{{ url('admin/delete_news/'.$item->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
+                                                                <a href="{{ url('admin/delete_gallery/'.$audio->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
                                                                         class="mdi mdi-delete"></i></a>
                                                             </td>
                                                         </tr>
-                                                        @endforeach --}}
+                                                        @endforeach
                                                     </tbody>
                                                 </table>
                                             </div>

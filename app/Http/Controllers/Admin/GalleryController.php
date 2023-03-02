@@ -16,10 +16,11 @@ class GalleryController extends Controller
      */
     public function index()
     {
-        $gallery = gallery::all();
-        return view('admin.pages.whats_new.gallery', compact('gallery'));
+        $photos = gallery::all()->where('category', '=', 'Photo');
+        $videos = gallery::all()->where('category', '=', 'Video');
+        $audios = gallery::all()->where('category', '=', 'Audio');
+        return view('admin.pages.whats_new.gallery', compact('photos','videos','audios'));
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -39,14 +40,13 @@ class GalleryController extends Controller
     public function store(Request $request)
     {
         $gallery = new gallery();
-        if($request->hasFile('image')){
-            $file = $request->file('image');
+        if($request->hasFile('media')){
+            $file = $request->file('media');
             $ext = $file->getClientOriginalExtension();
             $filename = time().'.'.$ext;
             $file->move('admin/assets/images/gallery',$filename);
-            $gallery->image = $filename;
+            $gallery->media = $filename;
         }
-        $gallery->media = $request->input('media');
         $gallery->category = $request->input('category');
         $gallery->name = $request->input('name');
         $gallery->description = $request->input('description');
@@ -88,18 +88,17 @@ class GalleryController extends Controller
     public function update(Request $request, $id)
     {
         $gallery = gallery::find($id);
-        if($request->hasFile('image')){
+        if($request->hasFile('media')){
             $path = 'admin/assets/images/gallery'.$gallery->image;
             if(File::exists($path)){
                 File::delete($path);
             }
-            $file = $request->file('image');
+            $file = $request->file('media');
             $ext = $file->getClientOriginalExtension();
             $filename = time().'.'.$ext;    
             $file->move('admin/assets/images/gallery',$filename);
-            $gallery->image = $filename;
+            $gallery->media = $filename;
         }
-        $gallery->media = $request->input('media');
         $gallery->category = $request->input('category');
         $gallery->name = $request->input('name');
         $gallery->description = $request->input('description');

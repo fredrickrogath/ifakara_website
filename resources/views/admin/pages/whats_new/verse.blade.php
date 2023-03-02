@@ -63,15 +63,22 @@
                                         </div>
 
                                     </div>
-                                    <div class="col-12">
+                                    <div class="row justify-content-between">
+                                        @foreach ($verses as $verse)
+                                    <div class="col-10">
                                         <div class="card card-body text-xs-center">
-                                            <h5 class="card-title">Special title treatment</h5>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional
-                                                content.</p>
+                                            <h5 class="card-title">{{ $verse->servant }}</h5>
+                                            <p class="card-text">{{ $verse->verse }}</p>
                                         </div>
                                     </div>
-                                    <hr>
-                                    
+                                    <div class="col-2">
+                                        <a href="{{ url('/admin/edit_verse/'.$verse->id) }}" class="action-icon"> <i
+                                            class="mdi mdi-square-edit-outline"></i></a>
+                                    <a href="{{ url('/admin/delete_verse/'.$verse->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
+                                            class="mdi mdi-delete"></i></a>
+                                    </div>
+                                    @endforeach
+                                    </div>
                                     <ul class="pagination pagination-rounded justify-content-end mb-0 mt-2">
                                         <li class="page-item">
                                             <a class="page-link" href="javascript: void(0);" aria-label="Previous">
@@ -124,15 +131,14 @@
                             <form action="{{ url('/admin/add_verse') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="mb-3">
-                                    <label for="position" class="form-label">Verse</label>
-                                    <textarea name="verse" id="" cols="12" rows="3" class="form-control" required></textarea>
-                                </div>
-                                <div class="mb-3">
                                     <label for="name" class="form-label">Servant</label>
                                     <input type="text" class="form-control" id="name" name="servant" required
                                         placeholder="Enter Sermons Title">
                                 </div>
-
+                                <div class="mb-3">
+                                    <label for="position" class="form-label">Verse</label>
+                                    <textarea name="verse" id="" cols="12" rows="3" class="form-control" required></textarea>
+                                </div>
                                 <div class="text-end">
                                     <button type="submit" class="bg-info p-2">Publish </button>
                                 </div>
