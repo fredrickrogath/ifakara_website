@@ -154,7 +154,7 @@
                                     <div class="sermon">
                                         <video src="{{ asset('site/img/bg-img/n-1.jpeg') }}" style="border-radius: 10px"
                                             height="240" width="340" controls></video>
-                                        <div class="play">
+                                        <div class="play" style="background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);">
                                             <a class="popup-vimeo"
                                                 href="https://vimeo.com/channels/staffpicks/93951774"><i
                                                     class="icon-play3"></i></a>
@@ -429,7 +429,7 @@
                                     </div>
                                     <div class="scf-text">
                                         <h2><span class="counter">149</span></h2>
-                                        <p style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Members</p>
+                                        <p style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Visitors</p>
                                     </div>
                                 </div>
                             </div>

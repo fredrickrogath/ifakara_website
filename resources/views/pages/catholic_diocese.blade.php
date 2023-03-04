@@ -149,37 +149,37 @@
                                             <div class="col-md-3">
                                                 <div class="single-widget-area add-widget mt-3 ml-3">
                                                     <a href="#" class=" justify-content-center">
-                                                        <img src="site/img/bg-img/bishop.jpg" alt="">
+                                                        <img src="site/img/bg-img/p_1.jpg" alt="">
                                                     </a>
                                                     <h6 class="text-center mt-3" style="font-weight:600; color: black;">
                                                         Right Rev.
                                                         Salutaris Melchior
                                                     </h6>
-                                                    <p> Ifakara Cathedrol Diocese</p>
+                                                    <p style="font-size:12px; color:#ff7b00;">Ifakara Cathedrol Diocese</p>
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="single-widget-area add-widget mt-3 ml-3">
                                                     <a href="#" class=" justify-content-center">
-                                                        <img src="site/img/bg-img/bishop.jpg" alt="">
+                                                        <img src="site/img/bg-img/p_2.jpg" alt="">
                                                     </a>
                                                     <h6 class="text-center mt-3" style="font-weight:600; color: black;">
                                                         Father.
                                                         Salutaris Melchior
                                                     </h6>
-                                                    <p> Ifakara Cathedrol Diocese</p>
+                                                    <p style="font-size:12px; color:#ff7b00;">Ifakara Cathedrol Diocese</p>
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="single-widget-area add-widget mt-3 ml-3">
                                                     <a href="#" class=" justify-content-center">
-                                                        <img src="site/img/bg-img/bishop.jpg" alt="">
+                                                        <img src="site/img/bg-img/p_3.jpg" alt="">
                                                     </a>
                                                     <h6 class="text-center mt-3" style="font-weight:600; color: black;">
                                                         Father.
                                                         Salutaris Melchior
                                                     </h6>
-                                                    <p>Ifakara Cathedrol Diocese</p>
+                                                    <p style="font-size:12px; color:#ff7b00;">Ifakara Cathedrol Diocese</p>
                                                 </div>
                                             </div>
                                         </div>
