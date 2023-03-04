@@ -95,7 +95,10 @@ Route::put('/admin/update_health/{id}', [HealthsController::class, 'update'])->n
 
 //About us route
 Route::get('/admin/summary',[AboutUsController::class, 'summary'])->name('diocese_summary');
-Route::post('/admin/add_summary',[AboutUsController::class, 'store'])->name('add_summary');
+Route::post('/admin/add_summary',[AboutUsController::class, 'storeSummary'])->name('add_summary');
+Route::get('/admin/edit_summary/{id}', [AboutUsController::class, 'editsummary'])->name('admin_editsummary');
+Route::get('/admin/delete_summary/{id}', [AboutUsController::class, 'destroysummary'])->name('admin_deletesummary');
+Route::put('/admin/update_summary/{id}', [AboutUsController::class, 'updatesummary'])->name('admin_updatesummary');
 
 //Sermons route
 Route::get('/admin/sermons',[SermonsController::class, 'index'])->name('admin_sermons');

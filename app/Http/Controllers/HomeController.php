@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\verse;
+use App\Models\summary;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -13,7 +15,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('welcome');
+        $verses = verse::all();
+        $school = summary::where('category', '=', 'Schools')->latest('id')->limit(1)->get();
+        $health = summary::where('category', '=', 'Healths Center')->latest('id')->limit(1)->get();
+        $parish = summary::where('category', '=', 'Parishies')->latest('id')->limit(1)->get();
+        $member = summary::where('category', '=', 'Members')->latest('id')->limit(1)->get();
+        return view('welcome', compact('verses','school', 'health', 'parish', 'member'));
     }
 
     /**

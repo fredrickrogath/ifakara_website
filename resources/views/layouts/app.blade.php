@@ -294,59 +294,31 @@
                                 <div class="single-widget-area add-widget mb-30">
                                     <a href="#">
                                     </a>
+                                    
                                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                        
                                         <div class="carousel-inner">
-                                            <div class="carousel-item active">
+                                            @foreach ($verses as $key => $verse)
+                                            <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
+                                                
                                                 <a href="#">
                                                     <blockquote>
                                                         <p
                                                             style="color:#fff; font-weight:700; font-size:15px; padding: 10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                                            &ldquo;For God so loved the world, that he gave his only
-                                                            begotten Son, that
-                                                            whosoever believeth in him should not perish, but have
-                                                            everlasting
-                                                            life.&rdquo;
+                                                            {{ $verse->verse }}
                                                         </p>
                                                         <h4
                                                             style="color:#b21818; font-weight:700; font-size:18px; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                                            John 3:166</h4>
+                                                            {{ $verse->servant }}</h4>
                                                     </blockquote>
                                                 </a>
+                                                
                                             </div>
-                                            <div class="carousel-item">
-                                                <a href="#">
-                                                    <blockquote>
-                                                        <p
-                                                            style="color:#fff; font-weight:700; font-size:15px; padding: 10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                                            &ldquo;For God so loved the world, that he gave his only
-                                                            begotten Son, that
-                                                            whosoever believeth in him should not perish, but have
-                                                            everlasting
-                                                            life.&rdquo;
-                                                        </p>
-                                                        <h4
-                                                            style="color:#b21818; font-weight:700; font-size:18px; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                                            John 3:166</h4>
-                                                    </blockquote>
-                                                </a>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <blockquote>
-                                                    <p
-                                                        style="color:#fff; font-weight:700; font-size:15px; padding: 10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                                        &ldquo;For God so loved the world, that he gave his only
-                                                        begotten Son, that
-                                                        whosoever believeth in him should not perish, but have
-                                                        everlasting
-                                                        life.&rdquo;
-                                                    </p>
-                                                    <h4
-                                                        style="color:#b21818; font-weight:700; font-size:18px; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                                        John 3:166</h4>
-                                                </blockquote>
-                                            </div>
+                                            @endforeach
                                         </div>
+                                        
                                     </div>
+                                    
                                 </div>
 
                                 <div class="blog-thumbnail" style="text-align: justify">
@@ -421,57 +393,65 @@
                     <div class="newsbox-cool-facts-area">
                         <div class="row mt-1">
 
-                            <!-- Single Cool Facts -->
+                            @foreach ($member as $member)
+                                <!-- Single Cool Facts -->
                             <div class="col-12 col-sm-6 col-lg-3">
                                 <div class="single-cool-fact mb-10">
                                     <div class="scf-icon">
                                         <img src="{{ asset('site/img/core-img/idea.png') }}" alt="">
                                     </div>
                                     <div class="scf-text">
-                                        <h2><span class="counter">149</span></h2>
-                                        <p style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Members</p>
+                                        <h2><span class="counter">{{ $member->amount }}</span></h2>
+                                        <p style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">{{ $member->name }}</p>
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- Single Cool Facts -->
+                            @endforeach
+                            
+                            @foreach ($parish as $parish)
+                                 <!-- Single Cool Facts -->
                             <div class="col-12 col-sm-6 col-lg-3">
                                 <div class="single-cool-fact mb-10">
                                     <div class="scf-icon">
                                         <img src="{{ asset('site/img/core-img/list.png') }}" alt="">
                                     </div>
                                     <div class="scf-text">
-                                        <h2><span class="counter">2391</span></h2>
-                                        <p style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Parishies</p>
+                                        <h2><span class="counter">{{$parish->amount}}</span></h2>
+                                        <p style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">{{$parish->name}}</p>
                                     </div>
                                 </div>
                             </div>
+                            @endforeach
 
-                            <!-- Single Cool Facts -->
+                            @foreach ($school as $school)
+                                <!-- Single Cool Facts -->
                             <div class="col-12 col-sm-6 col-lg-3">
                                 <div class="single-cool-fact mb-10">
                                     <div class="scf-icon">
                                         <img src="{{ asset('site/img/core-img/id-card.png') }}" alt="">
                                     </div>
                                     <div class="scf-text">
-                                        <h2><span class="counter">245</span></h2>
-                                        <p style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Schools</p>
+                                        <h2><span class="counter">{{$school->amount}}</span></h2>
+                                        <p style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">{{$school->name}}</p>
                                     </div>
                                 </div>
                             </div>
+                            @endforeach
 
-                            <!-- Single Cool Facts -->
+                            @foreach ($health as $health)
+                                <!-- Single Cool Facts -->
                             <div class="col-12 col-sm-6 col-lg-3">
                                 <div class="single-cool-fact mb-10">
                                     <div class="scf-icon">
                                         <img src="{{ asset('site/img/core-img/diamond.png') }}" alt="">
                                     </div>
                                     <div class="scf-text">
-                                        <h2><span class="counter">128</span></h2>
-                                        <p style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Healths Centers</p>
+                                        <h2><span class="counter">{{$health->amount}}</span></h2>
+                                        <p style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">{{$health->name}}</p>
                                     </div>
                                 </div>
                             </div>
+                            @endforeach
 
                         </div>
                     </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\verse;
 use Illuminate\Http\Request;
 
 class SitePagesController extends Controller
