@@ -62,13 +62,48 @@
                                         </div>
 
                                     </div>
+                                    <div class="row">
+                                        @foreach ($school as $school)
                                     <div class="col-6">
                                         <div class="card card-body text-xs-center">
-                                            <h5 class="card-title">Special title treatment</h5>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional
-                                                content.</p>
+                                            <h3 class="card-title">{{ $school->name }}</h3>
+                                            <h4 class="card-text">{{ $school->amount }}</h4>
                                         </div>
                                         <hr>
+                                    </div>
+                                    @endforeach
+                                    
+                                    
+                                    @foreach ($member as $member)
+                                    <div class="col-6">
+                                        <div class="card card-body text-xs-center">
+                                            <h3 class="card-title">{{ $member->name }}</h3>
+                                            <h4 class="card-text">{{ $member->amount }}</h4>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    @endforeach
+                                    
+
+                                    @foreach ($parish as $parish)
+                                    <div class="col-6">
+                                        <div class="card card-body text-xs-center">
+                                            <h3 class="card-title">{{ $parish->name }}</h3>
+                                            <h4 class="card-text">{{ $parish->amount }}</h4>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    @endforeach
+
+                                    @foreach ($health as $health)
+                                    <div class="col-6">
+                                        <div class="card card-body text-xs-center">
+                                            <h3 class="card-title">{{ $health->name }}</h3>
+                                            <h4 class="card-text">{{ $health->amount }}</h4>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    @endforeach
                                     </div>
                                     
                                     <ul class="pagination pagination-rounded justify-content-end mb-0 mt-2">
