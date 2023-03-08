@@ -68,6 +68,13 @@
                                         <div class="card card-body text-xs-center">
                                             <h3 class="card-title">{{ $school->name }}</h3>
                                             <h4 class="card-text">{{ $school->amount }}</h4>
+
+                                            {{-- <div>
+                                                <a href="{{ url('admin/edit_events/'. $school->id) }}" class="action-icon"> <i
+                                                    class="mdi mdi-square-edit-outline"></i></a>
+                                            <a href="{{ url('admin/delete_summary/'.$school->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
+                                                    class="mdi mdi-delete"></i></a>
+                                            </div> --}}
                                         </div>
                                         <hr>
                                     </div>
@@ -79,6 +86,12 @@
                                         <div class="card card-body text-xs-center">
                                             <h3 class="card-title">{{ $member->name }}</h3>
                                             <h4 class="card-text">{{ $member->amount }}</h4>
+                                            {{-- <div>
+                                                <a href="{{ url('admin/edit_events/'. $member->id) }}" class="action-icon"> <i
+                                                    class="mdi mdi-square-edit-outline"></i></a>
+                                            <a href="{{ url('admin/delete_summary/'.$member->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
+                                                    class="mdi mdi-delete"></i></a>
+                                            </div> --}}
                                         </div>
                                         <hr>
                                     </div>
@@ -90,6 +103,12 @@
                                         <div class="card card-body text-xs-center">
                                             <h3 class="card-title">{{ $parish->name }}</h3>
                                             <h4 class="card-text">{{ $parish->amount }}</h4>
+                                            {{-- <div>
+                                                <a href="{{ url('admin/edit_events/'. $parish->id) }}" class="action-icon"> <i
+                                                    class="mdi mdi-square-edit-outline"></i></a>
+                                            <a href="{{ url('admin/delete_summary/'.$parish->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
+                                                    class="mdi mdi-delete"></i></a>
+                                            </div> --}}
                                         </div>
                                         <hr>
                                     </div>
@@ -100,6 +119,12 @@
                                         <div class="card card-body text-xs-center">
                                             <h3 class="card-title">{{ $health->name }}</h3>
                                             <h4 class="card-text">{{ $health->amount }}</h4>
+                                            {{-- <div>
+                                                <a href="{{ url('admin/edit_events/'. $health->id) }}" class="action-icon"> <i
+                                                    class="mdi mdi-square-edit-outline"></i></a>
+                                            <a href="{{ url('admin/delete_summary/'.$health->id) }}" onclick="return confirm('Are you sure you want to delete?');" class="action-icon"> <i
+                                                    class="mdi mdi-delete"></i></a>
+                                            </div> --}}
                                         </div>
                                         <hr>
                                     </div>
