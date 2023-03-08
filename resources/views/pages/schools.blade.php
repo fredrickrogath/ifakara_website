@@ -14,8 +14,9 @@
     <!-- ##### Header Area Start ##### -->
 
     <!-- ##### Header Area Start ##### -->
+    
     @include('layouts.header')
-    <!-- ##### Header Area End ##### -->
+
     <!-- ##### Header Area End ##### -->
     <section class="intro-news-area mt-4 mb-70">
         <div class="container">
