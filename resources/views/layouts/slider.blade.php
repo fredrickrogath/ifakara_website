@@ -57,12 +57,12 @@
                                                             alt="Third slide">
                                                         <div class="carousel-caption d-none d-md-block py-1"
                                                             style="background-color: rgb(170, 167, 167); opacity:0.8; ">
-                                                            <h5 style="color:black; font-weight:700"> Kanisa Kuu 
-                                                                CBC </h5>
-                                                            <h6
+                                                            <h5 style="color:black; font-weight:700"> Kanisa kuu la Mtakatifu Andrea  jimbo Katoliki Ifakara.
+                                                                 </h5>
+                                                            {{-- <h6
                                                                 style="color:#0b0b0a; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                                                                 mafunzo ya walimu kuhusu kufundisha kwa kufata mutaala
-                                                                unaozingatia uamahili</h6>
+                                                                unaozingatia uamahili</h6> --}}
                                                         </div>
                                                     </div>
                                                 </div>

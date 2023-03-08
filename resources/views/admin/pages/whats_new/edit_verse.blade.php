@@ -55,7 +55,7 @@
                                                     </div>
                                                     <div class="col-12 mb-3">
                                                         <label for="company" class="form-label">Verse</label>
-                                                        <textarea name="verse" id="" cols="20" rows="5" class="form-control" required>{{ $verses->verse }}</textarea>
+                                                        <textarea name="verse" id="" cols="20" rows="5" placeholder="weka fungasemi na fungua semi" class="form-control" required>{{ $verses->verse }}</textarea>
                                                     </div>
                     
                                                     <div class="text-end">
