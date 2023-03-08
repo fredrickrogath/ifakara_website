@@ -39,7 +39,7 @@
                                                     </div>
                                                     <div class="carousel-item">
                                                         <img class="d-block w-100"
-                                                            src="{{ asset('site/img/bg-img/bg-2.jpg') }}"
+                                                            src="{{ asset('site/img/bg-img/bg-10.jpg') }}"
                                                             alt="Second slide">
                                                         <div class="carousel-caption d-none d-md-block py-1"
                                                             style="background-color: rgb(170, 167, 167); opacity:0.8; ">
@@ -53,11 +53,11 @@
                                                     </div>
                                                     <div class="carousel-item">
                                                         <img class="d-block w-100"
-                                                            src="{{ asset('site/img/bg-img/bg-10.jpg') }}"
+                                                            src="{{ asset('site/img/bg-img/chrch_slider_2.jpg') }}"
                                                             alt="Third slide">
                                                         <div class="carousel-caption d-none d-md-block py-1"
                                                             style="background-color: rgb(170, 167, 167); opacity:0.8; ">
-                                                            <h5 style="color:black; font-weight:700"> Mafunzo ya walimu
+                                                            <h5 style="color:black; font-weight:700"> Kanisa Kuu 
                                                                 CBC </h5>
                                                             <h6
                                                                 style="color:#0b0b0a; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">

@@ -36,9 +36,9 @@
 
                                         <!-- Blog Content -->
                                         <div class="blog-content">
-                                            <span class="post-date">June 20, 2018</span>
-                                            <a href="#" class="post-title">Lorem ipsum dolor sit, amet
-                                                consectsaepe eveniet .</a>
+                                            <span class="post-date">Dec 10, 2022</span>
+                                            <a href="#" class="post-title" style="font-size:14px;"> Ufununguzi la mafunzo ya walimu kuhusu kufundisha kwa
+                                                kufata mutaala unaozingatia uamahili</a>
                                         </div>
                                     </div>
                                 </div>
@@ -56,8 +56,7 @@
                                         <!-- Blog Content -->
                                         <div class="blog-content">
                                             <span class="post-date">June 20, 2018</span>
-                                            <a href="#" class="post-title">Lorem ipsum dolor sit, amet
-                                                consectsaepe eveniet .</a>
+                                            <a href="#" class="post-title" style="font-size:14px;">Parokia ya Mtakatifu Yohane Mbatizaji V 60, Ibadan ya misa takatifu, somo ni kutoka Mambo ya Walawi.</a>
                                         </div>
                                     </div>
                                 </div>
@@ -74,9 +73,8 @@
 
                                         <!-- Blog Content -->
                                         <div class="blog-content">
-                                            <span class="post-date">June 20, 2018</span>
-                                            <a href="#" class="post-title">Lorem ipsum dolor sit, amet
-                                                consectsaepe eveniet .</a>
+                                            <span class="post-date">Feb 2, 2023</span>
+                                            <a href="#" class="post-title" style="font-size:14px;">Parokia ya Mtakatifu Yohane Mbatizaji V 60, Ibadan ya misa takatifu, somo ni kutoka Mambo ya Walawi.</a>
                                         </div>
                                     </div>
                                 </div>
@@ -87,15 +85,16 @@
                                         <!-- Blog Thumbnail -->
                                         <div class="blog-thumbnail">
                                             <a href="#"><img
-                                                    src="{{ asset('site/img/bg-img/n-4.jpg') }}"
+                                                    src="{{ asset('site/img/bg-img/new_1.JPG') }}"
                                                     alt=""></a>
                                         </div>
 
                                         <!-- Blog Content -->
                                         <div class="blog-content">
-                                            <span class="post-date">June 20, 2018</span>
-                                            <a href="#" class="post-title">Lorem ipsum dolor sit, amet
-                                                consectsaepe eveniet odit provident iusto.</a>
+                                            <span class="post-date">March 02, 2023</span>
+                                            <a href="#" class="post-title" style="font-size:14px;">Mazungumzo ya Kitaaluma kuhusu Mtaala wa Elimu unaozungatia Ujuzi na Umahili. 
+                                                                         Mtoa Mada : Dr Eliya Kibga.
+                                                </a>
                                         </div>
                                     </div>
                                 </div>

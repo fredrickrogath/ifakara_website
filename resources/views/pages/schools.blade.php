@@ -41,7 +41,7 @@
                                                                 alt="First slide">
                                                             <div class="carousel-caption d-none d-md-block py-1"
                                                                 style="background-color: rgb(170, 167, 167); opacity:0.8; ">
-                                                                <h5 style="color:black; font-weight:700">Kanisa Kuu la Ifakara
+                                                                <h5 style="color:black; font-weight:700">CATHOLIC DIOCESE SCHOOLS
                                                                      </h5>
                                                                 <h6
                                                                     style="color:#0b0b0a; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
@@ -73,16 +73,9 @@
     <!-- ##### Intro News Area End ##### -->
     <section class="intro-news-area">
         <div class="container">
-
-            <div class="row">
-                <div class="col-md-12">
-                    <h4 class="text-info" style="color:#000; font-weight:700;font-size:15px">CATHOLIC DIOCESE SCHOOLS</h4>
-                </div>
-            </div>
-            <div class="row justify-content-center mt-4">
-
+            <div class="row justify-content-center">
                 <!-- Intro News Tabs Area -->
-                <div class="col-12 col-lg-12 col-md-12">
+                <div class="col-12 col-lg-12 col-md-12" style="margin-top:-8%">
                     <!-- ##### Accordians ##### -->
                     <div class="col-12 col-lg-12">
                         <div class="accordions mb-100" id="accordion" role="tablist" aria-multiselectable="true">

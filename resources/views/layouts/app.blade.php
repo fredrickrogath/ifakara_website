@@ -154,7 +154,7 @@
                                     <div class="sermon">
                                         <video src="{{ asset('site/img/bg-img/n-1.jpeg') }}" style="border-radius: 10px"
                                             height="240" width="340" controls></video>
-                                        <div class="play">
+                                        <div class="play" style="background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);">
                                             <a class="popup-vimeo"
                                                 href="https://vimeo.com/channels/staffpicks/93951774"><i
                                                     class="icon-play3"></i></a>
