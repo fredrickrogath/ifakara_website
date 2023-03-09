@@ -59,6 +59,20 @@
 
             <li class="menu-title">App</li>
             <li>
+                <a href="#sidebarEcommerce1" data-bs-toggle="collapse">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span>Home</span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidebarEcommerce1">
+                    <ul class="nav-second-level">
+                        <li>
+                            <a href="{{ route('admin_slider') }}">Slider</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
                 <a href="#sidebarEcommerce" data-bs-toggle="collapse">
                     <i class="fa fa-file" aria-hidden="true"></i>
                     <span> What's New</span>
@@ -131,6 +145,9 @@
                     <ul class="nav-second-level">
                         <li>
                             <a href="{{route('admin_research')}}">Research</a>
+                        </li>
+                        <li>
+                            <a href="{{route('admin_service')}}">Services</a>
                         </li>
                     </ul>
                 </div>

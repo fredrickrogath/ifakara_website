@@ -111,7 +111,7 @@
             <div class="col-12 col-sm-9 col-md-6 col-lg-4">
                 <div class="sidebar-area">
                     <div class="intro-news-filter d-flex justify-content-between" style="background-color:#fff; color:#ffff;  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
-                        <h6 style="color:#FF0000;font-weight:700">Galley and Photos</h6>
+                        <h6 style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Galley and Photos</h6>
 
                     </div>
                     <!-- Newsletter Widget -->
@@ -119,29 +119,16 @@
 
                     <!-- Add Widget -->
                     <div class="single-widget-area add-widget mb-30">
-                        <a href="#">
-                        </a>
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
+                            <div class="carousel-inner" >
+                                @foreach ($gallery_photo as $key => $gallery_photo)
+                                <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
                                     <a href="#">
-                                        <img class="d-block w-100" src="{{ asset('site/img/bg-img/g-1.jpg') }}"
-                                            alt="First slide">
+                                        <img class="d-block w-100" src="{{ asset('admin/assets/images/gallery/' . $gallery_photo->media) }}"
+                                            alt="First slide" style="height: 260px;">
                                     </a>
                                 </div>
-                                <div class="carousel-item">
-                                    <a href="#">
-                                        <img class="d-block w-100"
-                                            src="{{ asset('site/img/bg-img/g-2.jpg') }}" alt="Second slide">
-                                    </a>    
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="#">
-                                        <img class="d-block w-100"
-                                            src="{{ asset('site/img/bg-img/g-3.jpg') }}" alt="Third slide">
-
-                                    </a>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>

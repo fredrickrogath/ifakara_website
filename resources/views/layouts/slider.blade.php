@@ -10,34 +10,26 @@
                                 <div class="col-md-12 col-sm-8 col-md-12">
                                     <div class="single-blog-post style-2 mb-5">
                                         <!-- Blog Thumbnail -->
-                                        <div class="blog-thumbnail " style="width: 100%">
+                                        <div class="blog-thumbnail " style="width: 100%; height: 350px;">
                                             <div id="carouselExampleIndicators" class="carousel slide"
                                                 data-ride="carousel">
-                                                {{-- <ol class="carousel-indicators">
-                                                    <li data-target="#carouselExampleIndicators" data-slide-to="0"
-                                                        class="active"></li>
-                                                    <li data-target="#carouselExampleIndicators" data-slide-to="1">
-                                                    </li>
-                                                    <li data-target="#carouselExampleIndicators" data-slide-to="2">
-                                                    </li>
-                                                </ol> --}}
                                                 <div class="carousel-inner" style="margin-top: 80px;">
-                                                    <div class="carousel-item active">
+                                                    @foreach ($slider as $key => $slider)
+                                                    <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
 
                                                         <img class="d-block w-100 h-50"
-                                                            src="{{ asset('site/img/bg-img/bg-1.JPG') }}"
+                                                        src="{{ asset('admin/assets/images/slider/' . $slider->image) }}"
                                                             alt="First slide">
                                                         <div class="carousel-caption d-none d-md-block py-1"
                                                             style="background-color: rgb(170, 167, 167); opacity:0.8; ">
-                                                            <h5 style="color:black; font-weight:700"> Mafunzo ya walimu
-                                                                CBC </h5>
+                                                            <h5 style="color:black; font-weight:700">{{ $slider->title }}</h5>
                                                             <h6
                                                                 style="color:#0b0b0a; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                                                Ufununguzi la mafunzo ya walimu kuhusu kufundisha kwa
-                                                                kufata mutaala unaozingatia uamahili</h6>
+                                                                {{ $slider->small_description }}</h6>
                                                         </div>
                                                     </div>
-                                                    <div class="carousel-item">
+                                                    @endforeach
+                                                    {{-- <div class="carousel-item">
                                                         <img class="d-block w-100"
                                                             src="{{ asset('site/img/bg-img/bg-10.jpg') }}"
                                                             alt="Second slide">
@@ -64,7 +56,7 @@
                                                                 mafunzo ya walimu kuhusu kufundisha kwa kufata mutaala
                                                                 unaozingatia uamahili</h6> --}}
                                                         </div>
-                                                    </div>
+                                                    </div> --}}
                                                 </div>
                                                 <a class="carousel-control-prev" href="#carouselExampleIndicators"
                                                     role="button" data-slide="prev">

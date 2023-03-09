@@ -4,8 +4,6 @@ use App\Http\Controllers\Admin\AboutUsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\Admin\DashboardController;
-use App\Http\Controllers\Admin\DepartmentController;
 use App\Http\Controllers\Admin\DioceseDepartmentController;
 use App\Http\Controllers\Admin\EventsController;
 use App\Http\Controllers\Admin\ExactiveController;
@@ -19,6 +17,8 @@ use App\Http\Controllers\Admin\SchoolsController;
 use App\Http\Controllers\Admin\SermonsController;
 use App\Http\Controllers\Admin\VerseController;
 use App\Http\Controllers\SitePagesController;
+use App\Http\Controllers\Admin\serviceController;
+use App\Http\Controllers\Admin\HomeSliderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -121,10 +121,27 @@ Route::get('/admin/edit_gallery/{id}', [GalleryController::class, 'edit'])->name
 Route::get('/admin/delete_gallery/{id}', [GalleryController::class, 'destroy'])->name('delete_gallery');
 Route::put('/admin/update_gallery/{id}', [GalleryController::class, 'update'])->name('update_gallery');
 
-Route::get('/admin/exactives',[ExactiveController::class,'index'])->name('admin_exactive_staff');
-Route::get('/admin/research',[ResearchController::class,'index'])->name('admin_research');
+//Service route
+Route::get('/admin/service',[serviceController::class, 'index'])->name('admin_service');
+Route::post('/admin/add_service',[serviceController::class, 'store'])->name('add_service');
+Route::get('/admin/edit_service/{id}', [serviceController::class, 'edit'])->name('edit_service');
+Route::get('/admin/delete_service/{id}', [serviceController::class, 'destroy'])->name('delete_service');
+Route::put('/admin/update_service/{id}', [serviceController::class, 'update'])->name('update_service');
+
+//slider route
+Route::get('/admin/slider',[HomeSliderController::class, 'index'])->name('admin_slider');
+Route::post('/admin/add_slider',[HomeSliderController::class, 'store'])->name('add_slider');
+Route::get('/admin/edit_slider/{id}', [HomeSliderController::class, 'edit'])->name('edit_slider');
+Route::get('/admin/delete_slider/{id}', [HomeSliderController::class, 'destroy'])->name('delete_slider');
+Route::put('/admin/update_slider/{id}', [HomeSliderController::class, 'update'])->name('update_slider');
+
+//Derpartment route
 Route::get('/admin/Diocese_Department',[ParishDepartmentController::class,'index'])->name('admin_ParishDepartment');
 Route::get('/admin/Parish_Department',[DioceseDepartmentController::class,'index'])->name('admin_DioceseDepartment');
+
+Route::get('/admin/exactives',[ExactiveController::class,'index'])->name('admin_exactive_staff');
+Route::get('/admin/research',[ResearchController::class,'index'])->name('admin_research');
+
 
 
 
