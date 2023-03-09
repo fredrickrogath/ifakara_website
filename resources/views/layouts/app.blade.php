@@ -146,8 +146,6 @@
                                                 href="{{ asset('admin/assets/video/sermons/' . $sermons->video) }}"><i
                                                     class="icon-play3">Full Screen</i></a>
                                         </div>
-                                        <iframe width="360" height="250" src="https://www.youtube.com/embed/jDvPkbk4vTg" title="YouTube video player"
-                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </div>
                                     <h3
                                         style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
