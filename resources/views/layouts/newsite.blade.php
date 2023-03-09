@@ -37,7 +37,7 @@
                                         <!-- Blog Content -->
                                         <div class="blog-content">
                                             <span class="post-date">Dec 10, 2022</span>
-                                            <a href="#" class="post-title" style="font-size:14px;"> Ufununguzi la mafunzo ya walimu kuhusu kufundisha kwa
+                                            <a href="{{route('single_news')}}" class="post-title" style="font-size:14px;"> Ufununguzi la mafunzo ya walimu kuhusu kufundisha kwa
                                                 kufata mutaala unaozingatia uamahili</a>
                                         </div>
                                     </div>

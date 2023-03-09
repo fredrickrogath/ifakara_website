@@ -2,13 +2,13 @@
     <!-- Navbar Area -->
   
 
-    <div class="fixed-nav-bar" style="position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: 70px;">
-        <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
-            <div class="container">
+    <div class="fixed-nav-bar" style="position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: 70px; background-color:#F9F6EE">
+        <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar" style="background-color:#F9F6EE">
+            <div class="container" style="background-color:#F9F6EE">
                 <a class="navbar-brand" href="#" style="color:black">LOGO</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                     aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="fa fa-bars"></span> Menu
+                    <span class="fa fa-bars"></span> Menu2
                 </button>
                 <div class="collapse navbar-collapse" id="ftco-nav">
                     <ul class="navbar-nav ml-auto">

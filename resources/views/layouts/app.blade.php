@@ -44,24 +44,20 @@
                                     <div class="col-md-12 col-12">
                                         <p
                                             style="text-align: justify; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:18px; color:#000">
-                                            The Ifakara Catholic Diocese ceded from Mahenge
-                                            Diocese on 14th January 2012. It was officially inaugurated on 19th March
-                                            2012. The first bishop is the Rit. Rev. Salutaris M. Libena. The Vicar
-                                            General is Rev. Fr. Hospitio Itatilo, the Secretary General is Rev. Godfrey
-                                            Hongo, the deputy secretary general is Rev. Fr. Edwin Lyanga and the
-                                            treasury general is Rev. Sr. Patricia Mtunga. The diocese covers 14,245 km2
-                                            of the whole part of Kilombero district. </p>
+                                         Jimbo Katoliki Ifakara lilitengwa kutoka jimbo katoliki Mahenge tarehe 14 Januari 2012. Liliwekwa rasmi tarehe 19 Machi 2012. Askofu wa kwanza ni
+                                             Mhashamu Salutaris M. Libena. Naibu wa Askofu ni Padre Hospitio Itatiro, Katibu Mkuu ni Padre Godfrey Hongo, 
+                                            Naibu Katibu Mkuu ni Padre Edwin Lyanga na Mtunza Hazina ni Sr. Patricia Mtunga.
+                                             Jimbo lina ukubwa wa eneo la kitume ni kilomita za mraba 14,245 ya wilaya yote ya Kilombero. </p>
 
                                     </div>
                                     <div class="col-12 col-sm-8">
                                         <div class="single-blog-post style-2 mb-5">
                                             <p
                                                 style="text-align: justify; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-size:18px; color:#000">
-                                                Ifakara Catholic Diocese was started with 19
-                                                parishes. Now the diocese has 26 parishes and 01 elected parish. The
-                                                diocese has 32 diocesan priests and 27 religious priests. Also there are
-                                                different religious institutions of men and women. The diocese also is
-                                                offering social activities such as health, education and livehood. </p>
+                                                Ifakara Catholic Diocese ilianzishwa na parokia 19. Sasa dayosisi ina parokia 26 na parokia moja iliyochaguliwa.
+                                                 Dayosisi ina mapadre 32 wa dayosisi na mapadre 27 wa mashirika ya kitawa. Vilevile kuna taasisi mbalimbali za kitawa za
+                                                  wanaume na wanawake. Dayosisi pia inatoa shughuli za kijamii kama afya, elimu, na maisha ya kipato.
+                                            </p>
 
                                             <p style="text-align: justify"></p>
                                         </div>
@@ -150,6 +146,8 @@
                                                 href="{{ asset('admin/assets/video/sermons/' . $sermons->video) }}"><i
                                                     class="icon-play3">Full Screen</i></a>
                                         </div>
+                                        <iframe width="360" height="250" src="https://www.youtube.com/embed/jDvPkbk4vTg" title="YouTube video player"
+                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </div>
                                     <h3
                                         style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">

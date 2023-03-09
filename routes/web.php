@@ -53,7 +53,7 @@ Route::get ('/contact',[SitePagesController::class,'contact'])->name('contact');
 
 Route::get('/schools', [SitePagesController::class, 'schools'])->name('schools');
 Route::get('/healths', [SitePagesController::class, 'healths'])->name('healths');
-
+Route::get('/single_news',[SitePagesController::class, 'news_single'])->name('single_news');
 
 //Admin Route
 //Route::get('/admin/dashboard',[DashboardController::class, 'index']);
