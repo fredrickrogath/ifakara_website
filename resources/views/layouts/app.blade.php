@@ -77,14 +77,6 @@
                                                         alt=""
                                                         style="height:200px; width:250px; border-radius: 5px;"></a>
                                             </div>
-
-                                            <!-- Blog Content -->
-                                            {{-- <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Rachel Sm ith breaks down while
-                                                    discussing border crisis</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div> --}}
                                         </div>
                                     </div>
 
@@ -135,9 +127,6 @@
                 <div class="col-12 col-md-12 col-sm-12">
                     <div id="fh5co-sermon">
                         <div class="row animate-box">
-                            {{-- <div class="col-md-12 col-md-offset-3 text-center fh5co-heading">
-                                <h5 style="font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Message from GOD</h5>
-                            </div> --}}
                             <div class="col-12">
                                 <div class="intro-news-filter d-flex justify-content-between"
                                     style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
@@ -148,59 +137,27 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="row">
+                            @foreach ($sermons as $sermons)
                             <div class="col-md-4 text-center animate-box">
                                 <div class="sermon-entry">
                                     <div class="sermon">
-                                        <video src="{{ asset('site/img/bg-img/n-1.jpeg') }}" style="border-radius: 10px"
+                                        <video src="{{ asset('admin/assets/video/sermons/' . $sermons->video) }}" style="border-radius: 10px"
                                             height="240" width="340" controls></video>
                                         <div class="play" style="background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);">
                                             <a class="popup-vimeo"
-                                                href="https://vimeo.com/channels/staffpicks/93951774"><i
-                                                    class="icon-play3"></i></a>
+                                                href="{{ asset('admin/assets/video/sermons/' . $sermons->video) }}"><i
+                                                    class="icon-play3">Full Screen</i></a>
                                         </div>
                                     </div>
                                     <h3
                                         style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                        Soul Winning</h3>
-                                    <span>Pstr. John Doe</span>
+                                        {{ $sermons->sermons_title }}</h3>
+                                    <span>{{ $sermons->name }}</span>
                                 </div>
                             </div>
-                            <div class="col-md-4 text-center animate-box">
-                                <div class="sermon-entry">
-                                    <div class="sermon">
-                                        {{-- <img src="{{ asset('site/img/bg-img/n-1.jpeg') }}" alt="" style="border-radius: 10px"> --}}
-                                        <video src="{{ asset('site/img/bg-img/n-1.jpeg') }}" style="border-radius: 10px"
-                                            height="240" width="340" controls></video>
-                                        <div class="play">
-                                            <a class="popup-vimeo"
-                                                href="https://vimeo.com/channels/staffpicks/93951774"><i
-                                                    class="icon-play3"></i></a>
-                                        </div>
-                                    </div>
-                                    <h3
-                                        style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                        Message From God</h3>
-                                    <span>Pstr. John Doe</span>
-                                </div>
-                            </div>
-                            <div class="col-md-4 text-center animate-box">
-                                <div class="sermon-entry">
-                                    <div class="sermon">
-                                        <video src="{{ asset('site/img/bg-img/n-1.jpeg') }}" style="border-radius: 10px"
-                                            height="240" width="340" controls></video>
-                                        <div class="play">
-                                            <a class="popup-vimeo"
-                                                href="https://vimeo.com/channels/staffpicks/93951774"><i
-                                                    class="icon-play3"></i></a>
-                                        </div>
-                                    </div>
-                                    <h3
-                                        style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                        Our World Today</h3>
-                                    <span>Pstr. John Doe</span>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -224,57 +181,61 @@
 
                     </div>
                 </div>
+                @foreach ($health_service as $health_service)
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-service-area mb-100">
                         <div class="icon mb-30">
                             <img src="{{ asset('site/img/core-img/id-card2.png') }}" alt="">
                         </div>
                         <div class="text">
-                            <h5 style="font-weight:700">Health Activities</h5>
-                            <p style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#000; font-size:17px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
-                                facilisis, volutpat nulla placerat, tincidunt mi.</p>
+                            <h5 style="font-weight:700">{{ $health_service->title }}</h5>
+                            <p style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#000; font-size:17px; height: 180px;
+                            white-space:initial; text-overflow:ellipsis; max-width: 100%; overflow:hidden;"
+                            >
+                                {{ $health_service->initial_description }}</p>
                         </div>
                         <a href="#">Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 
                     </div>
                 </div>
+                @endforeach 
 
                 <!-- Single Service Area -->
+                @foreach ($education_service as $education_service)
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-service-area mb-100">
                         <div class="icon mb-30">
                             <img src="{{ asset('site/img/core-img/file.png') }}" alt="">
                         </div>
                         <div class="text">
-                            <h5 style="font-weight:700">Educations Studys</h5>
-                            <p style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#000; font-size:17px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
-                                facilisis, volutpat nulla placerat, tincidunt mi.</p>
+                            <h5 style="font-weight:700">{{ $education_service->title }}</h5>
+                            <p style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#000; font-size:17px; height: 180px;
+                            white-space:normal; text-overflow:ellipsis; max-width: 100%; overflow:hidden;">
+                                {{ $education_service->initial_description }}</p>
                         </div>
                         <a href="#">Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 
                     </div>
                 </div>
+                @endforeach
 
                 <!-- Single Service Area -->
+                @foreach ($bible_service as $bible_service)
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-service-area mb-100">
                         <div class="icon mb-30">
                             <img src="{{ asset('site/img/core-img/archive.png') }}" alt="">
                         </div>
                         <div class="text">
-                            <h5 style="font-weight:700">Livehood Activities</h5>
-                            <p style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#000; font-size:17px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
-                                facilisis, volutpat nulla placerat, tincidunt mi.</p>
+                            <h5 style="font-weight:700">{{ $bible_service->title }}</h5>
+                            <p style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#000; font-size:17px; height: 180px;
+                            white-space:normal; text-overflow:ellipsis; max-width: 100%; overflow:hidden;">
+                                {{ $bible_service->initial_description }}</p>
                         </div>
                         <a href="#">Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
-
-
-
-
-
-
+                @endforeach
                 <div class="row">
                     <div class="col-12 col-md-7 col-sm-8">
 
@@ -286,7 +247,7 @@
 
                         </div>
                         <div class="single-blog-post style-3"
-                            style="background-color:rgb(237, 186, 86);; border-radius: 20px;">
+                            style="background-color:rgb(237, 186, 86);; border-radius: 20px; height: 250px; width: 650px;">
                             <!-- Blog Thumbnail -->
 
                             <div class="card-body">
