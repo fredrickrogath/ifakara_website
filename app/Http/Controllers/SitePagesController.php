@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\gallery;
 
 use App\Models\verse;
 use Facade\FlareClient\View;
@@ -14,8 +15,9 @@ class SitePagesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function catholic_diocese()
-    {
-        return view('pages.catholic_diocese');
+    {  
+        $gallery_photo = gallery::all()->where('category', '=', 'Photo');
+        return view('pages.catholic_diocese',compact('gallery_photo'));
     }
 
     public function research(){
