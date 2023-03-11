@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\DioceseDepartmentController;
 use App\Http\Controllers\Admin\EventsController;
 use App\Http\Controllers\Admin\ExactiveController;
+use App\Http\Controllers\Admin\FeedbackController;
 use App\Http\Controllers\Admin\GalleryController;
 use App\Http\Controllers\Admin\HealthsController;
 use App\Http\Controllers\Admin\NewsController;
@@ -141,6 +142,12 @@ Route::get('/admin/Parish_Department',[DioceseDepartmentController::class,'index
 
 Route::get('/admin/exactives',[ExactiveController::class,'index'])->name('admin_exactive_staff');
 Route::get('/admin/research',[ResearchController::class,'index'])->name('admin_research');
+
+
+
+//Feedback  pages
+
+Route::get('/admin/feedback',[FeedbackController::class,'index'])->name('feedback');
 
 
 

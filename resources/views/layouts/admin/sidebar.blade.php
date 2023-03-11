@@ -200,10 +200,9 @@
             <hr>
 
             <li>
-                <a href="#">
+                <a href="{{route('feedback')}}">
                     <i class="fa fa-comments" aria-hidden="true"></i>
-                   
-                    <span> Feedback </span>
+                     <span> Feedback </span>
                 </a>
                 
             </li>
