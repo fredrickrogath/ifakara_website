@@ -158,8 +158,8 @@
                                         <div class="text-md-end mt-3 mt-md-0">
 
                                             <Span class="bg-info p-2 text-center" style="color:#fff"
-                                                data-bs-toggle="modal" data-bs-target="#custom-modal"><a href="#"
-                                                    data-bs-toggle="modal" data-bs-target="#custom-modal"
+                                                data-bs-toggle="modal" data-bs-target="#custom-modal-staff"><a href="#"
+                                                    data-bs-toggle="modal" data-bs-target="#custom-modal-staff"
                                                     style="color:#fff"><i class="mdi mdi-plus-circle me-1"></i> Add
                                                     Staff</a> </Span>
                                         </div>
@@ -357,9 +357,9 @@
             </div> <!-- container -->
 
         </div> <!-- content -->
-        <!-- Modal -->
-        <div class="modal fade" id="custom-modal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-md">
+        <!--Add Modal -->
+        <div class="modal fade" id="custom-modal-staff" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-header bg-light">
                         <h4 class="modal-title" id="myCenterModalLabel">Add Staff</h4>
@@ -367,34 +367,60 @@
                             aria-label="Close"></button>
                     </div>
                     <div class="modal-body p-4">
-                        <form>
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Full name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Image</label>
-                                <input type="file" class="form-control" id="exampleInputEmail1"
-                                    placeholder="Enter email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="position" class="form-label">Initial description</label>
-                                <textarea name="initial description" id="" cols="12" rows="3" class="form-control"></textarea>
-                            </div>
-                            <div class="mb-3">
-
-                                <label for="status-select" class="me-2">Position</label>
-                                <div class="me-sm-3">
-                                    <select class="form-select my-1 my-md-0" id="status-select">
-                                        <option>Select</option>
-                                        <option>Accountant</option>
-                                        <option selected>Prest</option>
-                                        <option>shemsi</option>
-                                        <option>others</option>
-                                    </select>
+                        <form action="{{ url('/admin/add_staff') }}" method="POST" enctype="multipart/form-data">
+                            @csrf
+                            <div class="row">
+                                <div class="col-6 mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" required
+                                        placeholder="Enter name">
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Image</label>
+                                    <input type="file" class="form-control" id="exampleInputEmail1" name="image" required
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="dropdown">
+                                        <label for="category" class="form-label">TiTle</label><br>
+                                        <select name="category" id="category" class="form-control" style="width: 100%">
+                                            <option selected>--Select Title--</option>
+                                            <option value="Bishop">Bishop</option>
+                                            <option value="Assistant Bishop">Assistant Bishop</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="dropdown">
+                                        <label for="category" class="form-label">Status</label><br>
+                                        <select name="status" id="category" class="form-control" style="width: 100%">
+                                            <option selected>--Select Status--</option>
+                                            <option value="Active">Active</option>
+                                            <option value="In Active">In Active</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <label for="position" class="form-label">Phone No</label>
+                                    <input placeholder="Enter Phone Number" name="phone_no" class="form-control" required>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <label for="position" class="form-label">Office No</label>
+                                    <input name="office_no" placeholder="Enter Office" class="form-control" required>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <label for="position" class="form-label">Start Date</label>
+                                    <input type="date" name="start_date" class="form-control" required>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <label for="position" class="form-label">End Date</label>
+                                    <input type="date" name="end_date" class="form-control" required>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="company" class="form-label">Biography</label>
+                                    <textarea name="biography" id="" cols="12" rows="5" class="form-control" required></textarea>
                                 </div>
                             </div>
-
                             <div class="text-end">
                                 <button type="submit" class="bg-info p-2">Publish </button>
                             </div>

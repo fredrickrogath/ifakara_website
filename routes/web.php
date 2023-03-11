@@ -20,6 +20,7 @@ use App\Http\Controllers\Admin\VerseController;
 use App\Http\Controllers\SitePagesController;
 use App\Http\Controllers\Admin\serviceController;
 use App\Http\Controllers\Admin\HomeSliderController;
+use App\Http\Controllers\Admin\staffCotroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -136,11 +137,17 @@ Route::get('/admin/edit_slider/{id}', [HomeSliderController::class, 'edit'])->na
 Route::get('/admin/delete_slider/{id}', [HomeSliderController::class, 'destroy'])->name('delete_slider');
 Route::put('/admin/update_slider/{id}', [HomeSliderController::class, 'update'])->name('update_slider');
 
+//staff route
+Route::get('/admin/staff',[staffCotroller::class,'index'])->name('admin_exactive_staff');
+Route::post('/admin/add_staff',[staffCotroller::class, 'store'])->name('add_staff');
+Route::get('/admin/edit_staff/{id}', [staffCotroller::class, 'edit'])->name('edit_staff');
+Route::get('/admin/delete_staff/{id}', [staffCotroller::class, 'destroy'])->name('delete_staff');
+Route::put('/admin/update_staff/{id}', [staffCotroller::class, 'update'])->name('update_staff');
+
 //Derpartment route
 Route::get('/admin/Diocese_Department',[ParishDepartmentController::class,'index'])->name('admin_ParishDepartment');
 Route::get('/admin/Parish_Department',[DioceseDepartmentController::class,'index'])->name('admin_DioceseDepartment');
 
-Route::get('/admin/exactives',[ExactiveController::class,'index'])->name('admin_exactive_staff');
 Route::get('/admin/research',[ResearchController::class,'index'])->name('admin_research');
 
 
