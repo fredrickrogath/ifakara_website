@@ -24,7 +24,7 @@
 
                         <!-- Logo -->
                         <h4 style="font-weight:700">Contact us</h4>
-                        <a href="#" class="d-block mb-50"><img src="img/core-img/logo.png" alt=""></a>
+                        {{-- <a href="#" class="d-block mb-50"><img src="img/core-img/logo.png" alt=""></a> --}}
 
                         <!-- Single Contact Info -->
                         <div class="single-contact-info d-flex align-items-center">
@@ -67,8 +67,8 @@
                         </div>
 
                         <!-- Contact Form Area -->
-                        <div class="contact-form-area mb-70">
-                            <h4 class="mb-50">Get In Touch</h4>
+                        <div class="contact-form-area mb-20">
+                            <h4 class="mb-20">Get In Touch</h4>
 
                             <form action="#" method="post">
                                 <div class="row">
