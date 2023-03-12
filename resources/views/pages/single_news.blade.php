@@ -20,20 +20,13 @@
                 <!-- Post Details Content Area -->
                 <div class="col-12 col-lg-8">
                     <div class="post-details-content mb-100">
-                        <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis. Vestibulum venenatis iaculis diam vitae lobortis. Donec
-                            tincidunt viverra elit, sed consectetur est pr etium ac.</p>
-                        <p>Mauris nec mauris tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit nisl, faucibus eu tempus vel, imperdiet at felis. Sed sed nibh et augue feugiat pharetra. Praesent ultrices nec tortor et gravida. Sed
-                            id rhoncus est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur vitae luctus turpis. Maecenas diam ex, mattis vel dolor ut, fermentum consectetur ex.</p>
+                        <span><h4>{{ $news->news_title }} </h4><p style="text-align: end;">{{ $news->news_date }}</p></span>
+                        <hr>
+                        <h5>{{ $news->initial_description }}</h5>
                             <img
-                            src="{{ asset('site/img/bg-img/n-1.jpeg') }}"
+                            src="{{ asset('admin/assets/images/news/' . $news->image) }}"
                             alt="">
-                        <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis. Vestibulum venenatis iaculis diam vitae lobortis. Donec
-                            tincidunt viverra elit, sed consectetur est pr etium ac.</p>
-                        <p>Mauris nec mauris tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit nisl, faucibus eu tempus vel, imperdiet at felis. Sed sed nibh et augue feugiat pharetra. Praesent ultrices nec tortor et gravida. Sed
-                            id rhoncus est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur vitae luctus turpis. Maecenas diam ex, mattis vel dolor ut, fermentum consectetur ex. </p>
-                        <h5 class="mb-30">A good news after all</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit nisl, faucibus eu tempus vel, imperdiet at felis. Sed sed nibh et augue feugiat pharetra. Praesent ultrices nec tortor et gravida. Sed id rhoncus est. Interdum et
-                            malesuada fames ac ante ipsum primis in faucibus. Curabitur vitae luctus turpis. Maecenas diam ex, mattis vel dolor ut, fermentum consectetur ex.</p>
+                        <h5>{{ $news->news_description }}</h5>
                     </div>
 
                     <!-- Comment Area Start -->
@@ -51,82 +44,23 @@
                             <h4>Latest News</h4>
 
                             <!-- Single News Area -->
+                            @foreach ($latest as $news)
                             <div class="single-blog-post d-flex style-4 mb-30">
                                 <!-- Blog Thumbnail -->
                                 <div class="blog-thumbnail">
                                     <a href="#"><img
-                                        src="{{ asset('site/img/bg-img/bg-3.jpg') }}"
+                                        src="{{ asset('admin/assets/images/news/' . $news->image) }}"
                                         alt=""></a>
                                 </div>
 
                                 <!-- Blog Content -->
                                 <div class="blog-content">
-                                    <span class="post-date">June 20, 2018</span>
-                                    <a href="#" class="post-title">Nearly a quarter have no emergency savings</a>
+                                    <span class="post-date">{{ $news->news_date }}</span>
+                                    <a href="{{url('single_news/'. $news->id)}}" class="post-title" style="white-space:normal; text-overflow:ellipsis; max-width: 100%; overflow:hidden; max-height: 80px; font-size:14px;"
+                                        >{{ $news->initial_description }}</a>
                                 </div>
                             </div>
-
-                            <!-- Single News Area -->
-                            <div class="single-blog-post d-flex style-4 mb-30">
-                                <!-- Blog Thumbnail -->
-                                <div class="blog-thumbnail">
-                                    <a href="#"><img
-                                        src="{{ asset('site/img/bg-img/n-1.jpeg') }}"
-                                        alt=""></a>
-                                </div>
-
-                                <!-- Blog Content -->
-                                <div class="blog-content">
-                                    <span class="post-date">June 20, 2018</span>
-                                    <a href="#" class="post-title">Nearly a quarter have no emergency savings</a>
-                                </div>
-                            </div>
-
-                            <!-- Single News Area -->
-                            <div class="single-blog-post d-flex style-4 mb-30">
-                                <!-- Blog Thumbnail -->
-                                <div class="blog-thumbnail">
-                                    <a href="#"><img
-                                        src="{{ asset('site/img/bg-img/n-2.jpeg') }}"
-                                        alt=""></a>
-                                </div>
-
-                                <!-- Blog Content -->
-                                <div class="blog-content">
-                                    <span class="post-date">June 20, 2018</span>
-                                    <a href="#" class="post-title">Top bitcoin exchange says over $30 million stolen</a>
-                                </div>
-                            </div>
-
-                            <!-- Single News Area -->
-                            <div class="single-blog-post d-flex style-4 mb-30">
-                                <!-- Blog Thumbnail -->
-                                <div class="blog-thumbnail">
-                                    <a href="#"><img
-                                        src="{{ asset('site/img/bg-img/new_1.JPG') }}"
-                                        alt=""></a>
-                                </div>
-
-                                <!-- Blog Content -->
-                                <div class="blog-content">
-                                    <span class="post-date">June 20, 2018</span>
-                                    <a href="#" class="post-title">Top bitcoin exchange says over $30 million stolen</a>
-                                </div>
-                            </div>
-
-                            <!-- Single News Area -->
-                            <div class="single-blog-post d-flex style-4 mb-30">
-                                <!-- Blog Thumbnail -->
-                                <div class="blog-thumbnail">
-                                    <a href="#"><img src="{{ asset('site/img/bg-img/n-1.jpeg') }}" alt=""></a>
-                                </div>
-
-                                <!-- Blog Content -->
-                                <div class="blog-content">
-                                    <span class="post-date">June 20, 2018</span>
-                                    <a href="#" class="post-title">Dow falls 287 points as trade war fears escalate</a>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
 
                        

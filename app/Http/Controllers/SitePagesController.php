@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\gallery;
-
+use App\Models\news;
 use App\Models\verse;
 use Facade\FlareClient\View;
 use Illuminate\Http\Request;
@@ -41,8 +41,10 @@ class SitePagesController extends Controller
         return view('pages.healths');
     }
 
-    public function news_single(){
-        return View('pages.single_news');
+    public function news_single($id){
+        $news = news::find($id);
+        $latest = news::latest('id')->limit(7)->get();
+        return View('pages.single_news', compact('news', 'latest'));
     }
     /**
      * Show the form for creating a new resource.

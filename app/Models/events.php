@@ -17,6 +17,7 @@ class events extends Model
         'start_date',
         'end_date',
         'guest_of_honor',
+        'initial_description',
         'created_at',
         'updated_at',
     ];

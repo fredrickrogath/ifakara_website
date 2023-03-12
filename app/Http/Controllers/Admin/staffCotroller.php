@@ -3,11 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\news;
+use App\Models\staff;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
-class NewsController extends Controller
+class staffCotroller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +16,8 @@ class NewsController extends Controller
      */
     public function index()
     {
-       $news = news::all();
-        return view('admin.pages.whats_new.news', compact('news'));
+        $staff = staff::all();
+        return view('admin.pages.Staff.exactivestaff', compact('staff'));
     }
 
     /**
@@ -38,20 +38,24 @@ class NewsController extends Controller
      */
     public function store(Request $request)
     {
-        $news = new news();
+        $staff = new staff();
         if($request->hasFile('image')){
             $file = $request->file('image');
             $ext = $file->getClientOriginalExtension();
             $filename = time().'.'.$ext;
-            $file->move('admin/assets/images/news',$filename);
-            $news->image = $filename;
+            $file->move('admin/assets/images/staff',$filename);
+            $staff->image = $filename;
         }
-        $news->news_title = $request->input('news_title');
-        $news->news_description = $request->input('news_description');
-        $news->news_date = $request->input('news_date');
-        $news->initial_description = $request->input('initial_description');
-        if($news->save()){
-            return redirect('/admin/news')->with('status', 'News Added SuccessFully!');
+        $staff->category = $request->input('category');
+        $staff->name = $request->input('name');
+        $staff->biography = $request->input('biography');
+        $staff->phone_no = $request->input('phone_no');
+        $staff->office_no = $request->input('office_no');
+        $staff->status = $request->input('status');
+        $staff->end_date = $request->input('end_date');
+        $staff->start_date = $request->input('start_date');
+        if($staff->save()){
+            return redirect('/admin/staff')->with('status', 'News Added SuccessFully!');
         }
     }
 
@@ -74,9 +78,10 @@ class NewsController extends Controller
      */
     public function edit($id)
     {
-        $news = news::find($id);
-        return view('admin.pages.whats_new.edit_news', compact('news'));
+        $staff = staff::find($id);
+        return view('admin.pages.Staff.edit_exactivestaff', compact('staff'));
     }
+
     /**
      * Update the specified resource in storage.
      *
@@ -86,25 +91,28 @@ class NewsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $news = news::find($id);
+        $staff = staff::find($id);
         if($request->hasFile('image')){
-            $path = 'admin/assets/images/news'.$news->image;
+            $path = 'admin/assets/images/staff'.$staff->image;
             if(File::exists($path)){
                 File::delete($path);
             }
             $file = $request->file('image');
             $ext = $file->getClientOriginalExtension();
             $filename = time().'.'.$ext;    
-            $file->move('admin/assets/images/news',$filename);
-            $news->image = $filename;
+            $file->move('admin/assets/images/staff',$filename);
+            $staff->image = $filename;
         }
-        $news->news_title = $request->input('news_title');
-        $news->news_description = $request->input('news_description');
-        $news->initial_description = $request->input('initial_description');
-        $news->news_date = $request->input('news_date');
-        
-        $news->update();
-        return redirect('/admin/news')->with('status', 'News was Updated successfully!');
+        $staff->category = $request->input('category');
+        $staff->name = $request->input('name');
+        $staff->biography = $request->input('biography');
+        $staff->phone_no = $request->input('phone_no');
+        $staff->office_no = $request->input('office_no');
+        $staff->status = $request->input('status');
+        $staff->end_date = $request->input('end_date');
+        $staff->start_date = $request->input('start_date');
+        $staff->update();
+        return redirect('/admin/staff')->with('status', 'Staff was Updated successfully!');
     }
 
     /**
@@ -115,14 +123,14 @@ class NewsController extends Controller
      */
     public function destroy($id)
     {
-        $news = news::find($id);
-        if($news->image){
-            $path = 'admin/assets/images/news/'.$news->image;
+        $staff = staff::find($id);
+        if($staff->image){
+            $path = 'admin/assets/images/staff/'.$staff->image;
             if(File::exists($path)){
                 File::delete($path);
             }
         }
-        $news->delete();
-        return redirect('/admin/news')->with('status', 'News deleted Successfully');
+        $staff->delete();
+        return redirect('/admin/staff')->with('status', 'Staff deleted Successfully');
     }
 }

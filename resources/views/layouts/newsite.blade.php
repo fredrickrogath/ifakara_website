@@ -11,7 +11,7 @@
                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                 <a class="nav-item nav-link active" id="nav1" data-toggle="tab"
                                     href="#nav-1" role="tab" aria-controls="nav-1"
-                                    aria-selected="true" style="color:#000">Latest</a>
+                                    aria-selected="true" style="color:#000">Events</a>
 
 
                             </div>
@@ -25,82 +25,24 @@
                             <div class="row">
                                 <!-- Single News Area -->
                                 <!-- Single News Area -->
+                                @foreach ($news as $news)
                                 <div class="col-12 col-sm-6">
                                     <div class="single-blog-post d-flex style-4 mb-30">
                                         <!-- Blog Thumbnail -->
                                         <div class="blog-thumbnail">
                                             <a href="#"><img
-                                                    src="{{ asset('site/img/bg-img/bg-3.jpg') }}"
+                                                    src="{{ asset('admin/assets/images/news/' . $news->image) }}"
                                                     alt=""></a>
                                         </div>
 
                                         <!-- Blog Content -->
                                         <div class="blog-content">
-                                            <span class="post-date">Dec 10, 2022</span>
-                                            <a href="{{route('single_news')}}" class="post-title" style="font-size:14px;"> Ufununguzi la mafunzo ya walimu kuhusu kufundisha kwa
-                                                kufata mutaala unaozingatia uamahili</a>
+                                            <span class="post-date">{{ $news->news_date }}</span>
+                                            <a href="{{url('single_news/'. $news->id)}}" class="post-title" style="white-space:normal; text-overflow:ellipsis; max-width: 100%; overflow:hidden; max-height: 100px; font-size:14px;">{{ $news->initial_description }}</a>
                                         </div>
                                     </div>
                                 </div>
-
-                                <!-- Single News Area -->
-                                <div class="col-12 col-sm-6">
-                                    <div class="single-blog-post d-flex style-4 mb-30"> 
-                                        <!-- Blog Thumbnail -->
-                                        <div class="blog-thumbnail">
-                                            <a href="#"><img
-                                                    src="{{ asset('site/img/bg-img/n-1.jpeg') }}"
-                                                    alt=""></a>
-                                        </div>
-
-                                        <!-- Blog Content -->
-                                        <div class="blog-content">
-                                            <span class="post-date">June 20, 2018</span>
-                                            <a href="#" class="post-title" style="font-size:14px;">Parokia ya Mtakatifu Yohane Mbatizaji V 60, Ibadan ya misa takatifu, somo ni kutoka Mambo ya Walawi.</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Single News Area -->
-                                <div class="col-12 col-sm-6">
-                                    <div class="single-blog-post d-flex style-4 mb-30">
-                                        <!-- Blog Thumbnail -->
-                                        <div class="blog-thumbnail">
-                                            <a href="#"><img
-                                                    src="{{ asset('site/img/bg-img/n-2.jpeg') }}"
-                                                    alt=""></a>
-                                        </div>
-
-                                        <!-- Blog Content -->
-                                        <div class="blog-content">
-                                            <span class="post-date">Feb 2, 2023</span>
-                                            <a href="#" class="post-title" style="font-size:14px;">Parokia ya Mtakatifu Yohane Mbatizaji V 60, Ibadan ya misa takatifu, somo ni kutoka Mambo ya Walawi.</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Single News Area -->
-                                <div class="col-12 col-sm-6">
-                                    <div class="single-blog-post d-flex style-4 mb-30">
-                                        <!-- Blog Thumbnail -->
-                                        <div class="blog-thumbnail">
-                                            <a href="#"><img
-                                                    src="{{ asset('site/img/bg-img/new_1.JPG') }}"
-                                                    alt=""></a>
-                                        </div>
-
-                                        <!-- Blog Content -->
-                                        <div class="blog-content">
-                                            <span class="post-date">March 02, 2023</span>
-                                            <a href="#" class="post-title" style="font-size:14px;">Mazungumzo ya Kitaaluma kuhusu Mtaala wa Elimu unaozungatia Ujuzi na Umahili. 
-                                                                         Mtoa Mada : Dr Eliya Kibga.
-                                                </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
+                                @endforeach
                             </div>
                         </div>
                     </div>

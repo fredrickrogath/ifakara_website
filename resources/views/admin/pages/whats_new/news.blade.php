@@ -73,6 +73,7 @@
                                                     <th>Image</th>
                                                     <th>Initial Discription</th>
                                                     <th>Discription</th>
+                                                    <th>Date</th>
                                                     <th style="width: 82px;">Action</th>
                                                 </tr>
                                             </thead>
@@ -90,11 +91,14 @@
                                                         <img src="{{ asset('admin/assets/images/news/' . $item->image) }}" alt="table-user"
                                                             class="me-2" width="100px" height="50px">
                                                     </td>
-                                                    <td>
+                                                    <td style="white-space:nowrap; text-overflow:ellipsis; max-width: 20ch; overflow:hidden;">
                                                         {{ $item->initial_description }}
                                                     </td>
-                                                    <td>
+                                                    <td style="white-space:nowrap; text-overflow:ellipsis; max-width: 35ch; overflow:hidden;">
                                                         {{ $item->news_description }}
+                                                    </td>
+                                                    <td>
+                                                        {{ $item->news_date }}
                                                     </td>
                                                     <td>
                                                         <a href="{{ url('admin/edit_news/'. $item->id) }}" class="action-icon"> <i
@@ -171,12 +175,17 @@
                                         placeholder="Enter email">
                                 </div>
                                 <div class="mb-3">
+                                    <label for="name" class="form-label">Date</label>
+                                    <input type="date" class="form-control" id="name" name="news_date" required
+                                        placeholder="Enter name">
+                                </div>
+                                <div class="mb-3">
                                     <label for="position" class="form-label">Initial description</label>
                                     <textarea name="initial_description" id="" cols="12" rows="3" class="form-control" required></textarea>
                                 </div>
                                 <div class="mb-3">
                                     <label for="company" class="form-label">Description</label>
-                                    <textarea name="news_description" id="" cols="12" rows="10" class="form-control" required></textarea>
+                                    <textarea name="news_description" id="" cols="12" rows="6" class="form-control" required></textarea>
                                 </div>
 
                                 <div class="text-end">
