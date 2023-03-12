@@ -48,6 +48,7 @@ class NewsController extends Controller
         }
         $news->news_title = $request->input('news_title');
         $news->news_description = $request->input('news_description');
+        $news->news_date = $request->input('news_date');
         $news->initial_description = $request->input('initial_description');
         if($news->save()){
             return redirect('/admin/news')->with('status', 'News Added SuccessFully!');
@@ -100,6 +101,7 @@ class NewsController extends Controller
         $news->news_title = $request->input('news_title');
         $news->news_description = $request->input('news_description');
         $news->initial_description = $request->input('initial_description');
+        $news->news_date = $request->input('news_date');
         
         $news->update();
         return redirect('/admin/news')->with('status', 'News was Updated successfully!');

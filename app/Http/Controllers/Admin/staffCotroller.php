@@ -111,7 +111,6 @@ class staffCotroller extends Controller
         $staff->status = $request->input('status');
         $staff->end_date = $request->input('end_date');
         $staff->start_date = $request->input('start_date');
-        
         $staff->update();
         return redirect('/admin/staff')->with('status', 'Staff was Updated successfully!');
     }

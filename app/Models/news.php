@@ -13,6 +13,7 @@ class news extends Model
         'news_title',
         'news_description',
         'image',
-        'created_at',
+        'news_date',
+        'initial_description'
     ];
 }
