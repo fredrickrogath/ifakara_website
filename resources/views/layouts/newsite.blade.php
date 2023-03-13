@@ -48,7 +48,7 @@
                         <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav4">
                             <div class="row">
                                 <!-- Single News Area -->
-                                <div class="col-1">
+                                <div class="col-12">
                                     <div class="single-blog-post style-2 mb-5">
                                         <!-- Blog Thumbnail -->
                                         <div class="blog-thumbnail">
