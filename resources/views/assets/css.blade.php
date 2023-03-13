@@ -24,5 +24,25 @@
     <link rel="stylesheet" href="{{ asset('site/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('site/css/custom.css') }}">
 
+    <style>
+        @media (max-width: 767px) {
+            #blog-thumbnail {
+                height: 270px;
+            }
+
+            #imageOne {
+                width: 100%;
+            }
+        }
+        @media (min-width: 768px) {
+            #blog-thumbnail {
+                /* height: 350px; */
+            }
+            #imageOne {
+                width:250px
+            }
+        }
+    </style>
+
 
 </head>

@@ -7,10 +7,10 @@
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active">
                             <div class="row">
-                                <div class="col-md-12 col-sm-8 col-md-12">
+                                <div class="col-md-12 col-sm-8 col-md-12" id="blog-thumbnail">
                                     <div class="single-blog-post style-2 mb-5">
                                         <!-- Blog Thumbnail -->
-                                        <div class="blog-thumbnail " style="width: 100%; height: 350px;">
+                                        <div class="blog-thumbnail" style="width: 100%; height: 350px;">
                                             <div id="carouselExampleIndicators" class="carousel slide"
                                                 data-ride="carousel">
                                                 <div class="carousel-inner" style="margin-top: 80px;">
