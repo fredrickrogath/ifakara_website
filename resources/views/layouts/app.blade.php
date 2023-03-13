@@ -51,12 +51,12 @@
 
                                     </div>
                                     <div class="col-12 col-sm-8">
-                                        <div class="single-blog-post style-2 mb-5">
+                                        <div class="single-blog-post style-2">
                                             <p
                                                 style="text-align: justify; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-size:18px; color:#000">
-                                                Ifakara Catholic Diocese ilianzishwa na parokia 19. Sasa dayosisi ina parokia 26 na parokia moja iliyochaguliwa.
+                                                Jimbo Katoliki Ifakara ilianzishwa na parokia 19. Sasa jimbo ina parokia 26 na parokia moja iliyochaguliwa.
                                                  Dayosisi ina mapadre 32 wa dayosisi na mapadre 27 wa mashirika ya kitawa. Vilevile kuna taasisi mbalimbali za kitawa za
-                                                  wanaume na wanawake. Dayosisi pia inatoa shughuli za kijamii kama afya, elimu, na maisha ya kipato.
+                                                  wanaume na wanawake. Jimbo  pia inatoa shughuli za kijamii kama afya, elimu, na maisha ya kipato.
                                             </p>
 
                                             <p style="text-align: justify"></p>
@@ -69,9 +69,10 @@
                                             <!-- Blog Thumbnail -->
                                             <div class="blog-thumbnail">
                                                 <a href="#"><img
+                                                    id="imageOne"
                                                         src="{{ asset('site/img/bg-img/chrch_bg_2.jpg') }}"
                                                         alt=""
-                                                        style="height:200px; width:250px; border-radius: 5px;"></a>
+                                                        style="height:200px; border-radius: 5px;"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -89,8 +90,8 @@
 
                 <!-- Sidebar Widget -->
                 <div class="col-12 col-sm-9 col-md-6 col-lg-3">
-                    <div class="sidebar-area">
-                        <div class="intro-news-filter d-flex justify-content-between"
+                    <div class="">
+                        <div class="intro-news-filter d-flex justify-content-between my-0"
                             style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
                             <h6
                                 style="color:#ff7b00;font-weight:700; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
@@ -101,7 +102,7 @@
                         <div class="single-widget-area add-widget mt-3 ml-3">
                             <a href="#" class=" justify-content-center">
                                 <img src="{{ asset('site/img/bg-img/bishop_img.jpg') }}" alt=""
-                                    style="border-radius: 5px; margin-left:2px height: 290px; text-align:center">
+                                    style="border-radius: 5px; margin-left:2px; width: 100%; text-align:center">
                             </a>
                             <h6 class="text-center mt-3"
                                 style="font-weight:600; color:#000; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">

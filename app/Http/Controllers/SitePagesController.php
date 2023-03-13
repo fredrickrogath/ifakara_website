@@ -15,9 +15,10 @@ class SitePagesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function catholic_diocese()
-    {  
+
+    {  $news = news::latest('id')->limit(4)->get();
         $gallery_photo = gallery::all()->where('category', '=', 'Photo');
-        return view('pages.catholic_diocese',compact('gallery_photo'));
+        return view('pages.catholic_diocese',compact('gallery_photo','news'));
     }
 
     public function research(){
