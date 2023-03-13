@@ -54,9 +54,9 @@
                                         <div class="single-blog-post style-2 mb-5">
                                             <p
                                                 style="text-align: justify; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-size:18px; color:#000">
-                                                Ifakara Catholic Diocese ilianzishwa na parokia 19. Sasa dayosisi ina parokia 26 na parokia moja iliyochaguliwa.
+                                                Jimbo Katoliki Ifakara ilianzishwa na parokia 19. Sasa jimbo ina parokia 26 na parokia moja iliyochaguliwa.
                                                  Dayosisi ina mapadre 32 wa dayosisi na mapadre 27 wa mashirika ya kitawa. Vilevile kuna taasisi mbalimbali za kitawa za
-                                                  wanaume na wanawake. Dayosisi pia inatoa shughuli za kijamii kama afya, elimu, na maisha ya kipato.
+                                                  wanaume na wanawake. Jimbo  pia inatoa shughuli za kijamii kama afya, elimu, na maisha ya kipato.
                                             </p>
 
                                             <p style="text-align: justify"></p>

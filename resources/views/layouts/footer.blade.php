@@ -27,14 +27,11 @@
                                 class="fa fa-instagram" aria-hidden="true"></i></a>
                     </div>
 
-                    <p class="mb-15">Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue
-                        condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus
-                        volutpat lobortis. Vestibulum venenatis iaculis diam vitae lobortis. Donec tincidunt viverra
-                        elit, sed consectetur est pr etium ac. Mauris nec mauris tellus. </p>
+                    <p class="mb-15">Roman Catholic of Ifakara Diocese <br>Ifakara, Morogoro <br>Tanzania<br>P.O box 232</p>
 
                     <!-- Copywrite Text -->
                     <p class="copywrite-text">
-                        <a href="#">
+                        <a href="#" style="color:#000">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             Copyright &copy;
                             <script>
