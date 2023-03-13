@@ -163,8 +163,8 @@
                                             </tbody>
                                         </table>
 
-                                    </div> <!-- end card body-->
-                                </div> <!-- end card -->
+                                    </div> 
+                                </div> 
                             </div>
                             <div class="col-md-3">
                                 <div class="card project-box">
@@ -173,7 +173,7 @@
                                         <!-- Title-->
                                         <h4 class="mt-0"><a href="project-detail.html" class="text-dark">New Admin Design</a></h4>
                                       
-                                        <!-- Desc-->
+                                       
                                         <p class="text-muted font-13 mb-3 sp-line-2">With supporting text below as a natural lead-in to additional contenposuere erat a
                                             ante...<a href="javascript:void(0);" class="fw-bold text-muted">view more</a>
                                         </p>
@@ -263,13 +263,12 @@
                                             <div class="progress-bar"
                                                  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
                                                  style="width: 80%;">
-                                            </div><!-- /.progress-bar .progress-bar-danger -->
+                                            </div>
                                         </div><!-- /.progress .no-rounded -->
                                     </div>
                                 </div> 
                             </div>
-
-                          
+                         
                             <!-- end col-->
                         </div>
                         
@@ -282,10 +281,6 @@
                 <!-- end Footer -->
 
             </div>
-
-            <!-- ============================================================== -->
-            <!-- End Page content -->
-            <!-- ============================================================== -->
 
 
         </div>
