@@ -31,7 +31,7 @@
                             style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
                             <h6
                                 style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                Ifakara Catholic Diocese</h6>
+                                Jimbo Kuu la Ifakara</h6>
 
                         </div>
 
@@ -129,7 +129,7 @@
                                     style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
                                     <h6
                                         style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                        Our Sermons</h6>
+                                        Misa na Maabiri</h6>
 
                                 </div>
                             </div>
@@ -174,7 +174,7 @@
                         style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
                         <h6
                             style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                            Our Service</h6>
+                            Huduma zetu</h6>
 
                     </div>
                 </div>
@@ -191,7 +191,7 @@
                             >
                                 {{ $health_service->initial_description }}</p>
                         </div>
-                        <a href="#">Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#">Soma Zaidi<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 
                     </div>
                 </div>
@@ -210,7 +210,7 @@
                             white-space:normal; text-overflow:ellipsis; max-width: 100%; overflow:hidden;">
                                 {{ $education_service->initial_description }}</p>
                         </div>
-                        <a href="#">Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#">Soma Zaidi <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 
                     </div>
                 </div>
@@ -229,7 +229,7 @@
                             white-space:normal; text-overflow:ellipsis; max-width: 100%; overflow:hidden;">
                                 {{ $bible_service->initial_description }}</p>
                         </div>
-                        <a href="#">Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#">Soma Zaidi <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 @endforeach
@@ -240,7 +240,7 @@
                             style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
                             <h6
                                 style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                Verse of the day</h6>
+                                Mistari wa siku</h6>
 
                         </div>
                         <div class="single-blog-post style-3"
@@ -297,7 +297,7 @@
                             style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
                             <h6
                                 style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                Diocese Documents </h6>
+                                Hati na taarifa za Jimbo </h6>
 
                         </div>
                         <p
@@ -342,7 +342,7 @@
                         style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
                         <h6
                             style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                            Diocese Summary</h6>
+                            Muhtasari wa Jimbo</h6>
 
                     </div>
                 </div>

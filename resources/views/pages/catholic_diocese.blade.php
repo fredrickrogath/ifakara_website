@@ -77,7 +77,7 @@
                         style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
                         <h6
                             style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                            Leadership Structure</h6>
+                            Mfumo wa Uongozi</h6>
 
                     </div>
                     <div class="intro-news-tab">
@@ -199,7 +199,7 @@
                         style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
                         <h6
                             style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                            IFakara Catholic History</h6>
+                            Historia ya Jimbo Katoliki Ifakara</h6>
 
                     </div>
 
@@ -220,14 +220,18 @@
                         <div class="p-1 d-flex justify-content-between" style="background-color:#1c2938; ">
                             <H5
                                 class="text-center"style="font-weight:600;font-size:18px; color:#ffff; text-align:center">
-                                Quick Links</H5>
+                            Viungo Muhimu</H5>
                         </div>
                         <div class="card-body">
                             <span>
-                                <a href="http://">Events and News</a>
+                                <a href="http://">Habari na Matukio</a>
                             </span>
                             <br>
-                            <span><a href="http://">Schools</a></span>
+                            <span><a href="http://">Shule</a></span>
+                            <br>
+                            <span><a href="http://">Hospitali</a></span>
+                            <br>
+                            <span><a href="http://">Mawasilano  yetu</a></span>
                         </div>
                     </div>
                 </div>

@@ -39,10 +39,10 @@
 
         <nav class="navbar navbar-expand-lg navbar-light ftco_navbar ftco-navbar-light" id="ftco-navbar" style="background-color:#F9F6EE">
             <div class="container">
-            <a class="navbar-brand" href="#" style="color:rgb(255, 170, 0)">LOGO</a>
+            <a class="navbar-brand" href="#" style="color:rgb(255, 170, 0)">ICD</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 {{-- <span class="navbar-toggler-icon"></span> --}}
-                <a class="navbar-brand" href="#" style="color:rgb(255, 170, 0)">LOGO</a>
+                <a class="navbar-brand" href="#" style="color:rgb(255, 170, 0)">Menu</a>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
@@ -58,24 +58,24 @@
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">Disabled</a>
                     </li> --}}
-                    <li class="nav-item"><a href="/" class="nav-link" style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Home</a></li>
-                        <li class="nav-item"><a href="{{route('catholic_diocese')}}" class="nav-link"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Catholic Diocese</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{route('schools')}}"   style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Schools</a></li>
+                    <li class="nav-item"><a href="/" class="nav-link" style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Nyumbani</a></li>
+                        <li class="nav-item"><a href="{{route('catholic_diocese')}}" class="nav-link"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Jimbo Ifakara</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{route('schools')}}"   style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shule Zetu</a></li>
                         <li class="nav-item">
-                            <a class="nav-link " href="{{route('healths')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Health
+                            <a class="nav-link " href="{{route('healths')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Taasisi za Kiafya
                                 Institute</a>
                            
                         </li>
                         <li class="nav-item dropdown position-static">
-                            <a class="nav-link" href="{{route('research_institute')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Research Institute</a>
+                            <a class="nav-link" href="{{route('research_institute')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Taasisi za Utafiti</a>
                            
                         </li>
                         <li class="nav-item dropdown position-static">
-                            <a class="nav-link" href="{{route('departiment')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Departiments</a>
+                            <a class="nav-link" href="{{route('departiment')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Idara</a>
                             
                         </li>
                         <li class="nav-item dropdown position-static">
-                            <a class="nav-link" href="{{route('contact')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Contact us</a>
+                            <a class="nav-link" href="{{route('contact')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Mawasiliano</a>
                             
                         </li>
                 </ul>

@@ -7,12 +7,12 @@
 
                        <!-- Intro News Filter -->
                        <div class="intro-news-filter d-flex justify-content-between" style="background-color:#ffff; color:#ffff; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
-                        <h6 style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">All the news</h6>
+                        <h6 style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Yote kwa ujumla</h6>
                         <nav>
                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
 
-                                <a class="nav-item nav-link active" id="nav2" data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2" aria-selected="false" style="color:#000">News</a>
-                                <a class="nav-item nav-link" id="nav4" data-toggle="tab" href="#nav-4" role="tab" aria-controls="nav-4" aria-selected="false" style="color:#000">Events</a>
+                                <a class="nav-item nav-link active" id="nav2" data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2" aria-selected="false" style="color:#000">Habari</a>
+                                <a class="nav-item nav-link" id="nav4" data-toggle="tab" href="#nav-4" role="tab" aria-controls="nav-4" aria-selected="false" style="color:#000">Matukio</a>
 
                             </div>
                         </nav>
@@ -48,7 +48,7 @@
                         <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav4">
                             <div class="row">
                                 <!-- Single News Area -->
-                                <div class="col-1">
+                                <div class="col-12">
                                     <div class="single-blog-post style-2 mb-5">
                                         <!-- Blog Thumbnail -->
                                         <div class="blog-thumbnail">
@@ -79,7 +79,7 @@
             <div class="col-12 col-sm-9 col-md-6 col-lg-4">
                 <div class="sidebar-area">
                     <div class="intro-news-filter d-flex justify-content-between" style="background-color:#fff; color:#ffff;  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
-                        <h6 style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Galley and Photos</h6>
+                        <h6 style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Album ya picha</h6>
 
                     </div>
                     <!-- Newsletter Widget -->
