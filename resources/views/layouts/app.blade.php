@@ -244,7 +244,7 @@
 
                         </div>
                         <div class="single-blog-post style-3"
-                            style="background-color:rgb(237, 186, 86);; border-radius: 20px; height: 250px; width: 650px;">
+                            style="background-color:rgb(230, 197, 131);; border-radius: 20px; height: 250px; width: 650px;">
                             <!-- Blog Thumbnail -->
 
                             <div class="card-body">
@@ -262,11 +262,11 @@
                                                 <a href="#">
                                                     <blockquote>
                                                         <p
-                                                            style="color:#fff; font-weight:700; font-size:15px; padding: 10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                            style="color:#662323; font-weight:200; font-size:17px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                                                             {{ $verse->verse }}
                                                         </p>
                                                         <h4
-                                                            style="color:#b21818; font-weight:700; font-size:18px; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                            style="color:#662323; font-weight:700; font-size:18px; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                                                             {{ $verse->servant }}</h4>
                                                     </blockquote>
                                                 </a>

@@ -123,7 +123,7 @@
                     <div class="row">
                         <div class="col-12">
 
-                            <h4 class="page-title">Exactive Staff</h4>
+                            <h4 class="page-title">Management Staff</h4>
                         </div>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                                             <Span class="bg-info p-2 text-center" style="color:#fff"
                                                 data-bs-toggle="modal" data-bs-target="#custom-modal-staff"><a href="#"
                                                     data-bs-toggle="modal" data-bs-target="#custom-modal-staff"
-                                                    style="color:#fff"><i class="mdi mdi-plus-circle me-1"></i> Add
+                                                    style="color:#fff"><i class="mdi mdi-plus-circle me-1"></i> Add Management
                                                     Staff</a> </Span>
                                         </div>
                                     </div><!-- end col-->
@@ -153,29 +153,34 @@
                 <!-- end row -->
 
                 <div class="row">
-                    @foreach ($exactive_staff as $exactive_staff)
+                    @foreach ($management as $management)
                     <div class="col-lg-3">
+                        
                         <div class="card">
+                            
                             <div class="card-body">
                                 <div class="text-center">
-                                    <img src="{{ asset('admin/assets/images/staff/'. $exactive_staff->image) }}" height="150px" width="150px" alt="logo"
+                                    <img src="{{ asset('admin/assets/images/staff/'. $management->image) }}" height="150px" width="150px" alt="logo"
                                         class="mb-1">
-                                    <h4 class="mb-1 font-20">{{ $exactive_staff->name }}</h4>
-                                    <p class="text-muted  font-14">{{ $exactive_staff->category }}</p>
+                                    <h4 class="mb-1 font-20">{{ $management->name }}</h4>
+                                    <p class="text-muted  font-14">{{ $management->category }}</p>
                                 </div>
                                 <div class="row mt-1 text-center">
                                     <div class="col-6">
-                                        <a href="{{ url('admin/update_staff/'.$exactive_staff->id) }}" class="action-icon"> <i
+                                        <a href="{{ url('admin/update_staff/'.$management->id) }}" class="action-icon"> <i
                                                 class="mdi mdi-square-edit-outline"></i></a>
 
                                     </div>
                                     <div class="col-6">
-                                        <a href="{{ url('admin/delete_staff/'.$exactive_staff->id) }}" class="action-icon"> <i
+                                        <a href="{{ url('admin/delete_staff/'.$management->id) }};" class="action-icon"> <i
                                                 class="mdi mdi-delete"></i></a>
                                     </div>
                                 </div>
                             </div>
+                            
                         </div> <!-- end card -->
+                        
+                        
                     </div><!-- end col -->
                     @endforeach
                 </div>
@@ -189,7 +194,7 @@
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-header bg-light">
-                        <h4 class="modal-title" id="myCenterModalLabel">Add Staff</h4>
+                        <h4 class="modal-title" id="myCenterModalLabel">Add Management Staff</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
@@ -212,10 +217,12 @@
                                         <label for="category" class="form-label">TiTle</label><br>
                                         <select name="category" id="category" class="form-control" style="width: 100%">
                                             <option selected>--Select Title--</option>
-                                            <option value="Bishop">Bishop</option>
-                                            <option value="Assistant Bishop">Assistant Bishop</option>
-                                            <option value="Parishioner ">Parishioner</option>
-                                            <option value="Assistant Parishioner">Assistant Parishioner</option>
+                                            <option value="Chair Person">Chair Person</option>
+                                            <option value="Assistant Chair Person">Assistant Chair Person</option>
+                                            <option value="Secretary">Secretary</option>
+                                            <option value="Assistant Secretary">Assistant Secretary</option>
+                                            <option value="Treasurer">Treasurer</option>
+                                            <option value="Assistant Treasurer">Assistant Treasurer</option>
                                         </select>
                                     </div>
                                 </div>
