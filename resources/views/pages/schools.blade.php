@@ -90,7 +90,7 @@
                                         <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapseOne" class="accordion-content collapse show">
+                                {{-- <div id="collapseOne" class="accordion-content collapse show">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -156,7 +156,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                                 <!-- single accordian area -->
                                 <div class="panel single-accordion">
                                     <h6>
@@ -170,7 +170,7 @@
                                                     aria-hidden="true"></i></span>
                                         </a>
                                     </h6>
-                                    <div id="collapseTwo" class="accordion-content collapse">
+                                    {{-- <div id="collapseTwo" class="accordion-content collapse">
                                         <div class="row">
                                             <div class="col-lg-8">
                                                 <div class="mt-4">
@@ -236,7 +236,7 @@
     
     
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <!-- single accordian area -->
                                 
@@ -253,7 +253,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapseThree" class="accordion-content collapse">
+                                {{-- <div id="collapseThree" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -319,7 +319,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -334,7 +334,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapsefour" class="accordion-content collapse">
+                                {{-- <div id="collapsefour" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -400,7 +400,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -414,7 +414,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapsefour" class="accordion-content collapse">
+                                {{-- <div id="collapsefour" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -480,7 +480,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -494,7 +494,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapsefive" class="accordion-content collapse">
+                                {{-- <div id="collapsefive" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -560,7 +560,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -574,7 +574,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapsesix" class="accordion-content collapse">
+                                {{-- <div id="collapsesix" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -640,7 +640,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -654,7 +654,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapsesevern" class="accordion-content collapse">
+                                {{-- <div id="collapsesevern" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -720,7 +720,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -734,7 +734,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapse8" class="accordion-content collapse">
+                                {{-- <div id="collapse8" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -800,7 +800,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -814,7 +814,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapse9" class="accordion-content collapse">
+                                {{-- <div id="collapse9" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -880,7 +880,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -894,7 +894,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapse10" class="accordion-content collapse">
+                                {{-- <div id="collapse10" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -960,7 +960,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -974,7 +974,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapse11" class="accordion-content collapse">
+                                {{-- <div id="collapse11" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -1040,7 +1040,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -1054,7 +1054,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapse12" class="accordion-content collapse">
+                                {{-- <div id="collapse12" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -1120,7 +1120,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -1134,7 +1134,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapse13" class="accordion-content collapse">
+                                {{-- <div id="collapse13" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -1200,7 +1200,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
 

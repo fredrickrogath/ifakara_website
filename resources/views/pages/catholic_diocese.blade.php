@@ -108,7 +108,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="col-12 col-sm-6 col-md-8">
+                                    {{-- <div class="col-12 col-sm-6 col-md-8">
                                         <div class="single-blog-post style-2 mb-5">
                                             <p style="text-align: justify; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-size:18px; color:#000">Lorem ipsum dolor sit
                                                 amet, consectetur adipisicing elit. Iusto asperiores neque vitae
@@ -128,7 +128,7 @@
 
                                             <p></p>
                                         </div>
-                                    </div>
+                                    </div> --}}
 
                                     <!-- Single News Area -->
 

@@ -39,7 +39,7 @@
                                                                 src="{{ asset('site/img/bg-img/health_1.JPG') }}"
                                                                 alt="First slide">
                                                             <div class="carousel-caption d-none d-md-block py-1"
-                                                                style="background-color: rgb(170, 167, 167); opacity:0.8; ">
+                                                                style="background-color: rgb(170, 167, 167); opacity:0.8; background-image:url() ">
                                                                 <h5 style="color:black; font-weight:700">CATHOLIC DIOCESE HEALTHS INSTITUTE
                                                                      </h5>
                                                                 <h6
@@ -88,7 +88,7 @@
                                         <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapseOne" class="accordion-content collapse show">
+                                {{-- <div id="collapseOne" class="accordion-content collapse show">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -154,13 +154,12 @@
 
 
                                     </div>
-                                </div>
-                                <!-- single accordian area -->
+                                </div> --}}
                                 <div class="panel single-accordion">
                                     <h6>
                                         <a role="button" class="collapsed" aria-expanded="true"
                                             aria-controls="collapseTwo" data-parent="#accordion" data-toggle="collapse"
-                                            href="#collapseTwo">SSt. Francis University College of
+                                            href="#collapseTwo">St. Francis University College of
                                             Health and Allied Sciences (SFUCHAS)
                                             <span class="accor-open"><i class="fa fa-plus"
                                                     aria-hidden="true"></i></span>
@@ -168,7 +167,7 @@
                                                     aria-hidden="true"></i></span>
                                         </a>
                                     </h6>
-                                    <div id="collapseTwo" class="accordion-content collapse">
+                                    {{-- <div id="collapseTwo" class="accordion-content collapse">
                                         <div class="row">
                                             <div class="col-lg-8">
                                                 <div class="mt-4">
@@ -234,7 +233,7 @@
     
     
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <!-- single accordian area -->
                                 
@@ -251,7 +250,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapseThree" class="accordion-content collapse">
+                                {{-- <div id="collapseThree" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -317,7 +316,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -331,7 +330,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapsefour" class="accordion-content collapse">
+                                {{-- <div id="collapsefour" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -397,7 +396,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -412,7 +411,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapsefour" class="accordion-content collapse">
+                                {{-- <div id="collapsefour" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -478,7 +477,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -492,7 +491,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapsefive" class="accordion-content collapse">
+                                {{-- <div id="collapsefive" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -558,7 +557,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -572,7 +571,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapsesix" class="accordion-content collapse">
+                                {{-- <div id="collapsesix" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -638,7 +637,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -652,7 +651,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapsesevern" class="accordion-content collapse">
+                                {{-- <div id="collapsesevern" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -718,7 +717,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -732,7 +731,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapse8" class="accordion-content collapse">
+                                {{-- <div id="collapse8" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -798,7 +797,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -812,7 +811,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapse9" class="accordion-content collapse">
+                                {{-- <div id="collapse9" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -878,7 +877,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -892,7 +891,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapse10" class="accordion-content collapse">
+                                {{-- <div id="collapse10" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -958,7 +957,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -972,7 +971,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapse11" class="accordion-content collapse">
+                                {{-- <div id="collapse11" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -1038,7 +1037,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="panel single-accordion">
@@ -1052,7 +1051,7 @@
                                                 aria-hidden="true"></i></span>
                                     </a>
                                 </h6>
-                                <div id="collapse12" class="accordion-content collapse">
+                                {{-- <div id="collapse12" class="accordion-content collapse">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="mt-4">
@@ -1118,7 +1117,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
 

@@ -52,18 +52,14 @@
 
                         <!-- Contact Social Info -->
                         <div class="contact-social-info mt-50 mb-70">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i
-                                    class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="instagram"><i
+                                class="fa fa-instagram" aria-hidden="true"></i></a>
                             <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i
                                     class="fa fa-facebook" aria-hidden="true"></i></a>
                             <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i
                                     class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Dribbble"><i
-                                    class="fa fa-dribbble" aria-hidden="true"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Behance"><i
-                                    class="fa fa-behance" aria-hidden="true"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i
-                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
+                      
+                   
                         </div>
 
                         <!-- Contact Form Area -->
@@ -114,10 +110,24 @@
 
                     <!-- Newsletter Widget -->
                     <div class="single-widget-area newsletter-widget mb-30">
-                        <h4>Quick links</h4>
-                        
-                        <p class="mt-30">Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue
-                            condimentum. Etiam pretium turpis eget nibh . volutpat lobortis.</p>
+                        <div class="">
+                            <div class="p-1 d-flex justify-content-between" style="background-color:#1c2938; ">
+                                <H5
+                                    class="text-center"style="font-weight:600;font-size:18px; color:#ffff; text-align:center">
+                                Viungo Muhimu</H5>
+                            </div>
+                            <div class="card-body">
+                                <span>
+                                    <a href="http://">Habari na Matukio</a>
+                                </span>
+                                <br>
+                                <span><a href="http://">Shule</a></span>
+                                <br>
+                                <span><a href="http://">Hospitali</a></span>
+                                <br>
+                                <span><a href="http://">Mawasilano  yetu</a></span>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Add Widget -->
@@ -140,8 +150,8 @@
 
                             <!-- Blog Content -->
                             <div class="blog-content">
-                                <span class="post-date">June 20, 2018</span>
-                                <a href="#" class="post-title">Nearly a quarter have no emergency savings</a>
+                                <span class="post-date">Ufunguzi wa misa takatifu</span>
+                                <a href="#" class="post-title">Paro Msaidizi wa parokia ya v 60 Padre Lyanga akifungua Misa</a>
                             </div>
                         </div>
 
@@ -154,25 +164,22 @@
 
                             <!-- Blog Content -->
                             <div class="blog-content">
-                                <span class="post-date">June 20, 2018</span>
-                                <a href="#" class="post-title">Nearly a quarter have no emergency savings</a>
+                                {{-- <span class="post-date">June 20, 2018</span> --}}
+                                <a href="#" class="post-title">Mafunzo ya Mtaala Kitaaluma kwa walimu</a>
                             </div>
                         </div>
 
-                        <!-- Single News Area -->
-                        <div class="single-blog-post d-flex style-4 mb-30">
-                            <!-- Blog Thumbnail -->
+                        {{-- <div class="single-blog-post d-flex style-4 mb-30">
                             <div class="blog-thumbnail">
                                 <a href="#"><img src="{{asset('site/img/bg-img/g-3.jpg')}}" alt=""></a>
                             </div>
 
-                            <!-- Blog Content -->
                             <div class="blog-content">
                                 <span class="post-date">June 20, 2018</span>
                                 <a href="#" class="post-title">Top bitcoin exchange says over $30 million
                                     stolen</a>
                             </div>
-                        </div>
+                        </div> --}}
 
                      
                     </div>
