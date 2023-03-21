@@ -175,10 +175,6 @@
 
                     </div>
                 </div>
-
-
-
-
             </div>
         </div>
     </section>
@@ -201,122 +197,157 @@
                     </div> --}}
                 </div>
                 <div class="col-12">
-                    <div class="row">
+                    <div class="card mt-3">
                         <div class="card-body">
-                            @foreach ($health_service as $health_service)
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="single-service-area mb-100">
-                                        <div class="icon mb-30">
-                                            <img src="{{ asset('site/img/core-img/id-card2.png') }}" alt="">
+                            <div class="row">
+                                @foreach ($health_service as $health_service)
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="">
+                                            <div class="card-body">
+                                                <div class="single-service-area mb-100">
+                                                    <div class="icon mb-30">
+                                                        <img src="{{ asset('site/img/core-img/id-card2.png') }}"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="text">
+                                                        <h5 style="font-weight:700">{{ $health_service->title }}</h5>
+                                                        <p
+                                                            style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#000; font-size:17px; height: 180px;
+                                                             white-space:initial; text-overflow:ellipsis; max-width: 100%; overflow:hidden;">
+                                                            {{ $health_service->initial_description }}</p>
+                                                    </div>
+                                                    <a href="#">Soma Zaidi<i class="fa fa-long-arrow-right"
+                                                            aria-hidden="true"></i></a>
+
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="text">
-                                            <h5 style="font-weight:700">{{ $health_service->title }}</h5>
-                                            <p
-                                                style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#000; font-size:17px; height: 180px;
-                    white-space:initial; text-overflow:ellipsis; max-width: 100%; overflow:hidden;">
-                                                {{ $health_service->initial_description }}</p>
+                                    </div>
+                                @endforeach
+
+                                <!-- Single Service Area -->
+                                @foreach ($education_service as $education_service)
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="">
+                                            <div class="card-body">
+                                                <div class="single-service-area mb-100">
+                                                    <div class="icon mb-30">
+                                                        <img src="{{ asset('site/img/core-img/file.png') }}"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="text">
+                                                        <h5 style="font-weight:700">{{ $education_service->title }}
+                                                        </h5>
+                                                        <p
+                                                            style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#000; font-size:17px; height: 180px;
+                                                             white-space:normal; text-overflow:ellipsis; max-width: 100%; overflow:hidden;">
+                                                            {{ $education_service->initial_description }}</p>
+                                                    </div>
+                                                    <a href="#">Soma Zaidi <i class="fa fa-long-arrow-right"
+                                                            aria-hidden="true"></i></a>
+
+                                                </div>
+                                            </div>
                                         </div>
-                                        <a href="#">Soma Zaidi<i class="fa fa-long-arrow-right"
-                                                aria-hidden="true"></i></a>
 
                                     </div>
-                                </div>
-                            @endforeach
+                                @endforeach
 
-                            <!-- Single Service Area -->
-                            @foreach ($education_service as $education_service)
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="single-service-area mb-100">
-                                        <div class="icon mb-30">
-                                            <img src="{{ asset('site/img/core-img/file.png') }}" alt="">
+                                <!-- Single Service Area -->
+                                @foreach ($bible_service as $bible_service)
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="">
+                                            <div class="card-body">
+                                                <div class="single-service-area mb-100">
+                                                    <div class="icon mb-30">
+                                                        <img src="{{ asset('site/img/core-img/archive.png') }}"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="text">
+                                                        <h5 style="font-weight:700">{{ $bible_service->title }}</h5>
+                                                        <p
+                                                            style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#000; font-size:17px; height: 180px;
+                                                              white-space:normal; text-overflow:ellipsis; max-width: 100%; overflow:hidden;">
+                                                            {{ $bible_service->initial_description }}</p>
+                                                    </div>
+                                                    <a href="#">Soma Zaidi <i class="fa fa-long-arrow-right"
+                                                            aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="text">
-                                            <h5 style="font-weight:700">{{ $education_service->title }}</h5>
-                                            <p
-                                                style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#000; font-size:17px; height: 180px;
-                    white-space:normal; text-overflow:ellipsis; max-width: 100%; overflow:hidden;">
-                                                {{ $education_service->initial_description }}</p>
-                                        </div>
-                                        <a href="#">Soma Zaidi <i class="fa fa-long-arrow-right"
-                                                aria-hidden="true"></i></a>
 
                                     </div>
-                                </div>
-                            @endforeach
-
-                            <!-- Single Service Area -->
-                            @foreach ($bible_service as $bible_service)
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="single-service-area mb-100">
-                                        <div class="icon mb-30">
-                                            <img src="{{ asset('site/img/core-img/archive.png') }}" alt="">
-                                        </div>
-                                        <div class="text">
-                                            <h5 style="font-weight:700">{{ $bible_service->title }}</h5>
-                                            <p
-                                                style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#000; font-size:17px; height: 180px;
-                    white-space:normal; text-overflow:ellipsis; max-width: 100%; overflow:hidden;">
-                                                {{ $bible_service->initial_description }}</p>
-                                        </div>
-                                        <a href="#">Soma Zaidi <i class="fa fa-long-arrow-right"
-                                                aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            @endforeach
+                                @endforeach
+                            </div>
                         </div>
                     </div>
+
+
                 </div>
 
-                <div class="row d-flex justify-content-between">
-                    <div class="col-12 col-md-8 col-sm-8">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="intro-news-area mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Intro News Tabs Area -->
+                <div class="col-12 col-lg-8">
+                    <div class="intro-news-tab">
                         <div class="card">
                             <div class="card-header">
                                 <h6
                                     style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                                     Mistari wa siku</h6>
+
                             </div>
                         </div>
-                        {{-- <div class="single-blog-post style-3"
-                            style="background-color:rgb(230, 197, 131);; border-radius: 20px; height: 250px; width: 650px;">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-1" role="tabpanel"
+                                aria-labelledby="nav1">
+                                <div class="card mt-3">
+                                    <div class="card-body"
+                                        style="background-color:rgb(230, 197, 131); border-radius: 10px;">
+                                        <div class="row">
 
-                          
-                        </div> --}}
-                        <div class="card-body mt-3"  style="background-color:rgb(230, 197, 131);; border-radius: 10px;">
-                            <!-- Add Widget -->
-                            <div class="single-widget-area add-widget mb-30">
-                                <a href="#">
-                                </a>
+                                            <div id="carouselExampleSlidesOnly" class="carousel slide"
+                                                data-ride="carousel">
 
-                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    @foreach ($verses as $key => $verse)
+                                                        <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
 
-                                    <div class="carousel-inner">
-                                        @foreach ($verses as $key => $verse)
-                                        <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
-                                            
-                                            <a href="#">
-                                                <blockquote>
-                                                    <p
-                                                        style="color:#662323; font-weight:200; font-size:17px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                                        {{ $verse->verse }}
-                                                    </p>
-                                                    <h4
-                                                        style="color:#662323; font-weight:700; font-size:18px; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                                        {{ $verse->servant }}</h4>
-                                                </blockquote>
-                                            </a>
-                                            
+                                                            <a href="#">
+                                                                <blockquote>
+                                                                    <p
+                                                                        style="color:#662323; font-weight:200; font-size:17px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                                        {{ $verse->verse }}
+                                                                    </p>
+                                                                    <h4
+                                                                        style="color:#662323; font-weight:700; font-size:18px; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                                        {{ $verse->servant }}</h4>
+                                                                </blockquote>
+                                                            </a>
+
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+
+                                            </div>
+
                                         </div>
-                                        @endforeach
                                     </div>
-
                                 </div>
 
                             </div>
-
                         </div>
-
                     </div>
-                    <div class="col-md-4 col-sm-4">
+                </div>
+                <!--  documents-->
+                <div class="col-12 col-sm-9 col-md-6 col-lg-4">
+                    <div class="sidebar-area">
                         <div class="card">
                             <div class="card-header">
                                 <h6
@@ -324,49 +355,54 @@
                                     Hati na taarifa za Jimbo </h6>
                             </div>
                         </div>
-                        {{-- <div class="intro-news-filter d-flex justify-content-between"
-                            style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
-                           
 
-                        </div> --}}
-                        <div class="card mt-3 d-flex justify-content-between">
-                            <div class="card-body">
-                                <p
-                                    style="text-align: justify;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:17px;color:#000;">
-                                    <i class="fa fa-file-pdf-o text-danger" aria-hidden="true"></i> Lorem ipsum dolor
-                                    sit amet
-                                    consectetur,
-                                    adipisicing elit. Nesciunt sit,
-                                    rep
-                                </p>
-                                <p
-                                    style="text-align: justify;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:17px;color:#000;">
-                                    <span><a href=""><i class="fa fa-book text-danger"
-                                                aria-hidden="true"></i></a></span>
-                                    Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Tempore, minima veniam. Placeat.
-                                </p>
 
-                                <p
-                                    style="text-align: justify;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:17px;color:#000;">
-                                    <span style="font-size: 25px"><a href=""><i
-                                                class="fa fa-file-pdf-o text-danger" aria-hidden="true"></i>
-                                        </a>
-                                    </span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, minima
-                                    veniam. Placeat.
-                                </p>
+                        <!-- Add Widget -->
+                        <div class="single-widget-area add-widget mb-30">
+                            <div class="card mt-3">
+                                <div class="card-body">
+                                    <p
+                                        style="text-align: justify;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:17px;color:#000;">
+                                        <i class="fa fa-file-pdf-o text-danger" aria-hidden="true"></i> Lorem ipsum
+                                        dolor
+                                        sit amet
+                                        consectetur,
+                                        adipisicing elit. Nesciunt sit,
+                                        rep
+                                    </p>
+                                    <p
+                                        style="text-align: justify;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:17px;color:#000;">
+                                        <span><a href=""><i class="fa fa-book text-danger"
+                                                    aria-hidden="true"></i></a></span>
+                                        Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Tempore, minima veniam. Placeat.
+                                    </p>
+
+                                    <p
+                                        style="text-align: justify;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:17px;color:#000;">
+                                        <span style="font-size: 25px"><a href=""><i
+                                                    class="fa fa-file-pdf-o text-danger" aria-hidden="true"></i>
+                                            </a>
+                                        </span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, minima
+                                        veniam. Placeat.
+                                    </p>
+                                </div>
                             </div>
+
                         </div>
 
                     </div>
                 </div>
             </div>
-
-
-
         </div>
-
     </section>
+
+
+
+
+
+
+
 
 
     <!-- ##### Intro News Area Start ##### -->
@@ -374,7 +410,6 @@
 
     <section class="elements-area section-padding-10-0" style="margin-top:-3%;">
         <div class="container">
-
             <div class="row">
                 <div class="col-12">
                     <div class="card">
@@ -384,11 +419,6 @@
                                 Muhtasari wa Jimbo</h6>
                         </div>
                     </div>
-                    {{-- <div class="intro-news-filter d-flex justify-content-between"
-                        style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
-                     
-
-                    </div> --}}
                 </div>
 
                 <div class="col-12 mt-3">
@@ -396,7 +426,6 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="row mt-1">
-
                                     @foreach ($member as $member)
                                         <!-- Single Cool Facts -->
                                         <div class="col-12 col-sm-6 col-lg-3">

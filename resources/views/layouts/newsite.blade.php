@@ -20,8 +20,7 @@
 
                     <div class="tab-content" id="nav-tabContent">
 
-                       
-                        <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav2">
+                            <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav2">
                             <div class="row">
                                 @foreach ($news as $news)
                                 <div class="col-12 col-sm-6">
@@ -87,72 +86,78 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row">
-                                        <!-- Single News Area -->
-                                        <div class="col-12 col-sm-6">
-                                            <div class="single-blog-post style-2 mb-5">
-                                                <!-- Blog Thumbnail -->
-                                                <div class="blog-thumbnail">
-                                                    <a href="#"><img src="{{asset('site/img/bg-img/n-1.jpeg')}}" alt=""></a>
-                                                </div>
-        
-                                                <!-- Blog Content -->
-                                                <div class="blog-content">
-                                                    <p>Parokia ya Mtakatifu Yohane Mbatizaji V 60, Ibadan ya misa takatifu, somo ni kutoka mambo ya walawi, Ibada imeambatana na Watoto kushiliki kusoma Mistari ya biblia</p>
-                                                    <a href="#" class="post-title">Soma zaidi</a>
-                                                    <a href="#" class="post-author">By admin</a>
-                                                </div>
+                                      
+
+
+                                          {{-- neww itemr --}}
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post d-flex style-4 mb-30">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="{{asset('site/img/bg-img/n-1.jpeg')}}" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                               
+
+                                                <a href="#" class="post-title">Parokia ya Mtakatifu Yohane Mbatizaji V 60</a>
+                                                <span class="post-date">by admin</span>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="single-blog-post style-2 mb-5">
-                                                <!-- Blog Thumbnail -->
-                                                <div class="blog-thumbnail">
-                                                    <a href="#"><img src="{{asset('site/img/bg-img/n-2.jpeg')}}" alt=""></a>
-                                                </div>
-        
-                                                <!-- Blog Content -->
-                                                <div class="blog-content">
-                                                    <a href="#" class="post-title">Ufunguzi wa misa</a>
-                                                    <p>Paro Msaidizi wa parokia ya v 60 Padre Lyanga akifungua Misa</p>
-                                                    <a href="#" class="post-title">Soma zaidi</a>
-                                                    <a href="#" class="post-author">By Admin</a>
-                                                </div>
+                                    </div>
+
+                                    <!-- Single News Area -->
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post d-flex style-4 mb-30">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="{{asset('site/img/bg-img/n-2.jpeg')}}" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                
+                                                <a href="#" class="post-title">Paro Msaidizi wa parokia ya v 60 Padre Lyanga akifungua Misa</a>
+                                                <span class="post-date">By admin</span>
                                             </div>
                                         </div>
-        
-                                        <!-- Single News Area -->
-        
-                                        <div class="col-12 col-sm-6">
-                                            <div class="single-blog-post style-2 mb-5">
-                                                <!-- Blog Thumbnail -->
-                                                <div class="blog-thumbnail">
-                                                    <a href="#"><img src="{{asset('site/img/bg-img/n-5.jpg')}}" alt=""></a>
-                                                </div>
-        
-                                                <!-- Blog Content -->
-                                                <div class="blog-content">
-                                                    <a href="#" class="post-title">Walsha Kanisa Katoriki Jimbo la Ifakara</a>
-                                                    <p>Mazungumzo ya Kitaaluma kuhusu Mtaala wa Elimu unaozungatia Ujuzi na Umahili. Mgeni Rasmi alikuwa na Baba Askofu Wa Jimbo Kuu la Ifakara. </p>
-                                                    <a href="#" class="post-author">By Admin</a>
-                                                </div>
+                                    </div>
+
+                                    <!-- Single News Area -->
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post d-flex style-4 mb-30">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="{{asset('site/img/bg-img/n-5.jpg')}}" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                              
+                                                <a href="#" class="post-title"> Walsha Kanisa Katoriki Jimbo la Ifakara</a>
+                                                <span class="post-date">By admin</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- Single News Area -->
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post d-flex style-4 mb-30">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="{{asset('site/img/bg-img/n-4.jpg')}}" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                
+                                                <a href="#" class="post-title">Mafunzo ya Mtaala Kitaaluma kwa walimu</a>
+                                                <span class="post-date">By admin</span>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="single-blog-post style-2 mb-5">
-                                                <!-- Blog Thumbnail -->
-                                                <div class="blog-thumbnail">
-                                                    <a href="#"><img src="{{asset('site/img/bg-img/n-4.jpg')}}" alt=""></a>
-                                                </div>
-        
-                                                <!-- Blog Content -->
-                                                <div class="blog-content">
-                                                    <a href="#" class="post-title"> Mafunzo ya Mtaala Kitaaluma kwa walimu</a>
-                                                    <p>Ufunguzi wa Mafunzo ya Mtaala Kitaaluma kwa walimu</p>
-                                                    <a href="#" class="post-author">By admin</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                       
+                                    </div>
         
                                      
                                     </div>
