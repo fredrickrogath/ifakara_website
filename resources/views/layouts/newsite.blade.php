@@ -30,7 +30,7 @@
                                         <div class="blog-thumbnail">
                                             <a href="#"><img
                                                     src="{{ asset('admin/assets/images/news/' . $news->image) }}"
-                                                    alt=""></a>
+                                                    style="height: 120px; width:100%;" alt=""></a>
                                         </div>
 
                                         <!-- Blog Content -->

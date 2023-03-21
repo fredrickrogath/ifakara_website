@@ -20,13 +20,13 @@
                 <!-- Post Details Content Area -->
                 <div class="col-12 col-lg-8">
                     <div class="post-details-content mb-100">
-                        <span><h4>{{ $news->news_title }} </h4><p style="text-align: end;">{{ $news->news_date }}</p></span>
+                        <span><h4 style="font-weight:700; font-family:'Times New Roman', Times, serif;">{{ $news->news_title }} </h4><p style="text-align: end;">{{ $news->news_date }}</p></span>
                         <hr>
-                        <h5>{{ $news->initial_description }}</h5>
+                        <h5 style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">{{ $news->initial_description }}</h5>
                             <img
                             src="{{ asset('admin/assets/images/news/' . $news->image) }}"
-                            alt="">
-                        <h5>{{ $news->news_description }}</h5>
+                            alt="" style="height: 300px; width: 100%; border-radius: 10px;">
+                        <h5 style="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">{{ $news->news_description }}</h5>
                     </div>
 
                     <!-- Comment Area Start -->
@@ -41,7 +41,7 @@
 
                         <!-- Latest News Widget -->
                         <div class="single-widget-area news-widget mb-30">
-                            <h4>Latest News</h4>
+                            <h4 style="font-weight:700; font-family:'Times New Roman', Times, serif;">Latest News</h4>
 
                             <!-- Single News Area -->
                             @foreach ($latest as $news)
@@ -56,7 +56,7 @@
                                 <!-- Blog Content -->
                                 <div class="blog-content">
                                     <span class="post-date">{{ $news->news_date }}</span>
-                                    <a href="{{url('single_news/'. $news->id)}}" class="post-title" style="white-space:normal; text-overflow:ellipsis; max-width: 100%; overflow:hidden; max-height: 80px; font-size:14px;"
+                                    <a href="{{url('single_news/'. $news->id)}}" class="post-title" style="white-space:normal; text-overflow:ellipsis; max-width: 100%; overflow:hidden; max-height: 80px; font-size:14px; font-family:Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:17px;"
                                         >{{ $news->initial_description }}</a>
                                 </div>
                             </div>

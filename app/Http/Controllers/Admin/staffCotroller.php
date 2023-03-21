@@ -16,8 +16,20 @@ class staffCotroller extends Controller
      */
     public function index()
     {
-        $staff = staff::all();
-        return view('admin.pages.Staff.exactivestaff', compact('staff'));
+        $exactive_staff = staff::whereIn('category', ['Bishop', 'Assistant Bishop'])->where('status', '=', 'Active')->get();
+        return view('admin.pages.Staff.exactivestaff', compact('exactive_staff'));
+    }
+
+    public function index_management(){
+        $management = staff::whereIn('category', ['Chair Person', 'Assistant Chair Person', 'ssistant Secretary', 'Secretary', 'Assistant Treasurer', 'Treasurer'])
+        ->where('status', '=', 'Active')->get();
+        return view('admin.pages.Staff.management', compact('management'));
+    }
+
+    public function index_historical(){
+        $exactive_historical_staff = staff::whereIn('category', ['Bishop', 'Assistant Bishop'])->where('status', '=', 'In Active')->get();
+        $management_historical_staff = staff::whereIn('category', ['Chair Person', 'Assistant Chair Person', 'ssistant Secretary', 'Secretary', 'Assistant Treasurer', 'Treasurer'])->where('status', '=', 'In Active')->get();
+        return view('admin.pages.Staff.historical', compact('exactive_historical_staff', 'management_historical_staff'));
     }
 
     /**

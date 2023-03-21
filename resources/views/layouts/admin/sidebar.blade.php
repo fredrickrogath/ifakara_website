@@ -111,6 +111,12 @@
                         <li>
                             <a href="{{route('admin_exactive_staff')}}">Exacutive staff</a>
                         </li>
+                        <li>
+                            <a href="{{route('admin_management_staff')}}">Management staff</a>
+                        </li>
+                        <li>
+                            <a href="{{route('admin_historical_staff')}}">Historical staff</a>
+                        </li>
                     </ul>
                 </div>
             </li>
