@@ -276,43 +276,43 @@
                                     Mistari wa siku</h6>
                             </div>
                         </div>
-                        <div class="single-blog-post style-3"
+                        {{-- <div class="single-blog-post style-3"
                             style="background-color:rgb(230, 197, 131);; border-radius: 20px; height: 250px; width: 650px;">
-                            <!-- Blog Thumbnail -->
 
-                            <div class="card-body">
-                                <!-- Add Widget -->
-                                <div class="single-widget-area add-widget mb-30">
-                                    <a href="#">
-                                    </a>
+                          
+                        </div> --}}
+                        <div class="card-body mt-3"  style="background-color:rgb(230, 197, 131);; border-radius: 10px;">
+                            <!-- Add Widget -->
+                            <div class="single-widget-area add-widget mb-30">
+                                <a href="#">
+                                </a>
 
-                                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
 
-                                        <div class="carousel-inner">
-                                            @foreach ($verses as $key => $verse)
-                                            <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
-                                                
-                                                <a href="#">
-                                                    <blockquote>
-                                                        <p
-                                                            style="color:#662323; font-weight:200; font-size:17px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                                            {{ $verse->verse }}
-                                                        </p>
-                                                        <h4
-                                                            style="color:#662323; font-weight:700; font-size:18px; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                                            {{ $verse->servant }}</h4>
-                                                    </blockquote>
-                                                </a>
-                                                
-                                            </div>
-                                            @endforeach
+                                    <div class="carousel-inner">
+                                        @foreach ($verses as $key => $verse)
+                                        <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
+                                            
+                                            <a href="#">
+                                                <blockquote>
+                                                    <p
+                                                        style="color:#662323; font-weight:200; font-size:17px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                        {{ $verse->verse }}
+                                                    </p>
+                                                    <h4
+                                                        style="color:#662323; font-weight:700; font-size:18px; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                        {{ $verse->servant }}</h4>
+                                                </blockquote>
+                                            </a>
+                                            
                                         </div>
-
+                                        @endforeach
                                     </div>
 
                                 </div>
 
                             </div>
+
                         </div>
 
                     </div>
@@ -329,7 +329,7 @@
                            
 
                         </div> --}}
-                        <div class="card mt-2 d-flex justify-content-between">
+                        <div class="card mt-3 d-flex justify-content-between">
                             <div class="card-body">
                                 <p
                                     style="text-align: justify;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:17px;color:#000;">
