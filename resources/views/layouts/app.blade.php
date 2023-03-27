@@ -23,10 +23,10 @@
 
     @include('layouts.maubiri')
     <!-- ##### Intro News Area Start ##### -->
-    @include('layouts.newsite')
+    
 
    @include('layouts.service')
-
+   @include('layouts.newsite')
     @include('layouts.summary')
     <!-- ##### Add Area End ##### -->
 
