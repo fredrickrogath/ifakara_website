@@ -20,7 +20,7 @@ class SitePagesController extends Controller
 
     {  $news = news::latest('id')->limit(4)->get();
         $events = events::latest('id')->limit(4)->get();
-        $gallery_photo = gallery::all()->latest('id')->where('category', '=', 'Photo');
+        $gallery_photo = gallery::all()->where('category', '=', 'Photo');
         return view('pages.catholic_diocese',compact('gallery_photo','news','events'));
     }
 
