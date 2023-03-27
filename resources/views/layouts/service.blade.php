@@ -1,4 +1,4 @@
-<section class="elements-area section-padding-100-0" style="margin-top:-5%">
+<section class="elements-area section-padding-100-0" style="margin-top:-3%">
     <div class="container">
 
         <div class="row">

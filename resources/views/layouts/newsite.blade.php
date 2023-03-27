@@ -5,9 +5,8 @@
                 <div class="intro-news-tab">
                     <div class="card">
                         <div class="card-header">
-                        
-                            <div class="intro-news-filter d-flex justify-content-between"
-                                style="background-color:#fff; color:#ffff;  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
+                            {{-- style="background-color:#fff; color:#ffff;  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;" --}}
+                            <div class="d-flex justify-content-between">
                                 <h6
                                 style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                                 Yote kwa Ujumla</h6>
@@ -28,7 +27,7 @@
 
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav1">
-                            <div class="card">
+                            <div class="card mt-3">
                                 <div class="card-body">
                                     <div class="row">
                                         @foreach ($news as $news)
