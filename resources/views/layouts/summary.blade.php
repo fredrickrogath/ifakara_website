@@ -13,13 +13,13 @@
 
             <div class="col-12 mt-3">
                 <div class="newsbox-cool-facts-area">
-                    <div class="card">
+                    <div class="card" style="height: auto;">
                         <div class="card-body">
                             <div class="row mt-1">
                                 @foreach ($member as $member)
                                     <!-- Single Cool Facts -->
                                     <div class="col-12 col-sm-6 col-lg-3">
-                                        <div class="single-cool-fact mb-10">
+                                        <div class="single-cool-fact">
                                             <div class="scf-icon">
                                                 <img src="{{ asset('site/img/core-img/idea.png') }}"
                                                     alt="">
@@ -37,7 +37,7 @@
                                 @foreach ($parish as $parish)
                                     <!-- Single Cool Facts -->
                                     <div class="col-12 col-sm-6 col-lg-3">
-                                        <div class="single-cool-fact mb-10">
+                                        <div class="single-cool-fact">
                                             <div class="scf-icon">
                                                 <img src="{{ asset('site/img/core-img/list.png') }}"
                                                     alt="">
@@ -55,7 +55,7 @@
                                 @foreach ($school as $school)
                                     <!-- Single Cool Facts -->
                                     <div class="col-12 col-sm-6 col-lg-3">
-                                        <div class="single-cool-fact mb-10">
+                                        <div class="single-cool-fact">
                                             <div class="scf-icon">
                                                 <img src="{{ asset('site/img/core-img/id-card.png') }}"
                                                     alt="">
@@ -73,7 +73,7 @@
                                 @foreach ($health as $health)
                                     <!-- Single Cool Facts -->
                                     <div class="col-12 col-sm-6 col-lg-3">
-                                        <div class="single-cool-fact mb-10">
+                                        <div class="single-cool-fact">
                                             <div class="scf-icon">
                                                 <img src="{{ asset('site/img/core-img/diamond.png') }}"
                                                     alt="">

@@ -18,7 +18,7 @@
             </div>
             <div class="col-12">
                 <div class="card mt-3">
-                    <div class="card-body">
+                    <div class="card-body ">
                         <div class="row">
                             @foreach ($health_service as $health_service)
                                 <div class="col-12 col-md-6 col-lg-4">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\events;
 use App\Models\gallery;
 use App\Models\news;
 use App\Models\sermon;
@@ -24,6 +25,7 @@ class HomeController extends Controller
         $sermons = sermon::latest('id')->limit(3)->get();
         $slider = slider::all();
         $news = news::latest('id')->limit(4)->get();
+        $events = events::latest('id')->limit(4)->get();
         $gallery_photo = gallery::all()->where('category', '=', 'Photo');
         $school = summary::where('category', '=', 'Schools')->latest('id')->limit(1)->get();
         $health = summary::where('category', '=', 'Healths Center')->latest('id')->limit(1)->get();
@@ -32,7 +34,7 @@ class HomeController extends Controller
         $education_service = service::where('category', '=', 'Education')->latest('id')->limit(1)->get();
         $health_service = service::where('category', '=', 'Health')->latest('id')->limit(1)->get();
         $bible_service = service::where('category', '=', 'Bible')->latest('id')->limit(1)->get();
-        return view('welcome', compact('verses',"news",'slider','sermons','gallery_photo','school', 'health', 'parish', 'member', 'education_service', 'health_service', 'bible_service'));
+        return view('welcome', compact('verses',"news",'events','slider','sermons','gallery_photo','school', 'health', 'parish', 'member', 'education_service', 'health_service', 'bible_service'));
     }
 
     /**

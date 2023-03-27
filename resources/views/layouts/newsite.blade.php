@@ -63,12 +63,31 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <!-- Single News Area -->
+                                        @foreach ($events as $events)
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post d-flex style-4 mb-30">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img
+                                                        src="{{ asset('admin/assets/images/events/' . $events->image) }}"
+                                                        style="height: 120px; width:100%;" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">{{ $events->news_date }}</span>
+                                                <a href="{{ url('single_events/' . $events->id) }}" class="post-title"
+                                                    style="white-space:normal; text-overflow:ellipsis; max-width: 100%; overflow:hidden; max-height: 100px; font-size:14px;">{{ $events->events_title }}</a>
+                                                    <span class="post-date">By admin</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endforeach
 
 
 
-
-                                        <!-- Single News Area -->
-                                        <div class="col-12 col-sm-6">
+                                        <!-- Single News Area-->
+                                        {{-- <div class="col-12 col-sm-6">
                                             <div class="single-blog-post d-flex style-4 mb-30">
                                                 <!-- Blog Thumbnail -->
                                                 <div class="blog-thumbnail">
@@ -82,10 +101,10 @@
 
                                                     <a href="#" class="post-title">Mkufunzi akitoa mafunzo ya
                                                         taaluma kwa walimu</a>
-                                                    <span class="post-date">By admin</span>
+                                                   
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                 </div>
                             </div>

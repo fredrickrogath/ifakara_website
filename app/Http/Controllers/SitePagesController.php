@@ -17,8 +17,8 @@ class SitePagesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function catholic_diocese()
-
-    {  $news = news::latest('id')->limit(4)->get();
+    { 
+        $news = news::latest('id')->limit(4)->get();
         $events = events::latest('id')->limit(4)->get();
         $gallery_photo = gallery::all()->latest('id')->where('category', '=', 'Photo');
         return view('pages.catholic_diocese',compact('gallery_photo','news','events'));
@@ -49,6 +49,12 @@ class SitePagesController extends Controller
         $news = news::find($id);
         $latest = news::latest('id')->limit(7)->get();
         return View('pages.single_news', compact('news', 'latest'));
+    }
+    
+    public function single_events($id){
+        $events = events::find($id);
+        $latest = events::latest('id')->limit(7)->get();
+        return View('pages.single_events', compact('events', 'latest'));
     }
     /**
      * Show the form for creating a new resource.

@@ -58,6 +58,7 @@ Route::get('/healths', [SitePagesController::class, 'healths'])->name('healths')
 
 // news site 
 Route::get('/single_news/{id}',[SitePagesController::class, 'news_single'])->name('single_news');
+Route::get('/single_events/{id}',[SitePagesController::class, 'single_events'])->name('single_events');
 
 //Admin Route
 //Route::get('/admin/dashboard',[DashboardController::class, 'index']);
