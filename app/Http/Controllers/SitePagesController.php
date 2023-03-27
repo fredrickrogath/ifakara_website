@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\events;
 use App\Models\gallery;
 use App\Models\news;
 use App\Models\verse;
@@ -17,8 +19,9 @@ class SitePagesController extends Controller
     public function catholic_diocese()
 
     {  $news = news::latest('id')->limit(4)->get();
-        $gallery_photo = gallery::all()->where('category', '=', 'Photo');
-        return view('pages.catholic_diocese',compact('gallery_photo','news'));
+        $events = events::latest('id')->limit(4)->get();
+        $gallery_photo = gallery::all()->latest('id')->where('category', '=', 'Photo');
+        return view('pages.catholic_diocese',compact('gallery_photo','news','events'));
     }
 
     public function research(){
