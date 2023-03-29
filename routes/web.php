@@ -59,6 +59,9 @@ Route::get('/healths', [SitePagesController::class, 'healths'])->name('healths')
 // news site 
 Route::get('/single_news/{id}',[SitePagesController::class, 'news_single'])->name('single_news');
 Route::get('/single_events/{id}',[SitePagesController::class, 'single_events'])->name('single_events');
+Route::get('/single_service_education/{id}',[SitePagesController::class, 'single_service_education'])->name('single_service_education');
+Route::get('/single_service_bible/{id}',[SitePagesController::class, 'single_service_bible'])->name('single_service_bible');
+Route::get('/single_service_health/{id}',[SitePagesController::class, 'single_service_health'])->name('single_service_health');
 
 //Admin Route
 //Route::get('/admin/dashboard',[DashboardController::class, 'index']);

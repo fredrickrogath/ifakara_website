@@ -36,7 +36,7 @@
                                                          white-space:initial; text-overflow:ellipsis; max-width: 100%; overflow:hidden;">
                                                         {{ $health_service->initial_description }}</p>
                                                 </div>
-                                                <a href="#">Soma Zaidi<i class="fa fa-long-arrow-right"
+                                                <a href="{{ url('single_service_health/' . $health_service->id) }}">Soma Zaidi<i class="fa fa-long-arrow-right"
                                                         aria-hidden="true"></i></a>
 
                                             </div>
@@ -63,7 +63,7 @@
                                                          white-space:normal; text-overflow:ellipsis; max-width: 100%; overflow:hidden;">
                                                         {{ $education_service->initial_description }}</p>
                                                 </div>
-                                                <a href="#">Soma Zaidi <i class="fa fa-long-arrow-right"
+                                                <a href="{{ url('single_service_education/' . $education_service->id) }}">Soma Zaidi <i class="fa fa-long-arrow-right"
                                                         aria-hidden="true"></i></a>
 
                                             </div>
@@ -90,7 +90,7 @@
                                                           white-space:normal; text-overflow:ellipsis; max-width: 100%; overflow:hidden;">
                                                         {{ $bible_service->initial_description }}</p>
                                                 </div>
-                                                <a href="#">Soma Zaidi <i class="fa fa-long-arrow-right"
+                                                <a href="{{ url('single_service_bible/' . $bible_service->id) }}">Soma Zaidi <i class="fa fa-long-arrow-right"
                                                         aria-hidden="true"></i></a>
                                             </div>
                                         </div>

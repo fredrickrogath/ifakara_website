@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\events;
 use App\Models\gallery;
 use App\Models\news;
+use App\Models\service;
 use App\Models\verse;
 use Facade\FlareClient\View;
 use Illuminate\Http\Request;
@@ -55,6 +56,21 @@ class SitePagesController extends Controller
         $events = events::find($id);
         $latest = events::latest('id')->limit(7)->get();
         return View('pages.single_events', compact('events', 'latest'));
+    }
+
+    public function single_service_education($id){
+        $education_service = service::find($id);
+        return View('pages.single_education_service', compact('education_service'));
+    }
+
+    public function single_service_bible($id){
+        $bible_service = service::find($id);
+        return View('pages.single_bible_service', compact('bible_service'));
+    }
+
+    public function single_service_health($id){
+        $health_service = service::find($id);
+        return View('pages.single_health_service', compact('health_service'));
     }
     /**
      * Show the form for creating a new resource.
