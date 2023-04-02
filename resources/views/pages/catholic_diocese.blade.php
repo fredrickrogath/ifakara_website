@@ -38,8 +38,9 @@
                                                                 alt="First slide">
                                                             <div class="carousel-caption d-none d-md-block py-1"
                                                                 style="background-color: rgb(170, 167, 167); opacity:0.8; ">
-                                                                <h5 style="color:black; font-weight:700">Kanisa Kuu la Ifakara
-                                                                     </h5>
+                                                                <h5 style="color:black; font-weight:700">Kanisa Kuu la
+                                                                    Ifakara
+                                                                </h5>
                                                                 <h6
                                                                     style="color:#0b0b0a; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                                                                     Ufununguzi la mafunzo ya walimu kuhusu kufundisha
@@ -75,8 +76,9 @@
                 <div class="col-12 col-lg-8">
                     <div class="intro-news-filter d-flex justify-content-between"
                         style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
-                        
-                        <h6 style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+
+                        <h6
+                            style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                             Mfumo wa Uongozi</h6>
 
                     </div>
@@ -94,18 +96,21 @@
                                                         <a href="#" class=" justify-content-center">
                                                             <img src="{{ asset('site/img/bg-img/bishop_img.jpg') }}"
                                                                 alt=""
-                                                                style="text-align:center">
+                                                                style="text-align:center;border-radius:10px;box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;">
                                                         </a>
-                                                        <h6 class="text-center mt-3" style="font-weight:600; color:#000; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                        <h6 class="text-center mt-3"
+                                                            style="font-weight:600; color:#000; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                                                             Right Rev. Salutaris
                                                             Melchior Libena
                                                         </h6>
-                                                        <p class="text-center" style="color:#ff7b00; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">The Bishop of the
+                                                        <p class="text-center"
+                                                            style="color:#ff7b00; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                            The Bishop of the
                                                             Ifakara Cathedrol Diocese</p>
                                                     </div>
-        
+
                                                     <!-- Blog Content -->
-        
+
                                                 </div>
                                             </div>
                                             {{-- <div class="col-12 col-sm-6 col-md-8">
@@ -129,58 +134,73 @@
                                                     <p></p>
                                                 </div>
                                             </div> --}}
-        
+
                                             <!-- Single News Area -->
-        
+
                                             <!-- Single News Area -->
                                             <div class="col-md-12 col-12">
                                                 <div class="row flex">
                                                     <div class="col-md-3">
-                                                        <div class="single-widget-area add-widget mt-3 ml-3">
-                                                            <a href="#" class="justify-content-center ">
-                                                                <img src="{{asset('site/img/bg-img/pr_marcus.jpg')}}" alt="" style="width: 100%; min-height:144px;">
+                                                        <div class="single-widget-area add-widget mt-3 ml-3"
+                                                            style="">
+                                                            <a href="#" class="justify-content-center zoomIn">
+                                                                <img src="{{ asset('site/img/bg-img/pr_marcus.jpg') }}"
+                                                                    alt=""
+                                                                    style="width: 100%; min-height:144px; animation: zoom-out 2s ease-in-out;border-radius:10px;box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;">
                                                             </a>
-                                                            <h6 class="text-center mt-3" style="text-align: justify; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-size:18px; color:#000">
-                                                                            Pd. Marcus Abell Mirwato
+                                                            <h6 class="text-center mt-3"
+                                                                style="text-align: justify; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-size:18px; color:#000">
+                                                                Pd. Marcus Abell Mirwato
                                                             </h6>
-                                                            <p style="font-size:12px; color:#ff7b00;" class="text-center">Paroko</p>
+                                                            <p style="font-size:12px; color:#ff7b00;"
+                                                                class="text-center">Paroko</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="single-widget-area add-widget mt-3 ml-3">
+                                                            <a href="#" class="justify-content-center">
+                                                                <img src="site/img/bg-img/p_1.jpg" alt=""
+                                                                    style="width: 100%; min-height:145px;animation: zoom-out 2s ease-in-out;border-radius:10px;box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;">
+
+                                                            </a>
+                                                            <h6 class="text-center mt-3"
+                                                                style="text-align: justify; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-size:18px; color:#000">
+                                                                Pd. Benny Jullio Mtema
+                                                            </h6>
+                                                            <p style="font-size:12px; color:#ff7b00;"
+                                                                class="text-center">Paroko</p>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="single-widget-area add-widget mt-3 ml-3">
                                                             <a href="#" class=" justify-content-center">
-                                                                <img src="site/img/bg-img/p_1.jpg" alt="" style="width: 100%; min-height:145px;">
+                                                                <img src="site/img/bg-img/p_2.jpg" alt=""
+                                                                    style="width: 100%; min-height:60px; animation: zoom-out 2s ease-in-out;border-radius:10px;box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;">
                                                             </a>
-                                                            <h6 class="text-center mt-3"  style="text-align: justify; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-size:18px; color:#000">
-                                                               Pd. Benny Jullio Mtema
-                                                            </h6>
-                                                            <p style="font-size:12px; color:#ff7b00;" class="text-center">Paroko</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <div class="single-widget-area add-widget mt-3 ml-3">
-                                                            <a href="#" class=" justify-content-center">
-                                                                <img src="site/img/bg-img/p_2.jpg" alt="" style="width: 100%; min-height:60px;">
-                                                            </a>
-                                                            <h6 class="text-center mt-3"  style="text-align: justify; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-size:18px; color:#000">
+                                                            <h6 class="text-center mt-3"
+                                                                style="text-align: justify; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-size:18px; color:#000">
                                                                 Pd. Godfrey Hongo
                                                             </h6>
-                                                            <p style="font-size:12px; color:#ff7b00;" class="text-center">Paroko</p>
+                                                            <p style="font-size:12px; color:#ff7b00;"
+                                                                class="text-center">Paroko</p>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="single-widget-area add-widget mt-3 ml-3">
                                                             <a href="#" class=" justify-content-center">
-                                                                <img src="site/img/bg-img/p_3.jpg" alt="" style="width: 100%; min-height:144px;">
+                                                                <img src="site/img/bg-img/p_3.jpg" alt=""
+                                                                    style="width: 100%; min-height:144px; animation: zoom-out 2s ease-in-out;border-radius:10px;box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;">
                                                             </a>
-                                                            <h6 class="text-center mt-3"  style="text-align: justify; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-size:18px; color:#000">
+                                                            <h6 class="text-center mt-3"
+                                                                style="text-align: justify; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-size:18px; color:#000">
                                                                 Pd. Pius Rwegoshora
                                                             </h6>
-                                                            <p style="font-size:12px; color:#ff7b00;" class="text-center">Paroko</p>
+                                                            <p style="font-size:12px; color:#ff7b00;"
+                                                                class="text-center">Paroko</p>
                                                         </div>
                                                     </div>
                                                 </div>
-        
+
                                             </div>
                                         </div>
                                     </div>
@@ -193,45 +213,83 @@
                 <!-- Sidebar Widget -->
                 <div class="col-12 col-sm-9 col-md-6 col-lg-4">
                     <div class="sidebar-area">
-                        <div class="intro-news-filter d-flex justify-content-between"
-                        style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
-                        <h6
-                            style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                            Historia ya Jimbo Katoliki Ifakara</h6>
 
-                    </div>
+                        <div class="intro-news-filter d-flex justify-content-between"
+                            style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
+                            <h6
+                                style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                Historia ya Jimbo Katoliki Ifakara</h6>
+
+                        </div>
 
                         <!-- Add Widget -->
                         <div class="single-widget-area add-widget mt-3 ml-3">
-                            <a href="#" class=" justify-content-center">
-                                <img src="{{asset('site/img/bg-img/catholic_history.jpg')}}" alt="">
-                            </a>
-                            <h6 class="text-center mt-3" style="font-weight:600;color:#000000; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Historia ya Jimbo kuu la Ifakara
-                            </h6>
-                            <a href="#" class="text-center" style="text-align: center">Soma zaidi <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                            <div class="card">
+                                <div class="card-body">
+                                    <a href="#" class=" justify-content-center">
+                                        <img src="{{ asset('site/img/bg-img/catholic_history.jpg') }}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p
+                                    style="font-weight:600;color:#000000; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                    Jimbo Katoliki Ifakara lilitengwa kutoka jimbo katoliki Mahenge tarehe 14 Januari
+                                    2012. </p>
+
+                                <a href="#" class="text-center btn btn-secondary btn-block"
+                                    style="text-align: center">Soma zaidi <i class="fa fa-long-arrow-right"
+                                        aria-hidden="true"></i></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="sidebar-area">
+
+                        <div class="card mt-3">
+                            <div class="card-header">
+                                <h6
+                                    style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                    Maeneo Muhimiu</h6>
+                            </div>
+                        </div>
+
+
+                        <div class="single-widget-area add-widget mt-3 ml-3">
+
+                            <div class="card-footer">
+
+
+                                <a href="#" class="text-center btn btn-secondary btn-block"
+                                    style="text-align: center">Habari na Matukio <i class="fa fa-long-arrow-right"
+                                        aria-hidden="true"></i>
+
+                                </a>
+
+                                <a href="#" class="text-center btn btn-secondary btn-block"
+                                    style="text-align: center">Shule <i class="fa fa-long-arrow-right"
+                                        aria-hidden="true"></i>
+
+                                </a>
+                                <a href="#" class="text-center btn btn-secondary btn-block"
+                                    style="text-align: center">Hospitali <i class="fa fa-long-arrow-right"
+                                        aria-hidden="true"></i>
+
+                                </a>
+                                <a href="#" class="text-center btn btn-secondary btn-block"
+                                    style="text-align: center">Mawasilano yetu <i class="fa fa-long-arrow-right"
+                                        aria-hidden="true"></i>
+
+                                </a>
+                            </div>
+
                         </div>
 
                     </div>
 
 
-                    <div class="card">
-                        <div class="p-1 d-flex justify-content-between" style="background-color:#1c2938; ">
-                            <H5
-                                class="text-center"style="font-weight:600;font-size:18px; color:#ffff; text-align:center">
-                            Viungo Muhimu</H5>
-                        </div>
-                        <div class="card-body">
-                            <span>
-                                <a href="http://">Habari na Matukio</a>
-                            </span>
-                            <br>
-                            <span><a href="http://">Shule</a></span>
-                            <br>
-                            <span><a href="http://">Hospitali</a></span>
-                            <br>
-                            <span><a href="http://">Mawasilano  yetu</a></span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
