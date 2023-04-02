@@ -42,10 +42,11 @@
 
                                             <!-- Blog Content -->
                                             <div class="blog-content">
-                                                <span class="post-date">{{ $news->news_date }}</span>
+                                                
                                                 <a href="{{ url('single_news/' . $news->id) }}" class="post-title"
                                                     style="white-space:normal; text-overflow:ellipsis; max-width: 100%; overflow:hidden; max-height: 100px; font-size:14px;">{{ $news->initial_description }}</a>
                                                     <span class="post-date">{{ $news->created_by }}</span>
+                                                    <span class="post-date" style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">{{ $news->news_date }}</span>
                                             </div>
                                         </div>
                                     </div>
