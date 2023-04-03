@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\feedback;
 use Illuminate\Http\Request;
 
 class FeedbackController extends Controller
@@ -14,7 +15,8 @@ class FeedbackController extends Controller
      */
     public function index()
     {
-        return view('admin.pages.feedback.feedback');
+        $feedback = feedback::all();
+        return view('admin.pages.feedback.feedback', compact('feedback'));
     }
 
     /**
@@ -35,7 +37,14 @@ class FeedbackController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $feedback = new feedback();
+        $feedback->name = $request->input('name');
+        $feedback->email = $request->input('email');
+        $feedback->subject = $request->input('subject');
+        $feedback->message = $request->input('message');
+        if($feedback->save()){
+            return redirect('/')->with('status', 'Feedback Added SuccessFully!');
+        }
     }
 
     /**
@@ -57,7 +66,8 @@ class FeedbackController extends Controller
      */
     public function edit($id)
     {
-        //
+        $feedback = feedback::find($id);
+        return view('admin.pages.feedback.edit_feedback', compact('feedback')); 
     }
 
     /**
@@ -69,7 +79,14 @@ class FeedbackController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $feedback = feedback::find($id);
+        $feedback->name = $request->input('name');
+        $feedback->email = $request->input('email');
+        $feedback->subject = $request->input('subject');
+        $feedback->message = $request->input('message');
+        
+        $feedback->update();
+        return redirect('/admin/feedback')->with('status', 'Verse was Updated successfully!');
     }
 
     /**
@@ -80,6 +97,8 @@ class FeedbackController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $feedback = feedback::find($id);
+        $feedback->delete();
+        return redirect('/admin/feedback')->with('status', 'feedback deleted Successfully');
     }
 }

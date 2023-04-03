@@ -129,37 +129,21 @@
                                                     <th>Name</th>
                                                     <th>Email</th>
                                                     <th>Subject</th>
-                                                    <th>Message</th>
+                                                    <th>Date|Time</th>
                                                   
                                                 </tr>
                                             </thead>
                                         
                                         
                                             <tbody>
+                                                @foreach ($feedback as $feedback)
                                                 <tr>
-                                                    <td>Tiger Nixon</td>
-                                                    <td>System Architect</td>
-                                                    <td>Edinburgh</td>
-                                                    <td>61</td>
-                              
+                                                    <td>{{ $feedback->name }}</td>
+                                                    <td>{{ $feedback->email }}</td>
+                                                    <td>{{ $feedback->subject }}</td>
+                                                    <td>{{ $feedback->created_at }}</td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Garrett Winters</td>
-                                                    <td>Accountant</td>
-                                                    <td>Tokyo</td>
-                                                    <td>63</td>
-                                                  
-                                                </tr>
-                                                <tr>
-                                                    <td>Ashton Cox</td>
-                                                    <td>Junior Technical Author</td>
-                                                    <td>San Francisco</td>
-                                                    <td>66</td>
-                                               
-                                                </tr>
-                                                
-                                             
-                                               
+                                                @endforeach
                                             </tbody>
                                         </table>
 

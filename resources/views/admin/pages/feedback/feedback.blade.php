@@ -58,131 +58,38 @@
                                         <table class="table table-centered table-nowrap table-hover mb-0">
                                             <thead>
                                                 <tr>
-                                                    <th>Basic Info</th>
-                                                    <th>Phone</th>
+                                                    <th>Name</th>
                                                     <th>Email</th>
+                                                    <th>Subject</th>
                                                     <th>Message</th>
                                                     <th>Created Date</th>
                                                     <th style="width: 82px;">Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                @foreach ($feedback as $feedback)
                                                 <tr>
                                                     <td class="table-user">
-                                                        <img src="../assets/images/users/user-4.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                        <a href="javascript:void(0);" class="text-body fw-semibold">Paul J. Friend</a>
+                                                        {{ $feedback->name }}
                                                     </td>
                                                     <td>
-                                                        937-330-1634
+                                                        {{ $feedback->email }}
                                                     </td>
                                                     <td>
-                                                        pauljfrnd@jourrapide.com
+                                                        {{ $feedback->subject }}
                                                     </td>
                                                     <td>
-                                                        Vine Corporation
+                                                        {{ $feedback->message }}
                                                     </td>
                                                     <td>
-                                                        07/07/2018
+                                                        {{ $feedback->created_at }}
                                                     </td>
                                                     <td>
                                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
                                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
                                                     </td>
                                                 </tr>
-
-                                                <tr>
-                                                    <td class="table-user">
-                                                        <img src="../assets/images/users/user-3.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                        <a href="javascript:void(0);" class="text-body fw-semibold">Bryan J. Luellen</a>
-                                                    </td>
-                                                    <td>
-                                                        215-302-3376
-                                                    </td>
-                                                    <td>
-                                                        bryuellen@dayrep.com
-                                                    </td>
-                                                    <td>
-                                                        Blue Motors
-                                                    </td>
-                                                    <td>
-                                                        09/12/2018
-                                                    </td>
-                                                    <td>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="table-user">
-                                                        <img src="../assets/images/users/user-3.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                        <a href="javascript:void(0);" class="text-body fw-semibold">Kathryn S. Collier</a>
-                                                    </td>
-                                                    <td>
-                                                        828-216-2190
-                                                    </td>
-                                                    <td>
-                                                        collier@jourrapide.com
-                                                    </td>
-                                                    <td>
-                                                        Arcanetworks
-                                                    </td>
-                                                    <td>
-                                                        06/30/2018
-                                                    </td>
-                                                    <td>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="table-user">
-                                                        <img src="../assets/images/users/user-1.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                        <a href="javascript:void(0);" class="text-body fw-semibold">Timothy Kauper</a>
-                                                    </td>
-                                                    <td>
-                                                        (216) 75 612 706
-                                                    </td>
-                                                    <td>
-                                                        thykauper@rhyta.com
-                                                    </td>
-                                                    <td>
-                                                        Boar Records
-                                                    </td>
-                                                    <td>
-                                                        09/08/2018
-                                                    </td>
-                                                    <td>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="table-user">
-                                                        <img src="../assets/images/users/user-5.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                        <a href="javascript:void(0);" class="text-body fw-semibold">Zara Raws</a>
-                                                    </td>
-                                                    <td>
-                                                        (02) 75 150 655
-                                                    </td>
-                                                    <td>
-                                                        austin@dayrep.com
-                                                    </td>
-                                                    <td>
-                                                        Bearings
-                                                    </td>
-                                                    <td>
-                                                        07/15/2018
-                                                    </td>
-                                                    <td>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                              
+                                                @endforeach
                                             </tbody>
                                         </table>
                                     </div>

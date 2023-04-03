@@ -66,24 +66,25 @@
                         <div class="contact-form-area mb-20">
                             <h4 class="mb-20">Get In Touch</h4>
 
-                            <form action="#" method="post">
+                            <form action="{{ url('/add_feedback') }}" method="post">
+                                @csrf
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="name"
+                                            <input type="text" class="form-control" id="name" name="name"
                                                 placeholder="Name">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <input type="email" class="form-control" id="email"
-                                                placeholder="E-mail">
+                                                placeholder="E-mail" name="email">
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="subject"
-                                                placeholder="Subject">
+                                                placeholder="Subject" name="subject">
                                         </div>
                                     </div>
                                     <div class="col-12">
