@@ -20,9 +20,15 @@
                 <!-- Post Details Content Area -->
                 <div class="col-12 col-lg-12">
                     <div class="post-details-content mb-100">
-                        <h4 style="font-weight:700; font-family:'Times New Roman', Times, serif;">{{ $health_service->title }} </h4>
-                        <hr>
-                        <h5 style="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">{{ $health_service->description }}</h5>
+                        <div class="card">
+                            <div class="card-header"  style="text-align:center;color:#ff7b00; font-weight:700; font-family:'Times New Roman', Times, serif;">
+                                {{ $health_service->title }} 
+                            </div>
+                            <div class="card-body">
+                                <p style="text-align:justify; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:black">{{ $health_service->description }}</p>
+                            </div>
+                        </div>
+                        
                     </div>
 
                     <!-- Comment Area Start -->
