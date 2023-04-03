@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use App\Http\Requests\LoginRequest;
 use App\Models\feedback;
+use App\Models\summary;
 
 class LoginController extends Controller
 {
@@ -44,8 +45,12 @@ class LoginController extends Controller
     public function dashboard()
     {
         if(Auth::check()){
+        $school = summary::where('category', '=', 'Schools')->latest('id')->limit(1)->get();
+        $health = summary::where('category', '=', 'Healths Center')->latest('id')->limit(1)->get();
+        $parish = summary::where('category', '=', 'Parishies')->latest('id')->limit(1)->get();
+        $member = summary::where('category', '=', 'Members')->latest('id')->limit(1)->get();
             $feedback = feedback::latest('id')->limit(3)->get();
-            return view('layouts.admin.app', compact('feedback'));
+            return view('layouts.admin.app', compact('feedback','school','health','parish','member'));
         }
   
         return redirect("login")->withSuccess('You are not allowed to access');

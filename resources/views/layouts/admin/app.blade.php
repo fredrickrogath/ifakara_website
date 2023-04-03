@@ -47,10 +47,12 @@
                                                 </div>
                                             </div>
                                             <div class="col-6">
+                                                @foreach ($member as $member)
                                                 <div class="text-end">
-                                                    <h3 class="text-dark my-1"><span data-plugin="counterup">12,008</span></h3>
-                                                    <p class="text-muted mb-0 text-truncate">Staff Registered</p>
+                                                    <h3 class="text-dark my-1"><span data-plugin="counterup">{{ $member->amount }}</span></h3>
+                                                    <p class="text-muted mb-0 text-truncate">{{ $member->name }}</p>
                                                 </div>
+                                                @endforeach
                                             </div>
                                         </div>
                                     </div>
@@ -67,10 +69,12 @@
                                                 </div>
                                             </div>
                                             <div class="col-6">
+                                                @foreach ($parish as $parish)
                                                 <div class="text-end">
-                                                    <h3 class="text-dark my-1"><span data-plugin="counterup">7,410</span></h3>
-                                                    <p class="text-muted mb-0 text-truncate">New Leads</p>
+                                                    <h3 class="text-dark my-1"><span data-plugin="counterup">{{ $parish->amount }}</span></h3>
+                                                    <p class="text-muted mb-0 text-truncate">{{ $parish->name }}</p>
                                                 </div>
+                                                @endforeach
                                             </div>
                                         </div>
                                     </div>
@@ -86,10 +90,12 @@
                                                 </div>
                                             </div>
                                             <div class="col-6">
+                                                @foreach ($school as $school)
                                                 <div class="text-end">
-                                                    <h3 class="text-dark my-1"><span data-plugin="counterup">2,125</span></h3>
-                                                    <p class="text-muted mb-0 text-truncate">Deals</p>
+                                                    <h3 class="text-dark my-1"><span data-plugin="counterup">{{ $school->amount }}</span></h3>
+                                                    <p class="text-muted mb-0 text-truncate">{{ $school->name }}</p>
                                                 </div>
+                                                @endforeach
                                             </div>
                                         </div>
                                     </div>
@@ -105,10 +111,12 @@
                                                 </div>
                                             </div>
                                             <div class="col-6">
+                                                @foreach ($health as $health)
                                                 <div class="text-end">
-                                                    <h3 class="text-dark my-1">$<span data-plugin="counterup">256</span>k</h3>
-                                                    <p class="text-muted mb-0 text-truncate">Booked Revenue</p>
+                                                    <h3 class="text-dark my-1"><span data-plugin="counterup">{{ $health->amount }}</span></h3>
+                                                    <p class="text-muted mb-0 text-truncate">{{ $health->name }}</p>
                                                 </div>
+                                                @endforeach
                                             </div>
                                         </div>
                                     </div>
@@ -119,7 +127,7 @@
 
                         
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-8">
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="header-title">Recent Feedback</h4>
@@ -130,6 +138,7 @@
                                                     <th>Email</th>
                                                     <th>Subject</th>
                                                     <th>Date|Time</th>
+                                                    <th>Actions</th>
                                                   
                                                 </tr>
                                             </thead>
@@ -142,6 +151,9 @@
                                                     <td>{{ $feedback->email }}</td>
                                                     <td>{{ $feedback->subject }}</td>
                                                     <td>{{ $feedback->created_at }}</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                    </td>
                                                 </tr>
                                                 @endforeach
                                             </tbody>
@@ -150,7 +162,7 @@
                                     </div> 
                                 </div> 
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <div class="card project-box">
                                     <div class="card-body">
                                         <!-- end dropdown -->
@@ -206,7 +218,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <div class="card project-box">
                                     <div class="card-body">
                                        
