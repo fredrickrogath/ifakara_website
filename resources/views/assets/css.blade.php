@@ -2,88 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <!-- Title -->
-    <title>Ifakara Catholic Diocese</title>
+    <meta charset="utf-8">
+    <title>Ifakara Diocese</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link href="img/favicon.ico" rel="icon">
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="{{ asset('site/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('site/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('site/css/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('site/css/classy-nav.css') }}">
-    <link rel="stylesheet" href="{{ asset('site/css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('site/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('site/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('site/css/custom.css') }}">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
 
-    <style>
-        @media (max-width: 767px) {
-            #blog-thumbnail {
-                height: 270px;
-            }
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-            #imageOne {
-                width: 100%;
-            }
-        }
-        @media (min-width: 768px) {
-            #blog-thumbnail {
-                /* height: 350px; */
-            }
-            #imageOne {
-                width:250px
-            }
-        }
+    <!-- Libraries Stylesheet -->
+    <link href="{{asset('web/lib/animate/animate.min.css')}}" rel="stylesheet">
+    <link href="{{asset('web/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
 
-        .zoomIn {
-  -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  }
-  @-webkit-keyframes zoomIn {
-  0% {
-  opacity: 0;
-  -webkit-transform: scale3d(.3, .3, .3);
-  transform: scale3d(.3, .3, .3);
-  }
-  50% {
-  opacity: 1;
-  }
-  }
-  @keyframes zoomIn {
-  0% {
-  opacity: 0;
-  -webkit-transform: scale3d(.3, .3, .3);
-  transform: scale3d(.3, .3, .3);
-  }
-  50% {
-  opacity: 1;
-  }
-  } 
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{asset('web/css/bootstrap.min.css')}}" rel="stylesheet">
 
-
-
-  @keyframes zoom-out {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0.5);
-  }
-}
-    </style>
-
-
-
+    <!-- Template Stylesheet -->
+    <link href="{{asset('web/css/style.css')}}" rel="stylesheet">
 </head>

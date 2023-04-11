@@ -55,6 +55,8 @@ Route::get ('/contact',[SitePagesController::class,'contact'])->name('contact');
 
 Route::get('/schools', [SitePagesController::class, 'schools'])->name('schools');
 Route::get('/healths', [SitePagesController::class, 'healths'])->name('healths');
+Route::get('/news_events',[SitePagesController::class, 'news_event'])->name('newsandevents');
+// Route::get('/newssingle',[SitePagesController::class,'singleandnews'])->name('newssingle');
 
 // news site 
 Route::get('/single_news/{id}',[SitePagesController::class, 'news_single'])->name('single_news');

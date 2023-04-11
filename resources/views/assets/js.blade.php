@@ -1,11 +1,12 @@
-<!-- ##### All Javascript Script ##### -->
-<!-- jQuery-2.2.4 js -->
-<script src="{{ asset('site/js/jquery/jquery-2.2.4.min.js') }}"></script>
-<!-- Popper js -->
-<script src="{{ asset('site/js/bootstrap/popper.min.js') }}"></script>
-<!-- Bootstrap js -->
-<script src="{{ asset('site/js/bootstrap/bootstrap.min.js') }}"></script>
-<!-- All Plugins js -->
-<script src="{{ asset('site/js/plugins/plugins.js') }}"></script>
-<!-- Active js -->
-<script src="{{ asset('site/js/active.js') }}"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{asset('web/lib/wow/wow.min.js')}}"></script>
+    <script src="{{asset('web/lib/easing/easing.min.js')}}"></script>
+    <script src="{{asset('web/lib/waypoints/waypoints.min.js')}}"></script>
+    <script src="{{asset('web/lib/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('web/lib/parallax/parallax.min.js')}}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{asset('web/js/main.js')}}"></script>

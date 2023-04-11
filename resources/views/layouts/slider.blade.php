@@ -27,8 +27,8 @@
                                                                 style="color:#0b0b0a; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                                                                 {{ $slider->small_description }}</h6>
                                                         </div>
-                                                    </div>
-                                                    @endforeach
+                                                   @endforeach       </div>
+                                              
                                                 </div>
                                                 <a class="carousel-control-prev" href="#carouselExampleIndicators"
                                                     role="button" data-slide="prev">

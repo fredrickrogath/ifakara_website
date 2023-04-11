@@ -1,101 +1,49 @@
-<section class="elements-area section-padding-10-0" style="margin-top: 2%;">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h6
-                            style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                            Muhtasari wa Jimbo</h6>
-                    </div>
-                </div>
+<div class="container-fluid donate my-5 py-5" data-parallax="scroll"
+    data-image-src="{{ asset('web/img/catholic_history.jpg') }}">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Hali</div>
+                <h1 class="display-6 text-white mb-5">Muhtasari wa Jimbo</h1>
+                <p class="text-white-50 mb-0">Taarifa fupi inayoonesha idadi ya parokia na vituo vinavyotoa huduma za kijamii Jimbo la Ifakara</p>
             </div>
-
-            <div class="col-12 mt-3">
-                <div class="newsbox-cool-facts-area">
-                    <div class="card" style="height: auto;">
-                        <div class="card-body">
-                            <div class="row mt-1">
-                                @foreach ($member as $member)
-                                    <!-- Single Cool Facts -->
-                                    <div class="col-12 col-sm-6 col-lg-3">
-                                        <div class="single-cool-fact">
-                                            <div class="scf-icon">
-                                                <img src="{{ asset('site/img/core-img/idea.png') }}"
-                                                    alt="">
-                                            </div>
-                                            <div class="scf-text">
-                                                <h2><span class="counter">{{ $member->amount }}</span></h2>
-                                                <p
-                                                    style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                                    {{ $member->name }}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                @endforeach
-
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="h-100 bg-white p-5">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="row">
                                 @foreach ($parish as $parish)
-                                    <!-- Single Cool Facts -->
-                                    <div class="col-12 col-sm-6 col-lg-3">
-                                        <div class="single-cool-fact">
-                                            <div class="scf-icon">
-                                                <img src="{{ asset('site/img/core-img/list.png') }}"
-                                                    alt="">
-                                            </div>
-                                            <div class="scf-text">
-                                                <h2><span class="counter">{{ $parish->amount }}</span></h2>
-                                                <p
-                                                    style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                                    {{ $parish->name }}</p>
-                                            </div>
-                                        </div>
+                                    <div class="col-md-4">
+                                        <h5 class="bg-primary text-white rounded text-center"> {{ $parish->name }}</h5>
+                                        <h1 class="btn btn-light btn-block p-4 counter text-center" for="btnradio1"
+                                            data-duration="8000" style="font-size: 20px;">{{ $parish->amount }}</h1>
                                     </div>
                                 @endforeach
-
                                 @foreach ($school as $school)
-                                    <!-- Single Cool Facts -->
-                                    <div class="col-12 col-sm-6 col-lg-3">
-                                        <div class="single-cool-fact">
-                                            <div class="scf-icon">
-                                                <img src="{{ asset('site/img/core-img/id-card.png') }}"
-                                                    alt="">
-                                            </div>
-                                            <div class="scf-text">
-                                                <h2><span class="counter">{{ $school->amount }}</span></h2>
-                                                <p
-                                                    style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                                    {{ $school->name }}</p>
-                                            </div>
-                                        </div>
+                                    <div class="col-md-4">
+                                        <h5 class="bg-primary text-white rounded text-center">{{ $school->name }}</h5>
+                                        <h1 class="btn btn-light btn-block p-4 counter" for="btnradio1"
+                                            data-duration="8000">{{ $school->amount }}</h1>
                                     </div>
                                 @endforeach
 
                                 @foreach ($health as $health)
-                                    <!-- Single Cool Facts -->
-                                    <div class="col-12 col-sm-6 col-lg-3">
-                                        <div class="single-cool-fact">
-                                            <div class="scf-icon">
-                                                <img src="{{ asset('site/img/core-img/diamond.png') }}"
-                                                    alt="">
-                                            </div>
-                                            <div class="scf-text">
-                                                <h2><span class="counter">{{ $health->amount }}</span></h2>
-                                                <p
-                                                    style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                                                    {{ $health->name }}</p>
-                                            </div>
-                                        </div>
+                                    <div class="col-md-4">
+                                        <h5 class="bg-primary text-white rounded text-center"> {{ $health->name }}</h5>
+                                        <h1 class="btn btn-light p-4 counter" for="btnradio1"
+                                            data-countto="{{ $health->amount }}" data-duration="8000">
+                                            {{ $health->amount }}</h1>
                                     </div>
                                 @endforeach
 
                             </div>
-                        </div>
-                    </div>
 
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
-
-</section>
+</div>

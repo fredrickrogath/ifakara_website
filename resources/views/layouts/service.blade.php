@@ -1,111 +1,60 @@
-<section class="elements-area section-padding-100-0" style="margin-top:-3%">
+<div class="container-xxl py-5">
     <div class="container">
-
-        <div class="row">
-            <div class="col-12">
-                <div class="">
-                    <div class="card-header">
-                        <h6
-                            style="color:#ff7b00; font-weight:700; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                            Huduma zetu</h6>
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Huduma</div>
+            <h1 class="display-6 mb-5">Huduma zetu</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+            @foreach ($education_service as $education_service)
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{{ asset('web/img/icon-1.png') }}" alt="">
+                        <h4 class="mb-3">{{ $education_service->title }}</h4>
+                        <p class="mb-4" style="text-align: justify"> {{ $education_service->initial_description }}</p>
+                        <a class="btn btn-outline-primary px-3"
+                            href="{{ url('single_service_education/' . $education_service->id) }}">
+                            Soma zaidi
+                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                {{-- <div class="intro-news-filter d-flex justify-content-between"
-                    style="background-color:#FFF; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;">
-                   
-
-                </div> --}}
-            </div>
-            <div class="col-12">
-                <div class="card mt-3">
-                    <div class="card-body ">
-                        <div class="row">
-                            @foreach ($health_service as $health_service)
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="">
-                                        <div class="card-body">
-                                            <div class="single-service-area mb-50">
-                                                <div class="icon mb-30">
-                                                    <img src="{{ asset('site/img/core-img/id-card2.png') }}"
-                                                        alt="">
-                                                </div>
-                                                <div class="text">
-                                                    <h5 style="font-weight:700">{{ $health_service->title }}</h5>
-                                                    <p
-                                                        style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#000; font-size:17px; height: 180px;
-                                                         white-space:initial; text-overflow:ellipsis; max-width: 100%; overflow:hidden;">
-                                                        {{ $health_service->initial_description }}</p>
-                                                </div>
-                                                <a href="{{ url('single_service_health/' . $health_service->id) }}">Soma Zaidi<i class="fa fa-long-arrow-right"
-                                                        aria-hidden="true"></i></a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-
-                            <!-- Single Service Area -->
-                            @foreach ($education_service as $education_service)
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="">
-                                        <div class="card-body">
-                                            <div class="single-service-area mb-25">
-                                                <div class="icon mb-30">
-                                                    <img src="{{ asset('site/img/core-img/file.png') }}"
-                                                        alt="">
-                                                </div>
-                                                <div class="text">
-                                                    <h5 style="font-weight:700">{{ $education_service->title }}
-                                                    </h5>
-                                                    <p
-                                                        style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#000; font-size:17px; height: 180px;
-                                                         white-space:normal; text-overflow:ellipsis; max-width: 100%; overflow:hidden;">
-                                                        {{ $education_service->initial_description }}</p>
-                                                </div>
-                                                <a href="{{ url('single_service_education/' . $education_service->id) }}">Soma Zaidi <i class="fa fa-long-arrow-right"
-                                                        aria-hidden="true"></i></a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            @endforeach
-
-                            <!-- Single Service Area -->
-                            @foreach ($bible_service as $bible_service)
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="">
-                                        <div class="card-body">
-                                            <div class="single-service-area mb-100">
-                                                <div class="icon mb-30">
-                                                    <img src="{{ asset('site/img/core-img/archive.png') }}"
-                                                        alt="">
-                                                </div>
-                                                <div class="text">
-                                                    <h5 style="font-weight:700">{{ $bible_service->title }}</h5>
-                                                    <p
-                                                        style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#000; font-size:17px; height: 180px;
-                                                          white-space:normal; text-overflow:ellipsis; max-width: 100%; overflow:hidden;">
-                                                        {{ $bible_service->initial_description }}</p>
-                                                </div>
-                                                <a href="{{ url('single_service_bible/' . $bible_service->id) }}">Soma Zaidi <i class="fa fa-long-arrow-right"
-                                                        aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            @endforeach
-                        </div>
+            @endforeach
+            @foreach ($health_service as $health_service)
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{{ asset('web/img/icon-2.png') }}" alt="">
+                        <h4 class="mb-3">{{ $health_service->title }}</h4>
+                        <p class="mb-4" style="text-align:justify">{{ $health_service->initial_description }}</p>
+                        <a class="btn btn-outline-primary px-3"
+                            href="{{ url('single_service_health/' . $health_service->id) }}">
+                            soma zaidi
+                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
                     </div>
                 </div>
+            @endforeach
 
-
-            </div>
-
+            @foreach ($bible_service as $bible_service)
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{{ asset('web/img/icon-3.png') }}" alt="">
+                        <h4 class="mb-3">{{ $bible_service->title }}i</h4>
+                        <p class="mb-4" style="text-align: justify"> {{ $bible_service->initial_description }}</p>
+                        <a class="btn btn-outline-primary px-3"
+                            href="{{ url('single_service_bible/' . $bible_service->id) }}">
+                            Soma zaidi
+                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            @endforeach
 
         </div>
     </div>
-</section>
+</div>

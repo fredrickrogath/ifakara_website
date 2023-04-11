@@ -72,6 +72,14 @@ class SitePagesController extends Controller
         $health_service = service::find($id);
         return View('pages.single_health_service', compact('health_service'));
     }
+
+    public function news_event(){
+        return View('pages.news_events');
+    }
+
+    public function singleandnews(){
+        return View('pages.single_news');
+    }
     /**
      * Show the form for creating a new resource.
      *

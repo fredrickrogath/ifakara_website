@@ -1,92 +1,54 @@
-<header class="header-area" style="background-color: 	#F9F6EE">
-    <!-- Navbar Area -->
-  
-
-    <div class="fixed-nav-bar" style="position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: 70px; background-color:#F9F6EE">
-        {{-- <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar" style="background-color:#F9F6EE">
-            <div class="container" style="background-color:#F9F6EE">
-                <a class="navbar-brand" href="#" style="color:black">LOGO</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="fa fa-bars"></span> Menu
-                </button>
-                <div class="collapse navbar-collapse" id="ftco-nav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a href="/" class="nav-link" style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Home</a></li>
-                        <li class="nav-item"><a href="{{route('catholic_diocese')}}" class="nav-link"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Catholic Diocese</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{route('schools')}}"   style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Schools</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="{{route('healths')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Health
-                                Institute</a>
-                           
-                        </li>
-                        <li class="nav-item dropdown position-static">
-                            <a class="nav-link" href="{{route('research_institute')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Research Institute</a>
-                           
-                        </li>
-                        <li class="nav-item dropdown position-static">
-                            <a class="nav-link" href="{{route('departiment')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Departiments</a>
-                            
-                        </li>
-                        <li class="nav-item dropdown position-static">
-                            <a class="nav-link" href="{{route('contact')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Contact us</a>
-                            
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav> --}}
-
-        <nav class="navbar navbar-expand-lg navbar-light ftco_navbar ftco-navbar-light" id="ftco-navbar" style="background-color:#F9F6EE">
-            <div class="container">
-            <a class="navbar-brand" href="#" style="color:rgb(255, 170, 0)">ICD</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                {{-- <span class="navbar-toggler-icon"></span> --}}
-                <a class="navbar-brand" href="#" style="color:rgb(255, 170, 0)">Menu</a>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    {{-- <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li> --}}
-                    <li class="nav-item"><a href="/" class="nav-link" style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Nyumbani</a></li>
-                        <li class="nav-item"><a href="{{route('catholic_diocese')}}" class="nav-link"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Jimbo Ifakara</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{route('schools')}}"   style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shule Zetu</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="{{route('healths')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Taasisi za Kiafya
-                                Institute</a>
-                           
-                        </li>
-                        <li class="nav-item dropdown position-static">
-                            <a class="nav-link" href="{{route('research_institute')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Taasisi za Utafiti</a>
-                           
-                        </li>
-                        <li class="nav-item dropdown position-static">
-                            <a class="nav-link" href="{{route('departiment')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Idara</a>
-                            
-                        </li>
-                        <li class="nav-item dropdown position-static">
-                            <a class="nav-link" href="{{route('contact')}}"  style="font-weight:600; color:rgb(255, 170, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Mawasiliano</a>
-                            
-                        </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
-        <!-- END nav -->
+<div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+    <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
+        <div class="col-lg-6 px-5 text-start">
+            <small><i class="fa fa-map-marker-alt me-2"></i>Ifakara Morogoro ,Tanzania</small>
+            <small class="ms-4"><i class="fa fa-envelope me-2"></i>info@Ifakaracatholicdiocese.com</small>
+        </div>
+        <div class="col-lg-6 px-5 text-end">
+            <small>Follow us:</small>
+            <a class="text-white-50 ms-3" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="text-white-50 ms-3" href=""><i class="fab fa-twitter"></i></a>
+            <a class="text-white-50 ms-3" href=""><i class="fab fa-linkedin-in"></i></a>
+            <a class="text-white-50 ms-3" href=""><i class="fab fa-instagram"></i></a>
+        </div>
     </div>
 
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h2 class="fw-bold text-primary m-0">ifakara<span class="text-white">Diocese</span></h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="/" class="nav-item nav-link">Nyumbani</a>
+                <a href="{{route('catholic_diocese')}}" class="nav-item nav-link">Jimbo Ifakara</a>
+                <a href="{{route('newsandevents')}}" class="nav-item nav-link">Habari na Matikio</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Taasisi zetu</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="{{route('schools')}}" class="dropdown-item">Shule</a>
+                        <a href="{{route('healths')}}" class="dropdown-item">Afya</a>
+                        <a href="{{route('research_institute')}}" class="dropdown-item">Utafiti</a>
+                        <a href="{{route('departiment')}}" class="dropdown-item">Idara</a>
+                        {{-- <a href="404.html" class="dropdown-item">404 Page</a> --}}
+                    </div>
+                </div>
+                <a href="{{route('contact')}}" class="nav-item nav-link">Mawasiliano</a>
+            </div>
+            {{-- <div class="d-none d-lg-flex ms-2">
+                <a class="btn btn-outline-primary py-2 px-3" href="">
+                    Donate Now
+                    <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div> --}}
+        </div>
+    </nav>
+</div>
 
-</header>
 
 {{--=--------------------------------------------------------------------------- otherss schools------------------------------------------------------------------------------ --}}
 {{-- <div class="col-md-3 d-none d-md-block">
