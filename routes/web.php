@@ -165,6 +165,7 @@ Route::get('/admin/research',[ResearchController::class,'index'])->name('admin_r
 //Feedback  pages
 
 Route::get('/admin/feedback',[FeedbackController::class,'index'])->name('feedback');
+Route::post('/add_feedback',[FeedbackController::class, 'store'])->name('add_feedback');
 
 
 
