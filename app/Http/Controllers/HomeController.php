@@ -24,8 +24,8 @@ class HomeController extends Controller
         $verses = verse::all();
         $sermons = sermon::latest('id')->limit(3)->get();
         $slider = slider::all();
-        $news = news::latest('id')->limit(4)->get();
-        $events = events::latest('id')->limit(4)->get();
+        $news = news::latest('id')->limit(3)->get();
+        $events = events::latest('id')->limit(3)->get();
         $gallery_photo = gallery::all()->where('category', '=', 'Photo');
         $school = summary::where('category', '=', 'Schools')->latest('id')->limit(1)->get();
         $health = summary::where('category', '=', 'Healths Center')->latest('id')->limit(1)->get();

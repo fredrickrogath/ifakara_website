@@ -112,9 +112,9 @@
                             class="causes-item d-flex flex-column bg-white border-top border-5 border-primary rounded-top overflow-hidden h-100">
                             <div class="text-center p-4 pt-0">
                                 <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
-                                    <small>Education</small>
+                                    <small>Habari</small>
                                 </div>
-                                <h5 class="mb-3">Education For African Children</h5>
+                                <h5 class="mb-3">{{$news->news_title}}</h5>
                                 <p>{{ $news->initial_description }}</p>
                                 <h6 class="text-danger">The posted at : {{ $news->news_date }}<span> by
                                         {{ $news->created_by }}</span></h6>
@@ -139,24 +139,26 @@
 
 
             </div>
-            {{-- <div class="row g-4 justify-content-center">
+            <div class="row g-4 justify-content-center mt-3">
               
                 @foreach ($events as $events)
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="causes-item d-flex flex-column bg-white border-top border-5 border-primary rounded-top overflow-hidden h-100">
                         <div class="text-center p-4 pt-0">
                             <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
-                                <small>Pure Water</small>
+                                <small>Matukio</small>
                             </div>
                             <h5 class="mb-3">{{ $events->events_title }}</h5>
+                            <h6 class="text-danger">Location : {{ $events->location }}<span> by
+                                {{ $news->created_by }}</span></h6>
                             <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
 
                         </div>
                         <div class="position-relative mt-auto">
                             <img class="img-fluid" src="{{ asset('admin/assets/images/events/' . $events->image) }}" alt="">
                             <div class="causes-overlay">
-                                <a class="btn btn-outline-primary" href="">
-                                    Read More
+                                <a class="btn btn-outline-primary" href="{{ url('single_events/' . $events->id) }}">
+                                    Soma zaidi
                                     <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                         <i class="fa fa-arrow-right"></i>
                                     </div>
@@ -167,7 +169,7 @@
                 </div>
                 @endforeach
                
-            </div> --}}
+            </div>
         </div>
     </div>
     <!-- Causes End -->

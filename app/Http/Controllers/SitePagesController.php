@@ -74,10 +74,13 @@ class SitePagesController extends Controller
     }
 
     public function news_event(){
-        return View('pages.news_events');
+        $news = news::latest('id')->get();
+        $events = events::latest('id')->get();
+        return View('pages.news_events',compact('news','events'));
     }
 
     public function singleandnews(){
+       
         return View('pages.single_news');
     }
     /**
