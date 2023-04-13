@@ -33,10 +33,12 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">
+                    <img class="w-100" src="{{asset('web/img/bishop_img.jpg')}}" alt="" style="height:70%">
+
+                    {{-- <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">
                         <img class="position-absolute w-50 h-100 pt-5 pe-5" src="{{asset('web/img/bishop_img.jpg')}}" alt="" style="object-fit: cover;">
-                        {{-- <img class="position-absolute top-0 end-0 bg-white ps-2 pb-2" src="{{asset('web/img/about-2.jpg')}}" alt="" style="width: 200px; height: 200px;"> --}}
-                    </div>
+                        <img class="position-absolute top-0 end-0 bg-white ps-2 pb-2" src="{{asset('web/img/about-2.jpg')}}" alt="" style="width: 200px; height: 200px;">
+                    </div> --}}
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="h-100">
@@ -142,7 +144,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="{{asset('web/img/p_2.jpg')}}" alt="">
+                            <img class="img-fluid" src="{{asset('web/img/p_4.png')}}" alt="" >
                         </div>
                         <div class="team-text bg-light text-center p-4">
                             <h5> Pd. Godfrey Hongo </h5>

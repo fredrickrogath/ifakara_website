@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="h-100">
-                        <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Matukio</div>
+                        {{-- <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Matukio</div> --}}
                         <h1 class="display-6 mb-5"> {{ $events->events_title }}</h1>
                         <div class="bg-light border-bottom border-5 border-primary rounded p-4 mb-4">
                          <p class="text-dark mb-2">{{ $events->events_description }}</p> 
@@ -78,7 +78,7 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Habari</div>
+                {{-- <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Habari</div> --}}
                 <h1 class="display-6 mb-5">Habari na Matukio zilizopita</h1>
             </div>
             <div class="row g-4 justify-content-center">

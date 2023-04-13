@@ -19,12 +19,12 @@
                 <p><i class="fa fa-envelope me-3"></i>info@ifarakcatholicdiosece.com</p>
             </div>
             <div class="col-lg-3 col-md-6">
-                <h5 class="text-light mb-4">Quick Links</h5>
-                <a class="btn btn-link" href="">Kuhusu sisi</a>
-                <a class="btn btn-link" href="">Mawasialano</a>
+                <h5 class="text-light mb-4">Linki Muhimu</h5>
+                <a class="btn btn-link" href="{{route('catholic_diocese')}}">Kuhusu sisi</a>
+                <a class="btn btn-link" href="{{route('contact')}}">Mawasialano</a>
                 <a class="btn btn-link" href="">Huduma</a>
                 <a class="btn btn-link" href="">portal</a>
-                <a class="btn btn-link" href="">managemnt</a>
+                <a class="btn btn-link" href="{{route('login')}}">managemnt</a>
             </div>
             {{-- <div class="col-lg-3 col-md-6">
                 <h5 class="text-light mb-4">Newsletter</h5>
@@ -40,7 +40,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="#">Ifakaracatholicdiocese.com</a> | All Right Reserved.
+                    &copy; 2023 | <a href="#">Ifakaracatholicdiocese.com</a> 
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->

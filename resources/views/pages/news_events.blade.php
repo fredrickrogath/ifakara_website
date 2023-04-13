@@ -34,8 +34,8 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Feature Causes</div>
-                <h1 class="display-6 mb-5">Every Child Deserves The Opportunity To Learn</h1>
+                {{-- <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">habari </div> --}}
+                <h1 class="display-6 mb-5">Habari na Matukio</h1>
             </div>
            
 
