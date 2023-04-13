@@ -40,8 +40,8 @@
                                 <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
                                     <small>{{ $sermons->sermons_title }}</small>
                                 </div>
-                                <h5 class="mb-3">Education For African Children</h5>
-                                <p>{{ $sermons->name }}</p>
+                                <h5 class="mb-3">{{ $sermons->name }}</h5>
+                                {{-- <p>{{ $sermons->name }}</p> --}}
 
                             </div>
                             <div class="position-relative mt-auto">

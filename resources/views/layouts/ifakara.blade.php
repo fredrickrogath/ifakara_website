@@ -12,7 +12,7 @@
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="h-100">
-                    <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Kuhusu sis
+                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Kuhusu sisi
                     </div>
                     <h1 class="display-6 mb-5">Jimbo Ifakara</h1>
                     <div class="bg-light border-bottom border-5 border-primary rounded p-4 mb-4">
