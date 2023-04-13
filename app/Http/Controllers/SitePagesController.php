@@ -83,6 +83,10 @@ class SitePagesController extends Controller
        
         return View('pages.single_news');
     }
+
+    public function gallery(){
+        return View('pages.gallery');
+    }
     /**
      * Show the form for creating a new resource.
      *

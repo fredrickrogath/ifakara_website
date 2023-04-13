@@ -52,7 +52,7 @@
                                     <a class="btn btn-outline-primary" data-toggle="modal"
                                         data-target="#exampleModalCenter"
                                         href="{{ asset('admin/assets/video/sermons/' . $sermons->video) }}">
-                                        Read More
+                                        Angalia zaidi
                                         <div
                                             class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                             <i class="fa fa-arrow-right"></i>

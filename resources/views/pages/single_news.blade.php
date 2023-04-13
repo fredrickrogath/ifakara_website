@@ -97,7 +97,7 @@
                             <img class="img-fluid" src="{{ asset('admin/assets/images/news/' . $news->image) }}" alt="">
                             <div class="causes-overlay">
                                 <a class="btn btn-outline-primary" href="{{ url('single_news/' . $news->id) }}">
-                                    Read More
+                                    Soma zaidi
                                     <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                         <i class="fa fa-arrow-right"></i>
                                     </div>

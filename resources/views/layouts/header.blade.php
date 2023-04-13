@@ -35,6 +35,8 @@
                         {{-- <a href="404.html" class="dropdown-item">404 Page</a> --}}
                     </div>
                 </div>
+                <a href="{{route('album_picha')}}" class="nav-item nav-link">Albamu ya picha</a>
+
                 <a href="{{route('contact')}}" class="nav-item nav-link">Mawasiliano</a>
             </div>
             {{-- <div class="d-none d-lg-flex ms-2">

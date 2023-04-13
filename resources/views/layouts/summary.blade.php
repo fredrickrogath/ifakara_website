@@ -1,5 +1,6 @@
-<div class="container-fluid donate my-5 py-5" data-parallax="scroll"
-    data-image-src="{{ asset('web/img/catholic_history.jpg') }}">
+
+
+<div class="container-fluid donate my-5 py-5" data-parallax="scroll" data-image-src="{{ asset('web/img/summarybg.png') }}">
     <div class="container py-5">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
