@@ -22,11 +22,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="/" class="nav-item nav-link">Nyumbani</a>
-                <a href="{{route('catholic_diocese')}}" class="nav-item nav-link">Jimbo Ifakara</a>
-                <a href="{{route('newsandevents')}}" class="nav-item nav-link">Habari na Matikio</a>
+                <a href="/" class="nav-item nav-link">Mwanzo</a>
+                <a href="{{route('catholic_diocese')}}" class="nav-item nav-link">Jimbo</a>
+                <a href="{{route('newsandevents')}}" class="nav-item nav-link">Habari na Matukio</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Taasisi zetu</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Taasisi Zetu</a>
                     <div class="dropdown-menu m-0">
                         <a href="{{route('schools')}}" class="dropdown-item">Shule</a>
                         <a href="{{route('healths')}}" class="dropdown-item">Afya</a>
@@ -35,7 +35,7 @@
                         {{-- <a href="404.html" class="dropdown-item">404 Page</a> --}}
                     </div>
                 </div>
-                <a href="{{route('album_picha')}}" class="nav-item nav-link">Albamu ya picha</a>
+                <a href="{{route('album_picha')}}" class="nav-item nav-link">Maktaba ya Picha</a>
 
                 <a href="{{route('contact')}}" class="nav-item nav-link">Mawasiliano</a>
             </div>
