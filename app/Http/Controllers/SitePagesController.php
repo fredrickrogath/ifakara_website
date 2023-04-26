@@ -87,6 +87,10 @@ class SitePagesController extends Controller
     public function gallery(){
         return View('pages.gallery');
     }
+
+    public function video(){
+        return view('pages.video');
+    }
     /**
      * Show the form for creating a new resource.
      *

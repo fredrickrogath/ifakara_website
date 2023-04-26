@@ -82,11 +82,8 @@
     <!-- About End -->
 
 
-   
-
-
     <!-- Team and fathers -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl" style="margin-top:-8%;">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Padres</div>
@@ -100,12 +97,17 @@
                         </div>
                         <div class="team-text bg-light text-center p-4">
                             <h5>   Pd. Marcus Abell Mirwato</h5> 
-                            <p class="text-primary">Designation</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
+                            <h6 class="text-primary"><span class="text-dark">Parokia : </span> Andrea Mtume-Ifakara</h6>
+                            <h6 class="text-primary"><span class="text-dark"><i class="fa fa-envelope" aria-hidden="true"></i> :
+                            </span>limanagani@gmail.com</h6>
+                            <h6 class="text-primary"><span class="text-dark"><i class="fa fa-phone-square" aria-hidden="true"></i> :
+
+                            </span> 0784050722</h6>
+                                {{-- <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                </div> --}}
                         </div>
                     </div>
                 </div>
@@ -116,12 +118,17 @@
                         </div>
                         <div class="team-text bg-light text-center p-4">
                             <h5>Pd. Benny Jullio Mtema</h5>
-                            <p class="text-primary">Paroko</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
+                            <h6 class="text-primary"><span class="text-dark">Parokia : </span>Mang’ula</h6>
+                            <h6 class="text-primary"><span class="text-dark"><i class="fa fa-envelope" aria-hidden="true"></i> :
+                            </span>bennyjulliomtema@gmail.com </h6>
+                            <h6 class="text-primary"><span class="text-dark"><i class="fa fa-phone-square" aria-hidden="true"></i> :
+
+                            </span> +255 686 580 500</h6>
+                                {{-- <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                </div> --}}
                         </div>
                     </div>
                 </div>
@@ -132,12 +139,17 @@
                         </div>
                         <div class="team-text bg-light text-center p-4">
                             <h5>Pd. Pius Rwegoshora</h5>
-                            <p class="text-primary">Parako</p>
-                            <div class="team-social text-center">
+                            <h6 class="text-primary"><span class="text-dark">Parokia : </span> Takatifu-Chisano</h6>
+                            <h6 class="text-primary"><span class="text-dark"><i class="fa fa-envelope" aria-hidden="true"></i> :
+                            </span>rwegoshorapius21@gmail.com</h6>
+                            <h6 class="text-primary"><span class="text-dark"><i class="fa fa-phone-square" aria-hidden="true"></i> :
+
+                            </span> +255 755 912 902</h6>
+                            {{-- <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -148,15 +160,65 @@
                         </div>
                         <div class="team-text bg-light text-center p-4">
                             <h5> Pd. Godfrey Hongo </h5>
-                            <p class="text-primary">Poroko</p>
-                            <div class="team-social text-center">
+                            <h6 class="text-primary"><span class="text-dark">Parokia : </span>Mt. Yohane Mbatizaji Viwanja Sitini-Ifakara</h6>
+                            <h6 class="text-primary"><span class="text-dark"><i class="fa fa-envelope" aria-hidden="true"></i> :
+                            </span></h6>
+                            <h6 class="text-primary"><span class="text-dark"><i class="fa fa-phone-square" aria-hidden="true"></i> :
+
+                            </span>  +255 786 627 114</h6>                           
+                             {{-- <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row g-4 mt-3">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{asset('web/img/p_5.png')}}" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5> Fr. Benvolus Chinyala</h5> 
+                            <h6 class="text-primary"><span class="text-dark">Parokia : </span>Idete</h6>
+                            <h6 class="text-primary"><span class="text-dark"><i class="fa fa-envelope" aria-hidden="true"></i> :
+                            </span>bchinyala@gmail.com </h6>
+                            <h6 class="text-primary"><span class="text-dark"><i class="fa fa-phone-square" aria-hidden="true"></i> :
+
+                            </span> +255 682 561 136</h6>
+                                {{-- <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                </div> --}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{asset('web/img/p_6.png')}}" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Fr. Ndelacho</h5>
+                            <h6 class="text-primary"><span class="text-dark">Parokia : </span></h6>
+                            <h6 class="text-primary"><span class="text-dark"><i class="fa fa-envelope" aria-hidden="true"></i> :
+                            </span></h6>
+                            <h6 class="text-primary"><span class="text-dark"><i class="fa fa-phone-square" aria-hidden="true"></i> :
+
+                            </span>    </h6>
+                                {{-- <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                </div> --}}
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>

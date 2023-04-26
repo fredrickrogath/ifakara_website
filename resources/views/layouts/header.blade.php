@@ -35,7 +35,14 @@
                         {{-- <a href="404.html" class="dropdown-item">404 Page</a> --}}
                     </div>
                 </div>
-                <a href="{{route('album_picha')}}" class="nav-item nav-link">Maktaba ya Picha</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Maktaba</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="{{route('album_picha')}}" class="dropdown-item">Picha</a>
+                        <a href="{{route('maktaba_video')}}" class="dropdown-item">Video</a>    
+                        {{-- <a href="404.html" class="dropdown-item">404 Page</a> --}}
+                    </div>
+                </div>
 
                 <a href="{{route('contact')}}" class="nav-item nav-link">Mawasiliano</a>
             </div>

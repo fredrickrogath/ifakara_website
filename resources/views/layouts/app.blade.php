@@ -99,8 +99,8 @@
 
 
     <!-- Matukio na Habari zetu -->
-    <div class="container-xxl bg-light my-5 py-5">
-        <div class="container py-5">
+    <div class="container-xxl bg-light my-5 py-5">  
+        <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Habari</div>
                 <h1 class="display-6 mb-5">Habari na Matukio</h1>
@@ -151,7 +151,7 @@
                             <h5 class="mb-3">{{ $events->events_title }}</h5>
                             <h6 class="text-danger">Location : {{ $events->location }}<span> by
                                 {{ $news->created_by }}</span></h6>
-                            <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
+                            {{-- <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p> --}}
 
                         </div>
                         <div class="position-relative mt-auto">
