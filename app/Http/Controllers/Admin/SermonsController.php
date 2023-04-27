@@ -48,6 +48,7 @@ class SermonsController extends Controller
         }
         $sermons->sermons_title = $request->input('sermons_title');
         $sermons->name = $request->input('name');
+        $sermons->utube_link = $request->input('utube_link');
         if($sermons->save()){
             return redirect('/admin/sermons')->with('status', 'Sermons Added SuccessFully!');
         }
@@ -99,7 +100,7 @@ class SermonsController extends Controller
         }
         $sermons->sermons_title = $request->input('sermons_title');
         $sermons->name = $request->input('name');
-        
+        $sermons->utube_link = $request->input('utube_link');
         $sermons->update();
         return redirect('/admin/sermons')->with('status', 'Sermons was Updated successfully!');
     }

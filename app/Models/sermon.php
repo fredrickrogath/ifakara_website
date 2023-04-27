@@ -11,6 +11,7 @@ class sermon extends Model
     protected $fillable = [
         'sermons_title',
         'video',
+        'utube_link',
         'name'
     ];
 }

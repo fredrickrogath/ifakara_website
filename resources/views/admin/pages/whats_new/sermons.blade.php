@@ -70,7 +70,7 @@
                                                 <tr>
                                                     <th>Sn</th>
                                                     <th>Title</th>
-                                                    <th>Video</th>
+                                                    <th>Cover Image</th>
                                                     <th>Priest</th>
                                                     <th style="width: 82px;">Action</th>
                                                 </tr>
@@ -85,8 +85,7 @@
                                                         {{ $sermons->sermons_title }}
                                                     </td>
                                                     <td>
-                                                        <video src="{{ asset('admin/assets/video/sermons/' . $sermons->video) }}" style="border-radius: 10px"
-                                                         height="80" width="150" controls></video>
+                                                         <img style="border-radius: 10px" src="{{ asset('admin/assets/video/sermons/' . $sermons->video) }}" height="80" width="150" alt="Cover Image">
                                                     </td>
                                                     <td>
                                                         {{ $sermons->name }}
@@ -161,14 +160,19 @@
                                         placeholder="Enter Sermons Title">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Video</label>
+                                    <label for="exampleInputEmail1" class="form-label">Cover Image</label>
                                     <input type="file" class="form-control" id="exampleInputEmail1" name="video" required
                                         >
                                 </div>
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Priest</label>
                                     <input type="text" class="form-control" id="name" name="name" required
-                                        placeholder="Enter Sermons Title">
+                                        placeholder="Enter Sermons Priest">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Youtube Link</label>
+                                    <input type="text" class="form-control" id="name" name="utube_link" required
+                                        placeholder="Enter Sermons Youtube Link">
                                 </div>
 
                                 <div class="text-end">

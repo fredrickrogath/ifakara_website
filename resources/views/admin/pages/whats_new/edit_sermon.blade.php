@@ -63,6 +63,11 @@
                                                         <input type="file" class="form-control" id="exampleInputEmail1" name="video" required
                                                         value="{{ $sermons->video }}">
                                                     </div>
+                                                    <div class="col-12 mb-3">
+                                                        <label for="name" class="form-label">Youtube Link</label>
+                                                        <input type="text" class="form-control" id="name" name="utube_link" required
+                                                            value="{{ $sermons->utube_link }}">
+                                                    </div>
                     
                                                     <div class="text-end">
                                                         <button type="submit" class="bg-info p-2">Publish </button>
