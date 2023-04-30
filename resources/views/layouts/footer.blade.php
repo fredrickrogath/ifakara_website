@@ -14,9 +14,11 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <h5 class="text-light mb-4">Address</h5>
-                <p><i class="fa fa-map-marker-alt me-3"></i>P.O BOX 94 Ifakara ,Morogoro Tanzania </p>
-                <p><i class="fa fa-phone-alt me-3"></i>+255 345 67890</p>
-                <p><i class="fa fa-envelope me-3"></i>info@ifarakcatholicdiosece.com</p>
+                <p><i class="fa fa-map-marker-alt me-3"></i>S.L.P 57 Ifakara
+                    Kilombero/Morogoro Tanzania </p>
+                <p><i class="fa fa-phone-alt me-3"></i>+255 232 625 088(Office)</p>
+                <p><i class="fa fa-phone-alt me-3"></i> +255 786 627 114 (Mobile)</p>                         
+                <p><i class="fa fa-envelope me-3"></i>ifakaradiocese@gmail.com</p>
             </div>
             <div class="col-lg-3 col-md-6">
                 <h5 class="text-light mb-4">Linki Muhimu</h5>

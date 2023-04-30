@@ -22,9 +22,10 @@ class HomeController extends Controller
     public function index()
     {
         $verses = verse::all();
-        $sermons = sermon::latest('id')->limit(3)->get();
+        $sermons = sermon::latest('created_at')->limit(3)->paginate(3);
         $slider = slider::all();
         $news = news::latest('id')->limit(3)->get();
+      
         $events = events::latest('id')->limit(3)->get();
         $gallery_photo = gallery::all()->where('category', '=', 'Photo');
         $school = summary::where('category', '=', 'Schools')->latest('id')->limit(1)->get();
@@ -34,7 +35,7 @@ class HomeController extends Controller
         $education_service = service::where('category', '=', 'Education')->latest('id')->limit(1)->get();
         $health_service = service::where('category', '=', 'Health')->latest('id')->limit(1)->get();
         $bible_service = service::where('category', '=', 'Bible')->latest('id')->limit(1)->get();
-        return view('welcome', compact('verses',"news",'events','slider','sermons','gallery_photo','school', 'health', 'parish', 'member', 'education_service', 'health_service', 'bible_service'));
+        return view('welcome', compact('verses','news','events','slider','sermons','gallery_photo','school', 'health', 'parish', 'member', 'education_service', 'health_service', 'bible_service'));
     }
 
     /**

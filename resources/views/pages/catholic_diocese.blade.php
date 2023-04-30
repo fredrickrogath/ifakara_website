@@ -33,7 +33,13 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="w-100" src="{{asset('web/img/bishop_img.jpg')}}" alt="" style="height:70%">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="w-100" src="{{asset('web/img/bishop_img.jpg')}}" alt="" style="height:100%;">
+
+                        </div>
+                    </div>
 
                     {{-- <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">
                         <img class="position-absolute w-50 h-100 pt-5 pe-5" src="{{asset('web/img/bishop_img.jpg')}}" alt="" style="object-fit: cover;">
@@ -68,6 +74,7 @@
                                 <i class="fa fa-arrow-right"></i>
                             </div>
                         </a> --}}
+                        
                         <a class="btn btn-outline-primary py-2 px-3" href="{{route('contact')}}">
                             Mawasilano
                             <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
@@ -83,8 +90,8 @@
 
 
     <!-- Team and fathers -->
-    <div class="container-xxl" style="margin-top:-8%;">
-        <div class="container">
+    <div class="container-xxl">
+        <div class="container" style="margin-top:-2%;">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Padres</div>
                 <h1 class="display-6 mb-5">Jimbo Katoliki na Paroko wake</h1>

@@ -49,7 +49,7 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-3 animated slideInDown">Mafunzo ya CBS</h1>
+                                    <h1 class="display-4 text-white mb-3 animated slideInDown">Mafunzo ya CBC</h1>
                                     <p class="fs-5 text-white-50 mb-5 animated slideInDown">Ufununguzi la mafunzo ya
                                         walimu kuhusu kufundisha kwa kufata mutaala unaozingatia uamahili</p>
                                     <a class="btn btn-primary py-2 px-3 animated slideInDown"
@@ -99,8 +99,8 @@
 
 
     <!-- Matukio na Habari zetu -->
-    <div class="container-xxl bg-light my-5 py-5">  
-        <div class="container">
+    <div class="container-xxl bg-light py-5">  
+        <div class="container"style="margin-top: -3%">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Habari</div>
                 <h1 class="display-6 mb-5">Habari na Matukio</h1>

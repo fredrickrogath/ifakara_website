@@ -7,7 +7,7 @@
                         alt="" style="object-fit: cover;">
                     <img class="position-absolute top-0 end-0 bg-white ps-2 pb-2"
                         src="{{ asset('web/img/bishop_img.jpg') }}" alt=""
-                        style="width: 200px; height: 200px;">
+                        style="width: 125px; height: 200px;">
                 </div>
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
