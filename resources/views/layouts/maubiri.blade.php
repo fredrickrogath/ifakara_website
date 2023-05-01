@@ -45,7 +45,7 @@
                         </div>
                         <div class="position-relative mt-auto"
                             style="background-image: url({{ asset('admin/assets/video/sermons/' . $sermons->video) }});  background-size:100% auto; height:250px; position:fixed opacity: 1; border-radius: 10px;">
-                            <div class="play-buuton px-3">
+                            <div style=" width: 100%; height: 100%; display: flex;align-items: center;justify-content: center; background: rgba(6, 6, 6, 0.5);">
                                 <a href="{{$sermons->utube_link}}" class="btn btn-primary px-3"><i class="fa fa-play-circle"
                                         aria-hidden="true"></i></a>
                             </div>

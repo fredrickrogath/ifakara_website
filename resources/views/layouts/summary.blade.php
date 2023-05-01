@@ -15,25 +15,48 @@
                             <div class="row">
                                 @foreach ($parish as $parish)
                                     <div class="col-md-4">
-                                        <h5 class="bg-primary text-white rounded text-center"> {{ $parish->name }}</h5>
-                                        <h1 class="btn btn-light btn-block p-4 counter text-center" for="btnradio1"
-                                            data-duration="8000" style="font-size: 20px;">{{ $parish->amount }}</h1>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5 class="text-primary rounded text-center"> {{ $parish->name }}</h5>
+
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <h1 class="btn btn-light btn-block p-4 counter text-center" for="btnradio1"
+                                                data-duration="8000" style="font-size: 20px;">{{ $parish->amount }}</h1>
+                                            </div>
+                                        </div>
+                                      
                                     </div>
                                 @endforeach
-                                @foreach ($school as $school)
+                               
                                     <div class="col-md-4">
-                                        <h5 class="bg-primary text-white rounded text-center">{{ $school->name }}</h5>
-                                        <h1 class="btn btn-light btn-block p-4 counter" for="btnradio1"
-                                            data-duration="8000">{{ $school->amount }}</h1>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5 class="text-primary rounded text-center">Shule</h5>
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <h1 class="btn btn-light btn-block p-4 counter text-center" for="btnradio1"
+                                                    data-duration="8000">11</h1>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
-                                @endforeach
+                               
 
                                 @foreach ($health as $health)
                                     <div class="col-md-4">
-                                        <h5 class="bg-primary text-white rounded text-center"> {{ $health->name }}</h5>
-                                        <h1 class="btn btn-light p-4 counter" for="btnradio1"
-                                            data-countto="{{ $health->amount }}" data-duration="8000">
-                                            {{ $health->amount }}</h1>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5 class="text-primary rounded text-center"> {{ $health->name }}</h5>
+
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <h1 class="btn btn-light p-4 counter" for="btnradio1"
+                                                data-countto="{{ $health->amount }}" data-duration="8000">
+                                                {{ $health->amount }}</h1>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
                                 @endforeach
 
